@@ -1,0 +1,45 @@
+
+.iconField {
+/*	background-color: red; */
+	background-image: url("../images/form/exclamation.gif")
+}
+
+.nameCat {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #0033CC;
+	margin-top: 10px;
+}
+.infoJson {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	width: 400px;
+}
+.infoList {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+}
+.uniprotId {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: bold;
+	color: #000099;
+	margin-bottom: 10px;
+}
+
+.workinprogress-cls {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: bold;
+	color: #000099;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	margin-top: 20px;
+}

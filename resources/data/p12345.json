@@ -1,0 +1,511 @@
+{"uniprot":{
+	"entry":{
+		"keyword":[
+			{
+				"$t":"Aminotransferase",
+				"@id":"KW-0032"
+			},
+			{
+				"$t":"Cell membrane",
+				"@id":"KW-1003"
+			},
+			{
+				"$t":"Complete proteome",
+				"@id":"KW-0181"
+			},
+			{
+				"$t":"Direct protein sequencing",
+				"@id":"KW-0903"
+			},
+			{
+				"$t":"Lipid transport",
+				"@id":"KW-0445"
+			},
+			{
+				"$t":"Membrane",
+				"@id":"KW-0472"
+			},
+			{
+				"$t":"Mitochondrion",
+				"@id":"KW-0496"
+			},
+			{
+				"$t":"Pyridoxal phosphate",
+				"@id":"KW-0663"
+			},
+			{
+				"$t":"Transferase",
+				"@id":"KW-0808"
+			},
+			{
+				"$t":"Transport",
+				"@id":"KW-0813"
+			}
+		],
+		"sequence":{
+			"@fragment":"single",
+			"@checksum":"410321530B95B673",
+			"@version":"1",
+			"@mass":"3401",
+			"$t":"\nSSWWAHVEMGPPDPILGVTEAYKRDTNSKK\n",
+			"@length":"30",
+			"@modified":"1989-10-01"
+		},
+		"gene":{
+			"name":{
+				"$t":"GOT2",
+				"@type":"primary"
+			}
+		},
+		"name":{
+			"$t":"AATM_RABIT"
+		},
+		"accession":{
+			"$t":"P12345"
+		},
+		"@dataset":"Swiss-Prot",
+		"feature":[
+			{
+				"@description":"Aspartate aminotransferase, mitochondrial",
+				"location":{
+					"begin":{
+						"@position":"1"
+					},
+					"end":{
+						"@status":"greater than",
+						"@position":"30"
+					}
+				},
+				"@id":"PRO_0000123886",
+				"@type":"chain"
+			},
+			{
+				"location":{
+					"position":{
+						"@position":"30"
+					}
+				},
+				"@type":"non-terminal residue"
+			}
+		],
+		"proteinExistence":{
+			"@type":"evidence at protein level"
+		},
+		"dbReference":[
+			{
+				"@key":"1",
+				"@id":"2.6.1.1",
+				"@type":"EC"
+			},
+			{
+				"@key":"6",
+				"@id":"B27103",
+				"property":{
+					"@value":"B27103",
+					"@type":"entry name"
+				},
+				"@type":"PIR"
+			},
+			{
+				"@key":"7",
+				"@id":"P12345",
+				"@type":"ProteinModelPortal"
+			},
+			{
+				"@key":"8",
+				"@id":"P12345",
+				"property":{
+					"@value":"1-30",
+					"@type":"residue range"
+				},
+				"@type":"SMR"
+			},
+			{
+				"@key":"9",
+				"@id":"P12345",
+				"@type":"STRING"
+			},
+			{
+				"@key":"10",
+				"@id":"ENSOCUT00000003872",
+				"property":[
+					{
+						"@value":"ENSOCUP00000003357",
+						"@type":"protein sequence ID"
+					},
+					{
+						"@value":"ENSOCUG00000003871",
+						"@type":"gene ID"
+					}
+				],
+				"@type":"Ensembl"
+			},
+			{
+				"@key":"11",
+				"@id":"maNOG12574",
+				"@type":"eggNOG"
+			},
+			{
+				"@key":"12",
+				"@id":"ENSGT00390000014081",
+				"@type":"GeneTree"
+			},
+			{
+				"@key":"13",
+				"@id":"EOG4RXZ07",
+				"@type":"OrthoDB"
+			},
+			{
+				"@key":"14",
+				"@id":"GO:0005759",
+				"property":[
+					{
+						"@value":"C:mitochondrial matrix",
+						"@type":"term"
+					},
+					{
+						"@value":"IEA:UniProtKB-SubCell",
+						"@type":"evidence"
+					}
+				],
+				"@type":"GO"
+			},
+			{
+				"@key":"15",
+				"@id":"GO:0005886",
+				"property":[
+					{
+						"@value":"C:plasma membrane",
+						"@type":"term"
+					},
+					{
+						"@value":"IEA:UniProtKB-SubCell",
+						"@type":"evidence"
+					}
+				],
+				"@type":"GO"
+			},
+			{
+				"@key":"16",
+				"@id":"GO:0004069",
+				"property":[
+					{
+						"@value":"F:L-aspartate:2-oxoglutarate aminotransferase activity",
+						"@type":"term"
+					},
+					{
+						"@value":"ISS:UniProtKB",
+						"@type":"evidence"
+					}
+				],
+				"@type":"GO"
+			},
+			{
+				"@key":"17",
+				"@id":"GO:0030170",
+				"property":[
+					{
+						"@value":"F:pyridoxal phosphate binding",
+						"@type":"term"
+					},
+					{
+						"@value":"IEA:InterPro",
+						"@type":"evidence"
+					}
+				],
+				"@type":"GO"
+			},
+			{
+				"@key":"18",
+				"@id":"GO:0006457",
+				"property":[
+					{
+						"@value":"P:protein folding",
+						"@type":"term"
+					},
+					{
+						"@value":"TAS:HGNC",
+						"@type":"evidence"
+					}
+				],
+				"@type":"GO"
+			},
+			{
+				"@key":"19",
+				"@id":"IPR000796",
+				"property":{
+					"@value":"Asp_trans",
+					"@type":"entry name"
+				},
+				"@type":"InterPro"
+			},
+			{
+				"@key":"20",
+				"@id":"IPR015422",
+				"property":{
+					"@value":"PyrdxlP-dep_Trfase_major_sub2",
+					"@type":"entry name"
+				},
+				"@type":"InterPro"
+			},
+			{
+				"@key":"21",
+				"@id":"G3DSA:3.90.1150.10",
+				"property":[
+					{
+						"@value":"PyrdxlP-dep_Trfase_major_sub2",
+						"@type":"entry name"
+					},
+					{
+						"@value":"1",
+						"@type":"match status"
+					}
+				],
+				"@type":"Gene3D"
+			},
+			{
+				"@key":"22",
+				"@id":"PTHR11879",
+				"property":[
+					{
+						"@value":"Asp_trans",
+						"@type":"entry name"
+					},
+					{
+						"@value":"1",
+						"@type":"match status"
+					}
+				],
+				"@type":"PANTHER"
+			},
+			{
+				"@key":"23",
+				"@id":"PS00105",
+				"property":[
+					{
+						"@value":"AA_TRANSFER_CLASS_1",
+						"@type":"entry name"
+					},
+					{
+						"@value":"PARTIAL",
+						"@type":"match status"
+					}
+				],
+				"@type":"PROSITE"
+			}
+		],
+		"protein":{
+			"alternativeName":[
+				{
+					"fullName":{
+						"$t":"Fatty acid-binding protein"
+					},
+					"shortName":{
+						"$t":"FABP-1"
+					}
+				},
+				{
+					"fullName":{
+						"$t":"Glutamate oxaloacetate transaminase 2"
+					}
+				},
+				{
+					"fullName":{
+						"$t":"Plasma membrane-associated fatty acid-binding protein"
+					},
+					"shortName":{
+						"$t":"FABPpm"
+					}
+				},
+				{
+					"fullName":{
+						"$t":"Transaminase A"
+					}
+				}
+			],
+			"recommendedName":{
+				"fullName":{
+					"$t":"Aspartate aminotransferase, mitochondrial"
+				},
+				"@ref":"1",
+				"shortName":{
+					"$t":"mAspAT"
+				}
+			}
+		},
+		"comment":[
+			{
+				"text":{
+					"$t":"Plays a key role in amino acid metabolism. Important for metabolite exchange between mitochondria and cytosol. Facilitates cellular uptake of long-chain free fatty acids (By similarity)."
+				},
+				"@type":"function"
+			},
+			{
+				"text":{
+					"$t":"L-aspartate + 2-oxoglutarate = oxaloacetate + L-glutamate."
+				},
+				"@type":"catalytic activity"
+			},
+			{
+				"text":{
+					"$t":"Pyridoxal phosphate."
+				},
+				"@type":"cofactor"
+			},
+			{
+				"text":{
+					"$t":"Homodimer."
+				},
+				"@type":"subunit"
+			},
+			{
+				"subcellularLocation":[
+					{
+						"location":{
+							"$t":"Mitochondrion matrix"
+						}
+					},
+					{
+						"location":{
+							"@status":"by similarity",
+							"$t":"Cell membrane"
+						}
+					}
+				],
+				"@type":"subcellular location"
+			},
+			{
+				"text":{
+					"$t":"In eukaryotes there are cytoplasmic, mitochondrial and chloroplastic isozymes."
+				},
+				"@type":"miscellaneous"
+			},
+			{
+				"text":{
+					"$t":"Belongs to the class-I pyridoxal-phosphate-dependent aminotransferase family."
+				},
+				"@type":"similarity"
+			}
+		],
+		"reference":{
+			"source":{
+				"tissue":{
+					"$t":"Liver"
+				}
+			},
+			"@key":"3",
+			"scope":{
+				"$t":"PROTEIN SEQUENCE"
+			},
+			"citation":{
+				"@date":"1985",
+				"@last":"1345",
+				"@name":"J. Biochem.",
+				"dbReference":[
+					{
+						"@key":"4",
+						"@id":"85289123",
+						"@type":"MEDLINE"
+					},
+					{
+						"@key":"5",
+						"@id":"4030726",
+						"@type":"PubMed"
+					}
+				],
+				"@first":"1337",
+				"authorList":{
+					"person":[
+						{
+							"@name":"Kuramitsu S."
+						},
+						{
+							"@name":"Inoue K."
+						},
+						{
+							"@name":"Kondo K."
+						},
+						{
+							"@name":"Aki K."
+						},
+						{
+							"@name":"Kagamiyama H."
+						}
+					]
+				},
+				"title":{
+					"$t":"Aspartate aminotransferase isozymes from rabbit liver. Purification and properties."
+				},
+				"@type":"journal article",
+				"@volume":"97"
+			}
+		},
+		"@version":"74",
+		"organism":{
+			"lineage":{
+				"taxon":[
+					{
+						"$t":"Eukaryota"
+					},
+					{
+						"$t":"Metazoa"
+					},
+					{
+						"$t":"Chordata"
+					},
+					{
+						"$t":"Craniata"
+					},
+					{
+						"$t":"Vertebrata"
+					},
+					{
+						"$t":"Euteleostomi"
+					},
+					{
+						"$t":"Mammalia"
+					},
+					{
+						"$t":"Eutheria"
+					},
+					{
+						"$t":"Euarchontoglires"
+					},
+					{
+						"$t":"Glires"
+					},
+					{
+						"$t":"Lagomorpha"
+					},
+					{
+						"$t":"Leporidae"
+					},
+					{
+						"$t":"Oryctolagus"
+					}
+				]
+			},
+			"dbReference":{
+				"@key":"2",
+				"@id":"9986",
+				"@type":"NCBI Taxonomy"
+			},
+			"name":[
+				{
+					"$t":"Oryctolagus cuniculus",
+					"@type":"scientific"
+				},
+				{
+					"$t":"Rabbit",
+					"@type":"common"
+				}
+			]
+		},
+		"@created":"1989-10-01",
+		"@modified":"2011-10-19"
+	},
+	"copyright":{
+		"$t":"\nCopyrighted by the UniProt Consortium, see http://www.uniprot.org/terms\nDistributed under the Creative Commons Attribution-NoDerivs License\n"
+	},
+	"@xsi:schemaLocation":"http://uniprot.org/uniprot http://www.uniprot.org/support/docs/uniprot.xsd"
+},"@encoding":"UTF-8","@version":"1.0"}

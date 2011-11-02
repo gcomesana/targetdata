@@ -1,0 +1,2901 @@
+{"uniprot":{
+	"entry":[
+		{
+			"keyword":[
+				{
+					"$t":"Complete proteome",
+					"@id":"KW-0181"
+				},
+				{
+					"$t":"FAD",
+					"@id":"KW-0274"
+				},
+				{
+					"$t":"FMN",
+					"@id":"KW-0288"
+				},
+				{
+					"$t":"Flavoprotein",
+					"@id":"KW-0285"
+				},
+				{
+					"$t":"Ion transport",
+					"@id":"KW-0406"
+				},
+				{
+					"$t":"Iron",
+					"@id":"KW-0408"
+				},
+				{
+					"$t":"Iron transport",
+					"@id":"KW-0410"
+				},
+				{
+					"$t":"NAD",
+					"@id":"KW-0520"
+				},
+				{
+					"$t":"NADP",
+					"@id":"KW-0521"
+				},
+				{
+					"$t":"Oxidoreductase",
+					"@id":"KW-0560"
+				},
+				{
+					"$t":"Transport",
+					"@id":"KW-0813"
+				}
+			],
+			"sequence":{
+				"@checksum":"0E64DE5A8FA0F12D",
+				"@version":"2",
+				"@mass":"26242",
+				"$t":"\nMTTLSCKVTSVEAITDTVYRVRIVPDAAFSFRAGQYLMVVMDERDKRPFSMASTPDEKGF\nIELHIGASEINLYAKAVMDRILKDHQIVVDIPHGEAWLRDDEERPMILIAGGTGFSYARS\nILLTALARNPNRDITIYWGGREEQHLYDLCELEALSLKHPGLQVVPVVEQPEAGWRGRTG\nTVLTAVLQDHGTLAEHDIYIAGRFEMAKIARDLFCSERNAREDRLFGDAFAFI\n",
+				"@length":"233",
+				"@modified":"2007-01-23"
+			},
+			"gene":{
+				"name":[
+					{
+						"$t":"fre",
+						"@type":"primary"
+					},
+					{
+						"$t":"ubiB",
+						"@type":"synonym"
+					},
+					{
+						"$t":"Z5365",
+						"@type":"ordered locus"
+					},
+					{
+						"$t":"ECs4772",
+						"@type":"ordered locus"
+					}
+				]
+			},
+			"name":{
+				"$t":"FRE_ECO57"
+			},
+			"accession":[
+				{
+					"$t":"P0AEN3"
+				},
+				{
+					"$t":"P23486"
+				},
+				{
+					"$t":"P76768"
+				}
+			],
+			"@dataset":"Swiss-Prot",
+			"feature":[
+				{
+					"@status":"by similarity",
+					"@description":"Removed",
+					"location":{
+						"position":{
+							"@position":"1"
+						}
+					},
+					"@type":"initiator methionine"
+				},
+				{
+					"@description":"NAD(P)H-flavin reductase",
+					"location":{
+						"begin":{
+							"@position":"2"
+						},
+						"end":{
+							"@position":"233"
+						}
+					},
+					"@id":"PRO_0000068145",
+					"@type":"chain"
+				},
+				{
+					"@description":"FAD-binding FR-type",
+					"location":{
+						"begin":{
+							"@position":"2"
+						},
+						"end":{
+							"@position":"99"
+						}
+					},
+					"@type":"domain"
+				},
+				{
+					"@status":"by similarity",
+					"@description":"Pyridine",
+					"location":{
+						"begin":{
+							"@position":"111"
+						},
+						"end":{
+							"@position":"115"
+						}
+					},
+					"@type":"nucleotide phosphate-binding region"
+				}
+			],
+			"proteinExistence":{
+				"@type":"inferred from homology"
+			},
+			"dbReference":[
+				{
+					"@key":"1",
+					"@id":"1.16.1.3",
+					"@type":"EC"
+				},
+				{
+					"@key":"2",
+					"@id":"1.5.1.29",
+					"@type":"EC"
+				},
+				{
+					"@key":"12",
+					"@id":"AE005174",
+					"property":[
+						{
+							"@value":"AAG59038.1",
+							"@type":"protein sequence ID"
+						},
+						{
+							"@value":"Genomic_DNA",
+							"@type":"molecule type"
+						}
+					],
+					"@type":"EMBL"
+				},
+				{
+					"@key":"13",
+					"@id":"BA000007",
+					"property":[
+						{
+							"@value":"BAB38195.1",
+							"@type":"protein sequence ID"
+						},
+						{
+							"@value":"Genomic_DNA",
+							"@type":"molecule type"
+						}
+					],
+					"@type":"EMBL"
+				},
+				{
+					"@key":"14",
+					"@id":"B86072",
+					"property":{
+						"@value":"B86072",
+						"@type":"entry name"
+					},
+					"@type":"PIR"
+				},
+				{
+					"@key":"15",
+					"@id":"D91225",
+					"property":{
+						"@value":"D91225",
+						"@type":"entry name"
+					},
+					"@type":"PIR"
+				},
+				{
+					"@key":"16",
+					"@id":"NP_290474.1",
+					"property":{
+						"@value":"NC_002655.2",
+						"@type":"nucleotide sequence ID"
+					},
+					"@type":"RefSeq"
+				},
+				{
+					"@key":"17",
+					"@id":"NP_312799.1",
+					"property":{
+						"@value":"NC_002695.1",
+						"@type":"nucleotide sequence ID"
+					},
+					"@type":"RefSeq"
+				},
+				{
+					"@key":"18",
+					"@id":"P0AEN3",
+					"@type":"ProteinModelPortal"
+				},
+				{
+					"@key":"19",
+					"@id":"P0AEN3",
+					"property":{
+						"@value":"2-233",
+						"@type":"residue range"
+					},
+					"@type":"SMR"
+				},
+				{
+					"@key":"20",
+					"@id":"EBESCT00000025916",
+					"property":[
+						{
+							"@value":"EBESCP00000024809",
+							"@type":"protein sequence ID"
+						},
+						{
+							"@value":"EBESCG00000024969",
+							"@type":"gene ID"
+						}
+					],
+					"@type":"EnsemblBacteria"
+				},
+				{
+					"@key":"21",
+					"@id":"EBESCT00000060173",
+					"property":[
+						{
+							"@value":"EBESCP00000058001",
+							"@type":"protein sequence ID"
+						},
+						{
+							"@value":"EBESCG00000059220",
+							"@type":"gene ID"
+						}
+					],
+					"@type":"EnsemblBacteria"
+				},
+				{
+					"@key":"22",
+					"@id":"915131",
+					"@type":"GeneID"
+				},
+				{
+					"@key":"23",
+					"@id":"960316",
+					"@type":"GeneID"
+				},
+				{
+					"@key":"24",
+					"@id":"AE005174_GR",
+					"property":{
+						"@value":"Z5365",
+						"@type":"gene designation"
+					},
+					"@type":"GenomeReviews"
+				},
+				{
+					"@key":"25",
+					"@id":"BA000007_GR",
+					"property":{
+						"@value":"ECs4772",
+						"@type":"gene designation"
+					},
+					"@type":"GenomeReviews"
+				},
+				{
+					"@key":"26",
+					"@id":"ece:Z5365",
+					"@type":"KEGG"
+				},
+				{
+					"@key":"27",
+					"@id":"ecs:ECs4772",
+					"@type":"KEGG"
+				},
+				{
+					"@key":"28",
+					"@id":"EBGT00050000009405",
+					"@type":"GeneTree"
+				},
+				{
+					"@key":"29",
+					"@id":"HBG625960",
+					"@type":"HOGENOM"
+				},
+				{
+					"@key":"30",
+					"@id":"ARDLFCN",
+					"@type":"OMA"
+				},
+				{
+					"@key":"31",
+					"@id":"PRK08051",
+					"@type":"ProtClustDB"
+				},
+				{
+					"@key":"32",
+					"@id":"ECOL83334:ECS4772-MONOMER",
+					"@type":"BioCyc"
+				},
+				{
+					"@key":"33",
+					"@id":"GO:0047138",
+					"property":[
+						{
+							"@value":"F:aquacobalamin reductase activity",
+							"@type":"term"
+						},
+						{
+							"@value":"IEA:EC",
+							"@type":"evidence"
+						}
+					],
+					"@type":"GO"
+				},
+				{
+					"@key":"34",
+					"@id":"GO:0008752",
+					"property":[
+						{
+							"@value":"F:FMN reductase activity",
+							"@type":"term"
+						},
+						{
+							"@value":"IEA:EC",
+							"@type":"evidence"
+						}
+					],
+					"@type":"GO"
+				},
+				{
+					"@key":"35",
+					"@id":"GO:0006811",
+					"property":[
+						{
+							"@value":"P:ion transport",
+							"@type":"term"
+						},
+						{
+							"@value":"IEA:UniProtKB-KW",
+							"@type":"evidence"
+						}
+					],
+					"@type":"GO"
+				},
+				{
+					"@key":"36",
+					"@id":"GO:0055072",
+					"property":[
+						{
+							"@value":"P:iron ion homeostasis",
+							"@type":"term"
+						},
+						{
+							"@value":"IEA:UniProtKB-KW",
+							"@type":"evidence"
+						}
+					],
+					"@type":"GO"
+				},
+				{
+					"@key":"37",
+					"@id":"IPR017927",
+					"property":{
+						"@value":"Fd_Rdtase_FAD-bd",
+						"@type":"entry name"
+					},
+					"@type":"InterPro"
+				},
+				{
+					"@key":"38",
+					"@id":"IPR008333",
+					"property":{
+						"@value":"OxRdtase_FAD-bd_dom",
+						"@type":"entry name"
+					},
+					"@type":"InterPro"
+				},
+				{
+					"@key":"39",
+					"@id":"IPR001433",
+					"property":{
+						"@value":"OxRdtase_FAD/NAD-bd",
+						"@type":"entry name"
+					},
+					"@type":"InterPro"
+				},
+				{
+					"@key":"40",
+					"@id":"IPR001221",
+					"property":{
+						"@value":"Phe_hydroxylase",
+						"@type":"entry name"
+					},
+					"@type":"InterPro"
+				},
+				{
+					"@key":"41",
+					"@id":"IPR017938",
+					"property":{
+						"@value":"Riboflavin_synthase-like_b-brl",
+						"@type":"entry name"
+					},
+					"@type":"InterPro"
+				},
+				{
+					"@key":"42",
+					"@id":"PF00970",
+					"property":[
+						{
+							"@value":"FAD_binding_6",
+							"@type":"entry name"
+						},
+						{
+							"@value":"1",
+							"@type":"match status"
+						}
+					],
+					"@type":"Pfam"
+				},
+				{
+					"@key":"43",
+					"@id":"PF00175",
+					"property":[
+						{
+							"@value":"NAD_binding_1",
+							"@type":"entry name"
+						},
+						{
+							"@value":"1",
+							"@type":"match status"
+						}
+					],
+					"@type":"Pfam"
+				},
+				{
+					"@key":"44",
+					"@id":"PR00410",
+					"property":{
+						"@value":"PHEHYDRXLASE",
+						"@type":"entry name"
+					},
+					"@type":"PRINTS"
+				},
+				{
+					"@key":"45",
+					"@id":"SSF63380",
+					"property":[
+						{
+							"@value":"Riboflavin_synthase_like_b-brl",
+							"@type":"entry name"
+						},
+						{
+							"@value":"1",
+							"@type":"match status"
+						}
+					],
+					"@type":"SUPFAM"
+				},
+				{
+					"@key":"46",
+					"@id":"PS51384",
+					"property":[
+						{
+							"@value":"FAD_FR",
+							"@type":"entry name"
+						},
+						{
+							"@value":"1",
+							"@type":"match status"
+						}
+					],
+					"@type":"PROSITE"
+				}
+			],
+			"protein":{
+				"alternativeName":[
+					{
+						"fullName":{
+							"$t":"Aquacobalamin reductase"
+						}
+					},
+					{
+						"fullName":{
+							"$t":"FMN reductase"
+						}
+					},
+					{
+						"fullName":{
+							"$t":"Ferrisiderophore reductase C"
+						}
+					},
+					{
+						"fullName":{
+							"$t":"NAD(P)H:flavin oxidoreductase"
+						}
+					}
+				],
+				"recommendedName":{
+					"fullName":{
+						"$t":"NAD(P)H-flavin reductase"
+					},
+					"@ref":"1 2"
+				}
+			},
+			"comment":[
+				{
+					"text":{
+						"$t":"Catalyzes the reduction of soluble flavins by reduced pyridine nucleotides. Seems to reduces the complexed Fe(3+) iron of siderophores to Fe(2+), thus releasing it from the chelator (By similarity)."
+					},
+					"@type":"function"
+				},
+				{
+					"text":{
+						"$t":"FMNH(2) + NAD(P)(+) = FMN + NAD(P)H."
+					},
+					"@type":"catalytic activity"
+				},
+				{
+					"text":{
+						"$t":"2 cob(II)alamin + NAD(+) = 2 aquacob(III)alamin + NADH."
+					},
+					"@type":"catalytic activity"
+				},
+				{
+					"text":{
+						"$t":"Monomer (By similarity)."
+					},
+					"@type":"subunit"
+				},
+				{
+					"text":{
+						"$t":"Belongs to the fre/luxG FAD/NAD(P) flavoprotein oxidoreductase family."
+					},
+					"@type":"similarity"
+				},
+				{
+					"text":{
+						"$t":"Contains 1 FAD-binding FR-type domain."
+					},
+					"@type":"similarity"
+				}
+			],
+			"reference":[
+				{
+					"source":{
+						"strain":{
+							"$t":"O157:H7 / EDL933 / ATCC 700927 / EHEC"
+						}
+					},
+					"@key":"4",
+					"scope":{
+						"$t":"NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+					},
+					"citation":{
+						"@date":"2001",
+						"@last":"533",
+						"@name":"Nature",
+						"dbReference":[
+							{
+								"@key":"5",
+								"@id":"21074935",
+								"@type":"MEDLINE"
+							},
+							{
+								"@key":"6",
+								"@id":"11206551",
+								"@type":"PubMed"
+							},
+							{
+								"@key":"7",
+								"@id":"10.1038/35054089",
+								"@type":"DOI"
+							}
+						],
+						"@first":"529",
+						"authorList":{
+							"person":[
+								{
+									"@name":"Perna N.T."
+								},
+								{
+									"@name":"Plunkett G. III"
+								},
+								{
+									"@name":"Burland V."
+								},
+								{
+									"@name":"Mau B."
+								},
+								{
+									"@name":"Glasner J.D."
+								},
+								{
+									"@name":"Rose D.J."
+								},
+								{
+									"@name":"Mayhew G.F."
+								},
+								{
+									"@name":"Evans P.S."
+								},
+								{
+									"@name":"Gregor J."
+								},
+								{
+									"@name":"Kirkpatrick H.A."
+								},
+								{
+									"@name":"Posfai G."
+								},
+								{
+									"@name":"Hackett J."
+								},
+								{
+									"@name":"Klink S."
+								},
+								{
+									"@name":"Boutin A."
+								},
+								{
+									"@name":"Shao Y."
+								},
+								{
+									"@name":"Miller L."
+								},
+								{
+									"@name":"Grotbeck E.J."
+								},
+								{
+									"@name":"Davis N.W."
+								},
+								{
+									"@name":"Lim A."
+								},
+								{
+									"@name":"Dimalanta E.T."
+								},
+								{
+									"@name":"Potamousis K."
+								},
+								{
+									"@name":"Apodaca J."
+								},
+								{
+									"@name":"Anantharaman T.S."
+								},
+								{
+									"@name":"Lin J."
+								},
+								{
+									"@name":"Yen G."
+								},
+								{
+									"@name":"Schwartz D.C."
+								},
+								{
+									"@name":"Welch R.A."
+								},
+								{
+									"@name":"Blattner F.R."
+								}
+							]
+						},
+						"title":{
+							"$t":"Genome sequence of enterohaemorrhagic Escherichia coli O157:H7."
+						},
+						"@type":"journal article",
+						"@volume":"409"
+					}
+				},
+				{
+					"source":{
+						"strain":{
+							"$t":"O157:H7 / Sakai / RIMD 0509952 / EHEC"
+						}
+					},
+					"@key":"8",
+					"scope":{
+						"$t":"NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+					},
+					"citation":{
+						"@date":"2001",
+						"@last":"22",
+						"@name":"DNA Res.",
+						"dbReference":[
+							{
+								"@key":"9",
+								"@id":"21156231",
+								"@type":"MEDLINE"
+							},
+							{
+								"@key":"10",
+								"@id":"11258796",
+								"@type":"PubMed"
+							},
+							{
+								"@key":"11",
+								"@id":"10.1093/dnares/8.1.11",
+								"@type":"DOI"
+							}
+						],
+						"@first":"11",
+						"authorList":{
+							"person":[
+								{
+									"@name":"Hayashi T."
+								},
+								{
+									"@name":"Makino K."
+								},
+								{
+									"@name":"Ohnishi M."
+								},
+								{
+									"@name":"Kurokawa K."
+								},
+								{
+									"@name":"Ishii K."
+								},
+								{
+									"@name":"Yokoyama K."
+								},
+								{
+									"@name":"Han C.-G."
+								},
+								{
+									"@name":"Ohtsubo E."
+								},
+								{
+									"@name":"Nakayama K."
+								},
+								{
+									"@name":"Murata T."
+								},
+								{
+									"@name":"Tanaka M."
+								},
+								{
+									"@name":"Tobe T."
+								},
+								{
+									"@name":"Iida T."
+								},
+								{
+									"@name":"Takami H."
+								},
+								{
+									"@name":"Honda T."
+								},
+								{
+									"@name":"Sasakawa C."
+								},
+								{
+									"@name":"Ogasawara N."
+								},
+								{
+									"@name":"Yasunaga T."
+								},
+								{
+									"@name":"Kuhara S."
+								},
+								{
+									"@name":"Shiba T."
+								},
+								{
+									"@name":"Hattori M."
+								},
+								{
+									"@name":"Shinagawa H."
+								}
+							]
+						},
+						"title":{
+							"$t":"Complete genome sequence of enterohemorrhagic Escherichia coli O157:H7 and genomic comparison with a laboratory strain K-12."
+						},
+						"@type":"journal article",
+						"@volume":"8"
+					}
+				}
+			],
+			"@version":"44",
+			"organism":{
+				"lineage":{
+					"taxon":[
+						{
+							"$t":"Bacteria"
+						},
+						{
+							"$t":"Proteobacteria"
+						},
+						{
+							"$t":"Gammaproteobacteria"
+						},
+						{
+							"$t":"Enterobacteriales"
+						},
+						{
+							"$t":"Enterobacteriaceae"
+						},
+						{
+							"$t":"Escherichia"
+						}
+					]
+				},
+				"dbReference":{
+					"@key":"3",
+					"@id":"83334",
+					"@type":"NCBI Taxonomy"
+				},
+				"name":{
+					"$t":"Escherichia coli O157:H7",
+					"@type":"scientific"
+				}
+			},
+			"@created":"2005-12-20",
+			"@modified":"2011-10-19"
+		},
+		{
+			"keyword":[
+				{
+					"$t":"Complete proteome",
+					"@id":"KW-0181"
+				},
+				{
+					"$t":"FAD",
+					"@id":"KW-0274"
+				},
+				{
+					"$t":"FMN",
+					"@id":"KW-0288"
+				},
+				{
+					"$t":"Flavoprotein",
+					"@id":"KW-0285"
+				},
+				{
+					"$t":"Ion transport",
+					"@id":"KW-0406"
+				},
+				{
+					"$t":"Iron",
+					"@id":"KW-0408"
+				},
+				{
+					"$t":"Iron transport",
+					"@id":"KW-0410"
+				},
+				{
+					"$t":"NAD",
+					"@id":"KW-0520"
+				},
+				{
+					"$t":"NADP",
+					"@id":"KW-0521"
+				},
+				{
+					"$t":"Oxidoreductase",
+					"@id":"KW-0560"
+				},
+				{
+					"$t":"Transport",
+					"@id":"KW-0813"
+				}
+			],
+			"sequence":{
+				"@checksum":"0E64DE5A8FA0F12D",
+				"@version":"2",
+				"@mass":"26242",
+				"$t":"\nMTTLSCKVTSVEAITDTVYRVRIVPDAAFSFRAGQYLMVVMDERDKRPFSMASTPDEKGF\nIELHIGASEINLYAKAVMDRILKDHQIVVDIPHGEAWLRDDEERPMILIAGGTGFSYARS\nILLTALARNPNRDITIYWGGREEQHLYDLCELEALSLKHPGLQVVPVVEQPEAGWRGRTG\nTVLTAVLQDHGTLAEHDIYIAGRFEMAKIARDLFCSERNAREDRLFGDAFAFI\n",
+				"@length":"233",
+				"@modified":"2007-01-23"
+			},
+			"gene":{
+				"name":[
+					{
+						"$t":"fre",
+						"@type":"primary"
+					},
+					{
+						"$t":"ubiB",
+						"@type":"synonym"
+					},
+					{
+						"$t":"c4791",
+						"@type":"ordered locus"
+					}
+				]
+			},
+			"name":{
+				"$t":"FRE_ECOL6"
+			},
+			"accession":[
+				{
+					"$t":"P0AEN2"
+				},
+				{
+					"$t":"P23486"
+				},
+				{
+					"$t":"P76768"
+				}
+			],
+			"@dataset":"Swiss-Prot",
+			"feature":[
+				{
+					"@status":"by similarity",
+					"@description":"Removed",
+					"location":{
+						"position":{
+							"@position":"1"
+						}
+					},
+					"@type":"initiator methionine"
+				},
+				{
+					"@description":"NAD(P)H-flavin reductase",
+					"location":{
+						"begin":{
+							"@position":"2"
+						},
+						"end":{
+							"@position":"233"
+						}
+					},
+					"@id":"PRO_0000068146",
+					"@type":"chain"
+				},
+				{
+					"@description":"FAD-binding FR-type",
+					"location":{
+						"begin":{
+							"@position":"2"
+						},
+						"end":{
+							"@position":"99"
+						}
+					},
+					"@type":"domain"
+				},
+				{
+					"@status":"by similarity",
+					"@description":"Pyridine",
+					"location":{
+						"begin":{
+							"@position":"111"
+						},
+						"end":{
+							"@position":"115"
+						}
+					},
+					"@type":"nucleotide phosphate-binding region"
+				}
+			],
+			"proteinExistence":{
+				"@type":"inferred from homology"
+			},
+			"dbReference":[
+				{
+					"@key":"1",
+					"@id":"1.16.1.3",
+					"@type":"EC"
+				},
+				{
+					"@key":"2",
+					"@id":"1.5.1.29",
+					"@type":"EC"
+				},
+				{
+					"@key":"8",
+					"@id":"AE014075",
+					"property":[
+						{
+							"@value":"AAN83224.1",
+							"@type":"protein sequence ID"
+						},
+						{
+							"@value":"ALT_INIT",
+							"@type":"status"
+						},
+						{
+							"@value":"Genomic_DNA",
+							"@type":"molecule type"
+						}
+					],
+					"@type":"EMBL"
+				},
+				{
+					"@key":"9",
+					"@id":"NP_756650.2",
+					"property":{
+						"@value":"NC_004431.1",
+						"@type":"nucleotide sequence ID"
+					},
+					"@type":"RefSeq"
+				},
+				{
+					"@key":"10",
+					"@id":"P0AEN2",
+					"@type":"ProteinModelPortal"
+				},
+				{
+					"@key":"11",
+					"@id":"P0AEN2",
+					"property":{
+						"@value":"2-233",
+						"@type":"residue range"
+					},
+					"@type":"SMR"
+				},
+				{
+					"@key":"12",
+					"@id":"EBESCT00000044962",
+					"property":[
+						{
+							"@value":"EBESCP00000043311",
+							"@type":"protein sequence ID"
+						},
+						{
+							"@value":"EBESCG00000044012",
+							"@type":"gene ID"
+						}
+					],
+					"@type":"EnsemblBacteria"
+				},
+				{
+					"@key":"13",
+					"@id":"1035669",
+					"@type":"GeneID"
+				},
+				{
+					"@key":"14",
+					"@id":"AE014075_GR",
+					"property":{
+						"@value":"c4791",
+						"@type":"gene designation"
+					},
+					"@type":"GenomeReviews"
+				},
+				{
+					"@key":"15",
+					"@id":"ecc:c4791",
+					"@type":"KEGG"
+				},
+				{
+					"@key":"16",
+					"@id":"EBGT00050000009405",
+					"@type":"GeneTree"
+				},
+				{
+					"@key":"17",
+					"@id":"HBG625960",
+					"@type":"HOGENOM"
+				},
+				{
+					"@key":"18",
+					"@id":"ARDLFCN",
+					"@type":"OMA"
+				},
+				{
+					"@key":"19",
+					"@id":"PRK08051",
+					"@type":"ProtClustDB"
+				},
+				{
+					"@key":"20",
+					"@id":"GO:0047138",
+					"property":[
+						{
+							"@value":"F:aquacobalamin reductase activity",
+							"@type":"term"
+						},
+						{
+							"@value":"IEA:EC",
+							"@type":"evidence"
+						}
+					],
+					"@type":"GO"
+				},
+				{
+					"@key":"21",
+					"@id":"GO:0008752",
+					"property":[
+						{
+							"@value":"F:FMN reductase activity",
+							"@type":"term"
+						},
+						{
+							"@value":"IEA:EC",
+							"@type":"evidence"
+						}
+					],
+					"@type":"GO"
+				},
+				{
+					"@key":"22",
+					"@id":"GO:0006811",
+					"property":[
+						{
+							"@value":"P:ion transport",
+							"@type":"term"
+						},
+						{
+							"@value":"IEA:UniProtKB-KW",
+							"@type":"evidence"
+						}
+					],
+					"@type":"GO"
+				},
+				{
+					"@key":"23",
+					"@id":"GO:0055072",
+					"property":[
+						{
+							"@value":"P:iron ion homeostasis",
+							"@type":"term"
+						},
+						{
+							"@value":"IEA:UniProtKB-KW",
+							"@type":"evidence"
+						}
+					],
+					"@type":"GO"
+				},
+				{
+					"@key":"24",
+					"@id":"IPR017927",
+					"property":{
+						"@value":"Fd_Rdtase_FAD-bd",
+						"@type":"entry name"
+					},
+					"@type":"InterPro"
+				},
+				{
+					"@key":"25",
+					"@id":"IPR008333",
+					"property":{
+						"@value":"OxRdtase_FAD-bd_dom",
+						"@type":"entry name"
+					},
+					"@type":"InterPro"
+				},
+				{
+					"@key":"26",
+					"@id":"IPR001433",
+					"property":{
+						"@value":"OxRdtase_FAD/NAD-bd",
+						"@type":"entry name"
+					},
+					"@type":"InterPro"
+				},
+				{
+					"@key":"27",
+					"@id":"IPR001221",
+					"property":{
+						"@value":"Phe_hydroxylase",
+						"@type":"entry name"
+					},
+					"@type":"InterPro"
+				},
+				{
+					"@key":"28",
+					"@id":"IPR017938",
+					"property":{
+						"@value":"Riboflavin_synthase-like_b-brl",
+						"@type":"entry name"
+					},
+					"@type":"InterPro"
+				},
+				{
+					"@key":"29",
+					"@id":"PF00970",
+					"property":[
+						{
+							"@value":"FAD_binding_6",
+							"@type":"entry name"
+						},
+						{
+							"@value":"1",
+							"@type":"match status"
+						}
+					],
+					"@type":"Pfam"
+				},
+				{
+					"@key":"30",
+					"@id":"PF00175",
+					"property":[
+						{
+							"@value":"NAD_binding_1",
+							"@type":"entry name"
+						},
+						{
+							"@value":"1",
+							"@type":"match status"
+						}
+					],
+					"@type":"Pfam"
+				},
+				{
+					"@key":"31",
+					"@id":"PR00410",
+					"property":{
+						"@value":"PHEHYDRXLASE",
+						"@type":"entry name"
+					},
+					"@type":"PRINTS"
+				},
+				{
+					"@key":"32",
+					"@id":"SSF63380",
+					"property":[
+						{
+							"@value":"Riboflavin_synthase_like_b-brl",
+							"@type":"entry name"
+						},
+						{
+							"@value":"1",
+							"@type":"match status"
+						}
+					],
+					"@type":"SUPFAM"
+				},
+				{
+					"@key":"33",
+					"@id":"PS51384",
+					"property":[
+						{
+							"@value":"FAD_FR",
+							"@type":"entry name"
+						},
+						{
+							"@value":"1",
+							"@type":"match status"
+						}
+					],
+					"@type":"PROSITE"
+				}
+			],
+			"protein":{
+				"alternativeName":[
+					{
+						"fullName":{
+							"$t":"Aquacobalamin reductase"
+						}
+					},
+					{
+						"fullName":{
+							"$t":"FMN reductase"
+						}
+					},
+					{
+						"fullName":{
+							"$t":"Ferrisiderophore reductase C"
+						}
+					},
+					{
+						"fullName":{
+							"$t":"NAD(P)H:flavin oxidoreductase"
+						}
+					}
+				],
+				"recommendedName":{
+					"fullName":{
+						"$t":"NAD(P)H-flavin reductase"
+					},
+					"@ref":"1 2"
+				}
+			},
+			"comment":[
+				{
+					"text":{
+						"$t":"Catalyzes the reduction of soluble flavins by reduced pyridine nucleotides. Seems to reduces the complexed Fe(3+) iron of siderophores to Fe(2+), thus releasing it from the chelator (By similarity)."
+					},
+					"@type":"function"
+				},
+				{
+					"text":{
+						"$t":"FMNH(2) + NAD(P)(+) = FMN + NAD(P)H."
+					},
+					"@type":"catalytic activity"
+				},
+				{
+					"text":{
+						"$t":"2 cob(II)alamin + NAD(+) = 2 aquacob(III)alamin + NADH."
+					},
+					"@type":"catalytic activity"
+				},
+				{
+					"text":{
+						"$t":"Monomer (By similarity)."
+					},
+					"@type":"subunit"
+				},
+				{
+					"text":{
+						"$t":"Belongs to the fre/luxG FAD/NAD(P) flavoprotein oxidoreductase family."
+					},
+					"@type":"similarity"
+				},
+				{
+					"text":{
+						"$t":"Contains 1 FAD-binding FR-type domain."
+					},
+					"@type":"similarity"
+				},
+				{
+					"conflict":{
+						"sequence":{
+							"@version":"1",
+							"@id":"AAN83224",
+							"@resource":"EMBL-CDS"
+						},
+						"@type":"erroneous initiation"
+					},
+					"@type":"sequence caution"
+				}
+			],
+			"reference":{
+				"source":{
+					"strain":{
+						"$t":"O6:H1 / CFT073 / ATCC 700928 / UPEC"
+					}
+				},
+				"@key":"4",
+				"scope":{
+					"$t":"NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+				},
+				"citation":{
+					"@date":"2002",
+					"@last":"17024",
+					"@name":"Proc. Natl. Acad. Sci. U.S.A.",
+					"dbReference":[
+						{
+							"@key":"5",
+							"@id":"22388234",
+							"@type":"MEDLINE"
+						},
+						{
+							"@key":"6",
+							"@id":"12471157",
+							"@type":"PubMed"
+						},
+						{
+							"@key":"7",
+							"@id":"10.1073/pnas.252529799",
+							"@type":"DOI"
+						}
+					],
+					"@first":"17020",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Welch R.A."
+							},
+							{
+								"@name":"Burland V."
+							},
+							{
+								"@name":"Plunkett G. III"
+							},
+							{
+								"@name":"Redford P."
+							},
+							{
+								"@name":"Roesch P."
+							},
+							{
+								"@name":"Rasko D."
+							},
+							{
+								"@name":"Buckles E.L."
+							},
+							{
+								"@name":"Liou S.-R."
+							},
+							{
+								"@name":"Boutin A."
+							},
+							{
+								"@name":"Hackett J."
+							},
+							{
+								"@name":"Stroud D."
+							},
+							{
+								"@name":"Mayhew G.F."
+							},
+							{
+								"@name":"Rose D.J."
+							},
+							{
+								"@name":"Zhou S."
+							},
+							{
+								"@name":"Schwartz D.C."
+							},
+							{
+								"@name":"Perna N.T."
+							},
+							{
+								"@name":"Mobley H.L.T."
+							},
+							{
+								"@name":"Donnenberg M.S."
+							},
+							{
+								"@name":"Blattner F.R."
+							}
+						]
+					},
+					"title":{
+						"$t":"Extensive mosaic structure revealed by the complete genome sequence of uropathogenic Escherichia coli."
+					},
+					"@type":"journal article",
+					"@volume":"99"
+				}
+			},
+			"@version":"46",
+			"organism":{
+				"lineage":{
+					"taxon":[
+						{
+							"$t":"Bacteria"
+						},
+						{
+							"$t":"Proteobacteria"
+						},
+						{
+							"$t":"Gammaproteobacteria"
+						},
+						{
+							"$t":"Enterobacteriales"
+						},
+						{
+							"$t":"Enterobacteriaceae"
+						},
+						{
+							"$t":"Escherichia"
+						}
+					]
+				},
+				"dbReference":{
+					"@key":"3",
+					"@id":"217992",
+					"@type":"NCBI Taxonomy"
+				},
+				"name":{
+					"$t":"Escherichia coli O6",
+					"@type":"scientific"
+				}
+			},
+			"@created":"2005-12-20",
+			"@modified":"2011-09-21"
+		},
+		{
+			"keyword":[
+				{
+					"$t":"3D-structure",
+					"@id":"KW-0002"
+				},
+				{
+					"$t":"Complete proteome",
+					"@id":"KW-0181"
+				},
+				{
+					"$t":"Direct protein sequencing",
+					"@id":"KW-0903"
+				},
+				{
+					"$t":"FAD",
+					"@id":"KW-0274"
+				},
+				{
+					"$t":"FMN",
+					"@id":"KW-0288"
+				},
+				{
+					"$t":"Flavoprotein",
+					"@id":"KW-0285"
+				},
+				{
+					"$t":"Ion transport",
+					"@id":"KW-0406"
+				},
+				{
+					"$t":"Iron",
+					"@id":"KW-0408"
+				},
+				{
+					"$t":"Iron transport",
+					"@id":"KW-0410"
+				},
+				{
+					"$t":"NAD",
+					"@id":"KW-0520"
+				},
+				{
+					"$t":"NADP",
+					"@id":"KW-0521"
+				},
+				{
+					"$t":"Oxidoreductase",
+					"@id":"KW-0560"
+				},
+				{
+					"$t":"Reference proteome",
+					"@id":"KW-1185"
+				},
+				{
+					"$t":"Transport",
+					"@id":"KW-0813"
+				}
+			],
+			"sequence":{
+				"@checksum":"0E64DE5A8FA0F12D",
+				"@version":"2",
+				"@mass":"26242",
+				"$t":"\nMTTLSCKVTSVEAITDTVYRVRIVPDAAFSFRAGQYLMVVMDERDKRPFSMASTPDEKGF\nIELHIGASEINLYAKAVMDRILKDHQIVVDIPHGEAWLRDDEERPMILIAGGTGFSYARS\nILLTALARNPNRDITIYWGGREEQHLYDLCELEALSLKHPGLQVVPVVEQPEAGWRGRTG\nTVLTAVLQDHGTLAEHDIYIAGRFEMAKIARDLFCSERNAREDRLFGDAFAFI\n",
+				"@length":"233",
+				"@modified":"2007-01-23"
+			},
+			"gene":{
+				"name":[
+					{
+						"$t":"fre",
+						"@type":"primary"
+					},
+					{
+						"$t":"fadI",
+						"@type":"synonym"
+					},
+					{
+						"$t":"flrD",
+						"@type":"synonym"
+					},
+					{
+						"$t":"fsrC",
+						"@type":"synonym"
+					},
+					{
+						"$t":"ubiB",
+						"@type":"synonym"
+					},
+					{
+						"$t":"b3844",
+						"@type":"ordered locus"
+					},
+					{
+						"$t":"JW3820",
+						"@type":"ordered locus"
+					}
+				]
+			},
+			"name":{
+				"$t":"FRE_ECOLI"
+			},
+			"accession":[
+				{
+					"$t":"P0AEN1"
+				},
+				{
+					"$t":"P23486"
+				},
+				{
+					"$t":"P76768"
+				},
+				{
+					"$t":"Q2M8E7"
+				}
+			],
+			"@dataset":"Swiss-Prot",
+			"feature":[
+				{
+					"@description":"Removed",
+					"location":{
+						"position":{
+							"@position":"1"
+						}
+					},
+					"@evidence":"1",
+					"@type":"initiator methionine"
+				},
+				{
+					"@description":"NAD(P)H-flavin reductase",
+					"location":{
+						"begin":{
+							"@position":"2"
+						},
+						"end":{
+							"@position":"233"
+						}
+					},
+					"@id":"PRO_0000068144",
+					"@type":"chain"
+				},
+				{
+					"@description":"FAD-binding FR-type",
+					"location":{
+						"begin":{
+							"@position":"2"
+						},
+						"end":{
+							"@position":"99"
+						}
+					},
+					"@type":"domain"
+				},
+				{
+					"@status":"by similarity",
+					"@description":"Pyridine",
+					"location":{
+						"begin":{
+							"@position":"111"
+						},
+						"end":{
+							"@position":"115"
+						}
+					},
+					"@type":"nucleotide phosphate-binding region"
+				},
+				{
+					"location":{
+						"begin":{
+							"@position":"3"
+						},
+						"end":{
+							"@position":"17"
+						}
+					},
+					"@type":"strand"
+				},
+				{
+					"location":{
+						"begin":{
+							"@position":"19"
+						},
+						"end":{
+							"@position":"27"
+						}
+					},
+					"@type":"strand"
+				},
+				{
+					"location":{
+						"begin":{
+							"@position":"36"
+						},
+						"end":{
+							"@position":"44"
+						}
+					},
+					"@type":"strand"
+				},
+				{
+					"location":{
+						"begin":{
+							"@position":"46"
+						},
+						"end":{
+							"@position":"50"
+						}
+					},
+					"@type":"strand"
+				},
+				{
+					"location":{
+						"begin":{
+							"@position":"61"
+						},
+						"end":{
+							"@position":"65"
+						}
+					},
+					"@type":"strand"
+				},
+				{
+					"location":{
+						"begin":{
+							"@position":"75"
+						},
+						"end":{
+							"@position":"84"
+						}
+					},
+					"@type":"helix"
+				},
+				{
+					"location":{
+						"begin":{
+							"@position":"85"
+						},
+						"end":{
+							"@position":"93"
+						}
+					},
+					"@type":"strand"
+				},
+				{
+					"location":{
+						"begin":{
+							"@position":"102"
+						},
+						"end":{
+							"@position":"104"
+						}
+					},
+					"@type":"strand"
+				},
+				{
+					"location":{
+						"begin":{
+							"@position":"106"
+						},
+						"end":{
+							"@position":"111"
+						}
+					},
+					"@type":"strand"
+				},
+				{
+					"location":{
+						"begin":{
+							"@position":"115"
+						},
+						"end":{
+							"@position":"128"
+						}
+					},
+					"@type":"helix"
+				},
+				{
+					"location":{
+						"begin":{
+							"@position":"134"
+						},
+						"end":{
+							"@position":"142"
+						}
+					},
+					"@type":"strand"
+				},
+				{
+					"location":{
+						"begin":{
+							"@position":"143"
+						},
+						"end":{
+							"@position":"145"
+						}
+					},
+					"@type":"helix"
+				},
+				{
+					"location":{
+						"begin":{
+							"@position":"149"
+						},
+						"end":{
+							"@position":"158"
+						}
+					},
+					"@type":"helix"
+				},
+				{
+					"location":{
+						"begin":{
+							"@position":"162"
+						},
+						"end":{
+							"@position":"170"
+						}
+					},
+					"@type":"strand"
+				},
+				{
+					"location":{
+						"begin":{
+							"@position":"177"
+						},
+						"end":{
+							"@position":"180"
+						}
+					},
+					"@type":"strand"
+				},
+				{
+					"location":{
+						"begin":{
+							"@position":"182"
+						},
+						"end":{
+							"@position":"189"
+						}
+					},
+					"@type":"helix"
+				},
+				{
+					"location":{
+						"begin":{
+							"@position":"197"
+						},
+						"end":{
+							"@position":"202"
+						}
+					},
+					"@type":"strand"
+				},
+				{
+					"location":{
+						"begin":{
+							"@position":"204"
+						},
+						"end":{
+							"@position":"217"
+						}
+					},
+					"@type":"helix"
+				},
+				{
+					"location":{
+						"begin":{
+							"@position":"222"
+						},
+						"end":{
+							"@position":"224"
+						}
+					},
+					"@type":"helix"
+				},
+				{
+					"location":{
+						"begin":{
+							"@position":"229"
+						},
+						"end":{
+							"@position":"232"
+						}
+					},
+					"@type":"helix"
+				}
+			],
+			"proteinExistence":{
+				"@type":"evidence at protein level"
+			},
+			"dbReference":[
+				{
+					"@key":"1",
+					"@id":"1.16.1.3",
+					"@type":"EC"
+				},
+				{
+					"@key":"2",
+					"@id":"1.5.1.29",
+					"@type":"EC"
+				},
+				{
+					"@key":"28",
+					"@id":"M61182",
+					"property":[
+						{
+							"@value":"AAA23806.1",
+							"@type":"protein sequence ID"
+						},
+						{
+							"@value":"Genomic_DNA",
+							"@type":"molecule type"
+						}
+					],
+					"@type":"EMBL"
+				},
+				{
+					"@key":"29",
+					"@id":"M85227",
+					"property":[
+						{
+							"@value":"AAA23753.1",
+							"@type":"protein sequence ID"
+						},
+						{
+							"@value":"Genomic_DNA",
+							"@type":"molecule type"
+						}
+					],
+					"@type":"EMBL"
+				},
+				{
+					"@key":"30",
+					"@id":"M74448",
+					"property":[
+						{
+							"@value":"AAA91058.1",
+							"@type":"protein sequence ID"
+						},
+						{
+							"@value":"Genomic_DNA",
+							"@type":"molecule type"
+						}
+					],
+					"@type":"EMBL"
+				},
+				{
+					"@key":"31",
+					"@id":"M87049",
+					"property":[
+						{
+							"@value":"AAA67641.1",
+							"@type":"protein sequence ID"
+						},
+						{
+							"@value":"Genomic_DNA",
+							"@type":"molecule type"
+						}
+					],
+					"@type":"EMBL"
+				},
+				{
+					"@key":"32",
+					"@id":"U00096",
+					"property":[
+						{
+							"@value":"AAC76847.1",
+							"@type":"protein sequence ID"
+						},
+						{
+							"@value":"Genomic_DNA",
+							"@type":"molecule type"
+						}
+					],
+					"@type":"EMBL"
+				},
+				{
+					"@key":"33",
+					"@id":"AP009048",
+					"property":[
+						{
+							"@value":"BAE77459.1",
+							"@type":"protein sequence ID"
+						},
+						{
+							"@value":"Genomic_DNA",
+							"@type":"molecule type"
+						}
+					],
+					"@type":"EMBL"
+				},
+				{
+					"@key":"34",
+					"@id":"A39434",
+					"property":{
+						"@value":"A39434",
+						"@type":"entry name"
+					},
+					"@type":"PIR"
+				},
+				{
+					"@key":"35",
+					"@id":"NP_418286.1",
+					"property":{
+						"@value":"NC_000913.2",
+						"@type":"nucleotide sequence ID"
+					},
+					"@type":"RefSeq"
+				},
+				{
+					"@key":"36",
+					"@id":"1QFJ",
+					"property":[
+						{
+							"@value":"X-ray",
+							"@type":"method"
+						},
+						{
+							"@value":"2.20",
+							"@type":"resolution"
+						},
+						{
+							"@value":"A/B/C/D=2-233",
+							"@type":"chains"
+						}
+					],
+					"@type":"PDB"
+				},
+				{
+					"@key":"37",
+					"@id":"1QFJ",
+					"@type":"PDBsum"
+				},
+				{
+					"@key":"38",
+					"@id":"P0AEN1",
+					"@type":"ProteinModelPortal"
+				},
+				{
+					"@key":"39",
+					"@id":"P0AEN1",
+					"property":{
+						"@value":"2-233",
+						"@type":"residue range"
+					},
+					"@type":"SMR"
+				},
+				{
+					"@key":"40",
+					"@id":"P0AEN1",
+					"property":{
+						"@value":"13",
+						"@type":"interactions"
+					},
+					"@type":"IntAct"
+				},
+				{
+					"@key":"41",
+					"@id":"EBESCT00000002824",
+					"property":[
+						{
+							"@value":"EBESCP00000002824",
+							"@type":"protein sequence ID"
+						},
+						{
+							"@value":"EBESCG00000002302",
+							"@type":"gene ID"
+						}
+					],
+					"@type":"EnsemblBacteria"
+				},
+				{
+					"@key":"42",
+					"@id":"EBESCT00000017302",
+					"property":[
+						{
+							"@value":"EBESCP00000016593",
+							"@type":"protein sequence ID"
+						},
+						{
+							"@value":"EBESCG00000016359",
+							"@type":"gene ID"
+						}
+					],
+					"@type":"EnsemblBacteria"
+				},
+				{
+					"@key":"43",
+					"@id":"948325",
+					"@type":"GeneID"
+				},
+				{
+					"@key":"44",
+					"@id":"AP009048_GR",
+					"property":{
+						"@value":"JW3820",
+						"@type":"gene designation"
+					},
+					"@type":"GenomeReviews"
+				},
+				{
+					"@key":"45",
+					"@id":"U00096_GR",
+					"property":{
+						"@value":"b3844",
+						"@type":"gene designation"
+					},
+					"@type":"GenomeReviews"
+				},
+				{
+					"@key":"46",
+					"@id":"ecj:JW3820",
+					"@type":"KEGG"
+				},
+				{
+					"@key":"47",
+					"@id":"eco:b3844",
+					"@type":"KEGG"
+				},
+				{
+					"@key":"48",
+					"@id":"EB0330",
+					"@type":"EchoBASE"
+				},
+				{
+					"@key":"49",
+					"@id":"EG10334",
+					"property":{
+						"@value":"fre",
+						"@type":"gene designation"
+					},
+					"@type":"EcoGene"
+				},
+				{
+					"@key":"50",
+					"@id":"COG0543",
+					"@type":"eggNOG"
+				},
+				{
+					"@key":"51",
+					"@id":"EBGT00050000009405",
+					"@type":"GeneTree"
+				},
+				{
+					"@key":"52",
+					"@id":"HBG625960",
+					"@type":"HOGENOM"
+				},
+				{
+					"@key":"53",
+					"@id":"ARDLFCN",
+					"@type":"OMA"
+				},
+				{
+					"@key":"54",
+					"@id":"PRK08051",
+					"@type":"ProtClustDB"
+				},
+				{
+					"@key":"55",
+					"@id":"EcoCyc:FMNREDUCT-MONOMER",
+					"@type":"BioCyc"
+				},
+				{
+					"@key":"56",
+					"@id":"MetaCyc:FMNREDUCT-MONOMER",
+					"@type":"BioCyc"
+				},
+				{
+					"@key":"57",
+					"@id":"P0AEN1",
+					"@type":"Genevestigator"
+				},
+				{
+					"@key":"58",
+					"@id":"GO:0047138",
+					"property":[
+						{
+							"@value":"F:aquacobalamin reductase activity",
+							"@type":"term"
+						},
+						{
+							"@value":"IEA:EC",
+							"@type":"evidence"
+						}
+					],
+					"@type":"GO"
+				},
+				{
+					"@key":"59",
+					"@id":"GO:0008752",
+					"property":[
+						{
+							"@value":"F:FMN reductase activity",
+							"@type":"term"
+						},
+						{
+							"@value":"IEA:EC",
+							"@type":"evidence"
+						}
+					],
+					"@type":"GO"
+				},
+				{
+					"@key":"60",
+					"@id":"GO:0006811",
+					"property":[
+						{
+							"@value":"P:ion transport",
+							"@type":"term"
+						},
+						{
+							"@value":"IEA:UniProtKB-KW",
+							"@type":"evidence"
+						}
+					],
+					"@type":"GO"
+				},
+				{
+					"@key":"61",
+					"@id":"GO:0055072",
+					"property":[
+						{
+							"@value":"P:iron ion homeostasis",
+							"@type":"term"
+						},
+						{
+							"@value":"IEA:UniProtKB-KW",
+							"@type":"evidence"
+						}
+					],
+					"@type":"GO"
+				},
+				{
+					"@key":"62",
+					"@id":"IPR017927",
+					"property":{
+						"@value":"Fd_Rdtase_FAD-bd",
+						"@type":"entry name"
+					},
+					"@type":"InterPro"
+				},
+				{
+					"@key":"63",
+					"@id":"IPR008333",
+					"property":{
+						"@value":"OxRdtase_FAD-bd_dom",
+						"@type":"entry name"
+					},
+					"@type":"InterPro"
+				},
+				{
+					"@key":"64",
+					"@id":"IPR001433",
+					"property":{
+						"@value":"OxRdtase_FAD/NAD-bd",
+						"@type":"entry name"
+					},
+					"@type":"InterPro"
+				},
+				{
+					"@key":"65",
+					"@id":"IPR001221",
+					"property":{
+						"@value":"Phe_hydroxylase",
+						"@type":"entry name"
+					},
+					"@type":"InterPro"
+				},
+				{
+					"@key":"66",
+					"@id":"IPR017938",
+					"property":{
+						"@value":"Riboflavin_synthase-like_b-brl",
+						"@type":"entry name"
+					},
+					"@type":"InterPro"
+				},
+				{
+					"@key":"67",
+					"@id":"PF00970",
+					"property":[
+						{
+							"@value":"FAD_binding_6",
+							"@type":"entry name"
+						},
+						{
+							"@value":"1",
+							"@type":"match status"
+						}
+					],
+					"@type":"Pfam"
+				},
+				{
+					"@key":"68",
+					"@id":"PF00175",
+					"property":[
+						{
+							"@value":"NAD_binding_1",
+							"@type":"entry name"
+						},
+						{
+							"@value":"1",
+							"@type":"match status"
+						}
+					],
+					"@type":"Pfam"
+				},
+				{
+					"@key":"69",
+					"@id":"PR00410",
+					"property":{
+						"@value":"PHEHYDRXLASE",
+						"@type":"entry name"
+					},
+					"@type":"PRINTS"
+				},
+				{
+					"@key":"70",
+					"@id":"SSF63380",
+					"property":[
+						{
+							"@value":"Riboflavin_synthase_like_b-brl",
+							"@type":"entry name"
+						},
+						{
+							"@value":"1",
+							"@type":"match status"
+						}
+					],
+					"@type":"SUPFAM"
+				},
+				{
+					"@key":"71",
+					"@id":"PS51384",
+					"property":[
+						{
+							"@value":"FAD_FR",
+							"@type":"entry name"
+						},
+						{
+							"@value":"1",
+							"@type":"match status"
+						}
+					],
+					"@type":"PROSITE"
+				}
+			],
+			"protein":{
+				"alternativeName":[
+					{
+						"fullName":{
+							"$t":"Aquacobalamin reductase"
+						}
+					},
+					{
+						"fullName":{
+							"$t":"FMN reductase"
+						}
+					},
+					{
+						"fullName":{
+							"$t":"Ferrisiderophore reductase C"
+						}
+					},
+					{
+						"fullName":{
+							"$t":"NAD(P)H:flavin oxidoreductase"
+						}
+					}
+				],
+				"recommendedName":{
+					"fullName":{
+						"$t":"NAD(P)H-flavin reductase"
+					},
+					"@ref":"1 2"
+				}
+			},
+			"comment":[
+				{
+					"text":{
+						"$t":"Catalyzes the reduction of soluble flavins by reduced pyridine nucleotides. Seems to reduce the complexed Fe(3+) iron of siderophores to Fe(2+), thus releasing it from the chelator."
+					},
+					"@type":"function"
+				},
+				{
+					"text":{
+						"$t":"FMNH(2) + NAD(P)(+) = FMN + NAD(P)H."
+					},
+					"@type":"catalytic activity"
+				},
+				{
+					"text":{
+						"$t":"2 cob(II)alamin + NAD(+) = 2 aquacob(III)alamin + NADH."
+					},
+					"@type":"catalytic activity"
+				},
+				{
+					"text":{
+						"$t":"Monomer."
+					},
+					"@type":"subunit"
+				},
+				{
+					"text":{
+						"$t":"Belongs to the fre/luxG FAD/NAD(P) flavoprotein oxidoreductase family."
+					},
+					"@type":"similarity"
+				},
+				{
+					"text":{
+						"$t":"Contains 1 FAD-binding FR-type domain."
+					},
+					"@type":"similarity"
+				},
+				{
+					"text":{
+						"$t":"Was originally (PubMed:1379743) assigned to be ubiB."
+					},
+					"@type":"caution"
+				}
+			],
+			"reference":[
+				{
+					"@key":"4",
+					"scope":[
+						{
+							"$t":"NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+						},
+						{
+							"$t":"PROTEIN SEQUENCE OF 2-21"
+						}
+					],
+					"citation":{
+						"@date":"1991",
+						"@last":"3679",
+						"@name":"J. Bacteriol.",
+						"dbReference":[
+							{
+								"@key":"5",
+								"@id":"91267929",
+								"@type":"MEDLINE"
+							},
+							{
+								"@key":"6",
+								"@id":"2050627",
+								"@type":"PubMed"
+							}
+						],
+						"@first":"3673",
+						"authorList":{
+							"person":[
+								{
+									"@name":"Spyrou G."
+								},
+								{
+									"@name":"Haggaard-Ljungquist E."
+								},
+								{
+									"@name":"Krook M."
+								},
+								{
+									"@name":"Joernvall H."
+								},
+								{
+									"@name":"Nilsson E."
+								},
+								{
+									"@name":"Reichard P."
+								}
+							]
+						},
+						"title":{
+							"$t":"Characterization of the flavin reductase gene (fre) of Escherichia coli and construction of a plasmid for overproduction of the enzyme."
+						},
+						"@type":"journal article",
+						"@volume":"173"
+					}
+				},
+				{
+					"source":{
+						"strain":{
+							"$t":"K12"
+						}
+					},
+					"@key":"7",
+					"scope":{
+						"$t":"NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+					},
+					"citation":{
+						"@date":"1992-01",
+						"authorList":{
+							"person":[
+								{
+									"@name":"Dirusso C.C."
+								},
+								{
+									"@name":"Shea O."
+								}
+							]
+						},
+						"title":{
+							"$t":"FadI: identification, characterization, and nucleotide sequence of a gene required for full activation of structural genes of the AD regulon in Escherichia coli."
+						},
+						"@db":"EMBL/GenBank/DDBJ databases",
+						"@type":"submission"
+					}
+				},
+				{
+					"source":{
+						"strain":{
+							"$t":"K12"
+						}
+					},
+					"@key":"8",
+					"scope":{
+						"$t":"NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+					},
+					"citation":{
+						"@date":"1996-03",
+						"authorList":{
+							"person":{
+								"@name":"Saviranta P.J."
+							}
+						},
+						"@db":"EMBL/GenBank/DDBJ databases",
+						"@type":"submission"
+					}
+				},
+				{
+					"source":{
+						"strain":{
+							"$t":"K12 / MG1655 / ATCC 47076"
+						}
+					},
+					"@key":"9",
+					"scope":{
+						"$t":"NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+					},
+					"citation":{
+						"@date":"1992",
+						"@last":"778",
+						"@name":"Science",
+						"dbReference":[
+							{
+								"@key":"10",
+								"@id":"92358234",
+								"@type":"MEDLINE"
+							},
+							{
+								"@key":"11",
+								"@id":"1379743",
+								"@type":"PubMed"
+							},
+							{
+								"@key":"12",
+								"@id":"10.1126/science.1379743",
+								"@type":"DOI"
+							}
+						],
+						"@first":"771",
+						"authorList":{
+							"person":[
+								{
+									"@name":"Daniels D.L."
+								},
+								{
+									"@name":"Plunkett G. III"
+								},
+								{
+									"@name":"Burland V.D."
+								},
+								{
+									"@name":"Blattner F.R."
+								}
+							]
+						},
+						"title":{
+							"$t":"Analysis of the Escherichia coli genome: DNA sequence of the region from 84.5 to 86.5 minutes."
+						},
+						"@type":"journal article",
+						"@volume":"257"
+					}
+				},
+				{
+					"source":{
+						"strain":{
+							"$t":"K12 / MG1655 / ATCC 47076"
+						}
+					},
+					"@key":"13",
+					"scope":{
+						"$t":"NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+					},
+					"citation":{
+						"@date":"1997",
+						"@last":"1474",
+						"@name":"Science",
+						"dbReference":[
+							{
+								"@key":"14",
+								"@id":"97426617",
+								"@type":"MEDLINE"
+							},
+							{
+								"@key":"15",
+								"@id":"9278503",
+								"@type":"PubMed"
+							},
+							{
+								"@key":"16",
+								"@id":"10.1126/science.277.5331.1453",
+								"@type":"DOI"
+							}
+						],
+						"@first":"1453",
+						"authorList":{
+							"person":[
+								{
+									"@name":"Blattner F.R."
+								},
+								{
+									"@name":"Plunkett G. III"
+								},
+								{
+									"@name":"Bloch C.A."
+								},
+								{
+									"@name":"Perna N.T."
+								},
+								{
+									"@name":"Burland V."
+								},
+								{
+									"@name":"Riley M."
+								},
+								{
+									"@name":"Collado-Vides J."
+								},
+								{
+									"@name":"Glasner J.D."
+								},
+								{
+									"@name":"Rode C.K."
+								},
+								{
+									"@name":"Mayhew G.F."
+								},
+								{
+									"@name":"Gregor J."
+								},
+								{
+									"@name":"Davis N.W."
+								},
+								{
+									"@name":"Kirkpatrick H.A."
+								},
+								{
+									"@name":"Goeden M.A."
+								},
+								{
+									"@name":"Rose D.J."
+								},
+								{
+									"@name":"Mau B."
+								},
+								{
+									"@name":"Shao Y."
+								}
+							]
+						},
+						"title":{
+							"$t":"The complete genome sequence of Escherichia coli K-12."
+						},
+						"@type":"journal article",
+						"@volume":"277"
+					}
+				},
+				{
+					"source":{
+						"strain":{
+							"$t":"K12 / W3110 / ATCC 27325 / DSM 5911"
+						}
+					},
+					"@key":"17",
+					"scope":{
+						"$t":"NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+					},
+					"citation":{
+						"@date":"2006",
+						"@last":"E5",
+						"@name":"Mol. Syst. Biol.",
+						"dbReference":[
+							{
+								"@key":"18",
+								"@id":"16738553",
+								"@type":"PubMed"
+							},
+							{
+								"@key":"19",
+								"@id":"10.1038/msb4100049",
+								"@type":"DOI"
+							}
+						],
+						"@first":"E1",
+						"authorList":{
+							"person":[
+								{
+									"@name":"Hayashi K."
+								},
+								{
+									"@name":"Morooka N."
+								},
+								{
+									"@name":"Yamamoto Y."
+								},
+								{
+									"@name":"Fujita K."
+								},
+								{
+									"@name":"Isono K."
+								},
+								{
+									"@name":"Choi S."
+								},
+								{
+									"@name":"Ohtsubo E."
+								},
+								{
+									"@name":"Baba T."
+								},
+								{
+									"@name":"Wanner B.L."
+								},
+								{
+									"@name":"Mori H."
+								},
+								{
+									"@name":"Horiuchi T."
+								}
+							]
+						},
+						"title":{
+							"$t":"Highly accurate genome sequences of Escherichia coli K-12 strains MG1655 and W3110."
+						},
+						"@type":"journal article",
+						"@volume":"2"
+					}
+				},
+				{
+					"source":{
+						"strain":{
+							"$t":"K12"
+						}
+					},
+					"@key":"20",
+					"scope":{
+						"$t":"CHARACTERIZATION"
+					},
+					"citation":{
+						"@date":"1992",
+						"@last":"252",
+						"@name":"FEBS Lett.",
+						"dbReference":[
+							{
+								"@key":"21",
+								"@id":"92290008",
+								"@type":"MEDLINE"
+							},
+							{
+								"@key":"22",
+								"@id":"1601132",
+								"@type":"PubMed"
+							},
+							{
+								"@key":"23",
+								"@id":"10.1016/0014-5793(92)80452-M",
+								"@type":"DOI"
+							}
+						],
+						"@first":"247",
+						"authorList":{
+							"person":[
+								{
+									"@name":"Andrews S.C."
+								},
+								{
+									"@name":"Shipley D."
+								},
+								{
+									"@name":"Keen J.N."
+								},
+								{
+									"@name":"Findlay J.B.C."
+								},
+								{
+									"@name":"Harrison P.M."
+								},
+								{
+									"@name":"Guest J.R."
+								}
+							]
+						},
+						"title":{
+							"$t":"The haemoglobin-like protein (HMP) of Escherichia coli has ferrisiderophore reductase activity and its C-terminal domain shares homology with ferredoxin NADP+ reductases."
+						},
+						"@type":"journal article",
+						"@volume":"302"
+					}
+				},
+				{
+					"@key":"24",
+					"scope":{
+						"$t":"X-RAY CRYSTALLOGRAPHY (2.2 ANGSTROMS)"
+					},
+					"citation":{
+						"@date":"1999",
+						"@last":"7049",
+						"@name":"Biochemistry",
+						"dbReference":[
+							{
+								"@key":"25",
+								"@id":"99282168",
+								"@type":"MEDLINE"
+							},
+							{
+								"@key":"26",
+								"@id":"10353815",
+								"@type":"PubMed"
+							},
+							{
+								"@key":"27",
+								"@id":"10.1021/bi982849m",
+								"@type":"DOI"
+							}
+						],
+						"@first":"7040",
+						"authorList":{
+							"person":[
+								{
+									"@name":"Ingelman M."
+								},
+								{
+									"@name":"Ramaswamy S."
+								},
+								{
+									"@name":"Niviere V."
+								},
+								{
+									"@name":"Fontecave M."
+								},
+								{
+									"@name":"Eklund H."
+								}
+							]
+						},
+						"title":{
+							"$t":"Crystal structure of NAD(P)H:flavin oxidoreductase from Escherichia coli."
+						},
+						"@type":"journal article",
+						"@volume":"38"
+					}
+				}
+			],
+			"@version":"58",
+			"evidence":{
+				"source":{
+					"dbReference":{
+						"@id":"2050627",
+						"@type":"PubMed"
+					}
+				},
+				"@key":"1",
+				"@type":"ECO:0000006"
+			},
+			"organism":{
+				"lineage":{
+					"taxon":[
+						{
+							"$t":"Bacteria"
+						},
+						{
+							"$t":"Proteobacteria"
+						},
+						{
+							"$t":"Gammaproteobacteria"
+						},
+						{
+							"$t":"Enterobacteriales"
+						},
+						{
+							"$t":"Enterobacteriaceae"
+						},
+						{
+							"$t":"Escherichia"
+						}
+					]
+				},
+				"dbReference":{
+					"@key":"3",
+					"@id":"83333",
+					"@type":"NCBI Taxonomy"
+				},
+				"name":{
+					"$t":"Escherichia coli (strain K12)",
+					"@type":"scientific"
+				}
+			},
+			"@created":"2005-12-20",
+			"@modified":"2011-10-19"
+		}
+	],
+	"copyright":{
+		"$t":"\nCopyrighted by the UniProt Consortium, see http://www.uniprot.org/terms\nDistributed under the Creative Commons Attribution-NoDerivs License\n"
+	},
+	"@xsi:schemaLocation":"http://uniprot.org/uniprot http://www.uniprot.org/support/docs/uniprot.xsd"
+},"@encoding":"UTF-8","@version":"1.0"}

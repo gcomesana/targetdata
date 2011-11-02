@@ -1,0 +1,1149 @@
+{"uniprot":{
+	"entry":{
+		"keyword":[
+			{
+				"$t":"Cell membrane",
+				"@id":"KW-1003"
+			},
+			{
+				"$t":"Cell wall biogenesis/degradation",
+				"@id":"KW-0961"
+			},
+			{
+				"$t":"Complete proteome",
+				"@id":"KW-0181"
+			},
+			{
+				"$t":"Glycosyltransferase",
+				"@id":"KW-0328"
+			},
+			{
+				"$t":"Membrane",
+				"@id":"KW-0472"
+			},
+			{
+				"$t":"Reference proteome",
+				"@id":"KW-1185"
+			},
+			{
+				"$t":"Transferase",
+				"@id":"KW-0808"
+			},
+			{
+				"$t":"Transmembrane",
+				"@id":"KW-0812"
+			},
+			{
+				"$t":"Transmembrane helix",
+				"@id":"KW-1133"
+			}
+		],
+		"sequence":{
+			"@checksum":"622356DC99AA4B5E",
+			"@version":"2",
+			"@mass":"101882",
+			"$t":"\nMAYHGSGPQSPGEHTYDDGHQLRDLSHSNTSYEEEASHGLLSSQQSPFAGPFDDPHQQRG\nLTASPVQRPTSGYSLTESYAPDAAYHDPYSANQSVYSGHSENPAAAFGVPGRVASPYARS\nETSSTEAWRQRQAGAAGGGNGLRRYATRKVKLVQGSVLSVDYPVPSAIQNAIQAKYRNDL\nEGGSEEFTHMRYTAATCDPNEFTLHNGYNLRPAMYNRHTELLIAITYYNEDKTLTARTLH\nGVMQNIRDIVNLKKSEFWNKGGPAWQKIVVCLVFDGIDPCDKDTLDVLATVGIYQDGVMK\nRDVDGKETVAHIFEYTTQLSVTPNQQLIRPTDDGPSTLPPVQMMFCLKQKNSKKINSHRW\nLFNAFGRILNPEVCILLDAGTKPGPKSLLYLWEAFYNDKDLGGACGEIHAMLGKGWKKLL\nNPLVAAQNFEYKISNILDKPLESSFGYVSVLPGAFSAYRFRAIMGRPLEQYFHGDHTLSK\nQLGKKGIEGMNIFKKNMFLAEDRILCFELVAKAGSKWHLSYVKASKGETDVPEGAPEFIS\nQRRRWLNGSFAAGIYSLMHFGRMYKSGHNIVRMFFLHLQMLYNWFSTFLTWFSLASYWLT\nTSVIMDLVGTPSSSNGYTAFPFGKTATPIINTLVKYIYLAFLLLQFILALGNRPKGSKLS\nYLASFVAFGIIQLYVVVDALYLVVRAFTGGAPMDFNTDDGIGAFLSSFFGSSGAGIIIIA\nLAATFGLYFVASFMYLDPWHMFTSFPAYMAVQSSYINILNVYAFSNWHDVSWGTKGSDKA\nDALPSAKTTGGKGEEAVIEEIDKPQADIDSQFEATVKRALTPYVPPEEKEEKSLDDSYKS\nFRTRLVTLWLFSNGLLAVCITSEGLDKFGFTNTSTERTSRFFQALLWSNAVVALIRFIGA\nTWFLGKTGLLCCFARR\n",
+			"@length":"916",
+			"@modified":"2009-05-26"
+		},
+		"gene":{
+			"name":[
+				{
+					"$t":"chsB",
+					"@type":"primary"
+				},
+				{
+					"$t":"AN2523",
+					"@type":"ORF"
+				}
+			]
+		},
+		"name":{
+			"$t":"CHSB_EMENI"
+		},
+		"accession":[
+			{
+				"$t":"Q00757"
+			},
+			{
+				"$t":"C8VPK2"
+			},
+			{
+				"$t":"P87326"
+			},
+			{
+				"$t":"Q5BAA7"
+			}
+		],
+		"@dataset":"Swiss-Prot",
+		"feature":[
+			{
+				"@description":"Chitin synthase B",
+				"location":{
+					"begin":{
+						"@position":"1"
+					},
+					"end":{
+						"@position":"916"
+					}
+				},
+				"@id":"PRO_0000193692",
+				"@type":"chain"
+			},
+			{
+				"@status":"potential",
+				"@description":"Helical;",
+				"location":{
+					"begin":{
+						"@position":"544"
+					},
+					"end":{
+						"@position":"561"
+					}
+				},
+				"@type":"transmembrane region"
+			},
+			{
+				"@status":"potential",
+				"@description":"Helical;",
+				"location":{
+					"begin":{
+						"@position":"588"
+					},
+					"end":{
+						"@position":"608"
+					}
+				},
+				"@type":"transmembrane region"
+			},
+			{
+				"@status":"potential",
+				"@description":"Helical;",
+				"location":{
+					"begin":{
+						"@position":"629"
+					},
+					"end":{
+						"@position":"649"
+					}
+				},
+				"@type":"transmembrane region"
+			},
+			{
+				"@status":"potential",
+				"@description":"Helical;",
+				"location":{
+					"begin":{
+						"@position":"664"
+					},
+					"end":{
+						"@position":"684"
+					}
+				},
+				"@type":"transmembrane region"
+			},
+			{
+				"@status":"potential",
+				"@description":"Helical;",
+				"location":{
+					"begin":{
+						"@position":"716"
+					},
+					"end":{
+						"@position":"736"
+					}
+				},
+				"@type":"transmembrane region"
+			},
+			{
+				"@status":"potential",
+				"@description":"Helical;",
+				"location":{
+					"begin":{
+						"@position":"845"
+					},
+					"end":{
+						"@position":"865"
+					}
+				},
+				"@type":"transmembrane region"
+			},
+			{
+				"@status":"potential",
+				"@description":"Helical;",
+				"location":{
+					"begin":{
+						"@position":"884"
+					},
+					"end":{
+						"@position":"904"
+					}
+				},
+				"@type":"transmembrane region"
+			},
+			{
+				"variation":{
+					"$t":"RR"
+				},
+				"@description":"In Ref. 1; BAA04807 and 2; BAA11845.",
+				"location":{
+					"begin":{
+						"@position":"136"
+					},
+					"end":{
+						"@position":"137"
+					}
+				},
+				"original":{
+					"$t":"AG"
+				},
+				"@ref":"3 6",
+				"@type":"sequence conflict"
+			}
+		],
+		"proteinExistence":{
+			"@type":"evidence at transcript level"
+		},
+		"dbReference":[
+			{
+				"@key":"1",
+				"@id":"2.4.1.16",
+				"@type":"EC"
+			},
+			{
+				"@key":"13",
+				"@id":"D21269",
+				"property":[
+					{
+						"@value":"BAA04807.1",
+						"@type":"protein sequence ID"
+					},
+					{
+						"@value":"Genomic_DNA",
+						"@type":"molecule type"
+					}
+				],
+				"@type":"EMBL"
+			},
+			{
+				"@key":"14",
+				"@id":"D83216",
+				"property":[
+					{
+						"@value":"BAA11845.1",
+						"@type":"protein sequence ID"
+					},
+					{
+						"@value":"mRNA",
+						"@type":"molecule type"
+					}
+				],
+				"@type":"EMBL"
+			},
+			{
+				"@key":"15",
+				"@id":"AACD01000043",
+				"property":[
+					{
+						"@value":"EAA64628.1",
+						"@type":"protein sequence ID"
+					},
+					{
+						"@value":"Genomic_DNA",
+						"@type":"molecule type"
+					}
+				],
+				"@type":"EMBL"
+			},
+			{
+				"@key":"16",
+				"@id":"BN001307",
+				"property":[
+					{
+						"@value":"CBF87020.1",
+						"@type":"protein sequence ID"
+					},
+					{
+						"@value":"Genomic_DNA",
+						"@type":"molecule type"
+					}
+				],
+				"@type":"EMBL"
+			},
+			{
+				"@key":"17",
+				"@id":"JC2315",
+				"property":{
+					"@value":"JC2315",
+					"@type":"entry name"
+				},
+				"@type":"PIR"
+			},
+			{
+				"@key":"18",
+				"@id":"XP_660127.1",
+				"property":{
+					"@value":"XM_655035.1",
+					"@type":"nucleotide sequence ID"
+				},
+				"@type":"RefSeq"
+			},
+			{
+				"@key":"19",
+				"@id":"GT2",
+				"property":{
+					"@value":"Glycosyltransferase Family 2",
+					"@type":"family name"
+				},
+				"@type":"CAZy"
+			},
+			{
+				"@key":"20",
+				"@id":"2874737",
+				"@type":"GeneID"
+			},
+			{
+				"@key":"21",
+				"@id":"ani:AN2523.2",
+				"@type":"KEGG"
+			},
+			{
+				"@key":"22",
+				"@id":"MHFGRMY",
+				"@type":"OMA"
+			},
+			{
+				"@key":"23",
+				"@id":"EOG405W8B",
+				"@type":"OrthoDB"
+			},
+			{
+				"@key":"24",
+				"@id":"Q00757",
+				"@type":"PhylomeDB"
+			},
+			{
+				"@key":"25",
+				"@id":"2.4.1.16",
+				"property":{
+					"@value":"517",
+					"@type":"organism ID"
+				},
+				"@type":"BRENDA"
+			},
+			{
+				"@key":"26",
+				"@id":"GO:0016021",
+				"property":[
+					{
+						"@value":"C:integral to membrane",
+						"@type":"term"
+					},
+					{
+						"@value":"IEA:UniProtKB-KW",
+						"@type":"evidence"
+					}
+				],
+				"@type":"GO"
+			},
+			{
+				"@key":"27",
+				"@id":"GO:0005886",
+				"property":[
+					{
+						"@value":"C:plasma membrane",
+						"@type":"term"
+					},
+					{
+						"@value":"IEA:UniProtKB-SubCell",
+						"@type":"evidence"
+					}
+				],
+				"@type":"GO"
+			},
+			{
+				"@key":"28",
+				"@id":"GO:0004100",
+				"property":[
+					{
+						"@value":"F:chitin synthase activity",
+						"@type":"term"
+					},
+					{
+						"@value":"IEA:EC",
+						"@type":"evidence"
+					}
+				],
+				"@type":"GO"
+			},
+			{
+				"@key":"29",
+				"@id":"GO:0007047",
+				"property":[
+					{
+						"@value":"P:cellular cell wall organization",
+						"@type":"term"
+					},
+					{
+						"@value":"IEA:UniProtKB-KW",
+						"@type":"evidence"
+					}
+				],
+				"@type":"GO"
+			},
+			{
+				"@key":"30",
+				"@id":"GO:0006031",
+				"property":[
+					{
+						"@value":"P:chitin biosynthetic process",
+						"@type":"term"
+					},
+					{
+						"@value":"IEA:InterPro",
+						"@type":"evidence"
+					}
+				],
+				"@type":"GO"
+			},
+			{
+				"@key":"31",
+				"@id":"IPR004834",
+				"property":{
+					"@value":"Chitin_synth",
+					"@type":"entry name"
+				},
+				"@type":"InterPro"
+			},
+			{
+				"@key":"32",
+				"@id":"IPR013616",
+				"property":{
+					"@value":"Chitin_synth_N",
+					"@type":"entry name"
+				},
+				"@type":"InterPro"
+			},
+			{
+				"@key":"33",
+				"@id":"PF01644",
+				"property":[
+					{
+						"@value":"Chitin_synth_1",
+						"@type":"entry name"
+					},
+					{
+						"@value":"1",
+						"@type":"match status"
+					}
+				],
+				"@type":"Pfam"
+			},
+			{
+				"@key":"34",
+				"@id":"PF08407",
+				"property":[
+					{
+						"@value":"Chitin_synth_1N",
+						"@type":"entry name"
+					},
+					{
+						"@value":"1",
+						"@type":"match status"
+					}
+				],
+				"@type":"Pfam"
+			},
+			{
+				"@key":"35",
+				"@id":"PD002998",
+				"property":[
+					{
+						"@value":"Chitin_synth",
+						"@type":"entry name"
+					},
+					{
+						"@value":"1",
+						"@type":"match status"
+					}
+				],
+				"@type":"ProDom"
+			}
+		],
+		"protein":{
+			"alternativeName":[
+				{
+					"fullName":{
+						"$t":"Chitin-UDP acetyl-glucosaminyl transferase B"
+					}
+				},
+				{
+					"fullName":{
+						"$t":"Class-III chitin synthase B"
+					}
+				}
+			],
+			"recommendedName":{
+				"fullName":{
+					"$t":"Chitin synthase B"
+				},
+				"@ref":"1"
+			}
+		},
+		"comment":[
+			{
+				"text":{
+					"$t":"Plays a major role in cell wall biogenesis."
+				},
+				"@type":"function"
+			},
+			{
+				"text":{
+					"$t":"UDP-N-acetyl-D-glucosamine + (1,4-(N-acetyl-beta-D-glucosaminyl))(n) = UDP + (1,4-(N-acetyl-beta-D-glucosaminyl))(n+1)."
+				},
+				"@type":"catalytic activity"
+			},
+			{
+				"subcellularLocation":{
+					"location":{
+						"$t":"Cell membrane"
+					},
+					"topology":{
+						"$t":"Multi-pass membrane protein"
+					}
+				},
+				"@type":"subcellular location"
+			},
+			{
+				"text":{
+					"$t":"Belongs to the chitin synthase family. Class III subfamily."
+				},
+				"@type":"similarity"
+			}
+		],
+		"reference":[
+			{
+				"source":{
+					"strain":{
+						"$t":"FGSC 89"
+					}
+				},
+				"@key":"3",
+				"scope":{
+					"$t":"NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+				},
+				"citation":{
+					"@date":"1994",
+					"@last":"1835",
+					"@name":"Biosci. Biotechnol. Biochem.",
+					"dbReference":[
+						{
+							"@key":"4",
+							"@id":"95072312",
+							"@type":"MEDLINE"
+						},
+						{
+							"@key":"5",
+							"@id":"7765508",
+							"@type":"PubMed"
+						}
+					],
+					"@first":"1828",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Yanai K."
+							},
+							{
+								"@name":"Kojima N."
+							},
+							{
+								"@name":"Takaya N."
+							},
+							{
+								"@name":"Horiuchi H."
+							},
+							{
+								"@name":"Ohta A."
+							},
+							{
+								"@name":"Takagi M."
+							}
+						]
+					},
+					"title":{
+						"$t":"Isolation and characterization of two chitin synthase genes from Aspergillus nidulans."
+					},
+					"@type":"journal article",
+					"@volume":"58"
+				}
+			},
+			{
+				"source":{
+					"strain":{
+						"$t":"FGSC 89"
+					}
+				},
+				"@key":"6",
+				"scope":{
+					"$t":"NUCLEOTIDE SEQUENCE [MRNA]"
+				},
+				"citation":{
+					"@date":"1997-02",
+					"authorList":{
+						"person":{
+							"@name":"Tatsuno K."
+						}
+					},
+					"title":{
+						"$t":"Aspergillus nidulans chitin synthase B gene."
+					},
+					"@db":"EMBL/GenBank/DDBJ databases",
+					"@type":"submission"
+				}
+			},
+			{
+				"source":{
+					"strain":{
+						"$t":"FGSC A4 / M139"
+					}
+				},
+				"@key":"7",
+				"scope":{
+					"$t":"NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+				},
+				"citation":{
+					"@date":"2005",
+					"@last":"1115",
+					"@name":"Nature",
+					"dbReference":[
+						{
+							"@key":"8",
+							"@id":"16372000",
+							"@type":"PubMed"
+						},
+						{
+							"@key":"9",
+							"@id":"10.1038/nature04341",
+							"@type":"DOI"
+						}
+					],
+					"@first":"1105",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Galagan J.E."
+							},
+							{
+								"@name":"Calvo S.E."
+							},
+							{
+								"@name":"Cuomo C."
+							},
+							{
+								"@name":"Ma L.-J."
+							},
+							{
+								"@name":"Wortman J.R."
+							},
+							{
+								"@name":"Batzoglou S."
+							},
+							{
+								"@name":"Lee S.-I."
+							},
+							{
+								"@name":"Bastuerkmen M."
+							},
+							{
+								"@name":"Spevak C.C."
+							},
+							{
+								"@name":"Clutterbuck J."
+							},
+							{
+								"@name":"Kapitonov V."
+							},
+							{
+								"@name":"Jurka J."
+							},
+							{
+								"@name":"Scazzocchio C."
+							},
+							{
+								"@name":"Farman M.L."
+							},
+							{
+								"@name":"Butler J."
+							},
+							{
+								"@name":"Purcell S."
+							},
+							{
+								"@name":"Harris S."
+							},
+							{
+								"@name":"Braus G.H."
+							},
+							{
+								"@name":"Draht O."
+							},
+							{
+								"@name":"Busch S."
+							},
+							{
+								"@name":"D'Enfert C."
+							},
+							{
+								"@name":"Bouchier C."
+							},
+							{
+								"@name":"Goldman G.H."
+							},
+							{
+								"@name":"Bell-Pedersen D."
+							},
+							{
+								"@name":"Griffiths-Jones S."
+							},
+							{
+								"@name":"Doonan J.H."
+							},
+							{
+								"@name":"Yu J."
+							},
+							{
+								"@name":"Vienken K."
+							},
+							{
+								"@name":"Pain A."
+							},
+							{
+								"@name":"Freitag M."
+							},
+							{
+								"@name":"Selker E.U."
+							},
+							{
+								"@name":"Archer D.B."
+							},
+							{
+								"@name":"Penalva M.A."
+							},
+							{
+								"@name":"Oakley B.R."
+							},
+							{
+								"@name":"Momany M."
+							},
+							{
+								"@name":"Tanaka T."
+							},
+							{
+								"@name":"Kumagai T."
+							},
+							{
+								"@name":"Asai K."
+							},
+							{
+								"@name":"Machida M."
+							},
+							{
+								"@name":"Nierman W.C."
+							},
+							{
+								"@name":"Denning D.W."
+							},
+							{
+								"@name":"Caddick M.X."
+							},
+							{
+								"@name":"Hynes M."
+							},
+							{
+								"@name":"Paoletti M."
+							},
+							{
+								"@name":"Fischer R."
+							},
+							{
+								"@name":"Miller B.L."
+							},
+							{
+								"@name":"Dyer P.S."
+							},
+							{
+								"@name":"Sachs M.S."
+							},
+							{
+								"@name":"Osmani S.A."
+							},
+							{
+								"@name":"Birren B.W."
+							}
+						]
+					},
+					"title":{
+						"$t":"Sequencing of Aspergillus nidulans and comparative analysis with A. fumigatus and A. oryzae."
+					},
+					"@type":"journal article",
+					"@volume":"438"
+				}
+			},
+			{
+				"source":{
+					"strain":{
+						"$t":"FGSC A4 / M139"
+					}
+				},
+				"@key":"10",
+				"scope":{
+					"$t":"GENOME REANNOTATION"
+				},
+				"citation":{
+					"@date":"2009",
+					"@last":"13",
+					"@name":"Fungal Genet. Biol.",
+					"dbReference":[
+						{
+							"@key":"11",
+							"@id":"19146970",
+							"@type":"PubMed"
+						},
+						{
+							"@key":"12",
+							"@id":"10.1016/j.fgb.2008.12.003",
+							"@type":"DOI"
+						}
+					],
+					"@first":"S2",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Wortman J.R."
+							},
+							{
+								"@name":"Gilsenan J.M."
+							},
+							{
+								"@name":"Joardar V."
+							},
+							{
+								"@name":"Deegan J."
+							},
+							{
+								"@name":"Clutterbuck J."
+							},
+							{
+								"@name":"Andersen M.R."
+							},
+							{
+								"@name":"Archer D."
+							},
+							{
+								"@name":"Bencina M."
+							},
+							{
+								"@name":"Braus G."
+							},
+							{
+								"@name":"Coutinho P."
+							},
+							{
+								"@name":"von Dohren H."
+							},
+							{
+								"@name":"Doonan J."
+							},
+							{
+								"@name":"Driessen A.J."
+							},
+							{
+								"@name":"Durek P."
+							},
+							{
+								"@name":"Espeso E."
+							},
+							{
+								"@name":"Fekete E."
+							},
+							{
+								"@name":"Flipphi M."
+							},
+							{
+								"@name":"Estrada C.G."
+							},
+							{
+								"@name":"Geysens S."
+							},
+							{
+								"@name":"Goldman G."
+							},
+							{
+								"@name":"de Groot P.W."
+							},
+							{
+								"@name":"Hansen K."
+							},
+							{
+								"@name":"Harris S.D."
+							},
+							{
+								"@name":"Heinekamp T."
+							},
+							{
+								"@name":"Helmstaedt K."
+							},
+							{
+								"@name":"Henrissat B."
+							},
+							{
+								"@name":"Hofmann G."
+							},
+							{
+								"@name":"Homan T."
+							},
+							{
+								"@name":"Horio T."
+							},
+							{
+								"@name":"Horiuchi H."
+							},
+							{
+								"@name":"James S."
+							},
+							{
+								"@name":"Jones M."
+							},
+							{
+								"@name":"Karaffa L."
+							},
+							{
+								"@name":"Karanyi Z."
+							},
+							{
+								"@name":"Kato M."
+							},
+							{
+								"@name":"Keller N."
+							},
+							{
+								"@name":"Kelly D.E."
+							},
+							{
+								"@name":"Kiel J.A."
+							},
+							{
+								"@name":"Kim J.M."
+							},
+							{
+								"@name":"van der Klei I.J."
+							},
+							{
+								"@name":"Klis F.M."
+							},
+							{
+								"@name":"Kovalchuk A."
+							},
+							{
+								"@name":"Krasevec N."
+							},
+							{
+								"@name":"Kubicek C.P."
+							},
+							{
+								"@name":"Liu B."
+							},
+							{
+								"@name":"Maccabe A."
+							},
+							{
+								"@name":"Meyer V."
+							},
+							{
+								"@name":"Mirabito P."
+							},
+							{
+								"@name":"Miskei M."
+							},
+							{
+								"@name":"Mos M."
+							},
+							{
+								"@name":"Mullins J."
+							},
+							{
+								"@name":"Nelson D.R."
+							},
+							{
+								"@name":"Nielsen J."
+							},
+							{
+								"@name":"Oakley B.R."
+							},
+							{
+								"@name":"Osmani S.A."
+							},
+							{
+								"@name":"Pakula T."
+							},
+							{
+								"@name":"Paszewski A."
+							},
+							{
+								"@name":"Paulsen I."
+							},
+							{
+								"@name":"Pilsyk S."
+							},
+							{
+								"@name":"Pocsi I."
+							},
+							{
+								"@name":"Punt P.J."
+							},
+							{
+								"@name":"Ram A.F."
+							},
+							{
+								"@name":"Ren Q."
+							},
+							{
+								"@name":"Robellet X."
+							},
+							{
+								"@name":"Robson G."
+							},
+							{
+								"@name":"Seiboth B."
+							},
+							{
+								"@name":"van Solingen P."
+							},
+							{
+								"@name":"Specht T."
+							},
+							{
+								"@name":"Sun J."
+							},
+							{
+								"@name":"Taheri-Talesh N."
+							},
+							{
+								"@name":"Takeshita N."
+							},
+							{
+								"@name":"Ussery D."
+							},
+							{
+								"@name":"vanKuyk P.A."
+							},
+							{
+								"@name":"Visser H."
+							},
+							{
+								"@name":"van de Vondervoort P.J."
+							},
+							{
+								"@name":"de Vries R.P."
+							},
+							{
+								"@name":"Walton J."
+							},
+							{
+								"@name":"Xiang X."
+							},
+							{
+								"@name":"Xiong Y."
+							},
+							{
+								"@name":"Zeng A.P."
+							},
+							{
+								"@name":"Brandt B.W."
+							},
+							{
+								"@name":"Cornell M.J."
+							},
+							{
+								"@name":"van den Hondel C.A."
+							},
+							{
+								"@name":"Visser J."
+							},
+							{
+								"@name":"Oliver S.G."
+							},
+							{
+								"@name":"Turner G."
+							}
+						]
+					},
+					"title":{
+						"$t":"The 2008 update of the Aspergillus nidulans genome annotation: a community effort."
+					},
+					"@type":"journal article",
+					"@volume":"46"
+				}
+			}
+		],
+		"@version":"65",
+		"organism":{
+			"lineage":{
+				"taxon":[
+					{
+						"$t":"Eukaryota"
+					},
+					{
+						"$t":"Fungi"
+					},
+					{
+						"$t":"Dikarya"
+					},
+					{
+						"$t":"Ascomycota"
+					},
+					{
+						"$t":"Pezizomycotina"
+					},
+					{
+						"$t":"Eurotiomycetes"
+					},
+					{
+						"$t":"Eurotiomycetidae"
+					},
+					{
+						"$t":"Eurotiales"
+					},
+					{
+						"$t":"Trichocomaceae"
+					},
+					{
+						"$t":"Emericella"
+					}
+				]
+			},
+			"dbReference":{
+				"@key":"2",
+				"@id":"162425",
+				"@type":"NCBI Taxonomy"
+			},
+			"name":[
+				{
+					"$t":"Emericella nidulans",
+					"@type":"scientific"
+				},
+				{
+					"$t":"Aspergillus nidulans",
+					"@type":"synonym"
+				}
+			]
+		},
+		"@created":"1999-07-15",
+		"@modified":"2011-10-19"
+	},
+	"copyright":{
+		"$t":"\nCopyrighted by the UniProt Consortium, see http://www.uniprot.org/terms\nDistributed under the Creative Commons Attribution-NoDerivs License\n"
+	},
+	"@xsi:schemaLocation":"http://uniprot.org/uniprot http://www.uniprot.org/support/docs/uniprot.xsd"
+},"@encoding":"UTF-8","@version":"1.0"}

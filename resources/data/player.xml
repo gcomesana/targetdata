@@ -1,0 +1,11 @@
+<xmlData>
+	<header date='12/10/2010' time='8.30pm'/>
+	<stats team="a">
+		<player id="1" name="player1" shots="100"/>
+		<player id="2" name="player2" shots="103"/>
+	</stats>
+	<stats team="b">
+		<player id="11" name="player11" shots="26"/>
+		<player id="22" name="player22" shots="13"/>
+	</stats>
+</xmlData>

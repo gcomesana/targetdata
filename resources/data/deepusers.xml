@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deeply>
+	<nested>
+		<xml>
+			<users>
+				<user ref="1">
+					<usrid>1</usrid>
+					<name>Ed Spencer</name>
+					<email>ed@sencha.com</email>
+				</user>
+				<user ref="2">
+					<usrid>2</usrid>
+					<name>Abe Elias</name>
+					<email>abe@sencha.com</email>
+				</user>
+			</users>
+		</xml>
+	</nested>
+</deeply>

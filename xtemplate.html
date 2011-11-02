@@ -1,0 +1,641 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Documento sin t&iacute;tulo</title>
+<style type="text/css">
+<!--
+.nameCat {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #0033CC;
+}
+.infoJson {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	margin-bottom: 10px;
+}
+.infoList {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+}
+.uniprotId {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: bold;
+	color: #000099;
+	margin-bottom: 20px;
+}
+-->
+</style>
+<script type="text/javascript" language="JavaScript1.5" src="app/util/jsonselect.js"></script>
+
+<script type="text/javascript" language="JavaScript1.5">
+
+	var jsonObj = {"uniprot":{
+		"entry":{
+			"keyword":[
+				{
+					"dollar_t":"Aminotransferase",
+					"at_id":"KW-0032"
+				},
+				{
+					"dollar_t":"Cell membrane",
+					"at_id":"KW-1003"
+				},
+				{
+					"dollar_t":"Complete proteome",
+					"at_id":"KW-0181"
+				},
+				{
+					"dollar_t":"Direct protein sequencing",
+					"at_id":"KW-0903"
+				},
+				{
+					"dollar_t":"Lipid transport",
+					"at_id":"KW-0445"
+				},
+				{
+					"dollar_t":"Membrane",
+					"at_id":"KW-0472"
+				},
+				{
+					"dollar_t":"Mitochondrion",
+					"at_id":"KW-0496"
+				},
+				{
+					"dollar_t":"Pyridoxal phosphate",
+					"at_id":"KW-0663"
+				},
+				{
+					"dollar_t":"Transferase",
+					"at_id":"KW-0808"
+				},
+				{
+					"dollar_t":"Transport",
+					"at_id":"KW-0813"
+				}
+			],
+			"sequence":{
+				"@fragment":"single",
+				"@checksum":"410321530B95B673",
+				"@version":"1",
+				"@mass":"3401",
+				"dollar_t":"\nSSWWAHVEMGPPDPILGVTEAYKRDTNSKK\n",
+				"@length":"30",
+				"@modified":"1989-10-01"
+			},
+			"gene":{
+				"name":{
+					"dollar_t":"GOT2",
+					"at_type":"primary"
+				}
+			},
+			"name":{
+				"dollar_t":"AATM_RABIT"
+			},
+			"accession":{
+				"dollar_t":"P12345"
+			},
+			"@dataset":"Swiss-Prot",
+			"feature":[
+				{
+					"@description":"Aspartate aminotransferase, mitochondrial",
+					"location":{
+						"begin":{
+							"@position":"1"
+						},
+						"end":{
+							"@status":"greater than",
+							"@position":"30"
+						}
+					},
+					"at_id":"PRO_0000123886",
+					"at_type":"chain"
+				},
+				{
+					"location":{
+						"position":{
+							"@position":"30"
+						}
+					},
+					"at_type":"non-terminal residue"
+				}
+			],
+			"proteinExistence":{
+				"at_type":"evidence at protein level"
+			},
+			"dbReference":[
+				{
+					"@key":"1",
+					"at_id":"2.6.1.1",
+					"at_type":"EC"
+				},
+				{
+					"@key":"6",
+					"at_id":"B27103",
+					"property":{
+						"@value":"B27103",
+						"at_type":"entry name"
+					},
+					"at_type":"PIR"
+				},
+				{
+					"@key":"7",
+					"at_id":"P12345",
+					"at_type":"ProteinModelPortal"
+				},
+				{
+					"@key":"8",
+					"at_id":"P12345",
+					"property":{
+						"@value":"1-30",
+						"at_type":"residue range"
+					},
+					"at_type":"SMR"
+				},
+				{
+					"@key":"9",
+					"at_id":"P12345",
+					"at_type":"STRING"
+				},
+				{
+					"@key":"10",
+					"at_id":"ENSOCUT00000003872",
+					"property":[
+						{
+							"@value":"ENSOCUP00000003357",
+							"at_type":"protein sequence ID"
+						},
+						{
+							"@value":"ENSOCUG00000003871",
+							"at_type":"gene ID"
+						}
+					],
+					"at_type":"Ensembl"
+				},
+				{
+					"@key":"11",
+					"at_id":"maNOG12574",
+					"at_type":"eggNOG"
+				},
+				{
+					"@key":"12",
+					"at_id":"ENSGT00390000014081",
+					"at_type":"GeneTree"
+				},
+				{
+					"@key":"13",
+					"at_id":"EOG4RXZ07",
+					"at_type":"OrthoDB"
+				},
+				{
+					"@key":"14",
+					"at_id":"GO:0005759",
+					"property":[
+						{
+							"@value":"C:mitochondrial matrix",
+							"at_type":"term"
+						},
+						{
+							"@value":"IEA:UniProtKB-SubCell",
+							"at_type":"evidence"
+						}
+					],
+					"at_type":"GO"
+				},
+				{
+					"@key":"15",
+					"at_id":"GO:0005886",
+					"property":[
+						{
+							"@value":"C:plasma membrane",
+							"at_type":"term"
+						},
+						{
+							"@value":"IEA:UniProtKB-SubCell",
+							"at_type":"evidence"
+						}
+					],
+					"at_type":"GO"
+				},
+				{
+					"@key":"16",
+					"at_id":"GO:0004069",
+					"property":[
+						{
+							"@value":"F:L-aspartate:2-oxoglutarate aminotransferase activity",
+							"at_type":"term"
+						},
+						{
+							"@value":"ISS:UniProtKB",
+							"at_type":"evidence"
+						}
+					],
+					"at_type":"GO"
+				},
+				{
+					"@key":"17",
+					"at_id":"GO:0030170",
+					"property":[
+						{
+							"@value":"F:pyridoxal phosphate binding",
+							"at_type":"term"
+						},
+						{
+							"@value":"IEA:InterPro",
+							"at_type":"evidence"
+						}
+					],
+					"at_type":"GO"
+				},
+				{
+					"@key":"18",
+					"at_id":"GO:0006457",
+					"property":[
+						{
+							"@value":"P:protein folding",
+							"at_type":"term"
+						},
+						{
+							"@value":"TAS:HGNC",
+							"at_type":"evidence"
+						}
+					],
+					"at_type":"GO"
+				},
+				{
+					"@key":"19",
+					"at_id":"IPR000796",
+					"property":{
+						"@value":"Asp_trans",
+						"at_type":"entry name"
+					},
+					"at_type":"InterPro"
+				},
+				{
+					"@key":"20",
+					"at_id":"IPR015422",
+					"property":{
+						"@value":"PyrdxlP-dep_Trfase_major_sub2",
+						"at_type":"entry name"
+					},
+					"at_type":"InterPro"
+				},
+				{
+					"@key":"21",
+					"at_id":"G3DSA:3.90.1150.10",
+					"property":[
+						{
+							"@value":"PyrdxlP-dep_Trfase_major_sub2",
+							"at_type":"entry name"
+						},
+						{
+							"@value":"1",
+							"at_type":"match status"
+						}
+					],
+					"at_type":"Gene3D"
+				},
+				{
+					"@key":"22",
+					"at_id":"PTHR11879",
+					"property":[
+						{
+							"@value":"Asp_trans",
+							"at_type":"entry name"
+						},
+						{
+							"@value":"1",
+							"at_type":"match status"
+						}
+					],
+					"at_type":"PANTHER"
+				},
+				{
+					"@key":"23",
+					"at_id":"PS00105",
+					"property":[
+						{
+							"@value":"AA_TRANSFER_CLASS_1",
+							"at_type":"entry name"
+						},
+						{
+							"@value":"PARTIAL",
+							"at_type":"match status"
+						}
+					],
+					"at_type":"PROSITE"
+				}
+			],
+			"protein":{
+				"alternativeName":[
+					{
+						"fullName":{
+							"dollar_t":"Fatty acid-binding protein"
+						},
+						"shortName":{
+							"dollar_t":"FABP-1"
+						}
+					},
+					{
+						"fullName":{
+							"dollar_t":"Glutamate oxaloacetate transaminase 2"
+						}
+					},
+					{
+						"fullName":{
+							"dollar_t":"Plasma membrane-associated fatty acid-binding protein"
+						},
+						"shortName":{
+							"dollar_t":"FABPpm"
+						}
+					},
+					{
+						"fullName":{
+							"dollar_t":"Transaminase A"
+						}
+					}
+				],
+				"recommendedName":{
+					"fullName":{
+						"dollar_t":"Aspartate aminotransferase, mitochondrial"
+					},
+					"@ref":"1",
+					"shortName":{
+						"dollar_t":"mAspAT"
+					}
+				}
+			},
+			"comment":[
+				{
+					"text":{
+						"dollar_t":"Plays a key role in amino acid metabolism. Important for metabolite exchange between mitochondria and cytosol. Facilitates cellular uptake of long-chain free fatty acids (By similarity)."
+					},
+					"at_type":"function"
+				},
+				{
+					"text":{
+						"dollar_t":"L-aspartate + 2-oxoglutarate = oxaloacetate + L-glutamate."
+					},
+					"at_type":"catalytic activity"
+				},
+				{
+					"text":{
+						"dollar_t":"Pyridoxal phosphate."
+					},
+					"at_type":"cofactor"
+				},
+				{
+					"text":{
+						"dollar_t":"Homodimer."
+					},
+					"at_type":"subunit"
+				},
+				{
+					"subcellularLocation":[
+						{
+							"location":{
+								"dollar_t":"Mitochondrion matrix"
+							}
+						},
+						{
+							"location":{
+								"@status":"by similarity",
+								"dollar_t":"Cell membrane"
+							}
+						}
+					],
+					"at_type":"subcellular location"
+				},
+				{
+					"text":{
+						"dollar_t":"In eukaryotes there are cytoplasmic, mitochondrial and chloroplastic isozymes."
+					},
+					"at_type":"miscellaneous"
+				},
+				{
+					"text":{
+						"dollar_t":"Belongs to the class-I pyridoxal-phosphate-dependent aminotransferase family."
+					},
+					"at_type":"similarity"
+				}
+			],
+			"reference":{
+				"source":{
+					"tissue":{
+						"dollar_t":"Liver"
+					}
+				},
+				"@key":"3",
+				"scope":{
+					"dollar_t":"PROTEIN SEQUENCE"
+				},
+				"citation":{
+					"@date":"1985",
+					"@last":"1345",
+					"@name":"J. Biochem.",
+					"dbReference":[
+						{
+							"@key":"4",
+							"at_id":"85289123",
+							"at_type":"MEDLINE"
+						},
+						{
+							"@key":"5",
+							"at_id":"4030726",
+							"at_type":"PubMed"
+						}
+					],
+					"@first":"1337",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Kuramitsu S."
+							},
+							{
+								"@name":"Inoue K."
+							},
+							{
+								"@name":"Kondo K."
+							},
+							{
+								"@name":"Aki K."
+							},
+							{
+								"@name":"Kagamiyama H."
+							}
+						]
+					},
+					"title":{
+						"dollar_t":"Aspartate aminotransferase isozymes from rabbit liver. Purification and properties."
+					},
+					"at_type":"journal article",
+					"@volume":"97"
+				}
+			},
+			"@version":"74",
+			"organism":{
+				"lineage":{
+					"taxon":[
+						{
+							"dollar_t":"Eukaryota"
+						},
+						{
+							"dollar_t":"Metazoa"
+						},
+						{
+							"dollar_t":"Chordata"
+						},
+						{
+							"dollar_t":"Craniata"
+						},
+						{
+							"dollar_t":"Vertebrata"
+						},
+						{
+							"dollar_t":"Euteleostomi"
+						},
+						{
+							"dollar_t":"Mammalia"
+						},
+						{
+							"dollar_t":"Eutheria"
+						},
+						{
+							"dollar_t":"Euarchontoglires"
+						},
+						{
+							"dollar_t":"Glires"
+						},
+						{
+							"dollar_t":"Lagomorpha"
+						},
+						{
+							"dollar_t":"Leporidae"
+						},
+						{
+							"dollar_t":"Oryctolagus"
+						}
+					]
+				},
+				"dbReference":{
+					"@key":"2",
+					"at_id":"9986",
+					"at_type":"NCBI Taxonomy"
+				},
+				"name":[
+					{
+						"dollar_t":"Oryctolagus cuniculus",
+						"at_type":"scientific"
+					},
+					{
+						"dollar_t":"Rabbit",
+						"at_type":"common"
+					}
+				]
+			},
+			"@created":"1989-10-01",
+			"@modified":"2011-10-19"
+		},
+		"copyright":{
+			"dollar_t":"\nCopyrighted by the UniProt Consortium, see http://www.uniprot.org/terms\nDistributed under the Creative Commons Attribution-NoDerivs License\n"
+		},
+		"@xsi:schemaLocation":"http://uniprot.org/uniprot http://www.uniprot.org/support/docs/uniprot.xsd"
+	},"@encoding":"UTF-8","@version":"1.0"}
+
+
+
+	var translateJson = function () {
+//		var jsonObj = Ext.JSON.decode (myJson)
+
+		var newJsonStr = "{"
+
+		var fullName = JSONSelect.match (".uniprot .entry .protein .recommendedName .fullName .$t", jsonObj)
+		if (fullName.length > 0) {
+			newJsonStr += '"fullName": "'+fullName[0]+'",'
+		}
+		else
+			newJsonStr += '"fullName": "",'
+
+		var shortName = JSONSelect.match (".uniprot .entry .protein .recommendedName .shortName .$t", jsonObj)
+		if (shortName.length > 0) {
+			newJsonStr += '"shortName": "'+shortName[0]+'",'
+		}
+		else
+			newJsonStr += '"shortName": "",'
+
+// geneName is an array of two arrays, as ...name is an array and
+// JSONSelect returns always arrays
+		var geneName = JSONSelect.match(".uniprot .entry .gene .name", jsonObj)
+		var geneNames = geneName[0] // this is another array!!!
+/*
+		newJsonStr += '"geneNames":['
+		Ext.Array.each(geneNames, function (item, index, genes) {
+			newJsonStr += '{'
+			for (var key in item) {
+				newJsonStr += '"'+key+'":"'+item[key]+'",'
+			}
+			newJsonStr = newJsonStr.substr(0, newJsonStr.length-1)
+			newJsonStr += "},"
+		})
+*
+// sometimes geneNames is an array and sometimes is an object...
+		if (geneNames.length > 0 || Ext.isArray(geneNames) == false)
+			newJsonStr = newJsonStr.substr(0, newJsonStr.length-1)
+		newJsonStr += "],"
+*/
+		var comment = JSONSelect.match(".uniprot .entry .comment :has(.at_type:val(\"function\"))", jsonObj)
+		var commentFunc = comment.length > 0? comment[0].text.$t: ''
+		newJsonStr += '"functionComment": "'+commentFunc+'",'
+
+		var organism
+		organism = JSONSelect.match('.uniprot .entry .organism .name :has(.at_type:val(\"common\"))', jsonObj)
+		var organismCommon = organism.length > 0? organism[0].$t: ''
+		newJsonStr += '"organismName": "'+organismCommon+'",'
+
+		newJsonStr += "}"
+// OJO!!!!!!! Shouldn't be necessary (or yes...) but XTemplate don't support $ and @
+		newJsonStr = newJsonStr.replace("$","", "g")
+		newJsonStr = newJsonStr.replace("@", "", "g")
+
+		console.info ("** newJSON: "+newJsonStr)
+//		var newJsonObj = Ext.JSON.decode (newJsonStr)
+
+//		return newJsonObj
+		return newJsonStr
+	}
+
+	var main = function () {
+		var strJson = translateJson ()
+		console.info (strJson)
+
+	}
+
+</script>
+</head>
+
+<body onload="main ();">
+<div class="uniprotId" id="divTit">Uniprot Id P32565</div>
+<div class="infoJson">There is no result for the requested Uniprot id.</div>
+<!--
+<div class="uniprotId" id="divTit">Uniprot Id P32565</div>
+<div id="divNames"class="nameCat">Name</div>
+<div class="infoJson">Chitin synthase B (CSB)</div>
+<div id="divGenes" class="nameCat">Genes</div>
+  <li class="infoList">chsB (primary)</li>
+  <li class="infoList">AN2523 (ORF)</li>
+</div>
+<div id="divOrganism" class="nameCat">Organism</div> 
+<div class="infoJson">Gallus</div>
+<div id="divFunction" class="nameCat">Function</div> 
+<div class="infoJson">Plays a major role in cell wall biogenesis.</div>
+-->
+</body>
+</html>
