@@ -27,7 +27,8 @@ Ext.define ("TD.view.form.FormSearch", {
 		grow      : false,
 		name      : 'frmSeq',
 		fieldLabel: 'Sequence search',
-		itemId: 'txtSeqSearch'
+		itemId: 'txtSeqSearch',
+		disabled: true
 	}],
 
 /*

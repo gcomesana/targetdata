@@ -23,10 +23,11 @@
 		'Ext.ux.form.MultiSelect',
 		'Ext.ux.form.ItemSelector',
 		'TD.view.form.FormSearch',
-		'TD.view.panel.tab.TargetFunctionPanel',
+		'TD.view.panel.tab.TargetInfoPanel',
 		'TD.view.panel.tab.TargetFamilyPanel',
 		'TD.view.panel.tab.PathwaysPanel',
-		'TD.view.panel.tab.InteractionsPanel'
+		'TD.view.panel.tab.InteractionsPanel',
+		'TD.view.panel.tab.FunctionalResiduesPanel'
 	]);
 	Ext.Ajax.disableCaching = false;
 
@@ -37,7 +38,7 @@
 		appFolder: "app",
 
 		controllers: [
-			"UniprotReq"
+			"TargetInfoCtrl"
 		],
 
 		launch: function() {
@@ -107,10 +108,13 @@
 						activeTab: 0,		 // first tab initially active
 						itemId: "contentTabPanel",
 						items: [{
-								xtype: "targetfunction",
-								id: "functionPanel"
+								xtype: "targetinfo",
+//								id: "functionPanel"
+								id: "infoPanel"
 							}, {
 								xtype: "targetfamily"
+							}, {
+								xtype: "functionalresidues"
 							}, {
 								xtype: "pathwayspanel"
 							}, {

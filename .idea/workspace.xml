@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9143943a-ef73-49b0-a7de-28ddef2562f2" name="Default" comment="" />
+    <list default="true" id="9143943a-ef73-49b0-a7de-28ddef2562f2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controller/util/TargetInfo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/view/panel/tab/FunctionalResiduesPanel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/view/panel/tab/TargetInfoFieldset.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/view/panel/tab/TargetInfoPanel.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/view/panel/tab/TargetFunctionPanel.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/controller/UniprotReq.js" afterPath="$PROJECT_DIR$/app/controller/TargetInfoCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/util/extjs-vtypes.js" afterPath="$PROJECT_DIR$/app/util/extjs-vtypes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/form/FormSearch.js" afterPath="$PROJECT_DIR$/app/view/form/FormSearch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appshit.js" afterPath="$PROJECT_DIR$/appshit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/custom-styles.css" afterPath="$PROJECT_DIR$/resources/css/custom-styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/data/P78257.json" afterPath="$PROJECT_DIR$/resources/data/P78257.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/data/p29876.json" afterPath="$PROJECT_DIR$/resources/data/p29876.json" />
+    </list>
     <ignored path="targetdata.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,43 +42,52 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="16" selection-start="2516" selection-end="2516" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UniprotReq.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controller/UniprotReq.js">
+      <file leaf-file-name="TargetInfoCtrl.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controller/TargetInfoCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="19" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.1943734">
+            <state line="140" column="15" selection-start="3954" selection-end="3954" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FormSearch.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/form/FormSearch.js">
+      <file leaf-file-name="TargetInfo.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controller/util/TargetInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="23" selection-start="401" selection-end="401" vertical-scroll-proportion="0.0">
+            <state line="50" column="21" selection-start="1325" selection-end="1325" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="p12345.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/data/p12345.json">
+      <file leaf-file-name="P78257.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/data/P78257.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="21" selection-start="1981" selection-end="1983" vertical-scroll-proportion="0.0">
+            <state line="708" column="8" selection-start="14223" selection-end="14223" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="TargetInfoPanel.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/view/panel/tab/TargetInfoPanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="145" column="41" selection-start="8714" selection-end="8714" vertical-scroll-proportion="0.0">
+            <state line="19" column="15" selection-start="450" selection-end="450" vertical-scroll-proportion="0.3432258">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TargetInfoFieldset.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/panel/tab/TargetInfoFieldset.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="19" selection-start="706" selection-end="706" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -82,22 +107,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controller/myJsonTemp.json" />
-        <option value="$PROJECT_DIR$/resources/data/myJsonTemp.json" />
-        <option value="$PROJECT_DIR$/app/view/panel/tab/LeftAccordionPanel.js" />
-        <option value="$PROJECT_DIR$/app/view/panel/AccordionPanel.js" />
-        <option value="$PROJECT_DIR$/app/view/panel/TabWestPanel.js" />
-        <option value="$PROJECT_DIR$/resources/data/p23555.json" />
-        <option value="$PROJECT_DIR$/resources/data/nuevoJsonOpenFUCKS.json" />
-        <option value="$PROJECT_DIR$/app/view/panel/tab/TargetFamilyPanel.js" />
-        <option value="$PROJECT_DIR$/app/view/panel/tab/InteractionsPanel.js" />
-        <option value="$PROJECT_DIR$/app/view/panel/tab/PathwaysPanel.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/app/view/panel/tab/TargetFunctionPanel.js" />
-        <option value="$PROJECT_DIR$/resources/css/custom-styles.css" />
+        <option value="$PROJECT_DIR$/app/view/panel/tab/FunctionalResiduesPanel.js" />
         <option value="$PROJECT_DIR$/app/view/form/FormSearch.js" />
+        <option value="$PROJECT_DIR$/resources/data/p29876.json" />
+        <option value="$PROJECT_DIR$/resources/data/P78257.json" />
+        <option value="$PROJECT_DIR$/appshit.js" />
         <option value="$PROJECT_DIR$/app/controller/UniprotReq.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/app/util/extjs-vtypes.js" />
+        <option value="$PROJECT_DIR$/resources/data/p29358.json" />
+        <option value="$PROJECT_DIR$/thingstest.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/app/controller/TargetInfoCtrl.js" />
+        <option value="$PROJECT_DIR$/app/controller/util/TargetInfo.js" />
+        <option value="$PROJECT_DIR$/app/view/panel/tab/TargetInfoPanel.js" />
+        <option value="$PROJECT_DIR$/app/view/panel/tab/TargetInfoFieldset.js" />
       </list>
     </option>
   </component>
@@ -123,7 +148,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -149,8 +174,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -173,11 +196,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -198,8 +217,26 @@
               <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="form" />
+              <option name="myItemId" value="targetdata" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="targetdata" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="panel" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -217,7 +254,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="panel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tab" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -232,57 +277,19 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="store" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="targetdata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="targetdata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="targetdata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="targetdata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="Errors" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../cgi-bin" />
     <property name="DefaultHtmlFileTemplate" value="Html" />
     <property name="options.searchVisible" value="true" />
@@ -385,19 +392,19 @@
     <frame x="92" y="22" width="1322" height="942" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21601942" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25606796" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24757281" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2598116" sideWeight="0.75242716" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23390895" sideWeight="0.75242716" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24175824" sideWeight="0.75242716" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24646781" sideWeight="0.75242716" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22087379" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24757281" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -446,106 +453,108 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/data/p29876.json">
+    <entry file="file://$PROJECT_DIR$/resources/data/p12345.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="4" selection-start="7" selection-end="7" vertical-scroll-proportion="0.036745407" />
+        <state line="399" column="6" selection-start="6704" selection-end="6704" vertical-scroll-proportion="0.20472442" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/data/p23555.json">
+    <entry file="file://$PROJECT_DIR$/resources/data/myJsonTemp.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="6" selection-start="1309" selection-end="1309" vertical-scroll-proportion="0.018372703" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/panel/tab/InteractionsPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="99" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/panel/tab/PathwaysPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="145" selection-end="145" vertical-scroll-proportion="0.11023622" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="41" selection-start="8714" selection-end="8714" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/data/nuevoJsonOpenFUCKS.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="469" column="9" selection-start="9085" selection-end="9085" vertical-scroll-proportion="0.33070865">
+        <state line="22" column="28" selection-start="371" selection-end="371" vertical-scroll-proportion="0.40419948" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/data/p23486new.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2900" column="39" selection-start="55144" selection-end="55144" vertical-scroll-proportion="0.19021739">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/data/p12345.json">
+    <entry file="file://$PROJECT_DIR$/resources/data/p29358.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="21" selection-start="1981" selection-end="1983" vertical-scroll-proportion="0.0">
+        <state line="959" column="6" selection-start="17833" selection-end="17833" vertical-scroll-proportion="-9.423077">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/panel/tab/TargetFunctionPanel.js">
+    <entry file="file://$PROJECT_DIR$/resources/data/p23486.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="28" selection-start="145" selection-end="145" vertical-scroll-proportion="0.090322584">
+        <state line="80" column="6" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/panel/tab/TargetFamilyPanel.js">
+    <entry file="file://$PROJECT_DIR$/appnew.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="99" selection-start="150" selection-end="247" vertical-scroll-proportion="0.11023622">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.4251969">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/custom-styles.css">
+    <entry file="file://$PROJECT_DIR$/thingstest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="1" selection-start="841" selection-end="841" vertical-scroll-proportion="0.7948387">
+        <state line="33" column="26" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.6062992">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/data/uniprot-test.json">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="39848" selection-start="39848" selection-end="39848" vertical-scroll-proportion="0.0">
+        <state line="17" column="41" selection-start="0" selection-end="10156" vertical-scroll-proportion="0.32205683">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/data/uniprot-test-beauty.json">
+    <entry file="file://$PROJECT_DIR$/app/controller/TargetInfoCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3923" column="16" selection-start="65722" selection-end="65722" vertical-scroll-proportion="60.028675">
+        <state line="140" column="15" selection-start="3954" selection-end="3954" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/data/p88732.json">
+    <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="354" column="9" selection-start="5750" selection-end="5750" vertical-scroll-proportion="0.5345268">
+        <state line="22" column="38" selection-start="1089" selection-end="1089" vertical-scroll-proportion="0.41677943">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="16" selection-start="2516" selection-end="2516" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/form/FormSearch.js">
+    <entry file="file://$PROJECT_DIR$/resources/data/P78257.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="23" selection-start="401" selection-end="401" vertical-scroll-proportion="0.0">
+        <state line="708" column="8" selection-start="14223" selection-end="14223" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/UniprotReq.js">
+    <entry file="file://$PROJECT_DIR$/app/controller/util/TargetInfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="19" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.1943734">
+        <state line="50" column="21" selection-start="1325" selection-end="1325" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/panel/tab/TargetInfoFieldset.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="19" selection-start="706" selection-end="706" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/panel/tab/TargetInfoPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="15" selection-start="450" selection-end="450" vertical-scroll-proportion="0.3432258">
           <folding />
         </state>
       </provider>
