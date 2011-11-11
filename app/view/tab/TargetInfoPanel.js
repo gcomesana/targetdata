@@ -14,7 +14,8 @@ Ext.define ("TD.view.panel.tab.TargetInfoPanel", {
 		type: "vbox"
 	},
 
-	defaults: {margins: '0 0 10 0'},
+	defaults: {margins: '0 0 10 0'}
+/*
 	items: [{
 		xtype: "panel",
 		width: 500,
@@ -46,5 +47,5 @@ Ext.define ("TD.view.panel.tab.TargetInfoPanel", {
 		itemId: "dbRefInfo",
 		id: "dbRefInfo"
 	}]
-
+*/
 })
