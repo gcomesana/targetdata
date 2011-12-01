@@ -1,28 +1,8 @@
-Ext.require (["TD.controller.util.TargetInfo"])
-Ext.define ("TD.controller.TargetInfoCtrl", {
+
+Ext.define ("TD.controller.UniprotReq", {
 	extend: "Ext.app.Controller",
 
-	views: ["form.FormSearch", "panel.tab.TargetInfoPanel"],
-
-
-// TODO HABRÍA QUE HACER UN STORE CON TODO ESTO PARA QUE ESTEN GUARDADITAS
-	hostLocal: ["localhost", "lady-qu"],
-	hostProd: ["ws.bioinfo.cnio.es"],
-
-	urisLocal: [
-		{"cat":"uniprot", "url": "/cgi-bin/uniFetcher.pl"},
-		{"cat":"pubmedAbstrac", "url": "/cgi-bin/togoAbstractFetch.pl"}
-	],
-
-	urisProd: [
-		{"cat":"uniprot", "url":"cgi-bin/uniFetcher.pl"},
-		{"cat":"pubmedAbstrac", "url": "cgi-bin/togoAbstractFetch.pl"}
-	],
-
-
-	uniprotJson: {},
-
-	targetInfoUtil: null,
+	views: ["form.FormSearch", "panel.tab.TargetFunctionPanel"],
 
 	init: function () {
 		this.control({
@@ -39,11 +19,7 @@ Ext.define ("TD.controller.TargetInfoCtrl", {
 						this.onClickBtnSearch (btn)
 					}
 				}
-			}, // EO txtIdSearch
-
-			"viewport > panel > targetinfo panel": {
-				expand: this.onPanelExpand
-			}
+			} // EO txtIdSearch
 		})
 	},
 
@@ -65,81 +41,42 @@ Ext.define ("TD.controller.TargetInfoCtrl", {
 		var theForm = btn.findParentByType("form")
 		var txtRequest = theForm.child("textfield")
 		var txtValue = txtRequest.getValue()
+
 		var self = this
-//		self.targetInfoUtil = Ext.create ("TD.controller.util.TargetInfo", {})
-		TD.controller.util.TargetInfo.uniprotReq (txtValue)
-//		self.uniprotReq (txtValue)
+		self.uniprotReq (txtValue)
 	},
 
 
 
-/**
- * Method response to expand event on any of the addtional information panels.
- * @param panel, the panel which triggers the event
- * @param evOpts, the object event options
- */
-	onPanelExpand: function (panel, evOpts) {
-		var targetInfoCls = TD.controller.util.TargetInfo
-		if (panel.getId() == "citationInfo") {
-			var citObj = JSONSelect.match(".uniprot .entry .reference .citation", targetInfoCls.uniprotJson)
-			console.info ("citObj: "+citObj)
-
-		}
-		else if (panel.getId() == "dbRefInfo") {
-			var dbRefObj = JSONSelect.match(".uniprot .entry .reference .citation", targetInfoCls.uniprotJson)
-			console.info ("dbRefObj: "+dbRefObj)
-		}
-	},
-
-
-
-/**
- * Get the main target information from the uniprot json object via an ajax call
- *
- * @param id, the uniprot id to retrieve the target
- */
 	uniprotReq: function (id) {
 		var self = this
 		var uniprotId = id
 
-// piece of snippet to get the correct url
-		var host = window.location.hostname
-		var isLocalhost = function(elem, index, array) { return elem == host }
-		var uris = this.hostLocal.some (isLocalhost)?	this.urisLocal:	this.urisProd
-		var uri = uris.filter(function (elem, index, array) {
-			return elem.cat == "uniprot"
-		})
-// console.info(uri[0].cat+":"+uri[0].url)
-
 		Ext.Ajax.request({
-//			url: "http://ws.bioinfo.cnio.es/OpenPHACTS/cgi-bin/uniFetcher.pl",
-//			url: "/cgi-bin/uniFetcher.pl",
-			url: uri[0].url,
+//			url: "resources/data/p23486.json",
+// TODO aquí estaba
+			url: "http://ws.bioinfo.cnio.es/OpenPHACTS/cgi-bin/uniFetcher.pl",
 			params: {
 				id: uniprotId
 			},
 			method: "GET",
-
-
+			
 			success: function (response, opts) {
 				var tpl
+				var view = Ext.ComponentQuery.query ("viewport > panel > targetfunction")
 
-// Get the main info from uniprot
-//				var view = Ext.ComponentQuery.query ('viewport > panel > targetinfo > panel[id="uniprotInfo"]')
-				var view = Ext.ComponentQuery.query ('viewport > panel > targetinfo')
 				if (response.responseText.length == 0) {
 					tpl = self.createEmptyTpl(opts.params.id)
 					tpl.overwrite(view[0].body, {})
+
 				}
 				else {
 					var jsonResp = response.responseText.replace ("$", "dollar_", "g").replace("@","at_", "g")
-					var jsonObj = Ext.JSON.decode (jsonResp)
-					self.uniprotJson = jsonObj
-					var myJsonObj = self.translateJson (jsonObj)
+					var myJsonObj = self.translateJson (jsonResp)
 					myJsonObj.uniprotId = opts.params.id
-					self.uniprotJson = myJsonObj
+//					console.info ("object to use: " + Ext.JSON.encode (myJsonObj))
 					try {
-						tpl = self.createInfoXTpl ()
+						tpl = self.createXTemplate ()
 					}
 					catch (e) {
 						console.error (e.name)
@@ -147,22 +84,16 @@ Ext.define ("TD.controller.TargetInfoCtrl", {
 					}
 					tpl.overwrite(view[0].body, myJsonObj)
 				}
-
 				Ext.getBody().unmask()
 				var contentTabs = Ext.ComponentQuery.query ('viewport > tabpanel[itemId="contentTabPanel"]')
 				contentTabs[0].setActiveTab(0)
-				var infopanels = Ext.ComponentQuery.query ('viewport > tabpanel > targetinfo > panel')
-				Ext.Array.each (infopanels, function (item, index, panelsItself) {
-					item.setVisible(true)
-				})
 			},
-
 
 			failure: function (response, opts) {
 				console.error ("Error in ajax call")
 				console.error (response)
 			}
-		}) // EO Ajax.request
+		})
 	},
 
 
@@ -170,12 +101,10 @@ Ext.define ("TD.controller.TargetInfoCtrl", {
 /**
  * Custom method to convert the uniprot json into a json object with the
  * right elements to represent as a target information
- * @param myJson, the json object already converted from the text received
- * from uniprot cgi script as text
+ * @param myJson, the json text as received from uniprot gateway
  */
 	translateJson: function (myJson) {
-//		var jsonObj = Ext.JSON.decode (myJson)
-		var jsonObj = myJson
+		var jsonObj = Ext.JSON.decode (myJson)
 		var newJsonStr = "{"
 
 		var fullName =
@@ -252,7 +181,7 @@ Ext.define ("TD.controller.TargetInfoCtrl", {
 	/**
 	 * Creates a XTemplate to display the result of a successful uniprot request
  	 */
-	createInfoXTpl: function () {
+	createXTemplate: function () {
 		var tpl = new Ext.XTemplate (
 			'<div class="uniprotId" id="divTit">Uniprot Id {uniprotId}</div>',
 			'<div id="divNames"class="nameCat">Name</div>',
@@ -277,6 +206,7 @@ Ext.define ("TD.controller.TargetInfoCtrl", {
 			'</tpl>'
 
 		)
+
 		return tpl
 	}
 })

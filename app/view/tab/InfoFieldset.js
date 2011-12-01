@@ -7,7 +7,7 @@
  * Inside them, collapsible panels display information as well
  */
 
-Ext.define ("TD.view.panel.tab.TargetInfoFieldset", {
+Ext.define ("TD.view.tab.InfoFieldset", {
 	extend: "Ext.form.FieldSet",
 	alias: "widget.targetinfo-fs",
 

@@ -15,7 +15,6 @@
 	Ext.require("TD.view.panel.TabWestPanel")
 	Ext.require("TD.view.panel.StatusSouthPanel")
 	Ext.require("TD.view.panel.NavAccordionPanel")
-	Ext.require("TD.view.panel.ContentTabPanel")
 
 
 	Ext.require([
@@ -24,8 +23,7 @@
 		'Ext.ux.form.MultiSelect',
 		'Ext.ux.form.ItemSelector',
 		'TD.view.form.FormSearch',
-		'TD.view.tab.TargetInfoFieldset',
-
+		'TD.view.panel.CenterTabs',
 		'TD.view.tab.TargetGenericPanel'
 	]);
 	Ext.Ajax.disableCaching = false;
@@ -37,11 +35,11 @@
 		appFolder: "app",
 
 		controllers: [
-			"TargetInfoCtrl"
+			"TargetInfo"
 		],
 
 		launch: function() {
-//			console.info("launchinnggggggggggg")
+			console.info("launchinnggggggggggg")
 //				var userWin = Ext.create('widget.editorwindow')
 //				userWin.show();
 
@@ -98,13 +96,34 @@
 							}*/
 						]
 					},
-// content-tab-panel already contains the five main tabs as target-generic-panel components
+					// in this instance the TabPanel is not wrapped by another panel
+					// since no title is needed, this Panel is added directly
+					// as a Container
+/*
+					Ext.create('Ext.tab.Panel', {
+						region: 'center', // a center region is ALWAYS required for border layout
+						deferredRender: false,
+						activeTab: 0,		 // first tab initially active
+						itemId: "contentTabPanel",
+						items: [{
+								xtype: "targetfunction",
+								id: "functionPanel"
+							}, {
+								xtype: "targetfamily"
+							}, {
+								xtype: "pathwayspanel"
+							}, {
+								xtype: "interactions"
+							}
+						]
+					})
+*/
 					{
-						xtype: "content-tab-panel",
+						xtype: "center-tabs",
 						region: "center"
 					}
-				]
-			}); // EO Viewport
+				] // viewport
+			}) // EO Viewport
 
 			Ext.create ("Ext.tip.ToolTip", {
 				html: "<b>UniProt</b> id like '<i>P12345</i>'",

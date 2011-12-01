@@ -2,19 +2,33 @@
  * This is the panel which is embedded in the first tab of the content tab panel
  * This is what have to be embedded in the fieldset
  */
-Ext.define ("TD.view.panel.tab.TargetInfoPanel", {
+Ext.define ("TD.view.tab.TargetInfoPanel", {
 	extend: "Ext.panel.Panel",
 	alias: "widget.targetinfo",
 
 	title: 'Target information',
 //								closable: true,
 	autoScroll: true,
+	collapsible: true,
 	bodyPadding: 10,
 	layout: {
-		type: "vbox"
+		type: "hbox"
 	},
 
-	defaults: {margins: '0 0 10 0'}
+	defaults: {margins: '0 0 10 0'},
+
+// may have to put it in a config object...
+	tpl: {}, // template to render the content into the panel
+	tplObj: {},
+
+	listeners: {
+		render: function (comp, opts) {
+//			tpl = self.createInfoXTpl ()
+			this.tpl.overwrite(comp.body, this.tplObj)
+		}
+	}
+
+
 /*
 	items: [{
 		xtype: "panel",

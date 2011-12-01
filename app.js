@@ -1,3 +1,5 @@
+
+
 (function() {
 	Ext.Loader.setConfig({
 		enabled : true,
@@ -23,11 +25,9 @@
 		'Ext.ux.form.MultiSelect',
 		'Ext.ux.form.ItemSelector',
 		'TD.view.form.FormSearch',
-		'TD.view.panel.tab.TargetInfoPanel',
-		'TD.view.panel.tab.TargetFamilyPanel',
-		'TD.view.panel.tab.PathwaysPanel',
-		'TD.view.panel.tab.InteractionsPanel',
-		'TD.view.panel.tab.FunctionalResiduesPanel'
+		'TD.view.panel.CenterTabs',
+		'TD.view.tab.TargetGenericPanel',
+		'TD.view.Viewport'
 	]);
 	Ext.Ajax.disableCaching = false;
 
@@ -38,92 +38,13 @@
 		appFolder: "app",
 
 		controllers: [
-			"TargetInfoCtrl"
+			"TargetInfo"
 		],
 
+		autoCreateViewport: true,
+
 		launch: function() {
-//			console.info("launchinnggggggggggg")
-//				var userWin = Ext.create('widget.editorwindow')
-//				userWin.show();
-
-			var viewport = Ext.create('Ext.Viewport', {
-				id: 'border-example',
-				layout: 'border',
-				items: [{
-						xtype:"northpanel",
-						region: "north",
-						margin: "5, 0, 0, 10",
-						border: 2,
-						style: {
-//							backgroundColor: "white"
-						}
-//						height: 240
-					},
-					{
-						// lazily created panel (xtype:'panel' is default)
-						region: 'south',
-						contentEl: 'south',
-						split: true,
-						xtype: "panel",
-						height: 100,
-						minHeight: 100,
-						minSize: 100,
-						maxSize: 200,
-						collapsible: true,
-						collapsed: true,
-						title: 'South',
-						margins: '0 0 0 0',
-						html: "<h2>Message area (in progress)</h2>"
-
-					},
-					{
-						xtype: "tab-west-panel",
-						region: 'west',
-						stateId: 'navigation-panel',
-						id: 'west-panel', // see Ext.getCmp() below
-						split: true,
-						width: 300,
-						// define the tabs as items
-						items: [{
-								autoScroll: true,
-//								html: "<h1>HTML in h1</h1>",
-								title: 'Search',
-//									iconCls: 'nav' // see the HEAD section for style used
-								items: [{
-									xtype: "formsearch"
-								}]
-							}/*,
-							{
-								title: 'Tab 2',
-								xtype: "accordion-panel"
-							}*/
-						]
-					},
-					// in this instance the TabPanel is not wrapped by another panel
-					// since no title is needed, this Panel is added directly
-					// as a Container
-					Ext.create('Ext.tab.Panel', {
-						region: 'center', // a center region is ALWAYS required for border layout
-						deferredRender: false,
-						activeTab: 0,		 // first tab initially active
-						itemId: "contentTabPanel",
-						items: [{
-								xtype: "targetinfo",
-//								id: "functionPanel"
-								id: "infoPanel"
-							}, {
-								xtype: "targetfamily"
-							}, {
-								xtype: "functionalresidues"
-							}, {
-								xtype: "pathwayspanel"
-							}, {
-								xtype: "interactions"
-							}
-						]
-					})
-				]
-			}); // EO Viewport
+			console.info("launchinnggggggggggg")
 
 			Ext.create ("Ext.tip.ToolTip", {
 				html: "<b>UniProt</b> id like '<i>P12345</i>'",

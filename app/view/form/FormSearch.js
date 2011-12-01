@@ -1,5 +1,5 @@
 
-
+Ext.require (["TD.view.form.ProteinLookup"])
 Ext.define ("TD.view.form.FormSearch", {
 	extend: "Ext.form.Panel",
 	alias: "widget.formsearch",
@@ -9,11 +9,11 @@ Ext.define ("TD.view.form.FormSearch", {
 	layout: "anchor",
 
 	border: 0,
-// TODO poner los items y los buttons dentro del initcomponent como en
-// TODO el MVC architecture. Intentar cambiarlo para que el botón Search sea
-// TODO submit y hacer que se pulse Enter
+
 	items: [{
-		xtype: "textfield",
+		xtype: "combo-protein-lookup"
+
+		/*
 		fieldLabel: "Keyword search",
 		name: "frmKey",
 		iconCls: "icon-grid",
@@ -22,6 +22,7 @@ Ext.define ("TD.view.form.FormSearch", {
 		id: "txtIdSearch",
 		vtype: "uniprot",
 		emptyText: "Uniprot id (i.e. 'P47928')"
+		*/
 	}, {
 		xtype     : 'textarea',
 		grow      : false,
@@ -61,7 +62,8 @@ Ext.define ("TD.view.form.FormSearch", {
 		xtype: "button",
 		itemId: "btnSearch",
 		text: "Search",
-		name: "btnSearch"
+		name: "btnSearch",
+		id: "btnSearch"
 		/*
 		handler: function () {
 			console.info ("btnSearch handler")
