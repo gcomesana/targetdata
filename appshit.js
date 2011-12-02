@@ -27,7 +27,7 @@
 		'Ext.ux.form.MultiSelect',
 		'Ext.ux.form.ItemSelector',
 		'TD.view.form.FormSearch',
-		'TD.view.panel.tab.TargetFunctionPanel',
+		'TD.view.panel.tab.TargetInfoPanel',
 		'TD.view.panel.tab.TargetFamilyPanel',
 		'TD.view.panel.tab.PathwaysPanel',
 		'TD.view.panel.tab.InteractionsPanel',

@@ -38,7 +38,8 @@
 		appFolder: "app",
 
 		controllers: [
-			"TargetInfo"
+			"TargetInfo",
+			"CenterTabs"
 		],
 
 		autoCreateViewport: true,

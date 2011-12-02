@@ -64,3 +64,29 @@
 	font-size: 11px;
 	color: #000000;
 }
+
+.citation-even {
+	padding: 10px 10px 10px 10px;
+	background-color: #ffffff;
+}
+
+.citation-odd {
+	padding: 10px 10px 10px 10px;
+	background-color: #d3d3d3;
+}
+
+.citationTit {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: bold;
+	color: #000099;
+	margin-bottom: 15px;
+	margin-top: 10px;
+	width: 80%;
+}
+
+a div {
+	text-decoration: none;
+	color: #000000;
+}

@@ -11,12 +11,14 @@ Ext.define ("TD.view.tab.TargetGenericPanel", {
 	title: 'Target information',
 //								closable: true,
 	autoScroll: true,
-	bodyPadding: 10,
+//	bodyPadding: 10,
 	layout: {
 		type: "vbox"
 	},
 
-	defaults: {margins: '0 0 10 0'}
+	defaults: {margins: '0 0 10 0'},
+
+	alreadyLoaded: false
 
 	//
 	/* may have to put it in a config object...

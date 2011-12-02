@@ -36,11 +36,15 @@ Ext.define ("TD.view.panel.CenterTabs", {
 			id: "targetFamily",
 			html: '<div id="workinprogress-1" class="workinprogress-cls"> <h1>ContentTabPanel: Work in progress!!</h1></div>',
 			title: 'Target family'
-		}, {
+		}, /* {
 			xtype: "target-generic-panel",
 			html: '<div id="workinprogress-1" class="workinprogress-cls"><h1>Work in progress!!</h1></div>',
 			title: 'Functional residues',
 			id: "targetresidues"
+		},*/{
+			xtype: "target-generic-panel",
+			title: 'Citations',
+			id: "targetcitations"
 		}, {
 			xtype: "target-generic-panel",
 			html: '<div id="workinprogress-1" class="workinprogress-cls"> <h1>ContentTabPanel: Work in progress!!</h1></div>',
@@ -52,6 +56,14 @@ Ext.define ("TD.view.panel.CenterTabs", {
 			title: 'Interactions',
 			id: "targetInteractions"
 		}
-	]
+	],
+
+
+	listeners: {
+		activate: function (theTab, opts) {
+//			alert ("activate theTab "+theTab.getId())
+			console.info ("activate '"+theTab.getId()+"' tab")
+		}
+	}
 
 })

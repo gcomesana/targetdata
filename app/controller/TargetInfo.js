@@ -4,7 +4,7 @@ Ext.define ("TD.controller.TargetInfo", {
 	views: ["form.FormSearch", "tab.TargetInfoPanel"],
 
 	extend: "Ext.app.Controller",
-	requires: ['TD.controller.util.TargetInfoUtil'],
+	requires: ['TD.controller.util.TargetInfoUtil', 'TD.controller.util.XTplFactory'],
 
 // TODO HABRÍA QUE HACER UN STORE CON TODO ESTO PARA QUE ESTEN GUARDADITAS
 	hostLocal: ["localhost", "lady-qu"],
@@ -21,11 +21,13 @@ Ext.define ("TD.controller.TargetInfo", {
 	],
 
 
-	uniprotJson: {},
+//	uniprotJson: {},
 
 	targetInfoUtil: null,
 
 	init: function () {
+		targetInfoUtil = TD.controller.util.TargetInfoUtil
+
 		this.control({
 			"#btnSearch": {
 				// render: this.onRenderBtnSearch,
@@ -44,11 +46,37 @@ Ext.define ("TD.controller.TargetInfo", {
 
 			"viewport > panel > targetinfo panel": {
 				expand: this.onPanelExpand
+			},
+
+			'viewport center-tabs panel': {
+				activate: this.onPanelShow
 			}
 		})
 	},
 
 
+
+
+	onPanelShow: function (theComp, opts) {
+		var compId = theComp.getId()
+		var height = theComp.getHeight()
+		if (compId == 'targetcitations') {
+			var infoTpl = TD.controller.util.XTplFactory.createCitationXTpl(height)
+			var citsJson = TD.controller.util.XTplFactory.citationInfo()
+
+			var panelInfo = Ext.widget ("targetinfo", {
+				tpl: infoTpl,
+				tplObj: citsJson,
+				collapsible: false,
+				frame: false,
+				frameHeader: false,
+				title: "",
+				preventHeader: true,
+				border: 0
+			})
+			theComp.add(panelInfo)
+		}
+	},
 
 
 /**
@@ -92,7 +120,7 @@ Ext.define ("TD.controller.TargetInfo", {
 			var dbRefObj = JSONSelect.match(".uniprot .entry .reference .citation", targetInfoCls.uniprotJson)
 			console.info ("dbRefObj: "+dbRefObj)
 		}
-	},
+	}
 
 
 
@@ -100,7 +128,7 @@ Ext.define ("TD.controller.TargetInfo", {
  * Get the main target information from the uniprot json object via an ajax call
  *
  * @param id, the uniprot id to retrieve the target
- */
+ *
 	uniprotReq: function (id) {
 		var self = this
 		var uniprotId = id
@@ -170,12 +198,12 @@ Ext.define ("TD.controller.TargetInfo", {
 
 
 	
-/**
+**
  * Custom method to convert the uniprot json into a json object with the
  * right elements to represent as a target information
  * @param myJson, the json object already converted from the text received
  * from uniprot cgi script as text
- */
+ *
 	translateJson: function (myJson) {
 //		var jsonObj = Ext.JSON.decode (myJson)
 		var jsonObj = myJson
@@ -238,10 +266,10 @@ Ext.define ("TD.controller.TargetInfo", {
 	},
 
 
-	/**
+	**
 	 * Creates a XTemplate for a empty response of a uniprot request.
 	 * @param reqId, the requested id which does not have any uniprot entry
-	 */
+	 *
 	createEmptyTpl: function (reqId) {
 		var tpl = new Ext.XTemplate (
 			'<div class="uniprotId" id="divTit">Uniprot Id '+reqId+'</div>',
@@ -252,9 +280,9 @@ Ext.define ("TD.controller.TargetInfo", {
 	},
 
 
-	/**
+	**
 	 * Creates a XTemplate to display the result of a successful uniprot request
- 	 */
+ 	 *
 	createInfoXTpl: function () {
 		var tpl = new Ext.XTemplate (
 			'<div class="uniprotId" id="divTit">Uniprot Id {uniprotId}</div>',
@@ -282,4 +310,5 @@ Ext.define ("TD.controller.TargetInfo", {
 		)
 		return tpl
 	}
+ */
 })

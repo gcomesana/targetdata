@@ -4,7 +4,8 @@
  * tabpanel.
  */
 // TODO Refactorizar esto porque se está yendo de madre. Otra clase y/o ver los static
-Ext.require (["TD.view.tab.InfoFieldset", "TD.view.tab.TargetGenericPanel", "TD.view.tab.TargetInfoPanel"])
+Ext.require (["TD.view.tab.InfoFieldset", "TD.view.tab.TargetGenericPanel",
+							"TD.view.tab.TargetInfoPanel", "TD.controller.util.XTplFactory"])
 Ext.define ("TD.controller.util.TargetInfoUtil", {
 	uniprotJson: {},
 
@@ -33,7 +34,7 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 			var uniprotId = id
 
 			var properUrl = self.getProperUri()
-//			properUrl = "resources/data/p23486new.json"
+			properUrl = "resources/data/p62258.json"
 			Ext.Ajax.request({
 	//			url: "http://ws.bioinfo.cnio.es/OpenPHACTS/cgi-bin/uniFetcher.pl",
 	//			url: "/cgi-bin/uniFetcher.pl",
@@ -51,12 +52,14 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 					var view = Ext.ComponentQuery.query ('#infoPanel')
 					var infoTab = Ext.ComponentQuery.query ('viewport > panel > targetinfo')
 					var emptyJson = {uniprotId: opts.params.id}
-					tpl = self.createTitleInfoXTpl ()
+//					tpl = self.createTitleInfoXTpl ()
+					tpl = TD.controller.util.XTplFactory.createTitleInfoXTpl()
 //					tpl.overwrite(infoTab[0].body, emptyJson)
 
 // Check whether or not the response is empty
 					if (response.responseText.length == 0) {
-						tpl = self.createEmptyTpl(opts.params.id)
+//						tpl = self.createEmptyTpl(opts.params.id)
+						tpl = TD.controller.util.XTplFactory.createEmptyTpl()
 						tpl.append(view[0].body, {})
 					}
 					else {
@@ -97,22 +100,24 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 								title: "Citations"
 							})
 							*/
-
+/*
 							var fieldsetTit = '<div class="fieldset-nfo-title">'+accession+'</div>'
 							var newFieldSet = Ext.widget("targetinfo-fs", {
 								title: fieldsetTit,
 								id: accession+"-fieldset"
 							})
+*/
 //							var added = newFieldSet.add(citPanel)
 							var infoPanelTit = "Info for Uniprot acc <i>"+accession+"</i>"
 							var infoPanel = Ext.create ("TD.view.tab.TargetInfoPanel", {
 								id: "uniprotInfo-"+accession,
-								tpl: self.createInfoXTpl(),
+//								tpl: self.createInfoXTpl(),
+								tpl: TD.controller.util.XTplFactory.createInfoXTpl(),
 								tplObj: myJsonObj,
 								title: infoPanelTit,
 								collapsed: false
 							})
-							added = newFieldSet.add(infoPanel)
+//							added = newFieldSet.add(infoPanel)
 
 //							tpl = self.createInfoXTpl ()
 //							tpl.overwrite(infoPanel.getEl(), myJsonObj)
@@ -247,160 +252,8 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 				return elem.cat == "uniprot"
 			})
 			return uri[0].url
-		}, // EO getProperUri
+		} // EO getProperUri
 
-
-
-/**
- * Creates a XTemplate for a empty response of a uniprot request.
- * @param reqId, the requested id which does not have any uniprot entry
- */
-		createEmptyTpl: function (reqId) {
-			var tpl = new Ext.XTemplate (
-				'<div class="infoJson">There is no result for the requested Uniprot id ('+reqId+').</div>'
-			)
-			return tpl
-		},
-
-
-
-/**
- * Creates a title with the uniprot id requested and the additinal accession
- * numbres if the xml file holds more than one
- */
-		createTitleInfoXTpl: function () {
-			var tpl = new Ext.XTemplate (
-				'<div id="divTit" class="uniprotId">Uniprot Id {uniprotId}</div>'
-			)
-			return tpl
-		},
-
-/*
-var resultTpl = new Ext.XTemplate(
-	'<tpl for=".">',
-	'<div class="search-item">',
-	'<a id={[this.getLinkId()]} href="violation.aspx?violationid={slvha}">',
-	'<img src="images/icons/home.gif" style="float:left;padding-right:2px">{number}&nbsp;{street}',
-	'</a>',
-	'<p>Owners:&nbsp;{owners}',
-	'<br/>Flag Code:&nbsp;{flag}',
-	'<br/>Number of Violations:&nbsp;[{summary}]</p>',
-	'</div>',
-	'</tpl>', {
-		getLinkId: function(values) {
-			var result = Ext.id();
-			this.addListener.defer(1, this, [result]);
-			return result;
-		},
-		addListener: function(id) {
-			Ext.get(id).on('click', function(e) {
-				e.stopEvent();
-				alert('link ' + id + ' clicked');
-			})
-		}
-	})
-*/
-
-/**
- * Creates a XTemplate to display the result of a successful uniprot request
- */
-		createInfoXTpl: function () {
-			var tpl = new Ext.XTemplate (
-				'<div id="divNames"class="nameCat">Name</div>',
-				'<div class="infoJson">{fullName}',
-				'<tpl if="shortName != &quot;&quot;"> ({shortName})</tpl>',
-				'<br/><small>(<i>{existence}</i>)</small>',
-				'</div>',
-				'<div id="divSeq" class="sequence">{shortSeq}</div>',
-				'<tpl if="geneNames.length &gt; 0">',
-				'<div id="divGenes" class="nameCat">Genes</div>',
-				'<tpl for="geneNames">',
-					'<li class="infoList">{_text_} (<i>{_at_type}</i>)</li>',
-				'</tpl>',
-				'</div>',
-				'</tpl>', // EO if geneNames.length
-				'<tpl if="organismName != &quot;&quot;">',
-				'<div id="divOrganism" class="nameCat">Organism</div>',
-				'<div class="infoJson">{organismName}</div>',
-				'</tpl>',
-
-				'<tpl if="functionComment != &quot;&quot;">',
-				'<div id="divFunction" class="nameCat">Function</div>',
-				'<div class="infoJson">{functionComment}</div>',
-				'</tpl>', {
-					addListener: function(id) {
-						Ext.get(id).on('click', function(e) {
-							e.stopEvent();
-							alert('link ' + id + ' clicked');
-						})
-					} // addListener
-				}
-			)
-			return tpl
-		}, // EO createXTemplate
-
-
-
-
-
-
-
-
-
-
-/**
- * Retrieve the information about citations, if exist, from the uniprot json object.
- * Also, retrieves the abstract of the papers by ajax-requesting to entrez.
- * Only citations with entrez reference number will be listed (they are
- * considered as the trustworthy ones)
- */
-		citationInfo: function (jsonObj, entryIdx) {
-
-			var entrezJson = []
-			var citations = JSONSelect.match(".reference .citation", jsonObj)
-			var pubmedCits = JSONSelect.match (".dbReference :has(._at_type:val(\"PubMed\"))", citations)
-			var numPubmedCits = pubmedCits.length
-
-			Ext.Array.each(pubmedCits, function (item, index, cits) {
-				// get info from pubmed
-				Ext.Ajax.request({
-					url: "resources/data/pubmedEntry.json",
-// http://www.ncbi.nlm.nih.gov/pubmed/2111111 -2111111- del json de uniprot
-					
-					mehtod: "GET",
-
-					failure: function (response, opts) {
-						console.error ("Error in ajax call")
-						console.error (response)
-					},
-
-					success: function (response, opts) {
-						console.info ("index inside citation ajax: "+index)
-					}
-				})
-			})
-	
-			console.info (pubmedCits.length)
-
-			return entrezJson
-		},
-
-
-	/**
-	 * Create the template to display the citations. Gets the right json object to
-	 * "feed" the template from the citationInfo method
-	 *
-	 * @param jsonObj, the object for the current accession
-	 */
-		createCitationXTpl: function (jsonObj) {
-			var citJson = TD.controller.util.TargetInfo.citationInfo(jsonObj)
-
-			var tpl = new Ext.XTemplate (
-				'<div id="divNames"class="nameCat">Citation</div>'
-			)
-			return tpl
-		}
-		
 	}, // EO statics
 
 
