@@ -34,7 +34,7 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 			var uniprotId = id
 
 			var properUrl = self.getProperUri()
-			properUrl = "resources/data/p62258.json"
+//			properUrl = "resources/data/p62258.json"
 			Ext.Ajax.request({
 	//			url: "http://ws.bioinfo.cnio.es/OpenPHACTS/cgi-bin/uniFetcher.pl",
 	//			url: "/cgi-bin/uniFetcher.pl",
@@ -89,24 +89,6 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 							var accessions = JSONSelect.match (".accession", jsonObj)
 							var accession = (accessions[0].length)? accessions[0][0]._text_: accessions[0]._text_
 
-// create the citation panel and "cache" the template, which will be rendered
-// when rendering the panel
-							/*
-							var citationObj = TargetInfoCls.citationInfo(entryOne, 0)
-							var citPanel = Ext.widget("targetinfo", {
-								id: "citation-"+accession,
-								tpl: self.createCitationXTpl (),
-//								tplObj: citationObj,
-								title: "Citations"
-							})
-							*/
-/*
-							var fieldsetTit = '<div class="fieldset-nfo-title">'+accession+'</div>'
-							var newFieldSet = Ext.widget("targetinfo-fs", {
-								title: fieldsetTit,
-								id: accession+"-fieldset"
-							})
-*/
 //							var added = newFieldSet.add(citPanel)
 							var infoPanelTit = "Info for Uniprot acc <i>"+accession+"</i>"
 							var infoPanel = Ext.create ("TD.view.tab.TargetInfoPanel", {
@@ -123,6 +105,14 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 //							tpl.overwrite(infoPanel.getEl(), myJsonObj)
 							view[0].add(infoPanel)
 							infoPanel.tpl.addListener('divSeq')
+
+							var tabPanel = Ext.getCmp("centerTabs")
+							var tabItems = tabPanel.items.items
+							Ext.each (tabItems, function (item, index, elems) {
+								console.info ("*** -> "+item.getId())
+								item.setDisabled(false)
+							})
+
 						}
 						catch (e) {
 							console.error (e.name)
@@ -256,15 +246,5 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 
 	}, // EO statics
 
-
-
-/**
- * Retrieves information of related sources by ajax-requestion to several sources
- * via custom cgi scripts
- */
-	referencesInfo: function () {
-
-
-	} // EO referencesInfo
 
 })

@@ -1,8 +1,10 @@
 // Ext.require (["TD.controller.util.TargetInfoUtil"])
 
 Ext.define ("TD.controller.TargetInfo", {
-	views: ["form.FormSearch", "tab.TargetInfoPanel"],
-
+	views: ["form.FormSearch", "tab.TargetInfoPanel", "KeggPathwaysGrid"],
+	stores: ["KeggPathways"],
+	models: ["KeggPathway"],
+	
 	extend: "Ext.app.Controller",
 	requires: ['TD.controller.util.TargetInfoUtil', 'TD.controller.util.XTplFactory'],
 
@@ -21,7 +23,8 @@ Ext.define ("TD.controller.TargetInfo", {
 	],
 
 
-//	uniprotJson: {},
+
+	currentUniprot: '',
 
 	targetInfoUtil: null,
 
@@ -50,20 +53,69 @@ Ext.define ("TD.controller.TargetInfo", {
 
 			'viewport center-tabs panel': {
 				activate: this.onPanelShow
+			},
+
+			'#pathways-grid': {
+//				selectionchange: this.onPathwaySelect,
+				itemclick: this.onPathwayClick
 			}
 		})
 	},
 
 
 
+	onPathwaySelect: function (selModel, selections, opts) {
+console.info ("onPathwaySelect -> selection length: "+selModel.getSelection().length+" vs "+selections.length)
+
+
+	},
+
+
+
+	onPathwayClick: function (grid, record, item, index, ev, opts) {
+console.info ("onPathwayClick -> gridId: "+grid.getId()+" on index: "+index)
+		var thePanel = Ext.getCmp("panel4PathwayInfo")
+
+		thePanel.pathTpl.overwrite(thePanel.body, {})
+		Ext.Ajax.request({
+			url: '/cgi-bin/pathway_info.rb',
+			params: {
+				pathway: record.raw[0]
+			},
+
+			success: function(response){
+				var jsonResp = response.responseText;
+				var jsonObj = Ext.JSON.decode (jsonResp)
+				var imgSmallName = record.raw[0].substr(3)
+				jsonObj['url-img-small'] = 'http://www.genome.jp/kegg/misc/thumbnail/map'+imgSmallName+'.gif'
+				jsonObj['url-img-big'] = 'http://www.genome.jp/kegg/pathway/hsa/'+record.raw[0]+'.png'
+				jsonObj['keggid'] = record.raw[0]
+				
+				thePanel.pathJson = jsonObj
+				thePanel.pathTpl.overwrite(thePanel.body, thePanel.pathJson)
+//						comp.add (pathwayTpl)
+					// process server response here
+			},
+
+			failure: function (response, opts) {
+				console.error ("Error in ajax call")
+				console.error (response)
+			}
+		}); // EO Ajax req
+
+	},
+
+
 
 	onPanelShow: function (theComp, opts) {
 		var compId = theComp.getId()
 		var height = theComp.getHeight()
+		
 		if (compId == 'targetcitations') {
 			var infoTpl = TD.controller.util.XTplFactory.createCitationXTpl(height)
 			var citsJson = TD.controller.util.XTplFactory.citationInfo()
 
+			theComp.removeAll()
 			var panelInfo = Ext.widget ("targetinfo", {
 				tpl: infoTpl,
 				tplObj: citsJson,
@@ -75,6 +127,59 @@ Ext.define ("TD.controller.TargetInfo", {
 				border: 0
 			})
 			theComp.add(panelInfo)
+		}
+
+////////////////////////////////////////////////////////////////////////////
+		if (compId == 'targetpathways') {
+			theComp.removeAll()
+//			var pathwayStore = Ext.data.StoreManager.lookup('keggpathways-store')
+			var pathwayStore = Ext.create ("TD.store.KeggPathways")
+			pathwayStore.proxy.extraParams = {
+				protein: Ext.getCmp('formSearch').currentUniprotId
+			}
+			pathwayStore.load()
+			var gridPathways = Ext.create("TD.view.KeggPathwaysGrid", {
+				flex: 1,
+				title: "Pathways from KEGG",
+				store: pathwayStore,
+				id: "pathways-grid"
+			})
+
+			var panelPathW = theComp.getWidth()*0.75-50
+			var panelPath = Ext.create("Ext.panel.Panel", {
+				border: 0,
+				frame: false,
+				minHeight: "800",
+				minWidth: panelPathW,
+//				width: "500",
+				id: "panel4PathwayInfo",
+				html: '<div class="citationTit">KEGG description</div>',
+
+				pathJson: null,
+				pathTpl: TD.controller.util.XTplFactory.createPathwayInfoTpl(400, panelPathW),
+
+				flex: 3,
+				margins: '0 0 0 10',
+				cls: 'backgroundRed'
+			})
+
+			var newConfig = {
+				layout: {
+						type: 'hbox',
+						padding:'5'
+				},
+//				height: 100,
+				minHeight: 75,
+//				maxHeight: 150,
+				defaults:{margins:'0 15 0 0'},
+				items: [
+					gridPathways
+					,
+					panelPath
+				]
+			}
+
+			theComp.add(Ext.apply (newConfig))
 		}
 	},
 
@@ -94,9 +199,11 @@ Ext.define ("TD.controller.TargetInfo", {
 		var theForm = btn.findParentByType("form")
 		var txtRequest = theForm.child("textfield")
 		var txtValue = txtRequest.getValue()
+		var formSearch = Ext.getCmp('formSearch')
+		formSearch.currentUniprotId = txtValue
 	//	txtValue = theForm.child ("combo").getValue()
-	
-		var self = this
+
+		Ext.getCmp('infoPanel').removeAll()
 //		self.targetInfoUtil = Ext.create ("TD.controller.util.TargetInfo", {})
 		TD.controller.util.TargetInfoUtil.uniprotReq (txtValue)
 //		self.uniprotReq (txtValue)
@@ -124,191 +231,5 @@ Ext.define ("TD.controller.TargetInfo", {
 
 
 
-/**
- * Get the main target information from the uniprot json object via an ajax call
- *
- * @param id, the uniprot id to retrieve the target
- *
-	uniprotReq: function (id) {
-		var self = this
-		var uniprotId = id
 
-// piece of snippet to get the correct url
-		var host = window.location.hostname
-		var isLocalhost = function(elem, index, array) { return elem == host }
-		var uris = this.hostLocal.some (isLocalhost)?	this.urisLocal:	this.urisProd
-		var uri = uris.filter(function (elem, index, array) {
-			return elem.cat == "uniprot"
-		})
-// console.info(uri[0].cat+":"+uri[0].url)
-
-		Ext.Ajax.request({
-//			url: "http://ws.bioinfo.cnio.es/OpenPHACTS/cgi-bin/uniFetcher.pl",
-//			url: "/cgi-bin/uniFetcher.pl",
-			url: uri[0].url,
-			params: {
-				id: uniprotId
-			},
-			method: "GET",
-
-
-			success: function (response, opts) {
-				var tpl
-
-// Get the main info from uniprot
-//				var view = Ext.ComponentQuery.query ('viewport > panel > targetinfo > panel[id="uniprotInfo"]')
-				var view = Ext.ComponentQuery.query ('viewport > panel > targetinfo')
-				if (response.responseText.length == 0) {
-					tpl = self.createEmptyTpl(opts.params.id)
-					tpl.overwrite(view[0].body, {})
-				}
-				else {
-					var jsonResp = response.responseText.replace ("$", "dollar_", "g").replace("@","at_", "g")
-					var jsonObj = Ext.JSON.decode (jsonResp)
-					self.uniprotJson = jsonObj
-					var myJsonObj = self.translateJson (jsonObj)
-					myJsonObj.uniprotId = opts.params.id
-					self.uniprotJson = myJsonObj
-					try {
-						tpl = self.createInfoXTpl ()
-					}
-					catch (e) {
-						console.error (e.name)
-						console.error (e.message)
-					}
-					tpl.overwrite(view[0].body, myJsonObj)
-				}
-
-				Ext.getBody().unmask()
-				var contentTabs = Ext.ComponentQuery.query ('viewport > tabpanel[itemId="contentTabPanel"]')
-				contentTabs[0].setActiveTab(0)
-				var infopanels = Ext.ComponentQuery.query ('viewport > tabpanel > targetinfo > panel')
-				Ext.Array.each (infopanels, function (item, index, panelsItself) {
-					item.setVisible(true)
-				})
-			},
-
-
-			failure: function (response, opts) {
-				console.error ("Error in ajax call")
-				console.error (response)
-			}
-		}) // EO Ajax.request
-	},
-
-
-	
-**
- * Custom method to convert the uniprot json into a json object with the
- * right elements to represent as a target information
- * @param myJson, the json object already converted from the text received
- * from uniprot cgi script as text
- *
-	translateJson: function (myJson) {
-//		var jsonObj = Ext.JSON.decode (myJson)
-		var jsonObj = myJson
-		var newJsonStr = "{"
-
-		var fullName =
-			JSONSelect.match (".uniprot .entry .protein .recommendedName .fullName ._text_", jsonObj)
-		if (fullName.length > 0) {
-			newJsonStr += '"fullName": "'+fullName[0]+'",'
-		}
-		else
-			newJsonStr += '"fullName": "",'
-
-		var shortName =
-			JSONSelect.match (".uniprot .entry .protein .recommendedName .shortName ._text_", jsonObj)
-		if (shortName.length > 0) {
-			newJsonStr += '"shortName": "'+shortName[0]+'",'
-		}
-		else
-			newJsonStr += '"shortName": "",'
-
-// geneName is an array of two arrays, as ...name is an array and
-// JSONSelect returns always arrays
-		var geneName = JSONSelect.match(".uniprot .entry .gene .name", jsonObj)
-		if (geneName.length > 0) {
-			var geneNames = geneName[0] // this is another array!!!
-
-			newJsonStr += '"geneNames":['
-			Ext.Array.each(geneNames, function (item, index, genes) {
-				newJsonStr += '{'
-				for (var key in item) {
-					newJsonStr += '"'+key+'":"'+item[key]+'",'
-				}
-				newJsonStr = newJsonStr.substr(0, newJsonStr.length-1)
-				newJsonStr += "},"
-			})
-	// sometimes geneNames is an array and sometimes is an object...
-			if (geneNames.length > 0 || Ext.isArray(geneNames) == false)
-				newJsonStr = newJsonStr.substr(0, newJsonStr.length-1)
-			newJsonStr += "],"
-		}
-
-		var comment = JSONSelect.match(".uniprot .entry .comment :has(._at_type:val(\"function\"))", jsonObj)
-		var commentFunc = comment.length > 0? comment[0].text._text_: ''
-		newJsonStr += '"functionComment": "'+commentFunc+'",'
-
-		var organism
-		organism = JSONSelect.match('.uniprot .entry .organism .name :has(._at_type:val("common"))', jsonObj)
-		var organismCommon = organism.length > 0? organism[0]._text_: ''
-		newJsonStr += '"organismName": "'+organismCommon+'",'
-
-		newJsonStr += "}"
-// OJO!!!!!!! Shouldn't be necessary (or yes...) but XTemplate don't support $ and @
-		newJsonStr = newJsonStr.replace("$","", "g")
-		newJsonStr = newJsonStr.replace("@", "", "g")
-
-		var newJsonObj = Ext.JSON.decode (newJsonStr)
-
-		return newJsonObj
-	},
-
-
-	**
-	 * Creates a XTemplate for a empty response of a uniprot request.
-	 * @param reqId, the requested id which does not have any uniprot entry
-	 *
-	createEmptyTpl: function (reqId) {
-		var tpl = new Ext.XTemplate (
-			'<div class="uniprotId" id="divTit">Uniprot Id '+reqId+'</div>',
-			'<div class="infoJson">There is no result for the requested Uniprot id ('+reqId+').</div>'
-		)
-
-		return tpl
-	},
-
-
-	**
-	 * Creates a XTemplate to display the result of a successful uniprot request
- 	 *
-	createInfoXTpl: function () {
-		var tpl = new Ext.XTemplate (
-			'<div class="uniprotId" id="divTit">Uniprot Id {uniprotId}</div>',
-			'<div id="divNames"class="nameCat">Name</div>',
-			'<div class="infoJson">{fullName}',
-			'<tpl if="shortName != &quot;&quot;"> ({shortName})</tpl>',
-			'</div>',
-			'<tpl if="geneNames.length &gt; 0">',
-			'<div id="divGenes" class="nameCat">Genes</div>',
-			'<tpl for="geneNames">',
-				'<li class="infoList">{_text_} (<i>{_at_type}</i>)</li>',
-			'</tpl>',
-			'</div>',
-			'</tpl>', // EO if geneNames.length
-			'<tpl if="organismName != &quot;&quot;">',
-			'<div id="divOrganism" class="nameCat">Organism</div>',
-			'<div class="infoJson">{organismName}</div>',
-			'</tpl>',
-
-			'<tpl if="functionComment != &quot;&quot;">',
-			'<div id="divFunction" class="nameCat">Function</div>',
-			'<div class="infoJson">{functionComment}</div>',
-			'</tpl>'
-
-		)
-		return tpl
-	}
- */
 })

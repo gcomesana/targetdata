@@ -131,7 +131,7 @@ Ext.define ("TD.controller.util.XTplFactory", {
 					hasAuthors: function (authorList) {
 						return (authorList.length > 0)
 					},
-
+// TODO PONER UN TOOLTIP PARA CUANDO EL RATÓN PASE POR ENCIMA
 					mouseOver: function () {
 						console.info ("on mouse over...")
 						Ext.get(id).on('click', function(e) {
@@ -141,9 +141,40 @@ Ext.define ("TD.controller.util.XTplFactory", {
 					}
 				}
 			)
-
 			return xTpl
+		},
+
+
+
+/**
+ * Creates a template to display pathway information.
+ * @return the template
+ */
+		createPathwayInfoTpl: function (h, w) {
+			var divStr = '<div id="divPathway" style="overflow-y: scroll; '
+			divStr += w != undefined? 'width: '+w+'px; ': ''
+			divStr += h != undefined? 'height:'+h+'px; ': ''
+			divStr += '">'
+
+			var pathwayTpl = new Ext.XTemplate (
+//		'<tpl if="this.isData(name) && this.isData(description)">',
+				divStr,
+				'<p class="citationTit">Kegg id: {keggid}</p>',
+				'<p style="margin-bottom: 10px"><b>Name</b>: {name}</p>',
+				'<p style="margin-bottom: 20px"><b>Description</b>: {description}</p>',
+				'<p><a href="{url-img-big}" target="_blank" style="text-decoration: none">',
+					'<img src="{url-img-small}" alt="{name}"/>',
+				'</a></p>',
+				'</div>',
+				 {
+					isData: function (jsonAttr) {
+						return jsonAttr != undefined
+					}
+				}
+			)
+			return pathwayTpl
 		}
+
 
 	} // EO statics
 

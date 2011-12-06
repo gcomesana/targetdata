@@ -28,6 +28,7 @@
 		'TD.view.panel.CenterTabs',
 		'TD.view.tab.TargetGenericPanel',
 		'TD.view.Viewport'
+
 	]);
 	Ext.Ajax.disableCaching = false;
 

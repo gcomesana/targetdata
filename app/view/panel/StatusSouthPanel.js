@@ -10,9 +10,9 @@ Ext.define("TD.view.panel.StatusSouthPanel", {
 	maxSize: 200,
 	collapsible: true,
 	collapsed: true,
-	title: 'Panel South',
+	title: 'Status Panel',
 	margins: '0 0 0 0',
-	html: "<h2>This is phantastic</h2>",
+//	html: "<h2>This is phantastic</h2>",
 
 	initComponent: function () {
 		this.callParent()

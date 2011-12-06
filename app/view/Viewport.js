@@ -22,7 +22,7 @@ Ext.define("TD.view.Viewport", {
 				region: "north",
 				margin: "5, 0, 0, 10",
 				border: 2
-			},
+			},/*
 			{
 				// lazily created panel (xtype:'panel' is default)
 				region: 'south',
@@ -35,11 +35,11 @@ Ext.define("TD.view.Viewport", {
 				maxSize: 200,
 				collapsible: true,
 				collapsed: true,
-				title: 'South',
+				title: 'Status',
 				margins: '0 0 0 0',
 				html: "<h2>Message area (in progress)</h2>"
 
-			},
+			}, */
 			{
 				xtype: "tab-west-panel",
 				region: 'west',

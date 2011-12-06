@@ -90,3 +90,7 @@ a div {
 	text-decoration: none;
 	color: #000000;
 }
+
+.backgroundRed {
+	background-color: red;
+}

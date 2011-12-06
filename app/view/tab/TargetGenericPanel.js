@@ -16,7 +16,10 @@ Ext.define ("TD.view.tab.TargetGenericPanel", {
 		type: "vbox"
 	},
 
-	defaults: {margins: '0 0 10 0'},
+	defaults: {
+		margins: '0 0 10 0',
+		padding: '15px 15px 15px 15px'
+	},
 
 	alreadyLoaded: false
 

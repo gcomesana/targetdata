@@ -30,13 +30,13 @@ Ext.define ("TD.view.panel.CenterTabs", {
 				valueField: "id"
 			})]
 */
-		}, {
+		}, /* {
 //								xtype: "targetfamily"
 			xtype: "target-generic-panel",
 			id: "targetFamily",
 			html: '<div id="workinprogress-1" class="workinprogress-cls"> <h1>ContentTabPanel: Work in progress!!</h1></div>',
 			title: 'Target family'
-		}, /* {
+		},  {
 			xtype: "target-generic-panel",
 			html: '<div id="workinprogress-1" class="workinprogress-cls"><h1>Work in progress!!</h1></div>',
 			title: 'Functional residues',
@@ -44,17 +44,21 @@ Ext.define ("TD.view.panel.CenterTabs", {
 		},*/{
 			xtype: "target-generic-panel",
 			title: 'Citations',
-			id: "targetcitations"
+			id: "targetcitations",
+			disabled: true
 		}, {
 			xtype: "target-generic-panel",
-			html: '<div id="workinprogress-1" class="workinprogress-cls"> <h1>ContentTabPanel: Work in progress!!</h1></div>',
+//			html: '<div id="workinprogress-1" class="workinprogress-cls"> <h1>ContentTabPanel: Work in progress!!</h1></div>',
 			title: 'Pathways',
-			id: "targetpathways"
+			id: "targetpathways",
+			layout: "fit",
+			disabled: true
 		}, {
 			xtype: "target-generic-panel",
 			html: '<div id="workinprogress-1" class="workinprogress-cls"> <h1>Work in progress!!</h1></div>',
 			title: 'Interactions',
-			id: "targetInteractions"
+			id: "targetInteractions",
+			disabled: true
 		}
 	],
 

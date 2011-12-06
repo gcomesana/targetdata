@@ -9,6 +9,8 @@ Ext.define ("TD.view.form.FormSearch", {
 	layout: "anchor",
 
 	border: 0,
+	id: 'formSearch',
+	currentUniprotId: '',
 
 	items: [{
 		xtype: "combo-protein-lookup"

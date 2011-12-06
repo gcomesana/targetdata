@@ -13,7 +13,7 @@ Ext.define ("TD.controller.CenterTabs", {
 	init: function () {
 		this.control({
 			'viewport center-tabs panel': {
-				activate: this.onPanelShow
+//				activate: this.onPanelShow
 			}
 		})
 
@@ -22,7 +22,5 @@ Ext.define ("TD.controller.CenterTabs", {
 
 	onPanelShow: function (aTab, opts) {
 		var theId = aTab.getId()
-
-		console.info ("controller.CenterTabs: activate '"+theId+"' tab")
 	}
 })
