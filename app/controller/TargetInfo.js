@@ -131,11 +131,15 @@ console.info ("onPathwayClick -> gridId: "+grid.getId()+" on index: "+index)
 
 ////////////////////////////////////////////////////////////////////////////
 		if (compId == 'targetpathways') {
+			var uniprotJson = TD.controller.util.TargetInfoUtil.uniprotJson
+			var gene = JSONSelect.match(".gene .name :has(._at_type:val(\"primary\"))", uniprotJson)
+
 			theComp.removeAll()
 //			var pathwayStore = Ext.data.StoreManager.lookup('keggpathways-store')
 			var pathwayStore = Ext.create ("TD.store.KeggPathways")
 			pathwayStore.proxy.extraParams = {
-				protein: Ext.getCmp('formSearch').currentUniprotId
+//				protein: Ext.getCmp('formSearch').currentUniprotId
+				protein: gene[0]._text_
 			}
 			pathwayStore.load()
 			var gridPathways = Ext.create("TD.view.KeggPathwaysGrid", {
@@ -205,7 +209,7 @@ console.info ("onPathwayClick -> gridId: "+grid.getId()+" on index: "+index)
 
 		Ext.getCmp('infoPanel').removeAll()
 //		self.targetInfoUtil = Ext.create ("TD.controller.util.TargetInfo", {})
-		TD.controller.util.TargetInfoUtil.uniprotReq (txtValue)
+		TD.controller.util.TargetInfoUtil.uniprotReq (Ext.htmlEncode(txtValue))
 //		self.uniprotReq (txtValue)
 	},
 

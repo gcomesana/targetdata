@@ -19,9 +19,9 @@ Ext.define("TD.view.Viewport", {
 		this.items = [
 			{
 				xtype:"northpanel",
-				region: "north",
-				margin: "5, 0, 0, 10",
-				border: 2
+				region: "north"
+//				margin: "5, 0, 0, 10"
+//				border: 0
 			},/*
 			{
 				// lazily created panel (xtype:'panel' is default)

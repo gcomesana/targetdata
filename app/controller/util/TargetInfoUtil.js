@@ -7,7 +7,6 @@
 Ext.require (["TD.view.tab.InfoFieldset", "TD.view.tab.TargetGenericPanel",
 							"TD.view.tab.TargetInfoPanel", "TD.controller.util.XTplFactory"])
 Ext.define ("TD.controller.util.TargetInfoUtil", {
-	uniprotJson: {},
 
 	statics: {
 
@@ -20,11 +19,11 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 		],
 
 		urisProd: [
-			{"cat":"uniprot", "url":"cgi-bin/uniFetcher.pl"},
-			{"cat":"pubmedAbstrac", "url": "cgi-bin/togoAbstractFetch.pl"}
+			{"cat":"uniprot", "url":"/cgi-bin/uniFetcher.pl"},
+			{"cat":"pubmedAbstrac", "url": "/cgi-bin/togoAbstractFetch.pl"}
 		],
 
-
+		uniprotJson: {},
 /**
  * Get the main target information from the uniprot json object via an ajax call
  * @param id, the uniprot id to retrieve the target
@@ -67,7 +66,6 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 // create a fieldset for it
 // for each fieldset, create a targetinfo for information and citation
 // and, if so, for database references...
-
 						var TargetInfoCls = TD.controller.util.TargetInfoUtil
 						var jsonObj = Ext.JSON.decode (response.responseText)
 						jsonObj.uniprotId = opts.params.id
@@ -99,20 +97,19 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 								title: infoPanelTit,
 								collapsed: false
 							})
-//							added = newFieldSet.add(infoPanel)
-
-//							tpl = self.createInfoXTpl ()
-//							tpl.overwrite(infoPanel.getEl(), myJsonObj)
 							view[0].add(infoPanel)
-							infoPanel.tpl.addListener('divSeq')
+//							var uniprotObj = TD.controller.util.TargetInfoUtil.uniprotJson
+//							var seq = JSONSelect.match (".sequence ._text_", uniprotObj)
+							infoPanel.tpl.createToolTip(JSONSelect.match(".sequence ._text_", jsonObj)[0])
 
 							var tabPanel = Ext.getCmp("centerTabs")
 							var tabItems = tabPanel.items.items
 							Ext.each (tabItems, function (item, index, elems) {
-								console.info ("*** -> "+item.getId())
 								item.setDisabled(false)
-							})
 
+								if (index == 0)
+									tabPanel.setActiveTab(item)
+							})
 						}
 						catch (e) {
 							console.error (e.name)
@@ -121,7 +118,6 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 //						tpl.append(view[0].body, myJsonObj)
 					}
 					Ext.getBody().unmask()
-
 				}, // EO success
 
 
@@ -244,7 +240,7 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 			return uri[0].url
 		} // EO getProperUri
 
-	}, // EO statics
+	} // EO statics
 
 
 })

@@ -8,7 +8,7 @@ Ext.define ("TD.store.KeggPathways", {
 //			url: "resources/data/p53-paths.json",
 			url: "/cgi-bin/get_pathways.rb",
 			extraParams: {
-				protein: "P62258"
+				protein: "CDK5"
 			},
 
 			reader: {
@@ -17,6 +17,6 @@ Ext.define ("TD.store.KeggPathways", {
 		},
 		model: "TD.model.KeggPathway",
 //		fields: ["pathway"],
-		autoLoad: true,
+//		autoLoad: true,
 		storeId: "keggpathways-store"
 })

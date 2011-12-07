@@ -58,12 +58,29 @@ Ext.define ("TD.controller.util.XTplFactory", {
 				'<div id="divFunction" class="nameCat">Function</div>',
 				'<div class="infoJson">{functionComment}</div>',
 				'</tpl>', {
-					addListener: function(id) {
-						Ext.get(id).on('click', function(e) {
+					addListener: function(longSeq) {
+						Ext.get('divSeq').on('mouseover', function(e) {
 							e.stopEvent();
-							alert('link ' + id + ' clicked');
+							console.info("click on seq...")
+							
+							Ext.create("Ext.tip.ToolTip", {
+								target: 'divSeq',
+								anchor: 'bottom',
+								trackMouse: 'true',
+								html: '<div class="sequence">'+longSeq+'</div>',
+								width: 500
+							})
 						})
-					} // addListener
+					}, // addListener
+					createToolTip: function (longSeq) {
+						Ext.create("Ext.tip.ToolTip", {
+							target: 'divSeq',
+							anchor: 'bottom',
+							trackMouse: 'true',
+							html: '<div class="sequence" style="width:500">'+longSeq+'</div>',
+							width: 500
+						})
+					}
 				}
 			)
 			return tpl
@@ -114,7 +131,7 @@ Ext.define ("TD.controller.util.XTplFactory", {
 
 			var xTpl = new Ext.XTemplate (
 				'<div id="divNames"class="citationTit">Publications from PubMed</div>',
-				'<div id="divCitations" style="overflow: scroll;height: '+(panelHeight-20)+'px">',
+				'<div id="divCitations" style="overflow: scroll;height: '+(panelHeight-70)+'px">',
 				'<tpl for=".">',
 				'<a href="',
 				'<tpl for="dbReference">',
