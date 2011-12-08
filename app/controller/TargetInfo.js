@@ -27,6 +27,7 @@ Ext.define ("TD.controller.TargetInfo", {
 	currentUniprot: '',
 
 	targetInfoUtil: null,
+	stringBaseUri: null,
 
 	init: function () {
 		targetInfoUtil = TD.controller.util.TargetInfoUtil
@@ -110,7 +111,8 @@ console.info ("onPathwayClick -> gridId: "+grid.getId()+" on index: "+index)
 	onPanelShow: function (theComp, opts) {
 		var compId = theComp.getId()
 		var height = theComp.getHeight()
-		
+		var uniprotJson = TD.controller.util.TargetInfoUtil.uniprotJson
+
 		if (compId == 'targetcitations') {
 			var infoTpl = TD.controller.util.XTplFactory.createCitationXTpl(height)
 			var citsJson = TD.controller.util.XTplFactory.citationInfo()
@@ -131,7 +133,6 @@ console.info ("onPathwayClick -> gridId: "+grid.getId()+" on index: "+index)
 
 ////////////////////////////////////////////////////////////////////////////
 		if (compId == 'targetpathways') {
-			var uniprotJson = TD.controller.util.TargetInfoUtil.uniprotJson
 			var gene = JSONSelect.match(".gene .name :has(._at_type:val(\"primary\"))", uniprotJson)
 
 			theComp.removeAll()
@@ -163,8 +164,7 @@ console.info ("onPathwayClick -> gridId: "+grid.getId()+" on index: "+index)
 				pathTpl: TD.controller.util.XTplFactory.createPathwayInfoTpl(400, panelPathW),
 
 				flex: 3,
-				margins: '0 0 0 10',
-				cls: 'backgroundRed'
+				margins: '0 0 0 10'
 			})
 
 			var newConfig = {
@@ -172,9 +172,7 @@ console.info ("onPathwayClick -> gridId: "+grid.getId()+" on index: "+index)
 						type: 'hbox',
 						padding:'5'
 				},
-//				height: 100,
 				minHeight: 75,
-//				maxHeight: 150,
 				defaults:{margins:'0 15 0 0'},
 				items: [
 					gridPathways
@@ -182,8 +180,129 @@ console.info ("onPathwayClick -> gridId: "+grid.getId()+" on index: "+index)
 					panelPath
 				]
 			}
-
 			theComp.add(Ext.apply (newConfig))
+		}
+
+
+////////////////////////////////////////////////////////////////////////////
+		if (compId == "targetInteractions") {
+			theComp.removeAll()
+			stringBaseUri = "http://string-db.org/api/image/network?identifier=xxxx&required_score=950&limit=10&network_flavor=evidence";
+/*
+			var netImgUri = 'http://string-db.org/api/image/network?identifier=9606.ENSP00000264335&required_score=950&limit=10&network_flavor=evidence'
+			var networkImg = Ext.create("Ext.Img", {
+				src: "http://string-db.org/api/image/network?identifier=9606.ENSP00000264335&required_score=950&limit=10&network_flavor=evidence",
+				height: 105,
+				width: 640,
+				style: {
+					padding: '0 10 0 50'
+				}
+			})
+*/
+			var intPanel = Ext.create ("TD.view.tab.TargetInfoPanel", {
+//								tpl: self.createInfoXTpl(),
+				tpl: TD.controller.util.XTplFactory.createIntAnnotationTpl(),
+				tplObj: {},
+				collapsed: false,
+//				frame: false,
+				frameHeader: false,
+//				border: 0,
+				collapsible: false,
+				id: "panel4Interactions",
+				maxWidth: 550,
+				minWidth: 400,
+				width: 550,
+
+//				maxHeight: 700,
+				height: 700,
+//				minHeight: 500,
+
+				title: "Interactions from STRING db",
+				
+				listeners: {
+					'render': function (comp, opts) {
+						var thePanel = comp
+						var uniprotAcc = uniprotJson.uniprot.entry.accession.length?
+														uniprotJson.uniprot.entry.accession[0]._text_:
+														uniprotJson.uniprot.entry.accession._text_
+
+//						thePanel.tpl.overwrite(thePanel.body, {})
+						Ext.Ajax.request({
+							url: '/cgi-bin/string_resolve.rb',
+							params: {
+								uniprotAcc: uniprotAcc
+							},
+
+							success: function(response){
+								var jsonResp = response.responseText;
+								var jsonObj = Ext.JSON.decode (jsonResp)
+								thePanel.jsonObj = jsonObj[0]
+
+								stringBaseUri = stringBaseUri.replace ("xxxx", thePanel.jsonObj.stringId)
+								thePanel.jsonObj.imgUri = stringBaseUri
+								thePanel.jsonObj.uniprotAcc = uniprotAcc
+
+								thePanel.tpl.overwrite(thePanel.body, thePanel.jsonObj)
+							},
+
+							failure: function (response, opts) {
+								console.error ("Error in ajax call")
+								console.error (response)
+							}
+						}); // EO Ajax req
+					} // EO render
+				} // EO listeners
+			})
+
+/*
+			var panelInt = Ext.create ("Ext.panel.Panel", {
+				layout: {
+					type: 'hbox',
+					padding:'5'
+				},
+				id: "panel4Interactions",
+				tpl: TD.controller.util.XTplFactory.createIntAnnotationTpl(),
+				jsonObj: {},
+//				border: 0,
+				frame: true,
+				frameHeader: true,
+				minWidth: 800,
+				maxWidth: 800,
+				items: [
+					networkImg
+				],
+
+				listeners: {
+					'render': function (comp, opts) {
+						var thePanel = comp
+
+						thePanel.tpl.overwrite(thePanel.body, {})
+						Ext.Ajax.request({
+							url: '/cgi-bin/string_resolve.rb',
+							params: {
+								uniprotAcc: 'P62258'
+							},
+
+							success: function(response){
+								var jsonResp = response.responseText;
+								var jsonObj = Ext.JSON.decode (jsonResp)
+								thePanel.jsonObj = jsonObj
+
+								thePanel.tpl.overwrite(thePanel.body, thePanel.jsonObj[0])
+				//						comp.add (pathwayTpl)
+									// process server response here
+							},
+
+							failure: function (response, opts) {
+								console.error ("Error in ajax call")
+								console.error (response)
+							}
+						}); // EO Ajax req
+					} // EO render
+				} // EO listeners
+			}) // EO create panel
+			*/
+			theComp.add (intPanel)
 		}
 	},
 

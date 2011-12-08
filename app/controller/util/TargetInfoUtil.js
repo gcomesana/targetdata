@@ -95,7 +95,8 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 								tpl: TD.controller.util.XTplFactory.createInfoXTpl(),
 								tplObj: myJsonObj,
 								title: infoPanelTit,
-								collapsed: false
+								collapsed: false,
+								collapsible: false
 							})
 							view[0].add(infoPanel)
 //							var uniprotObj = TD.controller.util.TargetInfoUtil.uniprotJson
@@ -106,7 +107,6 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 							var tabItems = tabPanel.items.items
 							Ext.each (tabItems, function (item, index, elems) {
 								item.setDisabled(false)
-
 								if (index == 0)
 									tabPanel.setActiveTab(item)
 							})

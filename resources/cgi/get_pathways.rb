@@ -23,19 +23,25 @@ res = Net::HTTP.start(url.host, url.port) {|http|
   http.request(req)
 }
 
+
 if (res.code == "500")
   jsonStr = "[]"
 
 else
-  jsonAux = res.body
-  jsonAux = jsonAux.slice(1, jsonAux.length-1)
-  paths = jsonAux.split(",")
-  jsonStr = "["
-  for path in paths
-    jsonStr += '['+ path +'],'
+  if res.body == "null"
+    jsonStr = "[]"
+    
+  else
+    jsonAux = res.body
+    jsonAux = jsonAux.slice(1, jsonAux.length-1)
+    paths = jsonAux.split(",")
+    jsonStr = "["
+    for path in paths
+      jsonStr += '['+ path +'],'
+    end
+  #  jsonStr = jsonStr.slice(0, jsonStr.length-1) + "]"
+    jsonStr = jsonStr.slice(0, jsonStr.length-1)
   end
-#  jsonStr = jsonStr.slice(0, jsonStr.length-1) + "]"
-  jsonStr = jsonStr.slice(0, jsonStr.length-1)
   
 end
 

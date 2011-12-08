@@ -36,7 +36,7 @@ Ext.define ("TD.controller.util.XTplFactory", {
  */
 		createInfoXTpl: function () {
 			var tpl = new Ext.XTemplate (
-				'<div id="divNames"class="nameCat">Name</div>',
+				'<div id="divNames" class="nameCat">Name</div>',
 				'<div class="infoJson">{fullName}',
 				'<tpl if="shortName != &quot;&quot;"> ({shortName})</tpl>',
 				'<br/><small>(<i>{existence}</i>)</small>',
@@ -77,8 +77,11 @@ Ext.define ("TD.controller.util.XTplFactory", {
 							target: 'divSeq',
 							anchor: 'bottom',
 							trackMouse: 'true',
-							html: '<div class="sequence" style="width:500">'+longSeq+'</div>',
-							width: 500
+							title: '<span style="font-size: 12px; font-weight: bold;">Target sequence</span>',
+							html: '<div class="sequenceTip">'+longSeq+'</div>',
+							maxWidth: 440,
+							autoHide: false,
+							closable: true
 						})
 					}
 				}
@@ -190,6 +193,20 @@ Ext.define ("TD.controller.util.XTplFactory", {
 				}
 			)
 			return pathwayTpl
+		},
+
+
+		createIntAnnotationTpl: function () {
+
+			var interactionTpl = new Ext.XTemplate (
+				'<div style="height: auto;">',
+				'<div class="citationTit">Interaction network for <i>{uniprotAcc}</i></div> ',
+				'<img src="{imgUri}"/><br/>',
+				'<div class="citation-even"><b>Annotaion:</b> {annotation}</div>',
+				'</div>'
+			)
+
+			return interactionTpl
 		}
 
 
