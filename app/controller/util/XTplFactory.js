@@ -118,6 +118,12 @@ Ext.define ("TD.controller.util.XTplFactory", {
 					entrezJson.push(cita)
 			})
 
+			var uniprotAcc = jsonObj.uniprot.entry.accession.length?
+														jsonObj.uniprot.entry.accession[0]._text_:
+														jsonObj.uniprot.entry.accession._text_
+
+			entrezJson.accesion = uniprotAcc
+
 			return entrezJson
 		},
 
@@ -133,7 +139,7 @@ Ext.define ("TD.controller.util.XTplFactory", {
 //			citJson = TD.controller.util.XTplFactory.citationInfo(citJson)
 
 			var xTpl = new Ext.XTemplate (
-				'<div id="divNames"class="citationTit">Publications from PubMed</div>',
+				'<div id="divNames"class="citationTit">Publications from PubMed for <i>{accesion}</i></div>',
 				'<div id="divCitations" style="overflow: scroll;height: '+(panelHeight-70)+'px">',
 				'<tpl for=".">',
 				'<a href="',
@@ -141,7 +147,7 @@ Ext.define ("TD.controller.util.XTplFactory", {
 				'<tpl if="_at_type == \'PubMed\'">http://www.ncbi.nlm.nih.gov/pubmed?term={_at_id}',
 				'" target="_blank" style="text-decoration:none"></tpl>',
 				'</tpl>', // dbReference
-				'<div id="divCit" class="{[xindex % 2 === 0 ? "citation-even" : "citation-odd"]}">',
+				'<div id="divCit{#}" class="{[xindex % 2 === 0 ? "citation-even" : "citation-odd"]}">',
 				'<tpl for="authorList.person">{_at_name},</tpl><tpl if="this.hasAuthors(authorList.person)"><br/></tpl>',
 				'<b>{title._text_}</b><br/>',
 				'<i>{_at_name}</i> {_at_volume} ({_at_date})',
@@ -151,16 +157,23 @@ Ext.define ("TD.controller.util.XTplFactory", {
 					hasAuthors: function (authorList) {
 						return (authorList.length > 0)
 					},
-// TODO PONER UN TOOLTIP PARA CUANDO EL RATÓN PASE POR ENCIMA
-					mouseOver: function () {
-						console.info ("on mouse over...")
-						Ext.get(id).on('click', function(e) {
-							e.stopEvent();
-							alert('link ' + id + ' clicked');
+					createToolTips: function (jsonObj) {
+						Ext.each (jsonObj, function (cita, index, citations) {
+							var htmlStr = "Click to access the article '<i>"+cita.title._text_+"</i>'"
+							var pubmed = JSONSelect.match('.dbReference :has(._at_type:val(\"PubMed\"))', cita)
+							Ext.create("Ext.tip.ToolTip", {
+								target: 'divCit'+(index+1), // pubmed[0]._at_id,
+								anchor: 'bottom',
+								trackMouse: 'true',
+				//				title: '<span style="font-size: 12px; font-weight: bold;">Target sequence</span>',
+								html: '<div style="font-size: 12px; font-family: Arial">'+htmlStr+'</div>',
+								maxWidth: 440
+							})
 						})
 					}
-				}
+				} // EO functions
 			)
+
 			return xTpl
 		},
 

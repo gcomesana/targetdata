@@ -74,7 +74,7 @@ console.info ("onPathwaySelect -> selection length: "+selModel.getSelection().le
 
 
 	onPathwayClick: function (grid, record, item, index, ev, opts) {
-console.info ("onPathwayClick -> gridId: "+grid.getId()+" on index: "+index)
+// console.info ("onPathwayClick -> gridId: "+grid.getId()+" on index: "+index)
 		var thePanel = Ext.getCmp("panel4PathwayInfo")
 
 		thePanel.pathTpl.overwrite(thePanel.body, {})
@@ -128,7 +128,9 @@ console.info ("onPathwayClick -> gridId: "+grid.getId()+" on index: "+index)
 				preventHeader: true,
 				border: 0
 			})
+
 			theComp.add(panelInfo)
+			panelInfo.tpl.createToolTips(citsJson)
 		}
 
 ////////////////////////////////////////////////////////////////////////////
