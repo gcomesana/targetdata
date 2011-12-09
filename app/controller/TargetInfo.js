@@ -156,7 +156,8 @@ console.info ("onPathwaySelect -> selection length: "+selModel.getSelection().le
 			var panelPath = Ext.create("Ext.panel.Panel", {
 				border: 0,
 				frame: false,
-				minHeight: "800",
+				minHeight: 800,
+				height: 800,
 				minWidth: panelPathW,
 //				width: "500",
 				id: "panel4PathwayInfo",

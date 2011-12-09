@@ -18,6 +18,7 @@ Ext.define ("TD.view.form.ProteinLookup", {
 	queryParam: "target_uuid",
 	fieldLabel: "Term",
 	triggerAction: "query",
+	emptyText: "Start typing free text or, i.e., BRCA1",
 	
 	listConfig: {
 		getInnerTpl: function() {

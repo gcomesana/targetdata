@@ -12,7 +12,7 @@ Ext.define ("TD.view.KeggPathwaysGrid", {
 	columns: [
 			{header: 'Pathway Name', dataIndex: 'pathway', flex:1}
 	],
-	height: 400,
+	height: 700,
 	width: 400,
 	name: "grid-paths",
 	id: "grid-paths"

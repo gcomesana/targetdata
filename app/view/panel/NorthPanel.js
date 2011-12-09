@@ -18,9 +18,15 @@ Ext.define ("TD.view.panel.NorthPanel", {
 //	title: "Northern panel",
 	layout: {
 		type: 'hbox',
-		padding:'5',
+		padding:'0 20 0 0',
 		pack:'end',
-		align:'middle'
+		align:'middle',
+		defaultMargins: {
+			top: 0,
+			right: 20,
+			bottom: 0,
+			left: 0
+		}
 	},
 
 	bodyStyle	 : 'padding: 10px; background-color: #DCE5F0; border-left: none;',
@@ -33,33 +39,33 @@ Ext.define ("TD.view.panel.NorthPanel", {
 	initComponent : function() {
 		this.items = [
 					Ext.create("Ext.Img", {
-						src: "resources/images/app/tdtitle-bottom.png",
-						height: 105,
-						width: 640,
+						src: "resources/images/app/targetdata_bottom.png",
+						height: 100,
+						width: 400,
 						style: {
-							padding: '0 10 0 50'
+							padding: '0 10 0 10'
 						}
 					}),
 					Ext.create("Ext.Img", {
 						src: "resources/images/app/OPS_logo_med_transp.gif",
-						height: 105,
-						width: 200,
+						height: 70,
+						width: 140,
 						style: {
 							padding: '0 10 0 50'
 						}
 					}),
 					Ext.create("Ext.Img", {
 						src: "resources/images/app/cnio_corp_trans.gif",
-						height: 105,
-						width: 130,
+						height: 70,
+						width: 90,
 						style: {
 							padding: '0 10 0 50'
 						}
 					}),
 					Ext.create("Ext.Img", {
 						src: "resources/images/app/inb_corp_trans.png",
-						height: 105,
-						width: 150,
+						height: 70,
+						width: 110,
 						style: {
 							padding: '0 10 0 50'
 						}

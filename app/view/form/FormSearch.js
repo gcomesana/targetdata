@@ -13,7 +13,15 @@ Ext.define ("TD.view.form.FormSearch", {
 	currentUniprotId: '',
 
 	items: [{
-		xtype: "combo-protein-lookup"
+		xtype: "combo-protein-lookup",
+		listeners: {
+			'afterrender': function (comp, opts) {
+				Ext.tip.QuickTipManager.register({
+					target: comp.getEl(),
+					text: 'Start typing free text or a gene name, i.e., BRCA1'
+				});
+			} // EO listeners
+		}
 
 		/*
 		fieldLabel: "Keyword search",
