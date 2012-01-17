@@ -1,0 +1,752 @@
+{
+	"uniprot": {
+		"entry": {
+			"keyword": [
+				{
+					"$t": "Copper",
+					"@id": "KW-0186"
+				},
+				{
+					"$t": "Electron transport",
+					"@id": "KW-0249"
+				},
+				{
+					"$t": "Membrane",
+					"@id": "KW-0472"
+				},
+				{
+					"$t": "Metal-binding",
+					"@id": "KW-0479"
+				},
+				{
+					"$t": "Mitochondrion",
+					"@id": "KW-0496"
+				},
+				{
+					"$t": "Mitochondrion inner membrane",
+					"@id": "KW-0999"
+				},
+				{
+					"$t": "Oxidoreductase",
+					"@id": "KW-0560"
+				},
+				{
+					"$t": "Respiratory chain",
+					"@id": "KW-0679"
+				},
+				{
+					"$t": "Transmembrane",
+					"@id": "KW-0812"
+				},
+				{
+					"$t": "Transmembrane helix",
+					"@id": "KW-1133"
+				},
+				{
+					"$t": "Transport",
+					"@id": "KW-0813"
+				}
+			],
+			"sequence": {
+				"@checksum": "AFE7220C0A3000C7",
+				"@version": "1",
+				"@mass": "26316",
+				"$t": "\u000aMATWMNINLQDANSSTMEQLTMFHDHTLMILTMITSIVTFIMVSMTTNTLINRYLLEGQT\u000aIEFIWTTIPAITLIFIALPSLHLLYLIDEINNPEMTLKVIGHQWYWSYEYSDFKNIEFDS\u000aYMKPTNELMNNEFRLLEVDNRVLLPMNKQIRILITAADVLHSWAIPSLGVKIDATPGRLN\u000aQGSIKINRPGILFGQCSEICGANHSFMPIVIESVPIKNFLKWINKSLSS\u000a",
+				"@length": "229",
+				"@modified": "1993-04-01"
+			},
+			"gene": {
+				"name": {
+					"$t": "COII",
+					"@type": "primary"
+				}
+			},
+			"@dataset": "Swiss-Prot",
+			"feature": [
+				{
+					"@description": "Cytochrome c oxidase subunit 2",
+					"location": {
+						"begin": {
+							"@position": "1"
+						},
+						"end": {
+							"@position": "229"
+						}
+					},
+					"@id": "PRO_0000183643",
+					"@type": "chain"
+				},
+				{
+					"@status": "potential",
+					"@description": "Mitochondrial intermembrane",
+					"location": {
+						"begin": {
+							"@position": "1"
+						},
+						"end": {
+							"@position": "26"
+						}
+					},
+					"@type": "topological domain"
+				},
+				{
+					"@status": "potential",
+					"@description": "Helical;",
+					"location": {
+						"begin": {
+							"@position": "27"
+						},
+						"end": {
+							"@position": "48"
+						}
+					},
+					"@type": "transmembrane region"
+				},
+				{
+					"@status": "potential",
+					"@description": "Mitochondrial matrix",
+					"location": {
+						"begin": {
+							"@position": "49"
+						},
+						"end": {
+							"@position": "62"
+						}
+					},
+					"@type": "topological domain"
+				},
+				{
+					"@status": "potential",
+					"@description": "Helical;",
+					"location": {
+						"begin": {
+							"@position": "63"
+						},
+						"end": {
+							"@position": "82"
+						}
+					},
+					"@type": "transmembrane region"
+				},
+				{
+					"@status": "potential",
+					"@description": "Mitochondrial intermembrane",
+					"location": {
+						"begin": {
+							"@position": "83"
+						},
+						"end": {
+							"@position": "229"
+						}
+					},
+					"@type": "topological domain"
+				},
+				{
+					"@status": "probable",
+					"@description": "Copper A",
+					"location": {
+						"position": {
+							"@position": "161"
+						}
+					},
+					"@type": "metal ion-binding site"
+				},
+				{
+					"@status": "probable",
+					"@description": "Copper A",
+					"location": {
+						"position": {
+							"@position": "196"
+						}
+					},
+					"@type": "metal ion-binding site"
+				},
+				{
+					"@status": "probable",
+					"@description": "Copper A",
+					"location": {
+						"position": {
+							"@position": "200"
+						}
+					},
+					"@type": "metal ion-binding site"
+				},
+				{
+					"@status": "probable",
+					"@description": "Copper A",
+					"location": {
+						"position": {
+							"@position": "204"
+						}
+					},
+					"@type": "metal ion-binding site"
+				}
+			],
+			"dbReference": [
+				{
+					"@key": "1",
+					"@id": "1.9.3.1",
+					"@type": "EC"
+				},
+				{
+					"@key": "7",
+					"@id": "M83959",
+					"property": [
+						{
+							"@value": "AAA31983.2",
+							"@type": "protein sequence ID"
+						},
+						{
+							"@value": "Genomic_DNA",
+							"@type": "molecule type"
+						}
+					],
+					"@type": "EMBL"
+				},
+				{
+					"@key": "8",
+					"@id": "H45170",
+					"property": {
+						"@value": "H45170",
+						"@type": "entry name"
+					},
+					"@type": "PIR"
+				},
+				{
+					"@key": "9",
+					"@id": "P29876",
+					"@type": "ProteinModelPortal"
+				},
+				{
+					"@key": "10",
+					"@id": "P29876",
+					"property": {
+						"@value": "5-222",
+						"@type": "residue range"
+					},
+					"@type": "SMR"
+				},
+				{
+					"@key": "11",
+					"@id": "GO:0016021",
+					"property": [
+						{
+							"@value": "C:integral to membrane",
+							"@type": "term"
+						},
+						{
+							"@value": "IEA:UniProtKB-KW",
+							"@type": "evidence"
+						}
+					],
+					"@type": "GO"
+				},
+				{
+					"@key": "12",
+					"@id": "GO:0005743",
+					"property": [
+						{
+							"@value": "C:mitochondrial inner membrane",
+							"@type": "term"
+						},
+						{
+							"@value": "IEA:UniProtKB-SubCell",
+							"@type": "evidence"
+						}
+					],
+					"@type": "GO"
+				},
+				{
+					"@key": "13",
+					"@id": "GO:0070469",
+					"property": [
+						{
+							"@value": "C:respiratory chain",
+							"@type": "term"
+						},
+						{
+							"@value": "IEA:UniProtKB-KW",
+							"@type": "evidence"
+						}
+					],
+					"@type": "GO"
+				},
+				{
+					"@key": "14",
+					"@id": "GO:0005507",
+					"property": [
+						{
+							"@value": "F:copper ion binding",
+							"@type": "term"
+						},
+						{
+							"@value": "IEA:InterPro",
+							"@type": "evidence"
+						}
+					],
+					"@type": "GO"
+				},
+				{
+					"@key": "15",
+					"@id": "GO:0004129",
+					"property": [
+						{
+							"@value": "F:cytochrome-c oxidase activity",
+							"@type": "term"
+						},
+						{
+							"@value": "IEA:EC",
+							"@type": "evidence"
+						}
+					],
+					"@type": "GO"
+				},
+				{
+					"@key": "16",
+					"@id": "GO:0009055",
+					"property": [
+						{
+							"@value": "F:electron carrier activity",
+							"@type": "term"
+						},
+						{
+							"@value": "IEA:InterPro",
+							"@type": "evidence"
+						}
+					],
+					"@type": "GO"
+				},
+				{
+					"@key": "17",
+					"@id": "GO:0020037",
+					"property": [
+						{
+							"@value": "F:heme binding",
+							"@type": "term"
+						},
+						{
+							"@value": "IEA:InterPro",
+							"@type": "evidence"
+						}
+					],
+					"@type": "GO"
+				},
+				{
+					"@key": "18",
+					"@id": "GO:0022904",
+					"property": [
+						{
+							"@value": "P:respiratory electron transport chain",
+							"@type": "term"
+						},
+						{
+							"@value": "IEA:InterPro",
+							"@type": "evidence"
+						}
+					],
+					"@type": "GO"
+				},
+				{
+					"@key": "19",
+					"@id": "IPR001505",
+					"property": {
+						"@value": "Copper_CuA",
+						"@type": "entry name"
+					},
+					"@type": "InterPro"
+				},
+				{
+					"@key": "20",
+					"@id": "IPR008972",
+					"property": {
+						"@value": "Cupredoxin",
+						"@type": "entry name"
+					},
+					"@type": "InterPro"
+				},
+				{
+					"@key": "21",
+					"@id": "IPR014222",
+					"property": {
+						"@value": "Cyt_c_oxidase_su2",
+						"@type": "entry name"
+					},
+					"@type": "InterPro"
+				},
+				{
+					"@key": "22",
+					"@id": "IPR015964",
+					"property": {
+						"@value": "Cyt_c_oxidase_su2-like_TM_dom",
+						"@type": "entry name"
+					},
+					"@type": "InterPro"
+				},
+				{
+					"@key": "23",
+					"@id": "IPR002429",
+					"property": {
+						"@value": "Cyt_c_oxidase_su2_C",
+						"@type": "entry name"
+					},
+					"@type": "InterPro"
+				},
+				{
+					"@key": "24",
+					"@id": "IPR011759",
+					"property": {
+						"@value": "Cyt_c_oxidase_su2_TM_dom",
+						"@type": "entry name"
+					},
+					"@type": "InterPro"
+				},
+				{
+					"@key": "25",
+					"@id": "G3DSA:1.10.287.90",
+					"property": [
+						{
+							"@value": "COX2_TM",
+							"@type": "entry name"
+						},
+						{
+							"@value": "1",
+							"@type": "match status"
+						}
+					],
+					"@type": "Gene3D"
+				},
+				{
+					"@key": "26",
+					"@id": "G3DSA:2.60.40.420",
+					"property": [
+						{
+							"@value": "Cupredoxin",
+							"@type": "entry name"
+						},
+						{
+							"@value": "1",
+							"@type": "match status"
+						}
+					],
+					"@type": "Gene3D"
+				},
+				{
+					"@key": "27",
+					"@id": "PF00116",
+					"property": [
+						{
+							"@value": "COX2",
+							"@type": "entry name"
+						},
+						{
+							"@value": "1",
+							"@type": "match status"
+						}
+					],
+					"@type": "Pfam"
+				},
+				{
+					"@key": "28",
+					"@id": "PF02790",
+					"property": [
+						{
+							"@value": "COX2_TM",
+							"@type": "entry name"
+						},
+						{
+							"@value": "1",
+							"@type": "match status"
+						}
+					],
+					"@type": "Pfam"
+				},
+				{
+					"@key": "29",
+					"@id": "PR01166",
+					"property": {
+						"@value": "CYCOXIDASEII",
+						"@type": "entry name"
+					},
+					"@type": "PRINTS"
+				},
+				{
+					"@key": "30",
+					"@id": "SSF49503",
+					"property": [
+						{
+							"@value": "Cupredoxin",
+							"@type": "entry name"
+						},
+						{
+							"@value": "1",
+							"@type": "match status"
+						}
+					],
+					"@type": "SUPFAM"
+				},
+				{
+					"@key": "31",
+					"@id": "SSF81464",
+					"property": [
+						{
+							"@value": "Cyt_c_oxidase_II-like_TM",
+							"@type": "entry name"
+						},
+						{
+							"@value": "1",
+							"@type": "match status"
+						}
+					],
+					"@type": "SUPFAM"
+				},
+				{
+					"@key": "32",
+					"@id": "TIGR02866",
+					"property": [
+						{
+							"@value": "CoxB",
+							"@type": "entry name"
+						},
+						{
+							"@value": "1",
+							"@type": "match status"
+						}
+					],
+					"@type": "TIGRFAMs"
+				},
+				{
+					"@key": "33",
+					"@id": "PS00078",
+					"property": [
+						{
+							"@value": "COX2",
+							"@type": "entry name"
+						},
+						{
+							"@value": "1",
+							"@type": "match status"
+						}
+					],
+					"@type": "PROSITE"
+				},
+				{
+					"@key": "34",
+					"@id": "PS50857",
+					"property": [
+						{
+							"@value": "COX2_CUA",
+							"@type": "entry name"
+						},
+						{
+							"@value": "1",
+							"@type": "match status"
+						}
+					],
+					"@type": "PROSITE"
+				},
+				{
+					"@key": "35",
+					"@id": "PS50999",
+					"property": [
+						{
+							"@value": "COX2_TM",
+							"@type": "entry name"
+						},
+						{
+							"@value": "1",
+							"@type": "match status"
+						}
+					],
+					"@type": "PROSITE"
+				}
+			],
+			"reference": {
+				"@key": "3",
+				"scope": {
+					"$t": "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+				},
+				"citation": {
+					"@date": "1992",
+					"@last": "52",
+					"@name": "Mol. Phylogenet. Evol.",
+					"dbReference": [
+						{
+							"@key": "4",
+							"@id": "94115687",
+							"@type": "MEDLINE"
+						},
+						{
+							"@key": "5",
+							"@id": "1342923",
+							"@type": "PubMed"
+						},
+						{
+							"@key": "6",
+							"@id": "10.1016/1055-7903(92)90034-E",
+							"@type": "DOI"
+						}
+					],
+					"@first": "41",
+					"authorList": {
+						"person": [
+							{
+								"@name": "Liu H."
+							},
+							{
+								"@name": "Beckenbach A.T."
+							}
+						]
+					},
+					"title": {
+						"$t": "Evolution of the mitochondrial cytochrome oxidase II gene among 10 orders of insects."
+					},
+					"@type": "journal article",
+					"@volume": "1"
+				}
+			},
+			"geneLocation": {
+				"@type": "mitochondrion"
+			},
+			"organism": {
+				"lineage": {
+					"taxon": [
+						{
+							"$t": "Eukaryota"
+						},
+						{
+							"$t": "Metazoa"
+						},
+						{
+							"$t": "Arthropoda"
+						},
+						{
+							"$t": "Hexapoda"
+						},
+						{
+							"$t": "Insecta"
+						},
+						{
+							"$t": "Pterygota"
+						},
+						{
+							"$t": "Neoptera"
+						},
+						{
+							"$t": "Paraneoptera"
+						},
+						{
+							"$t": "Hemiptera"
+						},
+						{
+							"$t": "Euhemiptera"
+						},
+						{
+							"$t": "Heteroptera"
+						},
+						{
+							"$t": "Panheteroptera"
+						},
+						{
+							"$t": "Pentatomomorpha"
+						},
+						{
+							"$t": "Lygaeoidea"
+						},
+						{
+							"$t": "Lygaeidae"
+						},
+						{
+							"$t": "Lygaeinae"
+						},
+						{
+							"$t": "Oncopeltus"
+						}
+					]
+				},
+				"dbReference": {
+					"@key": "2",
+					"@id": "7536",
+					"@type": "NCBI Taxonomy"
+				},
+				"name": [
+					{
+						"$t": "Oncopeltus fasciatus",
+						"@type": "scientific"
+					},
+					{
+						"$t": "Large milkweed bug",
+						"@type": "common"
+					}
+				]
+			},
+			"@created": "1993-04-01",
+			"name": {
+				"$t": "COX2_ONCFA"
+			},
+			"accession": {
+				"$t": "P29876"
+			},
+			"protein": {
+				"alternativeName": {
+					"fullName": {
+						"$t": "Cytochrome c oxidase polypeptide II"
+					}
+				},
+				"recommendedName": {
+					"fullName": {
+						"$t": "Cytochrome c oxidase subunit 2"
+					},
+					"@ref": "1"
+				}
+			},
+			"proteinExistence": {
+				"@type": "inferred from homology"
+			},
+			"@version": "81",
+			"comment": [
+				{
+					"text": {
+						"$t": "Cytochrome c oxidase is the component of the respiratory chain that catalyzes the reduction of oxygen to water. Subunits 1-3 form the functional core of the enzyme complex. Subunit 2 transfers the electrons from cytochrome c via its binuclear copper A center to the bimetallic center of the catalytic subunit 1."
+					},
+					"@type": "function"
+				},
+				{
+					"text": {
+						"$t": "4 ferrocytochrome c + O(2) + 4 H(+) = 4 ferricytochrome c + 2 H(2)O."
+					},
+					"@type": "catalytic activity"
+				},
+				{
+					"text": {
+						"$t": "Copper A."
+					},
+					"@type": "cofactor"
+				},
+				{
+					"subcellularLocation": {
+						"location": {
+							"$t": "Mitochondrion inner membrane"
+						},
+						"topology": {
+							"$t": "Multi-pass membrane protein"
+						}
+					},
+					"@type": "subcellular location"
+				},
+				{
+					"text": {
+						"$t": "Belongs to the cytochrome c oxidase subunit 2 family."
+					},
+					"@type": "similarity"
+				}
+			],
+			"@modified": "2011-05-31"
+		},
+		"copyright": {
+			"$t": "\u000aCopyrighted by the UniProt Consortium, see http://www.uniprot.org/terms\u000aDistributed under the Creative Commons Attribution-NoDerivs License\u000a"
+		},
+		"@xsi:schemaLocation": "http://uniprot.org/uniprot http://www.uniprot.org/support/docs/uniprot.xsd"
+	},
+	"@encoding": "UTF-8",
+	"@version": "1.0"
+}

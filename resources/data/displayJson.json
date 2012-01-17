@@ -1,0 +1,17 @@
+{
+	"fullName":"Chitin synthase B",
+	"shortName":"",
+	"geneNames":[
+		{
+			"t":"chsB",
+			"type":"primary"
+		},
+		{
+			"t":"AN2523",
+			"type":"ORF"
+		}
+	],
+	"organismName":"",
+	"function":"Plays a major role in cell wall biogenesis.",
+	"uniprotId":"P87326"
+}

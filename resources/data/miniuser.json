@@ -1,0 +1,8 @@
+{
+	"success": true,
+	"users": [
+		{"id": 1, "name": "Ed", "email": "ed@merda.com"	},
+		{"id": 2, "name": "Tommy", "email": "tommy@merda.com"	}
+	],
+	"totalCount": 2
+}

@@ -1,0 +1,23 @@
+
+	<protein>
+		<recommendedName ref="1">
+			<fullName>Aspartate aminotransferase, mitochondrial</fullName>
+			<shortName>mAspAT</shortName>
+		</recommendedName>
+
+		<alternativeName>
+			<fullName>Fatty acid-binding protein</fullName>
+			<shortName>FABP-1</shortName>
+		</alternativeName>
+		<alternativeName>
+			<fullName>Glutamate oxaloacetate transaminase 2</fullName>
+		</alternativeName>
+		<alternativeName>
+			<fullName>Plasma membrane-associated fatty acid-binding protein
+			</fullName>
+			<shortName>FABPpm</shortName>
+		</alternativeName>
+		<alternativeName>
+			<fullName>Transaminase A</fullName>
+		</alternativeName>
+	</protein>

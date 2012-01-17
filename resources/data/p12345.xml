@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+<uniprot xsi:schemaLocation="http://uniprot.org/uniprot http://www.uniprot.org/support/docs/uniprot.xsd">
+-->
+<uniprot>
+	<entry dataset="Swiss-Prot" created="1989-10-01" modified="2011-05-31"
+				 version="73">
+		<accession>P12345</accession>
+		<name>AATM_RABIT</name>
+
+		<protein>
+			<recommendedName ref="1">
+				<fullName>Aspartate aminotransferase, mitochondrial</fullName>
+				<shortName>mAspAT</shortName>
+			</recommendedName>
+			<alternativeName>
+				<fullName>Fatty acid-binding protein</fullName>
+				<shortName>FABP-1</shortName>
+			</alternativeName>
+			<alternativeName>
+				<fullName>Glutamate oxaloacetate transaminase 2</fullName>
+			</alternativeName>
+			<alternativeName>
+				<fullName>Plasma membrane-associated fatty acid-binding protein
+				</fullName>
+				<shortName>FABPpm</shortName>
+			</alternativeName>
+			<alternativeName>
+				<fullName>Transaminase A</fullName>
+			</alternativeName>
+		</protein>
+
+		<gene>
+			<name type="primary">GOT2</name>
+		</gene>
+		<organism>
+			<name type="scientific">Oryctolagus cuniculus</name>
+			<name type="common">Rabbit</name>
+			<dbReference type="NCBI Taxonomy" id="9986" key="2"/>
+			<lineage>
+				<taxon>Eukaryota</taxon>
+				<taxon>Metazoa</taxon>
+				<taxon>Chordata</taxon>
+				<taxon>Craniata</taxon>
+				<taxon>Vertebrata</taxon>
+				<taxon>Euteleostomi</taxon>
+				<taxon>Mammalia</taxon>
+				<taxon>Eutheria</taxon>
+				<taxon>Euarchontoglires</taxon>
+				<taxon>Glires</taxon>
+				<taxon>Lagomorpha</taxon>
+				<taxon>Leporidae</taxon>
+				<taxon>Oryctolagus</taxon>
+			</lineage>
+		</organism>
+
+		<reference key="3">
+			<citation type="journal article" date="1985" name="J. Biochem."
+								volume="97" first="1337" last="1345">
+				<title>Aspartate aminotransferase isozymes from rabbit liver.
+					Purification and properties.
+				</title>
+				<authorList>
+					<person name="Kuramitsu S."/>
+					<person name="Inoue K."/>
+					<person name="Kondo K."/>
+					<person name="Aki K."/>
+					<person name="Kagamiyama H."/>
+				</authorList>
+				<dbReference type="MEDLINE" id="85289123" key="4"/>
+				<dbReference type="PubMed" id="4030726" key="5"/>
+			</citation>
+			<scope>PROTEIN SEQUENCE</scope>
+			<source>
+				<tissue>Liver</tissue>
+			</source>
+		</reference>
+
+
+		<comment type="function">
+			<text>Plays a key role in amino acid metabolism. Important for metabolite
+				exchange between mitochondria and cytosol. Facilitates cellular uptake
+				of long-chain free fatty acids (By similarity).
+			</text>
+		</comment>
+		<comment type="catalytic activity">
+			<text>L-aspartate + 2-oxoglutarate = oxaloacetate + L-glutamate.</text>
+		</comment>
+		<comment type="cofactor">
+			<text>Pyridoxal phosphate.</text>
+		</comment>
+		<comment type="subunit">
+			<text>Homodimer.</text>
+		</comment>
+		<comment type="subcellular location">
+			<subcellularLocation>
+				<location>Mitochondrion matrix</location>
+			</subcellularLocation>
+			<subcellularLocation>
+				<location status="by similarity">Cell membrane</location>
+			</subcellularLocation>
+		</comment>
+		<comment type="miscellaneous">
+			<text>In eukaryotes there are cytoplasmic, mitochondrial and chloroplastic
+				isozymes.
+			</text>
+		</comment>
+		<comment type="similarity">
+			<text>Belongs to the class-I pyridoxal-phosphate-dependent
+				aminotransferase family.
+			</text>
+		</comment>
+
+		<dbReference type="EC" id="2.6.1.1" key="1"/>
+		<dbReference type="PIR" id="B27103" key="6">
+			<property type="entry name" value="B27103"/>
+		</dbReference>
+		<dbReference type="ProteinModelPortal" id="P12345" key="7"/>
+		<dbReference type="SMR" id="P12345" key="8">
+			<property type="residue range" value="1-30"/>
+		</dbReference>
+		<dbReference type="STRING" id="P12345" key="9"/>
+		<dbReference type="Ensembl" id="ENSOCUT00000003872" key="10">
+			<property type="protein sequence ID" value="ENSOCUP00000003357"/>
+			<property type="gene ID" value="ENSOCUG00000003871"/>
+		</dbReference>
+		<dbReference type="eggNOG" id="maNOG12574" key="11"/>
+		<dbReference type="GeneTree" id="ENSGT00390000014081" key="12"/>
+		<dbReference type="OrthoDB" id="EOG4RXZ07" key="13"/>
+		<dbReference type="GO" id="GO:0005759" key="14">
+			<property type="term" value="C:mitochondrial matrix"/>
+			<property type="evidence" value="IEA:UniProtKB-SubCell"/>
+		</dbReference>
+		<dbReference type="GO" id="GO:0005886" key="15">
+			<property type="term" value="C:plasma membrane"/>
+			<property type="evidence" value="IEA:UniProtKB-SubCell"/>
+		</dbReference>
+		<dbReference type="GO" id="GO:0004069" key="16">
+			<property type="term"
+								value="F:L-aspartate:2-oxoglutarate aminotransferase activity"/>
+			<property type="evidence" value="ISS:UniProtKB"/>
+		</dbReference>
+		<dbReference type="GO" id="GO:0030170" key="17">
+			<property type="term" value="F:pyridoxal phosphate binding"/>
+			<property type="evidence" value="IEA:InterPro"/>
+		</dbReference>
+		<dbReference type="GO" id="GO:0006457" key="18">
+			<property type="term" value="P:protein folding"/>
+			<property type="evidence" value="TAS:HGNC"/>
+		</dbReference>
+		<dbReference type="InterPro" id="IPR000796" key="19">
+			<property type="entry name" value="Asp_trans"/>
+		</dbReference>
+		<dbReference type="InterPro" id="IPR015422" key="20">
+			<property type="entry name" value="PyrdxlP-dep_Trfase_major_sub2"/>
+		</dbReference>
+		<dbReference type="Gene3D" id="G3DSA:3.90.1150.10" key="21">
+			<property type="entry name" value="PyrdxlP-dep_Trfase_major_sub2"/>
+			<property type="match status" value="1"/>
+		</dbReference>
+		<dbReference type="PANTHER" id="PTHR11879" key="22">
+			<property type="entry name" value="Asp_trans"/>
+			<property type="match status" value="1"/>
+		</dbReference>
+		<dbReference type="PROSITE" id="PS00105" key="23">
+			<property type="entry name" value="AA_TRANSFER_CLASS_1"/>
+			<property type="match status" value="PARTIAL"/>
+		</dbReference>
+		<proteinExistence type="evidence at protein level"/>
+
+		<keyword id="KW-0032">Aminotransferase</keyword>
+		<keyword id="KW-1003">Cell membrane</keyword>
+		<keyword id="KW-0903">Direct protein sequencing</keyword>
+		<keyword id="KW-0445">Lipid transport</keyword>
+		<keyword id="KW-0472">Membrane</keyword>
+		<keyword id="KW-0496">Mitochondrion</keyword>
+		<keyword id="KW-0663">Pyridoxal phosphate</keyword>
+		<keyword id="KW-0808">Transferase</keyword>
+		<keyword id="KW-0813">Transport</keyword>
+		
+		<feature type="chain"
+						 description="Aspartate aminotransferase, mitochondrial"
+						 id="PRO_0000123886">
+			<location>
+				<begin position="1"/>
+				<end position="30" status="greater than"/>
+			</location>
+		</feature>
+		<feature type="non-terminal residue">
+			<location>
+				<position position="30"/>
+			</location>
+		</feature>
+		
+		<sequence length="30" mass="3401" checksum="410321530B95B673"
+							modified="1989-10-01" version="1" fragment="single">
+			SSWWAHVEMGPPDPILGVTEAYKRDTNSKK
+		</sequence>
+	</entry>
+	<copyright>
+		Copyrighted by the UniProt Consortium, see http://www.uniprot.org/terms
+		Distributed under the Creative Commons Attribution-NoDerivs License
+	</copyright>
+</uniprot>

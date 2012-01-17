@@ -1,0 +1,174 @@
+{"uniprot":{
+	"entry":{
+		"sequence":{
+			"@fragment":"single",
+			"@checksum":"47AFD065BDA4E590",
+			"@version":"1",
+			"@mass":"24132",
+			"$t":"\nMGLKYIKKAPNYTEIVLKAKIFSTLILMIVILFLINKMPSTYKKAYAVVLNNQIVGYVKD\nKTEAQNLLTQIKKEVEERHNTDSFILQSKLQLKSIEPGQYRETRVDELKNTIIEKGKVLV\nKRYAIFVNSKPYFVFENPQTPNNILNKLKKVYYNDKASQAKFLEKVEIKPVYVSPAIKVA\nDEATALTKIMFGKDQVIEYTVKEGDTLWD\n",
+			"@length":"209",
+			"@modified":"1991-11-01"
+		},
+		"name":{
+			"$t":"YXYC_CALSA"
+		},
+		"accession":{
+			"$t":"P23555"
+		},
+		"@dataset":"Swiss-Prot",
+		"feature":[
+			{
+				"@description":"Uncharacterized protein in xynC 3'region",
+				"location":{
+					"begin":{
+						"@position":"1"
+					},
+					"end":{
+						"@status":"greater than",
+						"@position":"209"
+					}
+				},
+				"@id":"PRO_0000066551",
+				"@type":"chain"
+			},
+			{
+				"location":{
+					"position":{
+						"@position":"209"
+					}
+				},
+				"@type":"non-terminal residue"
+			}
+		],
+		"proteinExistence":{
+			"@type":"predicted"
+		},
+		"dbReference":{
+			"@key":"5",
+			"@id":"M34459",
+			"property":[
+				{
+					"@value":"AAA23064.1",
+					"@type":"protein sequence ID"
+				},
+				{
+					"@value":"Genomic_DNA",
+					"@type":"molecule type"
+				}
+			],
+			"@type":"EMBL"
+		},
+		"protein":{
+			"alternativeName":{
+				"fullName":{
+					"$t":"ORF 6"
+				}
+			},
+			"recommendedName":{
+				"fullName":{
+					"$t":"Uncharacterized protein in xynC 3'region"
+				}
+			}
+		},
+		"@version":"35",
+		"reference":{
+			"@key":"2",
+			"scope":{
+				"$t":"NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+			},
+			"citation":{
+				"@date":"1990",
+				"@last":"1024",
+				"@name":"Appl. Environ. Microbiol.",
+				"dbReference":[
+					{
+						"@key":"3",
+						"@id":"90253140",
+						"@type":"MEDLINE"
+					},
+					{
+						"@key":"4",
+						"@id":"2111111",
+						"@type":"PubMed"
+					}
+				],
+				"@first":"1017",
+				"authorList":{
+					"person":[
+						{
+							"@name":"Luethi E."
+						},
+						{
+							"@name":"Love D.R."
+						},
+						{
+							"@name":"McAnulty J."
+						},
+						{
+							"@name":"Wallace C."
+						},
+						{
+							"@name":"Caughey P.A."
+						},
+						{
+							"@name":"Saul D.J."
+						},
+						{
+							"@name":"Bergquist P.L."
+						}
+					]
+				},
+				"title":{
+					"$t":"Cloning, sequence analysis, and expression of genes encoding xylan-degrading enzymes from the thermophile 'Caldocellum saccharolyticum'."
+				},
+				"@type":"journal article",
+				"@volume":"56"
+			}
+		},
+		"organism":{
+			"lineage":{
+				"taxon":[
+					{
+						"$t":"Bacteria"
+					},
+					{
+						"$t":"Firmicutes"
+					},
+					{
+						"$t":"Clostridia"
+					},
+					{
+						"$t":"Thermoanaerobacterales"
+					},
+					{
+						"$t":"Thermoanaerobacterales Family III. Incertae Sedis"
+					},
+					{
+						"$t":"Caldicellulosiruptor"
+					}
+				]
+			},
+			"dbReference":{
+				"@key":"1",
+				"@id":"44001",
+				"@type":"NCBI Taxonomy"
+			},
+			"name":[
+				{
+					"$t":"Caldocellum saccharolyticum",
+					"@type":"scientific"
+				},
+				{
+					"$t":"Caldicellulosiruptor saccharolyticus",
+					"@type":"synonym"
+				}
+			]
+		},
+		"@created":"1991-11-01",
+		"@modified":"2010-01-19"
+	},
+	"copyright":{
+		"$t":"\nCopyrighted by the UniProt Consortium, see http://www.uniprot.org/terms\nDistributed under the Creative Commons Attribution-NoDerivs License\n"
+	},
+	"@xsi:schemaLocation":"http://uniprot.org/uniprot http://www.uniprot.org/support/docs/uniprot.xsd"
+},"@encoding":"UTF-8","@version":"1.0"}

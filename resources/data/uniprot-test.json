@@ -1,0 +1,3936 @@
+{"uniprot":{
+	"entry":{
+		"keyword":[
+			{
+				"$t":"3D-structure",
+				"@id":"KW-0002"
+			},
+			{
+				"$t":"Acute phase",
+				"@id":"KW-0011"
+			},
+			{
+				"$t":"Complete proteome",
+				"@id":"KW-0181"
+			},
+			{
+				"$t":"Direct protein sequencing",
+				"@id":"KW-0903"
+			},
+			{
+				"$t":"Disulfide bond",
+				"@id":"KW-1015"
+			},
+			{
+				"$t":"Glycoprotein",
+				"@id":"KW-0325"
+			},
+			{
+				"$t":"Polymorphism",
+				"@id":"KW-0621"
+			},
+			{
+				"$t":"Pyrrolidone carboxylic acid",
+				"@id":"KW-0873"
+			},
+			{
+				"$t":"Reference proteome",
+				"@id":"KW-1185"
+			},
+			{
+				"$t":"Secreted",
+				"@id":"KW-0964"
+			},
+			{
+				"$t":"Signal",
+				"@id":"KW-0732"
+			},
+			{
+				"$t":"Transport",
+				"@id":"KW-0813"
+			}
+		],
+		"sequence":{
+			"@precursor":"true",
+			"@checksum":"63292233AD6EAD8B",
+			"@version":"1",
+			"@mass":"23512",
+			"$t":"\nMALSWVLTVLSLLPLLEAQIPLCANLVPVPITNATLDQITGKWFYIASAFRNEEYNKSVQ\nEIQATFFYFTPNKTEDTIFLREYQTRQDQCIYNTTYLNVQRENGTISRYVGGQEHFAHLL\nILRDTKTYMLAFDVNDEKNWGLSVYADKPETTKEQLGEFYEALDCLRIPKSDVVYTDWKK\nDKCEPLEKQHEKERKQEEGES\n",
+			"@length":"201",
+			"@modified":"1988-01-01"
+		},
+		"gene":{
+			"name":[
+				{
+					"$t":"ORM1",
+					"@type":"primary"
+				},
+				{
+					"$t":"AGP1",
+					"@type":"synonym"
+				}
+			]
+		},
+		"name":{
+			"$t":"A1AG1_HUMAN"
+		},
+		"accession":[
+			{
+				"$t":"P02763"
+			},
+			{
+				"$t":"B7ZKQ5"
+			},
+			{
+				"$t":"Q5T539"
+			},
+			{
+				"$t":"Q5U067"
+			},
+			{
+				"$t":"Q8TC16"
+			}
+		],
+		"@dataset":"Swiss-Prot",
+		"feature":[
+			{
+				"location":{
+					"begin":{
+						"@position":"1"
+					},
+					"end":{
+						"@position":"18"
+					}
+				},
+				"@evidence":"4",
+				"@type":"signal peptide"
+			},
+			{
+				"@description":"Alpha-1-acid glycoprotein 1",
+				"location":{
+					"begin":{
+						"@position":"19"
+					},
+					"end":{
+						"@position":"201"
+					}
+				},
+				"@id":"PRO_0000017860",
+				"@type":"chain"
+			},
+			{
+				"@description":"Pyrrolidone carboxylic acid",
+				"location":{
+					"position":{
+						"@position":"19"
+					}
+				},
+				"@evidence":"4",
+				"@type":"modified residue"
+			},
+			{
+				"@description":"N-linked (GlcNAc...) (complex)",
+				"location":{
+					"position":{
+						"@position":"33"
+					}
+				},
+				"@evidence":"5 6 7 8 9 10 11",
+				"@type":"glycosylation site"
+			},
+			{
+				"@description":"N-linked (GlcNAc...)",
+				"location":{
+					"position":{
+						"@position":"56"
+					}
+				},
+				"@evidence":"5 9 10 14",
+				"@type":"glycosylation site"
+			},
+			{
+				"@description":"N-linked (GlcNAc...) (complex)",
+				"location":{
+					"position":{
+						"@position":"72"
+					}
+				},
+				"@evidence":"5 7 9 10 11",
+				"@type":"glycosylation site"
+			},
+			{
+				"@description":"N-linked (GlcNAc...)",
+				"location":{
+					"position":{
+						"@position":"93"
+					}
+				},
+				"@evidence":"5 7 8 9 10 12 13 14",
+				"@type":"glycosylation site"
+			},
+			{
+				"@description":"N-linked (GlcNAc...)",
+				"location":{
+					"position":{
+						"@position":"103"
+					}
+				},
+				"@id":"CAR_000170",
+				"@evidence":"5 9 10 13",
+				"@type":"glycosylation site"
+			},
+			{
+				"location":{
+					"begin":{
+						"@position":"23"
+					},
+					"end":{
+						"@position":"165"
+					}
+				},
+				"@evidence":"3 14",
+				"@type":"disulfide bond"
+			},
+			{
+				"location":{
+					"begin":{
+						"@position":"90"
+					},
+					"end":{
+						"@position":"183"
+					}
+				},
+				"@evidence":"3 14",
+				"@type":"disulfide bond"
+			},
+			{
+				"variation":{
+					"$t":"R"
+				},
+				"@description":"In allele ORM1*S.",
+				"location":{
+					"position":{
+						"@position":"38"
+					}
+				},
+				"original":{
+					"$t":"Q"
+				},
+				"@id":"VAR_013840",
+				"@evidence":"15 16 17 18",
+				"@type":"sequence variant"
+			},
+			{
+				"variation":{
+					"$t":"C"
+				},
+				"@description":"In dbSNP:rs3182034.",
+				"location":{
+					"position":{
+						"@position":"167"
+					}
+				},
+				"original":{
+					"$t":"R"
+				},
+				"@id":"VAR_056166",
+				"@evidence":"17",
+				"@type":"sequence variant"
+			},
+			{
+				"variation":{
+					"$t":"M"
+				},
+				"@description":"In allele ORM1*F2; dbSNP:rs1126801.",
+				"location":{
+					"position":{
+						"@position":"174"
+					}
+				},
+				"original":{
+					"$t":"V"
+				},
+				"@id":"VAR_013841",
+				"@evidence":"17 18",
+				"@type":"sequence variant"
+			},
+			{
+				"variation":{
+					"$t":"R"
+				},
+				"@description":"In Ref. 8; AAI43315.",
+				"location":{
+					"position":{
+						"@position":"170"
+					}
+				},
+				"original":{
+					"$t":"K"
+				},
+				"@ref":"21",
+				"@type":"sequence conflict"
+			},
+			{
+				"@description":"In Ref. 10; AA sequence.",
+				"location":{
+					"position":{
+						"@position":"182"
+					}
+				},
+				"@ref":"28",
+				"@type":"sequence conflict"
+			},
+			{
+				"@description":"In Ref. 10; AA sequence.",
+				"location":{
+					"position":{
+						"@position":"193"
+					}
+				},
+				"@ref":"28",
+				"@type":"sequence conflict"
+			},
+			{
+				"location":{
+					"begin":{
+						"@position":"24"
+					},
+					"end":{
+						"@position":"26"
+					}
+				},
+				"@type":"helix"
+			},
+			{
+				"location":{
+					"begin":{
+						"@position":"33"
+					},
+					"end":{
+						"@position":"39"
+					}
+				},
+				"@type":"helix"
+			},
+			{
+				"location":{
+					"begin":{
+						"@position":"43"
+					},
+					"end":{
+						"@position":"48"
+					}
+				},
+				"@type":"strand"
+			},
+			{
+				"location":{
+					"begin":{
+						"@position":"53"
+					},
+					"end":{
+						"@position":"59"
+					}
+				},
+				"@type":"helix"
+			},
+			{
+				"location":{
+					"begin":{
+						"@position":"62"
+					},
+					"end":{
+						"@position":"72"
+					}
+				},
+				"@type":"strand"
+			},
+			{
+				"location":{
+					"begin":{
+						"@position":"73"
+					},
+					"end":{
+						"@position":"76"
+					}
+				},
+				"@type":"turn"
+			},
+			{
+				"location":{
+					"begin":{
+						"@position":"77"
+					},
+					"end":{
+						"@position":"86"
+					}
+				},
+				"@type":"strand"
+			},
+			{
+				"location":{
+					"begin":{
+						"@position":"89"
+					},
+					"end":{
+						"@position":"99"
+					}
+				},
+				"@type":"strand"
+			},
+			{
+				"location":{
+					"begin":{
+						"@position":"106"
+					},
+					"end":{
+						"@position":"109"
+					}
+				},
+				"@type":"strand"
+			},
+			{
+				"location":{
+					"begin":{
+						"@position":"114"
+					},
+					"end":{
+						"@position":"121"
+					}
+				},
+				"@type":"strand"
+			},
+			{
+				"location":{
+					"begin":{
+						"@position":"127"
+					},
+					"end":{
+						"@position":"131"
+					}
+				},
+				"@type":"strand"
+			},
+			{
+				"location":{
+					"begin":{
+						"@position":"137"
+					},
+					"end":{
+						"@position":"139"
+					}
+				},
+				"@type":"helix"
+			},
+			{
+				"location":{
+					"begin":{
+						"@position":"143"
+					},
+					"end":{
+						"@position":"149"
+					}
+				},
+				"@type":"strand"
+			},
+			{
+				"location":{
+					"begin":{
+						"@position":"153"
+					},
+					"end":{
+						"@position":"155"
+					}
+				},
+				"@type":"turn"
+			},
+			{
+				"location":{
+					"begin":{
+						"@position":"159"
+					},
+					"end":{
+						"@position":"166"
+					}
+				},
+				"@type":"helix"
+			},
+			{
+				"location":{
+					"begin":{
+						"@position":"170"
+					},
+					"end":{
+						"@position":"172"
+					}
+				},
+				"@type":"helix"
+			},
+			{
+				"location":{
+					"begin":{
+						"@position":"178"
+					},
+					"end":{
+						"@position":"180"
+					}
+				},
+				"@type":"helix"
+			},
+			{
+				"location":{
+					"begin":{
+						"@position":"184"
+					},
+					"end":{
+						"@position":"189"
+					}
+				},
+				"@type":"helix"
+			}
+		],
+		"proteinExistence":{
+			"@type":"evidence at protein level"
+		},
+		"dbReference":[
+			{
+				"@key":"77",
+				"@id":"X02544",
+				"property":[
+					{
+						"@value":"CAA26397.1",
+						"@type":"protein sequence ID"
+					},
+					{
+						"@value":"mRNA",
+						"@type":"molecule type"
+					}
+				],
+				"@type":"EMBL"
+			},
+			{
+				"@key":"78",
+				"@id":"M13692",
+				"property":[
+					{
+						"@value":"AAA35515.1",
+						"@type":"protein sequence ID"
+					},
+					{
+						"@value":"mRNA",
+						"@type":"molecule type"
+					}
+				],
+				"@type":"EMBL"
+			},
+			{
+				"@key":"79",
+				"@id":"X05779",
+				"property":[
+					{
+						"@value":"CAA29229.1",
+						"@type":"protein sequence ID"
+					},
+					{
+						"@value":"ALT_SEQ",
+						"@type":"status"
+					},
+					{
+						"@value":"Genomic_DNA",
+						"@type":"molecule type"
+					}
+				],
+				"@type":"EMBL"
+			},
+			{
+				"@key":"80",
+				"@id":"X05780",
+				"property":[
+					{
+						"@value":"CAA29229.1",
+						"@type":"protein sequence ID"
+					},
+					{
+						"@value":"JOINED",
+						"@type":"status"
+					},
+					{
+						"@value":"Genomic_DNA",
+						"@type":"molecule type"
+					}
+				],
+				"@type":"EMBL"
+			},
+			{
+				"@key":"81",
+				"@id":"X05781",
+				"property":[
+					{
+						"@value":"CAA29229.1",
+						"@type":"protein sequence ID"
+					},
+					{
+						"@value":"JOINED",
+						"@type":"status"
+					},
+					{
+						"@value":"Genomic_DNA",
+						"@type":"molecule type"
+					}
+				],
+				"@type":"EMBL"
+			},
+			{
+				"@key":"82",
+				"@id":"X05782",
+				"property":[
+					{
+						"@value":"CAA29229.1",
+						"@type":"protein sequence ID"
+					},
+					{
+						"@value":"JOINED",
+						"@type":"status"
+					},
+					{
+						"@value":"Genomic_DNA",
+						"@type":"molecule type"
+					}
+				],
+				"@type":"EMBL"
+			},
+			{
+				"@key":"83",
+				"@id":"X05783",
+				"property":[
+					{
+						"@value":"CAA29229.1",
+						"@type":"protein sequence ID"
+					},
+					{
+						"@value":"JOINED",
+						"@type":"status"
+					},
+					{
+						"@value":"Genomic_DNA",
+						"@type":"molecule type"
+					}
+				],
+				"@type":"EMBL"
+			},
+			{
+				"@key":"84",
+				"@id":"X05784",
+				"property":[
+					{
+						"@value":"CAA29229.1",
+						"@type":"protein sequence ID"
+					},
+					{
+						"@value":"JOINED",
+						"@type":"status"
+					},
+					{
+						"@value":"Genomic_DNA",
+						"@type":"molecule type"
+					}
+				],
+				"@type":"EMBL"
+			},
+			{
+				"@key":"85",
+				"@id":"X06676",
+				"property":[
+					{
+						"@value":"NOT_ANNOTATED_CDS",
+						"@type":"status"
+					},
+					{
+						"@value":"Genomic_DNA",
+						"@type":"molecule type"
+					}
+				],
+				"@type":"EMBL"
+			},
+			{
+				"@key":"86",
+				"@id":"X06680",
+				"property":[
+					{
+						"@value":"NOT_ANNOTATED_CDS",
+						"@type":"status"
+					},
+					{
+						"@value":"Genomic_DNA",
+						"@type":"molecule type"
+					}
+				],
+				"@type":"EMBL"
+			},
+			{
+				"@key":"87",
+				"@id":"BT019790",
+				"property":[
+					{
+						"@value":"AAV38593.1",
+						"@type":"protein sequence ID"
+					},
+					{
+						"@value":"mRNA",
+						"@type":"molecule type"
+					}
+				],
+				"@type":"EMBL"
+			},
+			{
+				"@key":"88",
+				"@id":"AK312035",
+				"property":[
+					{
+						"@value":"BAG34972.1",
+						"@type":"protein sequence ID"
+					},
+					{
+						"@value":"mRNA",
+						"@type":"molecule type"
+					}
+				],
+				"@type":"EMBL"
+			},
+			{
+				"@key":"89",
+				"@id":"AL356796",
+				"property":[
+					{
+						"@value":"CAI16859.1",
+						"@type":"protein sequence ID"
+					},
+					{
+						"@value":"Genomic_DNA",
+						"@type":"molecule type"
+					}
+				],
+				"@type":"EMBL"
+			},
+			{
+				"@key":"90",
+				"@id":"CH471090",
+				"property":[
+					{
+						"@value":"EAW87416.1",
+						"@type":"protein sequence ID"
+					},
+					{
+						"@value":"Genomic_DNA",
+						"@type":"molecule type"
+					}
+				],
+				"@type":"EMBL"
+			},
+			{
+				"@key":"91",
+				"@id":"BC104818",
+				"property":[
+					{
+						"@value":"AAI04819.1",
+						"@type":"protein sequence ID"
+					},
+					{
+						"@value":"mRNA",
+						"@type":"molecule type"
+					}
+				],
+				"@type":"EMBL"
+			},
+			{
+				"@key":"92",
+				"@id":"BC104820",
+				"property":[
+					{
+						"@value":"AAI04821.1",
+						"@type":"protein sequence ID"
+					},
+					{
+						"@value":"mRNA",
+						"@type":"molecule type"
+					}
+				],
+				"@type":"EMBL"
+			},
+			{
+				"@key":"93",
+				"@id":"BC143313",
+				"property":[
+					{
+						"@value":"AAI43314.1",
+						"@type":"protein sequence ID"
+					},
+					{
+						"@value":"mRNA",
+						"@type":"molecule type"
+					}
+				],
+				"@type":"EMBL"
+			},
+			{
+				"@key":"94",
+				"@id":"BC143314",
+				"property":[
+					{
+						"@value":"AAI43315.1",
+						"@type":"protein sequence ID"
+					},
+					{
+						"@value":"mRNA",
+						"@type":"molecule type"
+					}
+				],
+				"@type":"EMBL"
+			},
+			{
+				"@key":"95",
+				"@id":"BC026238",
+				"property":[
+					{
+						"@value":"AAH26238.1",
+						"@type":"protein sequence ID"
+					},
+					{
+						"@value":"mRNA",
+						"@type":"molecule type"
+					}
+				],
+				"@type":"EMBL"
+			},
+			{
+				"@key":"96",
+				"@id":"IPI00022429",
+				"@type":"IPI"
+			},
+			{
+				"@key":"97",
+				"@id":"A28346",
+				"property":{
+					"@value":"OMHU1",
+					"@type":"entry name"
+				},
+				"@type":"PIR"
+			},
+			{
+				"@key":"98",
+				"@id":"NP_000598.2",
+				"property":{
+					"@value":"NM_000607.2",
+					"@type":"nucleotide sequence ID"
+				},
+				"@type":"RefSeq"
+			},
+			{
+				"@key":"99",
+				"@id":"Hs.522356",
+				"@type":"UniGene"
+			},
+			{
+				"@key":"100",
+				"@id":"3KQ0",
+				"property":[
+					{
+						"@value":"X-ray",
+						"@type":"method"
+					},
+					{
+						"@value":"1.80",
+						"@type":"resolution"
+					},
+					{
+						"@value":"A=20-201",
+						"@type":"chains"
+					}
+				],
+				"@type":"PDB"
+			},
+			{
+				"@key":"101",
+				"@id":"3KQ0",
+				"@type":"PDBsum"
+			},
+			{
+				"@key":"102",
+				"@id":"P02763",
+				"@type":"ProteinModelPortal"
+			},
+			{
+				"@key":"103",
+				"@id":"P02763",
+				"property":{
+					"@value":"19-193",
+					"@type":"residue range"
+				},
+				"@type":"SMR"
+			},
+			{
+				"@key":"104",
+				"@id":"P02763",
+				"property":{
+					"@value":"2",
+					"@type":"interactions"
+				},
+				"@type":"IntAct"
+			},
+			{
+				"@key":"105",
+				"@id":"P02763",
+				"@type":"STRING"
+			},
+			{
+				"@key":"106",
+				"@id":"P02763",
+				"@type":"GlycoSuiteDB"
+			},
+			{
+				"@key":"107",
+				"@id":"P02763",
+				"@type":"SWISS-2DPAGE"
+			},
+			{
+				"@key":"108",
+				"@id":"P02763",
+				"@type":"Siena-2DPAGE"
+			},
+			{
+				"@key":"109",
+				"@id":"P02763",
+				"@type":"PeptideAtlas"
+			},
+			{
+				"@key":"110",
+				"@id":"P02763",
+				"@type":"PRIDE"
+			},
+			{
+				"@key":"111",
+				"@id":"ENST00000259396",
+				"property":[
+					{
+						"@value":"ENSP00000259396",
+						"@type":"protein sequence ID"
+					},
+					{
+						"@value":"ENSG00000229314",
+						"@type":"gene ID"
+					}
+				],
+				"@type":"Ensembl"
+			},
+			{
+				"@key":"112",
+				"@id":"5004",
+				"@type":"GeneID"
+			},
+			{
+				"@key":"113",
+				"@id":"hsa:5004",
+				"@type":"KEGG"
+			},
+			{
+				"@key":"114",
+				"@id":"5004",
+				"@type":"CTD"
+			},
+			{
+				"@key":"115",
+				"@id":"GC09P086691",
+				"@type":"GeneCards"
+			},
+			{
+				"@key":"116",
+				"@id":"HGNC:8498",
+				"property":{
+					"@value":"ORM1",
+					"@type":"gene designation"
+				},
+				"@type":"HGNC"
+			},
+			{
+				"@key":"117",
+				"@id":"CAB006265",
+				"@type":"HPA"
+			},
+			{
+				"@key":"118",
+				"@id":"138600",
+				"property":{
+					"@value":"gene",
+					"@type":"type"
+				},
+				"@type":"MIM"
+			},
+			{
+				"@key":"119",
+				"@id":"NX_P02763",
+				"@type":"neXtProt"
+			},
+			{
+				"@key":"120",
+				"@id":"PA260",
+				"@type":"PharmGKB"
+			},
+			{
+				"@key":"121",
+				"@id":"prNOG11781",
+				"@type":"eggNOG"
+			},
+			{
+				"@key":"122",
+				"@id":"HBG126438",
+				"@type":"HOGENOM"
+			},
+			{
+				"@key":"123",
+				"@id":"HBG000035",
+				"@type":"HOVERGEN"
+			},
+			{
+				"@key":"124",
+				"@id":"P02763",
+				"@type":"InParanoid"
+			},
+			{
+				"@key":"125",
+				"@id":"EOG4V9TS3",
+				"@type":"OrthoDB"
+			},
+			{
+				"@key":"126",
+				"@id":"DB01418",
+				"property":{
+					"@value":"Acenocoumarol",
+					"@type":"generic name"
+				},
+				"@type":"DrugBank"
+			},
+			{
+				"@key":"127",
+				"@id":"DB00802",
+				"property":{
+					"@value":"Alfentanil",
+					"@type":"generic name"
+				},
+				"@type":"DrugBank"
+			},
+			{
+				"@key":"128",
+				"@id":"DB01429",
+				"property":{
+					"@value":"Aprindine",
+					"@type":"generic name"
+				},
+				"@type":"DrugBank"
+			},
+			{
+				"@key":"129",
+				"@id":"DB00280",
+				"property":{
+					"@value":"Disopyramide",
+					"@type":"generic name"
+				},
+				"@type":"DrugBank"
+			},
+			{
+				"@key":"130",
+				"@id":"DB01359",
+				"property":{
+					"@value":"Penbutolol",
+					"@type":"generic name"
+				},
+				"@type":"DrugBank"
+			},
+			{
+				"@key":"131",
+				"@id":"DB00946",
+				"property":{
+					"@value":"Phenprocoumon",
+					"@type":"generic name"
+				},
+				"@type":"DrugBank"
+			},
+			{
+				"@key":"132",
+				"@id":"DB00908",
+				"property":{
+					"@value":"Quinidine",
+					"@type":"generic name"
+				},
+				"@type":"DrugBank"
+			},
+			{
+				"@key":"133",
+				"@id":"DB00706",
+				"property":{
+					"@value":"Tamsulosin",
+					"@type":"generic name"
+				},
+				"@type":"DrugBank"
+			},
+			{
+				"@key":"134",
+				"@id":"19272",
+				"@type":"NextBio"
+			},
+			{
+				"@key":"135",
+				"@id":"P02763",
+				"@type":"ArrayExpress"
+			},
+			{
+				"@key":"136",
+				"@id":"P02763",
+				"@type":"Bgee"
+			},
+			{
+				"@key":"137",
+				"@id":"HS_ORM1",
+				"@type":"CleanEx"
+			},
+			{
+				"@key":"138",
+				"@id":"P02763",
+				"@type":"Genevestigator"
+			},
+			{
+				"@key":"139",
+				"@id":"ENSG00000187681",
+				"property":{
+					"@value":"Homo sapiens",
+					"@type":"organism name"
+				},
+				"@type":"GermOnline"
+			},
+			{
+				"@key":"140",
+				"@id":"GO:0005615",
+				"property":[
+					{
+						"@value":"C:extracellular space",
+						"@type":"term"
+					},
+					{
+						"@value":"TAS:ProtInc",
+						"@type":"evidence"
+					}
+				],
+				"@type":"GO"
+			},
+			{
+				"@key":"141",
+				"@id":"GO:0005515",
+				"property":[
+					{
+						"@value":"F:protein binding",
+						"@type":"term"
+					},
+					{
+						"@value":"IPI:IntAct",
+						"@type":"evidence"
+					}
+				],
+				"@type":"GO"
+			},
+			{
+				"@key":"142",
+				"@id":"GO:0006953",
+				"property":[
+					{
+						"@value":"P:acute-phase response",
+						"@type":"term"
+					},
+					{
+						"@value":"TAS:ProtInc",
+						"@type":"evidence"
+					}
+				],
+				"@type":"GO"
+			},
+			{
+				"@key":"143",
+				"@id":"GO:0002682",
+				"property":[
+					{
+						"@value":"P:regulation of immune system process",
+						"@type":"term"
+					},
+					{
+						"@value":"IEA:InterPro",
+						"@type":"evidence"
+					}
+				],
+				"@type":"GO"
+			},
+			{
+				"@key":"144",
+				"@id":"GO:0006810",
+				"property":[
+					{
+						"@value":"P:transport",
+						"@type":"term"
+					},
+					{
+						"@value":"IEA:UniProtKB-KW",
+						"@type":"evidence"
+					}
+				],
+				"@type":"GO"
+			},
+			{
+				"@key":"145",
+				"@id":"IPR001500",
+				"property":{
+					"@value":"A1A_glycop",
+					"@type":"entry name"
+				},
+				"@type":"InterPro"
+			},
+			{
+				"@key":"146",
+				"@id":"IPR012674",
+				"property":{
+					"@value":"Calycin",
+					"@type":"entry name"
+				},
+				"@type":"InterPro"
+			},
+			{
+				"@key":"147",
+				"@id":"IPR011038",
+				"property":{
+					"@value":"Calycin-like",
+					"@type":"entry name"
+				},
+				"@type":"InterPro"
+			},
+			{
+				"@key":"148",
+				"@id":"IPR000566",
+				"property":{
+					"@value":"Lipocln_cytosolic_FA-bd_dom",
+					"@type":"entry name"
+				},
+				"@type":"InterPro"
+			},
+			{
+				"@key":"149",
+				"@id":"G3DSA:2.40.128.20",
+				"property":[
+					{
+						"@value":"Calycin",
+						"@type":"entry name"
+					},
+					{
+						"@value":"1",
+						"@type":"match status"
+					}
+				],
+				"@type":"Gene3D"
+			},
+			{
+				"@key":"150",
+				"@id":"PTHR11967",
+				"property":[
+					{
+						"@value":"A1A_glycop",
+						"@type":"entry name"
+					},
+					{
+						"@value":"1",
+						"@type":"match status"
+					}
+				],
+				"@type":"PANTHER"
+			},
+			{
+				"@key":"151",
+				"@id":"PF00061",
+				"property":[
+					{
+						"@value":"Lipocalin",
+						"@type":"entry name"
+					},
+					{
+						"@value":"1",
+						"@type":"match status"
+					}
+				],
+				"@type":"Pfam"
+			},
+			{
+				"@key":"152",
+				"@id":"PIRSF036899",
+				"property":[
+					{
+						"@value":"AGP",
+						"@type":"entry name"
+					},
+					{
+						"@value":"1",
+						"@type":"match status"
+					}
+				],
+				"@type":"PIRSF"
+			},
+			{
+				"@key":"153",
+				"@id":"PR00708",
+				"property":{
+					"@value":"A1AGLPROTEIN",
+					"@type":"entry name"
+				},
+				"@type":"PRINTS"
+			},
+			{
+				"@key":"154",
+				"@id":"SSF50814",
+				"property":[
+					{
+						"@value":"Calycin",
+						"@type":"entry name"
+					},
+					{
+						"@value":"1",
+						"@type":"match status"
+					}
+				],
+				"@type":"SUPFAM"
+			},
+			{
+				"@key":"155",
+				"@id":"PS00213",
+				"property":[
+					{
+						"@value":"LIPOCALIN",
+						"@type":"entry name"
+					},
+					{
+						"@value":"FALSE_NEG",
+						"@type":"match status"
+					}
+				],
+				"@type":"PROSITE"
+			}
+		],
+		"protein":{
+			"alternativeName":{
+				"fullName":{
+					"$t":"Orosomucoid-1"
+				},
+				"shortName":{
+					"$t":"OMD 1"
+				}
+			},
+			"recommendedName":{
+				"fullName":{
+					"$t":"Alpha-1-acid glycoprotein 1"
+				},
+				"shortName":{
+					"$t":"AGP 1"
+				}
+			}
+		},
+		"comment":[
+			{
+				"text":{
+					"$t":"Functions as transport protein in the blood stream. Binds various ligands in the interior of its beta-barrel domain. Also binds synthetic drugs and influences their distribution and availability in the body. Appears to function in modulating the activity of the immune system during the acute-phase reaction.",
+					"@evidence":"1 2"
+				},
+				"@type":"function"
+			},
+			{
+				"organismsDiffer":{
+					"$t":"false"
+				},
+				"interactant":[
+					{
+						"@intactId":"EBI-976767"
+					},
+					{
+						"@intactId":"EBI-953978",
+						"label":{
+							"$t":"SERPINE1"
+						},
+						"id":{
+							"$t":"P05121"
+						}
+					}
+				],
+				"experiments":{
+					"$t":"4"
+				},
+				"@type":"interaction"
+			},
+			{
+				"subcellularLocation":{
+					"location":{
+						"$t":"Secreted"
+					}
+				},
+				"@type":"subcellular location"
+			},
+			{
+				"text":{
+					"$t":"Expressed by the liver and secreted in plasma."
+				},
+				"@type":"tissue specificity"
+			},
+			{
+				"text":{
+					"$t":"Synthesis is controlled by glucocorticoids, interleukin-1 and interleukin-6, It increases 5- to 50-fold upon inflammation."
+				},
+				"@type":"induction"
+			},
+			{
+				"text":{
+					"$t":"Contains a beta-barrel that binds various ligands in its interior.",
+					"@evidence":"3"
+				},
+				"@type":"domain"
+			},
+			{
+				"text":{
+					"$t":"Three common alleles of ORM1 are known. ORM1*F1 has Gln-38/Val-174; ORM1*F2 has Gln-38/Met-174 and ORM1*S has Arg-38/Val-174. The sequence shown is that of allele ORM1*F1."
+				},
+				"@type":"polymorphism"
+			},
+			{
+				"text":{
+					"$t":"Belongs to the calycin superfamily. Lipocalin family."
+				},
+				"@type":"similarity"
+			},
+			{
+				"conflict":{
+					"sequence":{
+						"@version":"1",
+						"@id":"CAA29229",
+						"@resource":"EMBL-CDS"
+					},
+					"@type":"erroneous gene model prediction"
+				},
+				"@type":"sequence caution"
+			}
+		],
+		"reference":[
+			{
+				"@key":"2",
+				"scope":{
+					"$t":"NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+				},
+				"citation":{
+					"@date":"1987",
+					"@last":"2296",
+					"@name":"EMBO J.",
+					"dbReference":[
+						{
+							"@key":"3",
+							"@id":"88029318",
+							"@type":"MEDLINE"
+						},
+						{
+							"@key":"4",
+							"@id":"2822385",
+							"@type":"PubMed"
+						}
+					],
+					"@first":"2289",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Dente L."
+							},
+							{
+								"@name":"Pizza M.G."
+							},
+							{
+								"@name":"Metspalu A."
+							},
+							{
+								"@name":"Cortese R."
+							}
+						]
+					},
+					"title":{
+						"$t":"Structure and expression of the genes coding for human alpha 1-acid glycoprotein."
+					},
+					"@type":"journal article",
+					"@volume":"6"
+				}
+			},
+			{
+				"@key":"5",
+				"scope":{
+					"$t":"NUCLEOTIDE SEQUENCE [MRNA]"
+				},
+				"citation":{
+					"@date":"1986",
+					"@last":"131",
+					"@name":"Gene",
+					"dbReference":[
+						{
+							"@key":"6",
+							"@id":"87031577",
+							"@type":"MEDLINE"
+						},
+						{
+							"@key":"7",
+							"@id":"3770479",
+							"@type":"PubMed"
+						},
+						{
+							"@key":"8",
+							"@id":"10.1016/0378-1119(86)90051-X",
+							"@type":"DOI"
+						}
+					],
+					"@first":"127",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Board P.G."
+							},
+							{
+								"@name":"Jones I.M."
+							},
+							{
+								"@name":"Bentley A.K."
+							}
+						]
+					},
+					"title":{
+						"$t":"Molecular cloning and nucleotide sequence of human alpha 1 acid glycoprotein cDNA."
+					},
+					"@type":"journal article",
+					"@volume":"44"
+				}
+			},
+			{
+				"@key":"9",
+				"scope":{
+					"$t":"NUCLEOTIDE SEQUENCE [MRNA]"
+				},
+				"citation":{
+					"@date":"1985",
+					"@last":"3952",
+					"@name":"Nucleic Acids Res.",
+					"dbReference":[
+						{
+							"@key":"10",
+							"@id":"85242080",
+							"@type":"MEDLINE"
+						},
+						{
+							"@key":"11",
+							"@id":"2409529",
+							"@type":"PubMed"
+						},
+						{
+							"@key":"12",
+							"@id":"10.1093/nar/13.11.3941",
+							"@type":"DOI"
+						}
+					],
+					"@first":"3941",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Dente L."
+							},
+							{
+								"@name":"Ciliberto G."
+							},
+							{
+								"@name":"Cortese R."
+							}
+						]
+					},
+					"title":{
+						"$t":"Structure of the human alpha 1-acid glycoprotein gene: sequence homology with other human acute phase protein genes."
+					},
+					"@type":"journal article",
+					"@volume":"13"
+				}
+			},
+			{
+				"@key":"13",
+				"scope":{
+					"$t":"NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA]"
+				},
+				"citation":{
+					"@date":"2004-10",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Kalnine N."
+							},
+							{
+								"@name":"Chen X."
+							},
+							{
+								"@name":"Rolfs A."
+							},
+							{
+								"@name":"Halleck A."
+							},
+							{
+								"@name":"Hines L."
+							},
+							{
+								"@name":"Eisenstein S."
+							},
+							{
+								"@name":"Koundinya M."
+							},
+							{
+								"@name":"Raphael J."
+							},
+							{
+								"@name":"Moreira D."
+							},
+							{
+								"@name":"Kelley T."
+							},
+							{
+								"@name":"LaBaer J."
+							},
+							{
+								"@name":"Lin Y."
+							},
+							{
+								"@name":"Phelan M."
+							},
+							{
+								"@name":"Farmer A."
+							}
+						]
+					},
+					"title":{
+						"$t":"Cloning of human full-length CDSs in BD Creator(TM) system donor vector."
+					},
+					"@db":"EMBL/GenBank/DDBJ databases",
+					"@type":"submission"
+				}
+			},
+			{
+				"source":{
+					"tissue":{
+						"$t":"Liver"
+					}
+				},
+				"@key":"14",
+				"scope":{
+					"$t":"NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA]"
+				},
+				"citation":{
+					"@date":"2004",
+					"@last":"45",
+					"@name":"Nat. Genet.",
+					"dbReference":[
+						{
+							"@key":"15",
+							"@id":"14702039",
+							"@type":"PubMed"
+						},
+						{
+							"@key":"16",
+							"@id":"10.1038/ng1285",
+							"@type":"DOI"
+						}
+					],
+					"@first":"40",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Ota T."
+							},
+							{
+								"@name":"Suzuki Y."
+							},
+							{
+								"@name":"Nishikawa T."
+							},
+							{
+								"@name":"Otsuki T."
+							},
+							{
+								"@name":"Sugiyama T."
+							},
+							{
+								"@name":"Irie R."
+							},
+							{
+								"@name":"Wakamatsu A."
+							},
+							{
+								"@name":"Hayashi K."
+							},
+							{
+								"@name":"Sato H."
+							},
+							{
+								"@name":"Nagai K."
+							},
+							{
+								"@name":"Kimura K."
+							},
+							{
+								"@name":"Makita H."
+							},
+							{
+								"@name":"Sekine M."
+							},
+							{
+								"@name":"Obayashi M."
+							},
+							{
+								"@name":"Nishi T."
+							},
+							{
+								"@name":"Shibahara T."
+							},
+							{
+								"@name":"Tanaka T."
+							},
+							{
+								"@name":"Ishii S."
+							},
+							{
+								"@name":"Yamamoto J."
+							},
+							{
+								"@name":"Saito K."
+							},
+							{
+								"@name":"Kawai Y."
+							},
+							{
+								"@name":"Isono Y."
+							},
+							{
+								"@name":"Nakamura Y."
+							},
+							{
+								"@name":"Nagahari K."
+							},
+							{
+								"@name":"Murakami K."
+							},
+							{
+								"@name":"Yasuda T."
+							},
+							{
+								"@name":"Iwayanagi T."
+							},
+							{
+								"@name":"Wagatsuma M."
+							},
+							{
+								"@name":"Shiratori A."
+							},
+							{
+								"@name":"Sudo H."
+							},
+							{
+								"@name":"Hosoiri T."
+							},
+							{
+								"@name":"Kaku Y."
+							},
+							{
+								"@name":"Kodaira H."
+							},
+							{
+								"@name":"Kondo H."
+							},
+							{
+								"@name":"Sugawara M."
+							},
+							{
+								"@name":"Takahashi M."
+							},
+							{
+								"@name":"Kanda K."
+							},
+							{
+								"@name":"Yokoi T."
+							},
+							{
+								"@name":"Furuya T."
+							},
+							{
+								"@name":"Kikkawa E."
+							},
+							{
+								"@name":"Omura Y."
+							},
+							{
+								"@name":"Abe K."
+							},
+							{
+								"@name":"Kamihara K."
+							},
+							{
+								"@name":"Katsuta N."
+							},
+							{
+								"@name":"Sato K."
+							},
+							{
+								"@name":"Tanikawa M."
+							},
+							{
+								"@name":"Yamazaki M."
+							},
+							{
+								"@name":"Ninomiya K."
+							},
+							{
+								"@name":"Ishibashi T."
+							},
+							{
+								"@name":"Yamashita H."
+							},
+							{
+								"@name":"Murakawa K."
+							},
+							{
+								"@name":"Fujimori K."
+							},
+							{
+								"@name":"Tanai H."
+							},
+							{
+								"@name":"Kimata M."
+							},
+							{
+								"@name":"Watanabe M."
+							},
+							{
+								"@name":"Hiraoka S."
+							},
+							{
+								"@name":"Chiba Y."
+							},
+							{
+								"@name":"Ishida S."
+							},
+							{
+								"@name":"Ono Y."
+							},
+							{
+								"@name":"Takiguchi S."
+							},
+							{
+								"@name":"Watanabe S."
+							},
+							{
+								"@name":"Yosida M."
+							},
+							{
+								"@name":"Hotuta T."
+							},
+							{
+								"@name":"Kusano J."
+							},
+							{
+								"@name":"Kanehori K."
+							},
+							{
+								"@name":"Takahashi-Fujii A."
+							},
+							{
+								"@name":"Hara H."
+							},
+							{
+								"@name":"Tanase T.-O."
+							},
+							{
+								"@name":"Nomura Y."
+							},
+							{
+								"@name":"Togiya S."
+							},
+							{
+								"@name":"Komai F."
+							},
+							{
+								"@name":"Hara R."
+							},
+							{
+								"@name":"Takeuchi K."
+							},
+							{
+								"@name":"Arita M."
+							},
+							{
+								"@name":"Imose N."
+							},
+							{
+								"@name":"Musashino K."
+							},
+							{
+								"@name":"Yuuki H."
+							},
+							{
+								"@name":"Oshima A."
+							},
+							{
+								"@name":"Sasaki N."
+							},
+							{
+								"@name":"Aotsuka S."
+							},
+							{
+								"@name":"Yoshikawa Y."
+							},
+							{
+								"@name":"Matsunawa H."
+							},
+							{
+								"@name":"Ichihara T."
+							},
+							{
+								"@name":"Shiohata N."
+							},
+							{
+								"@name":"Sano S."
+							},
+							{
+								"@name":"Moriya S."
+							},
+							{
+								"@name":"Momiyama H."
+							},
+							{
+								"@name":"Satoh N."
+							},
+							{
+								"@name":"Takami S."
+							},
+							{
+								"@name":"Terashima Y."
+							},
+							{
+								"@name":"Suzuki O."
+							},
+							{
+								"@name":"Nakagawa S."
+							},
+							{
+								"@name":"Senoh A."
+							},
+							{
+								"@name":"Mizoguchi H."
+							},
+							{
+								"@name":"Goto Y."
+							},
+							{
+								"@name":"Shimizu F."
+							},
+							{
+								"@name":"Wakebe H."
+							},
+							{
+								"@name":"Hishigaki H."
+							},
+							{
+								"@name":"Watanabe T."
+							},
+							{
+								"@name":"Sugiyama A."
+							},
+							{
+								"@name":"Takemoto M."
+							},
+							{
+								"@name":"Kawakami B."
+							},
+							{
+								"@name":"Yamazaki M."
+							},
+							{
+								"@name":"Watanabe K."
+							},
+							{
+								"@name":"Kumagai A."
+							},
+							{
+								"@name":"Itakura S."
+							},
+							{
+								"@name":"Fukuzumi Y."
+							},
+							{
+								"@name":"Fujimori Y."
+							},
+							{
+								"@name":"Komiyama M."
+							},
+							{
+								"@name":"Tashiro H."
+							},
+							{
+								"@name":"Tanigami A."
+							},
+							{
+								"@name":"Fujiwara T."
+							},
+							{
+								"@name":"Ono T."
+							},
+							{
+								"@name":"Yamada K."
+							},
+							{
+								"@name":"Fujii Y."
+							},
+							{
+								"@name":"Ozaki K."
+							},
+							{
+								"@name":"Hirao M."
+							},
+							{
+								"@name":"Ohmori Y."
+							},
+							{
+								"@name":"Kawabata A."
+							},
+							{
+								"@name":"Hikiji T."
+							},
+							{
+								"@name":"Kobatake N."
+							},
+							{
+								"@name":"Inagaki H."
+							},
+							{
+								"@name":"Ikema Y."
+							},
+							{
+								"@name":"Okamoto S."
+							},
+							{
+								"@name":"Okitani R."
+							},
+							{
+								"@name":"Kawakami T."
+							},
+							{
+								"@name":"Noguchi S."
+							},
+							{
+								"@name":"Itoh T."
+							},
+							{
+								"@name":"Shigeta K."
+							},
+							{
+								"@name":"Senba T."
+							},
+							{
+								"@name":"Matsumura K."
+							},
+							{
+								"@name":"Nakajima Y."
+							},
+							{
+								"@name":"Mizuno T."
+							},
+							{
+								"@name":"Morinaga M."
+							},
+							{
+								"@name":"Sasaki M."
+							},
+							{
+								"@name":"Togashi T."
+							},
+							{
+								"@name":"Oyama M."
+							},
+							{
+								"@name":"Hata H."
+							},
+							{
+								"@name":"Watanabe M."
+							},
+							{
+								"@name":"Komatsu T."
+							},
+							{
+								"@name":"Mizushima-Sugano J."
+							},
+							{
+								"@name":"Satoh T."
+							},
+							{
+								"@name":"Shirai Y."
+							},
+							{
+								"@name":"Takahashi Y."
+							},
+							{
+								"@name":"Nakagawa K."
+							},
+							{
+								"@name":"Okumura K."
+							},
+							{
+								"@name":"Nagase T."
+							},
+							{
+								"@name":"Nomura N."
+							},
+							{
+								"@name":"Kikuchi H."
+							},
+							{
+								"@name":"Masuho Y."
+							},
+							{
+								"@name":"Yamashita R."
+							},
+							{
+								"@name":"Nakai K."
+							},
+							{
+								"@name":"Yada T."
+							},
+							{
+								"@name":"Nakamura Y."
+							},
+							{
+								"@name":"Ohara O."
+							},
+							{
+								"@name":"Isogai T."
+							},
+							{
+								"@name":"Sugano S."
+							}
+						]
+					},
+					"title":{
+						"$t":"Complete sequencing and characterization of 21,243 full-length human cDNAs."
+					},
+					"@type":"journal article",
+					"@volume":"36"
+				}
+			},
+			{
+				"@key":"17",
+				"scope":[
+					{
+						"$t":"NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+					},
+					{
+						"$t":"VARIANT ARG-38"
+					}
+				],
+				"citation":{
+					"@date":"2004",
+					"@last":"374",
+					"@name":"Nature",
+					"dbReference":[
+						{
+							"@key":"18",
+							"@id":"15164053",
+							"@type":"PubMed"
+						},
+						{
+							"@key":"19",
+							"@id":"10.1038/nature02465",
+							"@type":"DOI"
+						}
+					],
+					"@first":"369",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Humphray S.J."
+							},
+							{
+								"@name":"Oliver K."
+							},
+							{
+								"@name":"Hunt A.R."
+							},
+							{
+								"@name":"Plumb R.W."
+							},
+							{
+								"@name":"Loveland J.E."
+							},
+							{
+								"@name":"Howe K.L."
+							},
+							{
+								"@name":"Andrews T.D."
+							},
+							{
+								"@name":"Searle S."
+							},
+							{
+								"@name":"Hunt S.E."
+							},
+							{
+								"@name":"Scott C.E."
+							},
+							{
+								"@name":"Jones M.C."
+							},
+							{
+								"@name":"Ainscough R."
+							},
+							{
+								"@name":"Almeida J.P."
+							},
+							{
+								"@name":"Ambrose K.D."
+							},
+							{
+								"@name":"Ashwell R.I.S."
+							},
+							{
+								"@name":"Babbage A.K."
+							},
+							{
+								"@name":"Babbage S."
+							},
+							{
+								"@name":"Bagguley C.L."
+							},
+							{
+								"@name":"Bailey J."
+							},
+							{
+								"@name":"Banerjee R."
+							},
+							{
+								"@name":"Barker D.J."
+							},
+							{
+								"@name":"Barlow K.F."
+							},
+							{
+								"@name":"Bates K."
+							},
+							{
+								"@name":"Beasley H."
+							},
+							{
+								"@name":"Beasley O."
+							},
+							{
+								"@name":"Bird C.P."
+							},
+							{
+								"@name":"Bray-Allen S."
+							},
+							{
+								"@name":"Brown A.J."
+							},
+							{
+								"@name":"Brown J.Y."
+							},
+							{
+								"@name":"Burford D."
+							},
+							{
+								"@name":"Burrill W."
+							},
+							{
+								"@name":"Burton J."
+							},
+							{
+								"@name":"Carder C."
+							},
+							{
+								"@name":"Carter N.P."
+							},
+							{
+								"@name":"Chapman J.C."
+							},
+							{
+								"@name":"Chen Y."
+							},
+							{
+								"@name":"Clarke G."
+							},
+							{
+								"@name":"Clark S.Y."
+							},
+							{
+								"@name":"Clee C.M."
+							},
+							{
+								"@name":"Clegg S."
+							},
+							{
+								"@name":"Collier R.E."
+							},
+							{
+								"@name":"Corby N."
+							},
+							{
+								"@name":"Crosier M."
+							},
+							{
+								"@name":"Cummings A.T."
+							},
+							{
+								"@name":"Davies J."
+							},
+							{
+								"@name":"Dhami P."
+							},
+							{
+								"@name":"Dunn M."
+							},
+							{
+								"@name":"Dutta I."
+							},
+							{
+								"@name":"Dyer L.W."
+							},
+							{
+								"@name":"Earthrowl M.E."
+							},
+							{
+								"@name":"Faulkner L."
+							},
+							{
+								"@name":"Fleming C.J."
+							},
+							{
+								"@name":"Frankish A."
+							},
+							{
+								"@name":"Frankland J.A."
+							},
+							{
+								"@name":"French L."
+							},
+							{
+								"@name":"Fricker D.G."
+							},
+							{
+								"@name":"Garner P."
+							},
+							{
+								"@name":"Garnett J."
+							},
+							{
+								"@name":"Ghori J."
+							},
+							{
+								"@name":"Gilbert J.G.R."
+							},
+							{
+								"@name":"Glison C."
+							},
+							{
+								"@name":"Grafham D.V."
+							},
+							{
+								"@name":"Gribble S."
+							},
+							{
+								"@name":"Griffiths C."
+							},
+							{
+								"@name":"Griffiths-Jones S."
+							},
+							{
+								"@name":"Grocock R."
+							},
+							{
+								"@name":"Guy J."
+							},
+							{
+								"@name":"Hall R.E."
+							},
+							{
+								"@name":"Hammond S."
+							},
+							{
+								"@name":"Harley J.L."
+							},
+							{
+								"@name":"Harrison E.S.I."
+							},
+							{
+								"@name":"Hart E.A."
+							},
+							{
+								"@name":"Heath P.D."
+							},
+							{
+								"@name":"Henderson C.D."
+							},
+							{
+								"@name":"Hopkins B.L."
+							},
+							{
+								"@name":"Howard P.J."
+							},
+							{
+								"@name":"Howden P.J."
+							},
+							{
+								"@name":"Huckle E."
+							},
+							{
+								"@name":"Johnson C."
+							},
+							{
+								"@name":"Johnson D."
+							},
+							{
+								"@name":"Joy A.A."
+							},
+							{
+								"@name":"Kay M."
+							},
+							{
+								"@name":"Keenan S."
+							},
+							{
+								"@name":"Kershaw J.K."
+							},
+							{
+								"@name":"Kimberley A.M."
+							},
+							{
+								"@name":"King A."
+							},
+							{
+								"@name":"Knights A."
+							},
+							{
+								"@name":"Laird G.K."
+							},
+							{
+								"@name":"Langford C."
+							},
+							{
+								"@name":"Lawlor S."
+							},
+							{
+								"@name":"Leongamornlert D.A."
+							},
+							{
+								"@name":"Leversha M."
+							},
+							{
+								"@name":"Lloyd C."
+							},
+							{
+								"@name":"Lloyd D.M."
+							},
+							{
+								"@name":"Lovell J."
+							},
+							{
+								"@name":"Martin S."
+							},
+							{
+								"@name":"Mashreghi-Mohammadi M."
+							},
+							{
+								"@name":"Matthews L."
+							},
+							{
+								"@name":"McLaren S."
+							},
+							{
+								"@name":"McLay K.E."
+							},
+							{
+								"@name":"McMurray A."
+							},
+							{
+								"@name":"Milne S."
+							},
+							{
+								"@name":"Nickerson T."
+							},
+							{
+								"@name":"Nisbett J."
+							},
+							{
+								"@name":"Nordsiek G."
+							},
+							{
+								"@name":"Pearce A.V."
+							},
+							{
+								"@name":"Peck A.I."
+							},
+							{
+								"@name":"Porter K.M."
+							},
+							{
+								"@name":"Pandian R."
+							},
+							{
+								"@name":"Pelan S."
+							},
+							{
+								"@name":"Phillimore B."
+							},
+							{
+								"@name":"Povey S."
+							},
+							{
+								"@name":"Ramsey Y."
+							},
+							{
+								"@name":"Rand V."
+							},
+							{
+								"@name":"Scharfe M."
+							},
+							{
+								"@name":"Sehra H.K."
+							},
+							{
+								"@name":"Shownkeen R."
+							},
+							{
+								"@name":"Sims S.K."
+							},
+							{
+								"@name":"Skuce C.D."
+							},
+							{
+								"@name":"Smith M."
+							},
+							{
+								"@name":"Steward C.A."
+							},
+							{
+								"@name":"Swarbreck D."
+							},
+							{
+								"@name":"Sycamore N."
+							},
+							{
+								"@name":"Tester J."
+							},
+							{
+								"@name":"Thorpe A."
+							},
+							{
+								"@name":"Tracey A."
+							},
+							{
+								"@name":"Tromans A."
+							},
+							{
+								"@name":"Thomas D.W."
+							},
+							{
+								"@name":"Wall M."
+							},
+							{
+								"@name":"Wallis J.M."
+							},
+							{
+								"@name":"West A.P."
+							},
+							{
+								"@name":"Whitehead S.L."
+							},
+							{
+								"@name":"Willey D.L."
+							},
+							{
+								"@name":"Williams S.A."
+							},
+							{
+								"@name":"Wilming L."
+							},
+							{
+								"@name":"Wray P.W."
+							},
+							{
+								"@name":"Young L."
+							},
+							{
+								"@name":"Ashurst J.L."
+							},
+							{
+								"@name":"Coulson A."
+							},
+							{
+								"@name":"Blocker H."
+							},
+							{
+								"@name":"Durbin R.M."
+							},
+							{
+								"@name":"Sulston J.E."
+							},
+							{
+								"@name":"Hubbard T."
+							},
+							{
+								"@name":"Jackson M.J."
+							},
+							{
+								"@name":"Bentley D.R."
+							},
+							{
+								"@name":"Beck S."
+							},
+							{
+								"@name":"Rogers J."
+							},
+							{
+								"@name":"Dunham I."
+							}
+						]
+					},
+					"title":{
+						"$t":"DNA sequence and analysis of human chromosome 9."
+					},
+					"@type":"journal article",
+					"@volume":"429"
+				}
+			},
+			{
+				"@key":"20",
+				"scope":[
+					{
+						"$t":"NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+					},
+					{
+						"$t":"VARIANT ARG-38"
+					}
+				],
+				"citation":{
+					"@date":"2005-07",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Mural R.J."
+							},
+							{
+								"@name":"Istrail S."
+							},
+							{
+								"@name":"Sutton G.G."
+							},
+							{
+								"@name":"Florea L."
+							},
+							{
+								"@name":"Halpern A.L."
+							},
+							{
+								"@name":"Mobarry C.M."
+							},
+							{
+								"@name":"Lippert R."
+							},
+							{
+								"@name":"Walenz B."
+							},
+							{
+								"@name":"Shatkay H."
+							},
+							{
+								"@name":"Dew I."
+							},
+							{
+								"@name":"Miller J.R."
+							},
+							{
+								"@name":"Flanigan M.J."
+							},
+							{
+								"@name":"Edwards N.J."
+							},
+							{
+								"@name":"Bolanos R."
+							},
+							{
+								"@name":"Fasulo D."
+							},
+							{
+								"@name":"Halldorsson B.V."
+							},
+							{
+								"@name":"Hannenhalli S."
+							},
+							{
+								"@name":"Turner R."
+							},
+							{
+								"@name":"Yooseph S."
+							},
+							{
+								"@name":"Lu F."
+							},
+							{
+								"@name":"Nusskern D.R."
+							},
+							{
+								"@name":"Shue B.C."
+							},
+							{
+								"@name":"Zheng X.H."
+							},
+							{
+								"@name":"Zhong F."
+							},
+							{
+								"@name":"Delcher A.L."
+							},
+							{
+								"@name":"Huson D.H."
+							},
+							{
+								"@name":"Kravitz S.A."
+							},
+							{
+								"@name":"Mouchard L."
+							},
+							{
+								"@name":"Reinert K."
+							},
+							{
+								"@name":"Remington K.A."
+							},
+							{
+								"@name":"Clark A.G."
+							},
+							{
+								"@name":"Waterman M.S."
+							},
+							{
+								"@name":"Eichler E.E."
+							},
+							{
+								"@name":"Adams M.D."
+							},
+							{
+								"@name":"Hunkapiller M.W."
+							},
+							{
+								"@name":"Myers E.W."
+							},
+							{
+								"@name":"Venter J.C."
+							}
+						]
+					},
+					"@db":"EMBL/GenBank/DDBJ databases",
+					"@type":"submission"
+				}
+			},
+			{
+				"source":{
+					"tissue":{
+						"$t":"Liver"
+					}
+				},
+				"@key":"21",
+				"scope":[
+					{
+						"$t":"NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA]"
+					},
+					{
+						"$t":"VARIANTS ARG-38; CYS-167 AND MET-174"
+					}
+				],
+				"citation":{
+					"@date":"2004",
+					"@last":"2127",
+					"@name":"Genome Res.",
+					"dbReference":[
+						{
+							"@key":"22",
+							"@id":"15489334",
+							"@type":"PubMed"
+						},
+						{
+							"@key":"23",
+							"@id":"10.1101/gr.2596504",
+							"@type":"DOI"
+						}
+					],
+					"@first":"2121",
+					"authorList":{
+						"consortium":{
+							"@name":"The MGC Project Team"
+						}
+					},
+					"title":{
+						"$t":"The status, quality, and expansion of the NIH full-length cDNA project: the Mammalian Gene Collection (MGC)."
+					},
+					"@type":"journal article",
+					"@volume":"14"
+				}
+			},
+			{
+				"@key":"24",
+				"scope":{
+					"$t":"PROTEIN SEQUENCE OF 19-129"
+				},
+				"citation":{
+					"@date":"1973",
+					"@last":"2724",
+					"@name":"Biochemistry",
+					"dbReference":[
+						{
+							"@key":"25",
+							"@id":"73197484",
+							"@type":"MEDLINE"
+						},
+						{
+							"@key":"26",
+							"@id":"4711474",
+							"@type":"PubMed"
+						},
+						{
+							"@key":"27",
+							"@id":"10.1021/bi00738a026",
+							"@type":"DOI"
+						}
+					],
+					"@first":"2711",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Schmid K."
+							},
+							{
+								"@name":"Kaufmann H."
+							},
+							{
+								"@name":"Isemura S."
+							},
+							{
+								"@name":"Bauer F."
+							},
+							{
+								"@name":"Emura J."
+							},
+							{
+								"@name":"Motoyama T."
+							},
+							{
+								"@name":"Ishiguro M."
+							},
+							{
+								"@name":"Nanno S."
+							}
+						]
+					},
+					"title":{
+						"$t":"Structure of alpha 1-acid glycoprotein. The complete amino acid sequence, multiple amino acid substitutions, and homology with the immunoglobulins."
+					},
+					"@type":"journal article",
+					"@volume":"12"
+				}
+			},
+			{
+				"@key":"28",
+				"scope":{
+					"$t":"PROTEIN SEQUENCE OF 129-201"
+				},
+				"citation":{
+					"@date":"1972",
+					"@last":"3829",
+					"@name":"Biochemistry",
+					"dbReference":[
+						{
+							"@key":"29",
+							"@id":"73006944",
+							"@type":"MEDLINE"
+						},
+						{
+							"@key":"30",
+							"@id":"4561179",
+							"@type":"PubMed"
+						},
+						{
+							"@key":"31",
+							"@id":"10.1021/bi00770a022",
+							"@type":"DOI"
+						}
+					],
+					"@first":"3817",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Ikenaka T."
+							},
+							{
+								"@name":"Ishiguro M."
+							},
+							{
+								"@name":"Emura J."
+							},
+							{
+								"@name":"Kaufmann H."
+							},
+							{
+								"@name":"Isemura S."
+							},
+							{
+								"@name":"Bauer W."
+							},
+							{
+								"@name":"Schmid K."
+							}
+						]
+					},
+					"title":{
+						"$t":"Isolation and partial characterization of the cyanogen bromide fragments of alpha 1-acid glycoprotein and the elucidation of the amino acid sequence of the carboxyl-terminal cyanogen bromide fragment."
+					},
+					"@type":"journal article",
+					"@volume":"11"
+				}
+			},
+			{
+				"@key":"32",
+				"scope":{
+					"$t":"DISULFIDE BONDS"
+				},
+				"citation":{
+					"@date":"1974",
+					"@last":"2697",
+					"@name":"Biochemistry",
+					"dbReference":[
+						{
+							"@key":"33",
+							"@id":"74290014",
+							"@type":"MEDLINE"
+						},
+						{
+							"@key":"34",
+							"@id":"4603214",
+							"@type":"PubMed"
+						},
+						{
+							"@key":"35",
+							"@id":"10.1021/bi00710a006",
+							"@type":"DOI"
+						}
+					],
+					"@first":"2694",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Schmid K."
+							},
+							{
+								"@name":"Buergi W."
+							},
+							{
+								"@name":"Collins J.H."
+							},
+							{
+								"@name":"Nanno S."
+							}
+						]
+					},
+					"title":{
+						"$t":"The disulfide bonds of alpha1-acid glycoprotein."
+					},
+					"@type":"journal article",
+					"@volume":"13"
+				}
+			},
+			{
+				"@key":"36",
+				"scope":{
+					"$t":"GLYCOSYLATION AT ASN-33; ASN-56; ASN-72; ASN-93 AND ASN-103"
+				},
+				"citation":{
+					"@date":"1992",
+					"@last":"112",
+					"@name":"Biochem. J.",
+					"dbReference":[
+						{
+							"@key":"37",
+							"@id":"92231810",
+							"@type":"MEDLINE"
+						},
+						{
+							"@key":"38",
+							"@id":"1567356",
+							"@type":"PubMed"
+						}
+					],
+					"@first":"105",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Treuheit M.J."
+							},
+							{
+								"@name":"Costello C.E."
+							},
+							{
+								"@name":"Halsall H.B."
+							}
+						]
+					},
+					"title":{
+						"$t":"Analysis of the five glycosylation sites of human alpha 1-acid glycoprotein."
+					},
+					"@type":"journal article",
+					"@volume":"283"
+				}
+			},
+			{
+				"@key":"39",
+				"scope":{
+					"$t":"GLYCOSYLATION AT ASN-33"
+				},
+				"citation":{
+					"@date":"2003",
+					"@last":"666",
+					"@name":"Nat. Biotechnol.",
+					"dbReference":[
+						{
+							"@key":"40",
+							"@id":"22660472",
+							"@type":"MEDLINE"
+						},
+						{
+							"@key":"41",
+							"@id":"12754519",
+							"@type":"PubMed"
+						},
+						{
+							"@key":"42",
+							"@id":"10.1038/nbt827",
+							"@type":"DOI"
+						}
+					],
+					"@first":"660",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Zhang H."
+							},
+							{
+								"@name":"Li X.-J."
+							},
+							{
+								"@name":"Martin D.B."
+							},
+							{
+								"@name":"Aebersold R."
+							}
+						]
+					},
+					"title":{
+						"$t":"Identification and quantification of N-linked glycoproteins using hydrazide chemistry, stable isotope labeling and mass spectrometry."
+					},
+					"@type":"journal article",
+					"@volume":"21"
+				}
+			},
+			{
+				"@key":"43",
+				"scope":[
+					{
+						"$t":"GLYCOSYLATION AT ASN-33; ASN-72 AND ASN-93"
+					},
+					{
+						"$t":"MASS SPECTROMETRY"
+					}
+				],
+				"citation":{
+					"@date":"2004",
+					"@last":"566",
+					"@name":"J. Proteome Res.",
+					"dbReference":[
+						{
+							"@key":"44",
+							"@id":"15253437",
+							"@type":"PubMed"
+						},
+						{
+							"@key":"45",
+							"@id":"10.1021/pr034112b",
+							"@type":"DOI"
+						}
+					],
+					"@first":"556",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Hagglund P."
+							},
+							{
+								"@name":"Bunkenborg J."
+							},
+							{
+								"@name":"Elortza F."
+							},
+							{
+								"@name":"Jensen O.N."
+							},
+							{
+								"@name":"Roepstorff P."
+							}
+						]
+					},
+					"title":{
+						"$t":"A new strategy for identification of N-glycosylated proteins and unambiguous assignment of their glycosylation sites using HILIC enrichment and partial deglycosylation."
+					},
+					"@type":"journal article",
+					"@volume":"3"
+				}
+			},
+			{
+				"source":{
+					"tissue":{
+						"$t":"Bile"
+					}
+				},
+				"@key":"46",
+				"scope":[
+					{
+						"$t":"GLYCOSYLATION [LARGE SCALE ANALYSIS] AT ASN-33 AND ASN-93"
+					},
+					{
+						"$t":"MASS SPECTROMETRY"
+					}
+				],
+				"citation":{
+					"@date":"2004",
+					"@last":"728",
+					"@name":"Mol. Cell. Proteomics",
+					"dbReference":[
+						{
+							"@key":"47",
+							"@id":"15084671",
+							"@type":"PubMed"
+						},
+						{
+							"@key":"48",
+							"@id":"10.1074/mcp.M400015-MCP200",
+							"@type":"DOI"
+						}
+					],
+					"@first":"715",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Kristiansen T.Z."
+							},
+							{
+								"@name":"Bunkenborg J."
+							},
+							{
+								"@name":"Gronborg M."
+							},
+							{
+								"@name":"Molina H."
+							},
+							{
+								"@name":"Thuluvath P.J."
+							},
+							{
+								"@name":"Argani P."
+							},
+							{
+								"@name":"Goggins M.G."
+							},
+							{
+								"@name":"Maitra A."
+							},
+							{
+								"@name":"Pandey A."
+							}
+						]
+					},
+					"title":{
+						"$t":"A proteomic analysis of human bile."
+					},
+					"@type":"journal article",
+					"@volume":"3"
+				}
+			},
+			{
+				"source":{
+					"tissue":{
+						"$t":"Plasma"
+					}
+				},
+				"@key":"49",
+				"scope":[
+					{
+						"$t":"GLYCOSYLATION [LARGE SCALE ANALYSIS] AT ASN-33; ASN-56; ASN-72; ASN-93 AND ASN-103"
+					},
+					{
+						"$t":"MASS SPECTROMETRY"
+					}
+				],
+				"citation":{
+					"@date":"2004",
+					"@last":"465",
+					"@name":"Proteomics",
+					"dbReference":[
+						{
+							"@key":"50",
+							"@id":"14760718",
+							"@type":"PubMed"
+						},
+						{
+							"@key":"51",
+							"@id":"10.1002/pmic.200300556",
+							"@type":"DOI"
+						}
+					],
+					"@first":"454",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Bunkenborg J."
+							},
+							{
+								"@name":"Pilch B.J."
+							},
+							{
+								"@name":"Podtelejnikov A.V."
+							},
+							{
+								"@name":"Wisniewski J.R."
+							}
+						]
+					},
+					"title":{
+						"$t":"Screening for N-glycosylated proteins by liquid chromatography mass spectrometry."
+					},
+					"@type":"journal article",
+					"@volume":"4"
+				}
+			},
+			{
+				"source":{
+					"tissue":{
+						"$t":"Plasma"
+					}
+				},
+				"@key":"52",
+				"scope":[
+					{
+						"$t":"GLYCOSYLATION [LARGE SCALE ANALYSIS] AT ASN-33; ASN-56; ASN-72; ASN-93 AND ASN-103"
+					},
+					{
+						"$t":"MASS SPECTROMETRY"
+					}
+				],
+				"citation":{
+					"@date":"2005",
+					"@last":"2080",
+					"@name":"J. Proteome Res.",
+					"dbReference":[
+						{
+							"@key":"53",
+							"@id":"16335952",
+							"@type":"PubMed"
+						},
+						{
+							"@key":"54",
+							"@id":"10.1021/pr0502065",
+							"@type":"DOI"
+						}
+					],
+					"@first":"2070",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Liu T."
+							},
+							{
+								"@name":"Qian W.-J."
+							},
+							{
+								"@name":"Gritsenko M.A."
+							},
+							{
+								"@name":"Camp D.G. II"
+							},
+							{
+								"@name":"Monroe M.E."
+							},
+							{
+								"@name":"Moore R.J."
+							},
+							{
+								"@name":"Smith R.D."
+							}
+						]
+					},
+					"title":{
+						"$t":"Human plasma N-glycoproteome analysis by immunoaffinity subtraction, hydrazide chemistry, and mass spectrometry."
+					},
+					"@type":"journal article",
+					"@volume":"4"
+				}
+			},
+			{
+				"@key":"55",
+				"scope":{
+					"$t":"FUNCTION"
+				},
+				"citation":{
+					"@date":"2006",
+					"@last":"1712",
+					"@name":"Biochim. Biophys. Acta",
+					"dbReference":[
+						{
+							"@key":"56",
+							"@id":"17008009",
+							"@type":"PubMed"
+						},
+						{
+							"@key":"57",
+							"@id":"10.1016/j.bbagen.2006.08.015",
+							"@type":"DOI"
+						}
+					],
+					"@first":"1704",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Fitos I."
+							},
+							{
+								"@name":"Visy J."
+							},
+							{
+								"@name":"Zsila F."
+							},
+							{
+								"@name":"Mady G."
+							},
+							{
+								"@name":"Simonyi M."
+							}
+						]
+					},
+					"title":{
+						"$t":"Selective binding of imatinib to the genetic variants of human alpha1-acid glycoprotein."
+					},
+					"@type":"journal article",
+					"@volume":"1760"
+				}
+			},
+			{
+				"source":{
+					"tissue":{
+						"$t":"Saliva"
+					}
+				},
+				"@key":"58",
+				"scope":[
+					{
+						"$t":"GLYCOSYLATION [LARGE SCALE ANALYSIS] AT ASN-93"
+					},
+					{
+						"$t":"MASS SPECTROMETRY"
+					}
+				],
+				"citation":{
+					"@date":"2006",
+					"@last":"1503",
+					"@name":"J. Proteome Res.",
+					"dbReference":[
+						{
+							"@key":"59",
+							"@id":"16740002",
+							"@type":"PubMed"
+						},
+						{
+							"@key":"60",
+							"@id":"10.1021/pr050492k",
+							"@type":"DOI"
+						}
+					],
+					"@first":"1493",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Ramachandran P."
+							},
+							{
+								"@name":"Boontheung P."
+							},
+							{
+								"@name":"Xie Y."
+							},
+							{
+								"@name":"Sondej M."
+							},
+							{
+								"@name":"Wong D.T."
+							},
+							{
+								"@name":"Loo J.A."
+							}
+						]
+					},
+					"title":{
+						"$t":"Identification of N-linked glycoproteins in human saliva by glycoprotein capture and mass spectrometry."
+					},
+					"@type":"journal article",
+					"@volume":"5"
+				}
+			},
+			{
+				"@key":"61",
+				"scope":{
+					"$t":"FUNCTION"
+				},
+				"citation":{
+					"@date":"2007",
+					"@last":"809",
+					"@name":"Biochim. Biophys. Acta",
+					"dbReference":[
+						{
+							"@key":"62",
+							"@id":"17321687",
+							"@type":"PubMed"
+						},
+						{
+							"@key":"63",
+							"@id":"10.1016/j.bbagen.2007.01.009",
+							"@type":"DOI"
+						}
+					],
+					"@first":"797",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Zsila F."
+							},
+							{
+								"@name":"Iwao Y."
+							}
+						]
+					},
+					"title":{
+						"$t":"The drug binding site of human alpha1-acid glycoprotein: insight from induced circular dichroism and electronic absorption spectra."
+					},
+					"@type":"journal article",
+					"@volume":"1770"
+				}
+			},
+			{
+				"source":{
+					"tissue":{
+						"$t":"Liver"
+					}
+				},
+				"@key":"64",
+				"scope":[
+					{
+						"$t":"GLYCOSYLATION [LARGE SCALE ANALYSIS] AT ASN-93 AND ASN-103"
+					},
+					{
+						"$t":"MASS SPECTROMETRY"
+					}
+				],
+				"citation":{
+					"@date":"2009",
+					"@last":"661",
+					"@name":"J. Proteome Res.",
+					"dbReference":[
+						{
+							"@key":"65",
+							"@id":"19159218",
+							"@type":"PubMed"
+						},
+						{
+							"@key":"66",
+							"@id":"10.1021/pr8008012",
+							"@type":"DOI"
+						}
+					],
+					"@first":"651",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Chen R."
+							},
+							{
+								"@name":"Jiang X."
+							},
+							{
+								"@name":"Sun D."
+							},
+							{
+								"@name":"Han G."
+							},
+							{
+								"@name":"Wang F."
+							},
+							{
+								"@name":"Ye M."
+							},
+							{
+								"@name":"Wang L."
+							},
+							{
+								"@name":"Zou H."
+							}
+						]
+					},
+					"title":{
+						"$t":"Glycoproteomics analysis of human liver tissue by combination of multiple enzyme digestion and hydrazide chemistry."
+					},
+					"@type":"journal article",
+					"@volume":"8"
+				}
+			},
+			{
+				"source":{
+					"tissue":{
+						"$t":"Cerebrospinal fluid"
+					}
+				},
+				"@key":"67",
+				"scope":[
+					{
+						"$t":"GLYCOSYLATION [LARGE SCALE ANALYSIS] AT ASN-33 AND ASN-72"
+					},
+					{
+						"$t":"STRUCTURE OF CARBOHYDRATES"
+					},
+					{
+						"$t":"MASS SPECTROMETRY"
+					}
+				],
+				"citation":{
+					"@date":"2009",
+					"@last":"811",
+					"@name":"Nat. Methods",
+					"dbReference":[
+						{
+							"@key":"68",
+							"@id":"19838169",
+							"@type":"PubMed"
+						},
+						{
+							"@key":"69",
+							"@id":"10.1038/nmeth.1392",
+							"@type":"DOI"
+						}
+					],
+					"@first":"809",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Nilsson J."
+							},
+							{
+								"@name":"Rueetschi U."
+							},
+							{
+								"@name":"Halim A."
+							},
+							{
+								"@name":"Hesse C."
+							},
+							{
+								"@name":"Carlsohn E."
+							},
+							{
+								"@name":"Brinkmalm G."
+							},
+							{
+								"@name":"Larson G."
+							}
+						]
+					},
+					"title":{
+						"$t":"Enrichment of glycopeptides for glycan structure and attachment site identification."
+					},
+					"@type":"journal article",
+					"@volume":"6"
+				}
+			},
+			{
+				"@key":"70",
+				"scope":[
+					{
+						"$t":"X-RAY CRYSTALLOGRAPHY (1.8 ANGSTROMS) OF 20-201"
+					},
+					{
+						"$t":"DOMAIN"
+					},
+					{
+						"$t":"DISULFIDE BONDS"
+					}
+				],
+				"citation":{
+					"@date":"2008",
+					"@last":"405",
+					"@name":"J. Mol. Biol.",
+					"dbReference":[
+						{
+							"@key":"71",
+							"@id":"18823996",
+							"@type":"PubMed"
+						},
+						{
+							"@key":"72",
+							"@id":"10.1016/j.jmb.2008.09.020",
+							"@type":"DOI"
+						}
+					],
+					"@first":"393",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Schonfeld D.L."
+							},
+							{
+								"@name":"Ravelli R.B."
+							},
+							{
+								"@name":"Mueller U."
+							},
+							{
+								"@name":"Skerra A."
+							}
+						]
+					},
+					"title":{
+						"$t":"The 1.8-A crystal structure of alpha1-acid glycoprotein (Orosomucoid) solved by UV RIP reveals the broad drug-binding activity of this human plasma lipocalin."
+					},
+					"@type":"journal article",
+					"@volume":"384"
+				}
+			},
+			{
+				"@key":"73",
+				"scope":{
+					"$t":"VARIANTS ARG-38 AND MET-174"
+				},
+				"citation":{
+					"@date":"1997",
+					"@last":"398",
+					"@name":"Hum. Genet.",
+					"dbReference":[
+						{
+							"@key":"74",
+							"@id":"97203211",
+							"@type":"MEDLINE"
+						},
+						{
+							"@key":"75",
+							"@id":"9050929",
+							"@type":"PubMed"
+						},
+						{
+							"@key":"76",
+							"@id":"10.1007/s004390050378",
+							"@type":"DOI"
+						}
+					],
+					"@first":"393",
+					"authorList":{
+						"person":[
+							{
+								"@name":"Yuasa I."
+							},
+							{
+								"@name":"Umetsu K."
+							},
+							{
+								"@name":"Vogt U."
+							},
+							{
+								"@name":"Nakamura H."
+							},
+							{
+								"@name":"Nanba E."
+							},
+							{
+								"@name":"Tamaki N."
+							},
+							{
+								"@name":"Irizawa Y."
+							}
+						]
+					},
+					"title":{
+						"$t":"Human orosomucoid polymorphism: molecular basis of the three common ORM1 alleles, ORM1*F1, ORM1*F2, and ORM1*S."
+					},
+					"@type":"journal article",
+					"@volume":"99"
+				}
+			}
+		],
+		"@version":"135",
+		"evidence":[
+			{
+				"source":{
+					"dbReference":{
+						"@id":"17008009",
+						"@type":"PubMed"
+					}
+				},
+				"@key":"1",
+				"@type":"ECO:0000006"
+			},
+			{
+				"source":{
+					"dbReference":{
+						"@id":"17321687",
+						"@type":"PubMed"
+					}
+				},
+				"@key":"2",
+				"@type":"ECO:0000006"
+			},
+			{
+				"source":{
+					"dbReference":{
+						"@id":"18823996",
+						"@type":"PubMed"
+					}
+				},
+				"@key":"3",
+				"@type":"ECO:0000006"
+			},
+			{
+				"source":{
+					"dbReference":{
+						"@id":"4711474",
+						"@type":"PubMed"
+					}
+				},
+				"@key":"4",
+				"@type":"ECO:0000006"
+			},
+			{
+				"source":{
+					"dbReference":{
+						"@id":"1567356",
+						"@type":"PubMed"
+					}
+				},
+				"@key":"5",
+				"@type":"ECO:0000006"
+			},
+			{
+				"source":{
+					"dbReference":{
+						"@id":"12754519",
+						"@type":"PubMed"
+					}
+				},
+				"@key":"6",
+				"@type":"ECO:0000006"
+			},
+			{
+				"source":{
+					"dbReference":{
+						"@id":"15253437",
+						"@type":"PubMed"
+					}
+				},
+				"@key":"7",
+				"@type":"ECO:0000006"
+			},
+			{
+				"source":{
+					"dbReference":{
+						"@id":"15084671",
+						"@type":"PubMed"
+					}
+				},
+				"@key":"8",
+				"@type":"ECO:0000006"
+			},
+			{
+				"source":{
+					"dbReference":{
+						"@id":"14760718",
+						"@type":"PubMed"
+					}
+				},
+				"@key":"9",
+				"@type":"ECO:0000006"
+			},
+			{
+				"source":{
+					"dbReference":{
+						"@id":"16335952",
+						"@type":"PubMed"
+					}
+				},
+				"@key":"10",
+				"@type":"ECO:0000006"
+			},
+			{
+				"source":{
+					"dbReference":{
+						"@id":"19838169",
+						"@type":"PubMed"
+					}
+				},
+				"@key":"11",
+				"@type":"ECO:0000006"
+			},
+			{
+				"source":{
+					"dbReference":{
+						"@id":"16740002",
+						"@type":"PubMed"
+					}
+				},
+				"@key":"12",
+				"@type":"ECO:0000006"
+			},
+			{
+				"source":{
+					"dbReference":{
+						"@id":"19159218",
+						"@type":"PubMed"
+					}
+				},
+				"@key":"13",
+				"@type":"ECO:0000006"
+			},
+			{
+				"source":{
+					"dbReference":{
+						"@id":"4603214",
+						"@type":"PubMed"
+					}
+				},
+				"@key":"14",
+				"@type":"ECO:0000006"
+			},
+			{
+				"source":{
+					"dbReference":{
+						"@id":"15164053",
+						"@type":"PubMed"
+					}
+				},
+				"@key":"15",
+				"@type":"ECO:0000006"
+			},
+			{
+				"source":{
+					"@ref":"20"
+				},
+				"@key":"16",
+				"@type":"ECO:0000006"
+			},
+			{
+				"source":{
+					"dbReference":{
+						"@id":"15489334",
+						"@type":"PubMed"
+					}
+				},
+				"@key":"17",
+				"@type":"ECO:0000006"
+			},
+			{
+				"source":{
+					"dbReference":{
+						"@id":"9050929",
+						"@type":"PubMed"
+					}
+				},
+				"@key":"18",
+				"@type":"ECO:0000006"
+			}
+		],
+		"organism":{
+			"lineage":{
+				"taxon":[
+					{
+						"$t":"Eukaryota"
+					},
+					{
+						"$t":"Metazoa"
+					},
+					{
+						"$t":"Chordata"
+					},
+					{
+						"$t":"Craniata"
+					},
+					{
+						"$t":"Vertebrata"
+					},
+					{
+						"$t":"Euteleostomi"
+					},
+					{
+						"$t":"Mammalia"
+					},
+					{
+						"$t":"Eutheria"
+					},
+					{
+						"$t":"Euarchontoglires"
+					},
+					{
+						"$t":"Primates"
+					},
+					{
+						"$t":"Haplorrhini"
+					},
+					{
+						"$t":"Catarrhini"
+					},
+					{
+						"$t":"Hominidae"
+					},
+					{
+						"$t":"Homo"
+					}
+				]
+			},
+			"dbReference":{
+				"@key":"1",
+				"@id":"9606",
+				"@type":"NCBI Taxonomy"
+			},
+			"name":[
+				{
+					"$t":"Homo sapiens",
+					"@type":"scientific"
+				},
+				{
+					"$t":"Human",
+					"@type":"common"
+				}
+			]
+		},
+		"@created":"1986-07-21",
+		"@modified":"2011-09-21"
+	},
+	"copyright":{
+		"$t":"\nCopyrighted by the UniProt Consortium, see http://www.uniprot.org/terms\nDistributed under the Creative Commons Attribution-NoDerivs License\n"
+	},
+	"@xsi:schemaLocation":"http://uniprot.org/uniprot http://www.uniprot.org/support/docs/uniprot.xsd"
+},"@encoding":"UTF-8","@version":"1.0"}

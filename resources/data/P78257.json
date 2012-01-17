@@ -1,0 +1,2880 @@
+{
+	"uniprot": {
+		"entry": [
+			{
+				"keyword": [
+					{
+						"$t": "Acetylation",
+						"@id": "KW-0007"
+					},
+					{
+						"$t": "Allosteric enzyme",
+						"@id": "KW-0021"
+					},
+					{
+						"$t": "Complete proteome",
+						"@id": "KW-0181"
+					},
+					{
+						"$t": "Transferase",
+						"@id": "KW-0808"
+					},
+					{
+						"$t": "Tricarboxylic acid cycle",
+						"@id": "KW-0816"
+					}
+				],
+				"sequence": {
+					"@checksum": "F30A9DBF1FC590D5",
+					"@version": "1",
+					"@mass": "48015",
+					"$t": "\u000aMADTKAKLTLNGDTAVELDVLKGTLGQDVIDIRTLGSKGVFTFDPGFTSTASCESKITFI\u000aDGDEGILLHRGFPIDQLATDSNYLEVCYILLNGEKPTQEQYDEFKTTVTRHTMIHEQITR\u000aLFHAFRRDSHPMAVMCGITGALAAFYHDSLDVNNPRHREIAAFRLLSKMPTMAAMCYKYS\u000aIGQPFVYPRNDLSYAGNFLNMMFSTPCEPYEVNPILERAMDRILILHADHEQNASTSTVR\u000aTAGSSGANPFACIAAGIASLWGPAHGGANEAALKMLEEISSVKHIPEFVRRAKDKNDSFR\u000aLMGFGHRVYKNYDPRATVMRETCHEVLKELGTKDDLLEVAMELENIALNDPYFIEKKLYP\u000aNVDFYSGIILKAMGIPSSMFTVIFAMARTVGWIAHWSEMHSDGMKIARPRQLYTGYEKRD\u000aFKSDIKR\u000a",
+					"@length": "427",
+					"@modified": "2005-10-25"
+				},
+				"gene": {
+					"name": [
+						{
+							"$t": "gltA",
+							"@type": "primary"
+						},
+						{
+							"$t": "c0796",
+							"@type": "ordered locus"
+						}
+					]
+				},
+				"name": {
+					"$t": "CISY_ECOL6"
+				},
+				"accession": [
+					{
+						"$t": "P0ABH8"
+					},
+					{
+						"$t": "O32552"
+					},
+					{
+						"$t": "P00891"
+					},
+					{
+						"$t": "P78257"
+					}
+				],
+				"@dataset": "Swiss-Prot",
+				"feature": [
+					{
+						"@description": "Citrate synthase",
+						"location": {
+							"begin": {
+								"@position": "1"
+							},
+							"end": {
+								"@position": "427"
+							}
+						},
+						"@id": "PRO_0000169944",
+						"@type": "chain"
+					},
+					{
+						"@status": "by similarity",
+						"location": {
+							"position": {
+								"@position": "306"
+							}
+						},
+						"@type": "active site"
+					},
+					{
+						"@status": "by similarity",
+						"location": {
+							"position": {
+								"@position": "363"
+							}
+						},
+						"@type": "active site"
+					},
+					{
+						"@status": "by similarity",
+						"@description": "N6-acetyllysine",
+						"location": {
+							"position": {
+								"@position": "283"
+							}
+						},
+						"@type": "modified residue"
+					}
+				],
+				"proteinExistence": {
+					"@type": "inferred from homology"
+				},
+				"dbReference": [
+					{
+						"@key": "1",
+						"@id": "2.3.3.1",
+						"@type": "EC"
+					},
+					{
+						"@key": "7",
+						"@id": "AE014075",
+						"property": [
+							{
+								"@value": "AAN79269.1",
+								"@type": "protein sequence ID"
+							},
+							{
+								"@value": "Genomic_DNA",
+								"@type": "molecule type"
+							}
+						],
+						"@type": "EMBL"
+					},
+					{
+						"@key": "8",
+						"@id": "NP_752726.1",
+						"property": {
+							"@value": "NC_004431.1",
+							"@type": "nucleotide sequence ID"
+						},
+						"@type": "RefSeq"
+					},
+					{
+						"@key": "9",
+						"@id": "P0ABH8",
+						"@type": "ProteinModelPortal"
+					},
+					{
+						"@key": "10",
+						"@id": "P0ABH8",
+						"property": {
+							"@value": "2-427",
+							"@type": "residue range"
+						},
+						"@type": "SMR"
+					},
+					{
+						"@key": "11",
+						"@id": "EBESCT00000043290",
+						"property": [
+							{
+								"@value": "EBESCP00000041639",
+								"@type": "protein sequence ID"
+							},
+							{
+								"@value": "EBESCG00000042340",
+								"@type": "gene ID"
+							}
+						],
+						"@type": "EnsemblBacteria"
+					},
+					{
+						"@key": "12",
+						"@id": "1036856",
+						"@type": "GeneID"
+					},
+					{
+						"@key": "13",
+						"@id": "AE014075_GR",
+						"property": {
+							"@value": "c0796",
+							"@type": "gene designation"
+						},
+						"@type": "GenomeReviews"
+					},
+					{
+						"@key": "14",
+						"@id": "ecc:c0796",
+						"@type": "KEGG"
+					},
+					{
+						"@key": "15",
+						"@id": "EBGT00050000010098",
+						"@type": "GeneTree"
+					},
+					{
+						"@key": "16",
+						"@id": "HBG649489",
+						"@type": "HOGENOM"
+					},
+					{
+						"@key": "17",
+						"@id": "RVTHHTM",
+						"@type": "OMA"
+					},
+					{
+						"@key": "18",
+						"@id": "PRK05614",
+						"@type": "ProtClustDB"
+					},
+					{
+						"@key": "19",
+						"@id": "GO:0005737",
+						"property": [
+							{
+								"@value": "C:cytoplasm",
+								"@type": "term"
+							},
+							{
+								"@value": "IEA:InterPro",
+								"@type": "evidence"
+							}
+						],
+						"@type": "GO"
+					},
+					{
+						"@key": "20",
+						"@id": "GO:0004108",
+						"property": [
+							{
+								"@value": "F:citrate (Si)-synthase activity",
+								"@type": "term"
+							},
+							{
+								"@value": "IEA:EC",
+								"@type": "evidence"
+							}
+						],
+						"@type": "GO"
+					},
+					{
+						"@key": "21",
+						"@id": "GO:0044262",
+						"property": [
+							{
+								"@value": "P:cellular carbohydrate metabolic process",
+								"@type": "term"
+							},
+							{
+								"@value": "IEA:InterPro",
+								"@type": "evidence"
+							}
+						],
+						"@type": "GO"
+					},
+					{
+						"@key": "22",
+						"@id": "GO:0006099",
+						"property": [
+							{
+								"@value": "P:tricarboxylic acid cycle",
+								"@type": "term"
+							},
+							{
+								"@value": "IEA:UniProtKB-KW",
+								"@type": "evidence"
+							}
+						],
+						"@type": "GO"
+					},
+					{
+						"@key": "23",
+						"@id": "IPR016142",
+						"property": {
+							"@value": "Citrate_synth-like_lrg_a-sub",
+							"@type": "entry name"
+						},
+						"@type": "InterPro"
+					},
+					{
+						"@key": "24",
+						"@id": "IPR016143",
+						"property": {
+							"@value": "Citrate_synth-like_sm_a-sub",
+							"@type": "entry name"
+						},
+						"@type": "InterPro"
+					},
+					{
+						"@key": "25",
+						"@id": "IPR002020",
+						"property": {
+							"@value": "Citrate_synthase-like",
+							"@type": "entry name"
+						},
+						"@type": "InterPro"
+					},
+					{
+						"@key": "26",
+						"@id": "IPR016141",
+						"property": {
+							"@value": "Citrate_synthase-like_core",
+							"@type": "entry name"
+						},
+						"@type": "InterPro"
+					},
+					{
+						"@key": "27",
+						"@id": "IPR019810",
+						"property": {
+							"@value": "Citrate_synthase_AS",
+							"@type": "entry name"
+						},
+						"@type": "InterPro"
+					},
+					{
+						"@key": "28",
+						"@id": "IPR024176",
+						"property": {
+							"@value": "Citrate_synthase_bac-typ",
+							"@type": "entry name"
+						},
+						"@type": "InterPro"
+					},
+					{
+						"@key": "29",
+						"@id": "IPR010953",
+						"property": {
+							"@value": "Citrate_synthase_typ-II",
+							"@type": "entry name"
+						},
+						"@type": "InterPro"
+					},
+					{
+						"@key": "30",
+						"@id": "G3DSA:1.10.580.10",
+						"property": [
+							{
+								"@value": "Citrate_synthase_lrg_a-sub",
+								"@type": "entry name"
+							},
+							{
+								"@value": "1",
+								"@type": "match status"
+							}
+						],
+						"@type": "Gene3D"
+					},
+					{
+						"@key": "31",
+						"@id": "G3DSA:1.10.230.10",
+						"property": [
+							{
+								"@value": "Citrate_synthase_sm_a-sub",
+								"@type": "entry name"
+							},
+							{
+								"@value": "1",
+								"@type": "match status"
+							}
+						],
+						"@type": "Gene3D"
+					},
+					{
+						"@key": "32",
+						"@id": "PTHR11739",
+						"property": [
+							{
+								"@value": "Citrate_synth",
+								"@type": "entry name"
+							},
+							{
+								"@value": "1",
+								"@type": "match status"
+							}
+						],
+						"@type": "PANTHER"
+					},
+					{
+						"@key": "33",
+						"@id": "PF00285",
+						"property": [
+							{
+								"@value": "Citrate_synt",
+								"@type": "entry name"
+							},
+							{
+								"@value": "1",
+								"@type": "match status"
+							}
+						],
+						"@type": "Pfam"
+					},
+					{
+						"@key": "34",
+						"@id": "PIRSF001369",
+						"property": [
+							{
+								"@value": "Citrate_synth",
+								"@type": "entry name"
+							},
+							{
+								"@value": "1",
+								"@type": "match status"
+							}
+						],
+						"@type": "PIRSF"
+					},
+					{
+						"@key": "35",
+						"@id": "PR00143",
+						"property": {
+							"@value": "CITRTSNTHASE",
+							"@type": "entry name"
+						},
+						"@type": "PRINTS"
+					},
+					{
+						"@key": "36",
+						"@id": "SSF48256",
+						"property": [
+							{
+								"@value": "Citrate_synthase_core",
+								"@type": "entry name"
+							},
+							{
+								"@value": "1",
+								"@type": "match status"
+							}
+						],
+						"@type": "SUPFAM"
+					},
+					{
+						"@key": "37",
+						"@id": "TIGR01798",
+						"property": [
+							{
+								"@value": "Cit_synth_I",
+								"@type": "entry name"
+							},
+							{
+								"@value": "1",
+								"@type": "match status"
+							}
+						],
+						"@type": "TIGRFAMs"
+					},
+					{
+						"@key": "38",
+						"@id": "PS00480",
+						"property": [
+							{
+								"@value": "CITRATE_SYNTHASE",
+								"@type": "entry name"
+							},
+							{
+								"@value": "1",
+								"@type": "match status"
+							}
+						],
+						"@type": "PROSITE"
+					}
+				],
+				"protein": {
+					"recommendedName": {
+						"fullName": {
+							"$t": "Citrate synthase"
+						},
+						"@ref": "1"
+					}
+				},
+				"comment": [
+					{
+						"text": {
+							"$t": "Acetyl-CoA + H(2)O + oxaloacetate = citrate + CoA."
+						},
+						"@type": "catalytic activity"
+					},
+					{
+						"text": {
+							"$t": "Carbohydrate metabolism; tricarboxylic acid cycle; isocitrate from oxaloacetate: step 1/2."
+						},
+						"@type": "pathway"
+					},
+					{
+						"text": {
+							"$t": "Homohexamer (By similarity)."
+						},
+						"@type": "subunit"
+					},
+					{
+						"text": {
+							"$t": "Citrate synthase is found in nearly all cells capable of oxidative metabolism."
+						},
+						"@type": "miscellaneous"
+					},
+					{
+						"text": {
+							"$t": "Belongs to the citrate synthase family."
+						},
+						"@type": "similarity"
+					}
+				],
+				"reference": {
+					"source": {
+						"strain": {
+							"$t": "O6:H1 / CFT073 / ATCC 700928 / UPEC"
+						}
+					},
+					"@key": "3",
+					"scope": {
+						"$t": "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+					},
+					"citation": {
+						"@date": "2002",
+						"@last": "17024",
+						"@name": "Proc. Natl. Acad. Sci. U.S.A.",
+						"dbReference": [
+							{
+								"@key": "4",
+								"@id": "22388234",
+								"@type": "MEDLINE"
+							},
+							{
+								"@key": "5",
+								"@id": "12471157",
+								"@type": "PubMed"
+							},
+							{
+								"@key": "6",
+								"@id": "10.1073/pnas.252529799",
+								"@type": "DOI"
+							}
+						],
+						"@first": "17020",
+						"authorList": {
+							"person": [
+								{
+									"@name": "Welch R.A."
+								},
+								{
+									"@name": "Burland V."
+								},
+								{
+									"@name": "Plunkett G. III"
+								},
+								{
+									"@name": "Redford P."
+								},
+								{
+									"@name": "Roesch P."
+								},
+								{
+									"@name": "Rasko D."
+								},
+								{
+									"@name": "Buckles E.L."
+								},
+								{
+									"@name": "Liou S.-R."
+								},
+								{
+									"@name": "Boutin A."
+								},
+								{
+									"@name": "Hackett J."
+								},
+								{
+									"@name": "Stroud D."
+								},
+								{
+									"@name": "Mayhew G.F."
+								},
+								{
+									"@name": "Rose D.J."
+								},
+								{
+									"@name": "Zhou S."
+								},
+								{
+									"@name": "Schwartz D.C."
+								},
+								{
+									"@name": "Perna N.T."
+								},
+								{
+									"@name": "Mobley H.L.T."
+								},
+								{
+									"@name": "Donnenberg M.S."
+								},
+								{
+									"@name": "Blattner F.R."
+								}
+							]
+						},
+						"title": {
+							"$t": "Extensive mosaic structure revealed by the complete genome sequence of uropathogenic Escherichia coli."
+						},
+						"@type": "journal article",
+						"@volume": "99"
+					}
+				},
+				"@version": "39",
+				"organism": {
+					"lineage": {
+						"taxon": [
+							{
+								"$t": "Bacteria"
+							},
+							{
+								"$t": "Proteobacteria"
+							},
+							{
+								"$t": "Gammaproteobacteria"
+							},
+							{
+								"$t": "Enterobacteriales"
+							},
+							{
+								"$t": "Enterobacteriaceae"
+							},
+							{
+								"$t": "Escherichia"
+							}
+						]
+					},
+					"dbReference": {
+						"@key": "2",
+						"@id": "217992",
+						"@type": "NCBI Taxonomy"
+					},
+					"name": {
+						"$t": "Escherichia coli O6",
+						"@type": "scientific"
+					}
+				},
+				"@created": "1986-07-21",
+				"@modified": "2011-09-21"
+			},
+			{
+				"keyword": [
+					{
+						"$t": "3D-structure",
+						"@id": "KW-0002"
+					},
+					{
+						"$t": "Acetylation",
+						"@id": "KW-0007"
+					},
+					{
+						"$t": "Allosteric enzyme",
+						"@id": "KW-0021"
+					},
+					{
+						"$t": "Complete proteome",
+						"@id": "KW-0181"
+					},
+					{
+						"$t": "Direct protein sequencing",
+						"@id": "KW-0903"
+					},
+					{
+						"$t": "Reference proteome",
+						"@id": "KW-1185"
+					},
+					{
+						"$t": "Transferase",
+						"@id": "KW-0808"
+					},
+					{
+						"$t": "Tricarboxylic acid cycle",
+						"@id": "KW-0816"
+					}
+				],
+				"sequence": {
+					"@checksum": "F30A9DBF1FC590D5",
+					"@version": "1",
+					"@mass": "48015",
+					"$t": "\u000aMADTKAKLTLNGDTAVELDVLKGTLGQDVIDIRTLGSKGVFTFDPGFTSTASCESKITFI\u000aDGDEGILLHRGFPIDQLATDSNYLEVCYILLNGEKPTQEQYDEFKTTVTRHTMIHEQITR\u000aLFHAFRRDSHPMAVMCGITGALAAFYHDSLDVNNPRHREIAAFRLLSKMPTMAAMCYKYS\u000aIGQPFVYPRNDLSYAGNFLNMMFSTPCEPYEVNPILERAMDRILILHADHEQNASTSTVR\u000aTAGSSGANPFACIAAGIASLWGPAHGGANEAALKMLEEISSVKHIPEFVRRAKDKNDSFR\u000aLMGFGHRVYKNYDPRATVMRETCHEVLKELGTKDDLLEVAMELENIALNDPYFIEKKLYP\u000aNVDFYSGIILKAMGIPSSMFTVIFAMARTVGWIAHWSEMHSDGMKIARPRQLYTGYEKRD\u000aFKSDIKR\u000a",
+					"@length": "427",
+					"@modified": "2005-10-25"
+				},
+				"gene": {
+					"name": [
+						{
+							"$t": "gltA",
+							"@type": "primary"
+						},
+						{
+							"$t": "gluT",
+							"@type": "synonym"
+						},
+						{
+							"$t": "icdB",
+							"@type": "synonym"
+						},
+						{
+							"$t": "b0720",
+							"@type": "ordered locus"
+						},
+						{
+							"$t": "JW0710",
+							"@type": "ordered locus"
+						}
+					]
+				},
+				"name": {
+					"$t": "CISY_ECOLI"
+				},
+				"accession": [
+					{
+						"$t": "P0ABH7"
+					},
+					{
+						"$t": "O32552"
+					},
+					{
+						"$t": "P00891"
+					},
+					{
+						"$t": "P78257"
+					}
+				],
+				"@dataset": "Swiss-Prot",
+				"feature": [
+					{
+						"@description": "Citrate synthase",
+						"location": {
+							"begin": {
+								"@position": "1"
+							},
+							"end": {
+								"@position": "427"
+							}
+						},
+						"@id": "PRO_0000169943",
+						"@type": "chain"
+					},
+					{
+						"@status": "by similarity",
+						"location": {
+							"position": {
+								"@position": "306"
+							}
+						},
+						"@type": "active site"
+					},
+					{
+						"@status": "by similarity",
+						"location": {
+							"position": {
+								"@position": "363"
+							}
+						},
+						"@type": "active site"
+					},
+					{
+						"@description": "N6-acetyllysine",
+						"location": {
+							"position": {
+								"@position": "283"
+							}
+						},
+						"@evidence": "1",
+						"@type": "modified residue"
+					},
+					{
+						"variation": {
+							"$t": "S"
+						},
+						"@description": "Weakened NADH binding and inhibition.",
+						"location": {
+							"position": {
+								"@position": "207"
+							}
+						},
+						"original": {
+							"$t": "C"
+						},
+						"@evidence": "2",
+						"@type": "mutagenesis site"
+					},
+					{
+						"variation": {
+							"$t": "A"
+						},
+						"@description": "Weakened NADH binding and inhibition.",
+						"location": {
+							"position": {
+								"@position": "208"
+							}
+						},
+						"original": {
+							"$t": "E"
+						},
+						"@evidence": "2",
+						"@type": "mutagenesis site"
+					},
+					{
+						"variation": {
+							"$t": "D"
+						},
+						"@description": "In Ref. 6; AA sequence.",
+						"location": {
+							"position": {
+								"@position": "11"
+							}
+						},
+						"original": {
+							"$t": "N"
+						},
+						"@ref": "18",
+						"@type": "sequence conflict"
+					},
+					{
+						"variation": {
+							"$t": "F"
+						},
+						"@description": "In Ref. 1; AAA23892 and 6; AA sequence.",
+						"location": {
+							"position": {
+								"@position": "289"
+							}
+						},
+						"original": {
+							"$t": "V"
+						},
+						"@ref": "3 18",
+						"@type": "sequence conflict"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "4"
+							},
+							"end": {
+								"@position": "14"
+							}
+						},
+						"@type": "strand"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "16"
+							},
+							"end": {
+								"@position": "21"
+							}
+						},
+						"@type": "strand"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "24"
+							},
+							"end": {
+								"@position": "26"
+							}
+						},
+						"@type": "strand"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "29"
+							},
+							"end": {
+								"@position": "31"
+							}
+						},
+						"@type": "strand"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "33"
+							},
+							"end": {
+								"@position": "39"
+							}
+						},
+						"@type": "turn"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "50"
+							},
+							"end": {
+								"@position": "61"
+							}
+						},
+						"@type": "strand"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "62"
+							},
+							"end": {
+								"@position": "65"
+							}
+						},
+						"@type": "turn"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "66"
+							},
+							"end": {
+								"@position": "69"
+							}
+						},
+						"@type": "strand"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "74"
+							},
+							"end": {
+								"@position": "80"
+							}
+						},
+						"@type": "helix"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "83"
+							},
+							"end": {
+								"@position": "92"
+							}
+						},
+						"@type": "helix"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "98"
+							},
+							"end": {
+								"@position": "109"
+							}
+						},
+						"@type": "helix"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "116"
+							},
+							"end": {
+								"@position": "118"
+							}
+						},
+						"@type": "turn"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "119"
+							},
+							"end": {
+								"@position": "122"
+							}
+						},
+						"@type": "helix"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "131"
+							},
+							"end": {
+								"@position": "139"
+							}
+						},
+						"@type": "helix"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "142"
+							},
+							"end": {
+								"@position": "145"
+							}
+						},
+						"@type": "helix"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "147"
+							},
+							"end": {
+								"@position": "149"
+							}
+						},
+						"@type": "helix"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "155"
+							},
+							"end": {
+								"@position": "181"
+							}
+						},
+						"@type": "helix"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "194"
+							},
+							"end": {
+								"@position": "203"
+							}
+						},
+						"@type": "helix"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "214"
+							},
+							"end": {
+								"@position": "225"
+							}
+						},
+						"@type": "helix"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "234"
+							},
+							"end": {
+								"@position": "244"
+							}
+						},
+						"@type": "helix"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "249"
+							},
+							"end": {
+								"@position": "265"
+							}
+						},
+						"@type": "helix"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "269"
+							},
+							"end": {
+								"@position": "273"
+							}
+						},
+						"@type": "turn"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "274"
+							},
+							"end": {
+								"@position": "276"
+							}
+						},
+						"@type": "helix"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "280"
+							},
+							"end": {
+								"@position": "282"
+							}
+						},
+						"@type": "strand"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "286"
+							},
+							"end": {
+								"@position": "289"
+							}
+						},
+						"@type": "turn"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "300"
+							},
+							"end": {
+								"@position": "303"
+							}
+						},
+						"@type": "turn"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "316"
+							},
+							"end": {
+								"@position": "327"
+							}
+						},
+						"@type": "helix"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "335"
+							},
+							"end": {
+								"@position": "338"
+							}
+						},
+						"@type": "turn"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "339"
+							},
+							"end": {
+								"@position": "349"
+							}
+						},
+						"@type": "helix"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "351"
+							},
+							"end": {
+								"@position": "355"
+							}
+						},
+						"@type": "helix"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "362"
+							},
+							"end": {
+								"@position": "372"
+							}
+						},
+						"@type": "helix"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "377"
+							},
+							"end": {
+								"@position": "379"
+							}
+						},
+						"@type": "helix"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "380"
+							},
+							"end": {
+								"@position": "401"
+							}
+						},
+						"@type": "helix"
+					},
+					{
+						"location": {
+							"begin": {
+								"@position": "410"
+							},
+							"end": {
+								"@position": "413"
+							}
+						},
+						"@type": "strand"
+					}
+				],
+				"proteinExistence": {
+					"@type": "evidence at protein level"
+				},
+				"dbReference": [
+					{
+						"@key": "1",
+						"@id": "2.3.3.1",
+						"@type": "EC"
+					},
+					{
+						"@key": "43",
+						"@id": "J01619",
+						"property": [
+							{
+								"@value": "AAA23892.1",
+								"@type": "protein sequence ID"
+							},
+							{
+								"@value": "Genomic_DNA",
+								"@type": "molecule type"
+							}
+						],
+						"@type": "EMBL"
+					},
+					{
+						"@key": "44",
+						"@id": "U00096",
+						"property": [
+							{
+								"@value": "AAC73814.1",
+								"@type": "protein sequence ID"
+							},
+							{
+								"@value": "Genomic_DNA",
+								"@type": "molecule type"
+							}
+						],
+						"@type": "EMBL"
+					},
+					{
+						"@key": "45",
+						"@id": "AP009048",
+						"property": [
+							{
+								"@value": "BAA35384.1",
+								"@type": "protein sequence ID"
+							},
+							{
+								"@value": "Genomic_DNA",
+								"@type": "molecule type"
+							}
+						],
+						"@type": "EMBL"
+					},
+					{
+						"@key": "46",
+						"@id": "X00980",
+						"property": [
+							{
+								"@value": "CAA25484.1",
+								"@type": "protein sequence ID"
+							},
+							{
+								"@value": "Genomic_DNA",
+								"@type": "molecule type"
+							}
+						],
+						"@type": "EMBL"
+					},
+					{
+						"@key": "47",
+						"@id": "V01501",
+						"property": [
+							{
+								"@value": "CAA24746.1",
+								"@type": "protein sequence ID"
+							},
+							{
+								"@value": "Genomic_DNA",
+								"@type": "molecule type"
+							}
+						],
+						"@type": "EMBL"
+					},
+					{
+						"@key": "48",
+						"@id": "M28987",
+						"property": [
+							{
+								"@value": "AAA23901.1",
+								"@type": "protein sequence ID"
+							},
+							{
+								"@value": "Genomic_DNA",
+								"@type": "molecule type"
+							}
+						],
+						"@type": "EMBL"
+					},
+					{
+						"@key": "49",
+						"@id": "M29373",
+						"property": [
+							{
+								"@value": "AAA23902.1",
+								"@type": "protein sequence ID"
+							},
+							{
+								"@value": "Genomic_DNA",
+								"@type": "molecule type"
+							}
+						],
+						"@type": "EMBL"
+					},
+					{
+						"@key": "50",
+						"@id": "G64807",
+						"property": {
+							"@value": "YKEC",
+							"@type": "entry name"
+						},
+						"@type": "PIR"
+					},
+					{
+						"@key": "51",
+						"@id": "NP_415248.1",
+						"property": {
+							"@value": "NC_000913.2",
+							"@type": "nucleotide sequence ID"
+						},
+						"@type": "RefSeq"
+					},
+					{
+						"@key": "52",
+						"@id": "1K3P",
+						"property": [
+							{
+								"@value": "X-ray",
+								"@type": "method"
+							},
+							{
+								"@value": "2.20",
+								"@type": "resolution"
+							},
+							{
+								"@value": "A/B=2-427",
+								"@type": "chains"
+							}
+						],
+						"@type": "PDB"
+					},
+					{
+						"@key": "53",
+						"@id": "1NXE",
+						"property": [
+							{
+								"@value": "X-ray",
+								"@type": "method"
+							},
+							{
+								"@value": "2.30",
+								"@type": "resolution"
+							},
+							{
+								"@value": "A/B=1-427",
+								"@type": "chains"
+							}
+						],
+						"@type": "PDB"
+					},
+					{
+						"@key": "54",
+						"@id": "1NXG",
+						"property": [
+							{
+								"@value": "X-ray",
+								"@type": "method"
+							},
+							{
+								"@value": "2.50",
+								"@type": "resolution"
+							},
+							{
+								"@value": "A/B=1-427",
+								"@type": "chains"
+							}
+						],
+						"@type": "PDB"
+					},
+					{
+						"@key": "55",
+						"@id": "1OWB",
+						"property": [
+							{
+								"@value": "X-ray",
+								"@type": "method"
+							},
+							{
+								"@value": "2.20",
+								"@type": "resolution"
+							},
+							{
+								"@value": "A/B=1-427",
+								"@type": "chains"
+							}
+						],
+						"@type": "PDB"
+					},
+					{
+						"@key": "56",
+						"@id": "1OWC",
+						"property": [
+							{
+								"@value": "X-ray",
+								"@type": "method"
+							},
+							{
+								"@value": "2.20",
+								"@type": "resolution"
+							},
+							{
+								"@value": "A/B=1-427",
+								"@type": "chains"
+							}
+						],
+						"@type": "PDB"
+					},
+					{
+						"@key": "57",
+						"@id": "3L96",
+						"property": [
+							{
+								"@value": "X-ray",
+								"@type": "method"
+							},
+							{
+								"@value": "1.90",
+								"@type": "resolution"
+							},
+							{
+								"@value": "A/B=2-427",
+								"@type": "chains"
+							}
+						],
+						"@type": "PDB"
+					},
+					{
+						"@key": "58",
+						"@id": "3L97",
+						"property": [
+							{
+								"@value": "X-ray",
+								"@type": "method"
+							},
+							{
+								"@value": "2.70",
+								"@type": "resolution"
+							},
+							{
+								"@value": "A/B=2-427",
+								"@type": "chains"
+							}
+						],
+						"@type": "PDB"
+					},
+					{
+						"@key": "59",
+						"@id": "3L98",
+						"property": [
+							{
+								"@value": "X-ray",
+								"@type": "method"
+							},
+							{
+								"@value": "2.30",
+								"@type": "resolution"
+							},
+							{
+								"@value": "A/B=2-427",
+								"@type": "chains"
+							}
+						],
+						"@type": "PDB"
+					},
+					{
+						"@key": "60",
+						"@id": "3L99",
+						"property": [
+							{
+								"@value": "X-ray",
+								"@type": "method"
+							},
+							{
+								"@value": "2.10",
+								"@type": "resolution"
+							},
+							{
+								"@value": "A/B=2-427",
+								"@type": "chains"
+							}
+						],
+						"@type": "PDB"
+					},
+					{
+						"@key": "61",
+						"@id": "1K3P",
+						"@type": "PDBsum"
+					},
+					{
+						"@key": "62",
+						"@id": "1NXE",
+						"@type": "PDBsum"
+					},
+					{
+						"@key": "63",
+						"@id": "1NXG",
+						"@type": "PDBsum"
+					},
+					{
+						"@key": "64",
+						"@id": "1OWB",
+						"@type": "PDBsum"
+					},
+					{
+						"@key": "65",
+						"@id": "1OWC",
+						"@type": "PDBsum"
+					},
+					{
+						"@key": "66",
+						"@id": "3L96",
+						"@type": "PDBsum"
+					},
+					{
+						"@key": "67",
+						"@id": "3L97",
+						"@type": "PDBsum"
+					},
+					{
+						"@key": "68",
+						"@id": "3L98",
+						"@type": "PDBsum"
+					},
+					{
+						"@key": "69",
+						"@id": "3L99",
+						"@type": "PDBsum"
+					},
+					{
+						"@key": "70",
+						"@id": "P0ABH7",
+						"@type": "ProteinModelPortal"
+					},
+					{
+						"@key": "71",
+						"@id": "P0ABH7",
+						"property": {
+							"@value": "2-427",
+							"@type": "residue range"
+						},
+						"@type": "SMR"
+					},
+					{
+						"@key": "72",
+						"@id": "DIP-36204N",
+						"@type": "DIP"
+					},
+					{
+						"@key": "73",
+						"@id": "P0ABH7",
+						"property": {
+							"@value": "8",
+							"@type": "interactions"
+						},
+						"@type": "IntAct"
+					},
+					{
+						"@key": "74",
+						"@id": "MINT-1249502",
+						"@type": "MINT"
+					},
+					{
+						"@key": "75",
+						"@id": "H047.4",
+						"property": {
+							"@value": "6TH EDITION",
+							"@type": "edition"
+						},
+						"@type": "ECO2DBASE"
+					},
+					{
+						"@key": "76",
+						"@id": "H047.5",
+						"property": {
+							"@value": "6TH EDITION",
+							"@type": "edition"
+						},
+						"@type": "ECO2DBASE"
+					},
+					{
+						"@key": "77",
+						"@id": "EBESCT00000003104",
+						"property": [
+							{
+								"@value": "EBESCP00000003104",
+								"@type": "protein sequence ID"
+							},
+							{
+								"@value": "EBESCG00000002544",
+								"@type": "gene ID"
+							}
+						],
+						"@type": "EnsemblBacteria"
+					},
+					{
+						"@key": "78",
+						"@id": "EBESCT00000003105",
+						"property": [
+							{
+								"@value": "EBESCP00000003105",
+								"@type": "protein sequence ID"
+							},
+							{
+								"@value": "EBESCG00000002544",
+								"@type": "gene ID"
+							}
+						],
+						"@type": "EnsemblBacteria"
+					},
+					{
+						"@key": "79",
+						"@id": "EBESCT00000015732",
+						"property": [
+							{
+								"@value": "EBESCP00000015023",
+								"@type": "protein sequence ID"
+							},
+							{
+								"@value": "EBESCG00000014792",
+								"@type": "gene ID"
+							}
+						],
+						"@type": "EnsemblBacteria"
+					},
+					{
+						"@key": "80",
+						"@id": "945323",
+						"@type": "GeneID"
+					},
+					{
+						"@key": "81",
+						"@id": "AP009048_GR",
+						"property": {
+							"@value": "JW0710",
+							"@type": "gene designation"
+						},
+						"@type": "GenomeReviews"
+					},
+					{
+						"@key": "82",
+						"@id": "U00096_GR",
+						"property": {
+							"@value": "b0720",
+							"@type": "gene designation"
+						},
+						"@type": "GenomeReviews"
+					},
+					{
+						"@key": "83",
+						"@id": "ecj:JW0710",
+						"@type": "KEGG"
+					},
+					{
+						"@key": "84",
+						"@id": "eco:b0720",
+						"@type": "KEGG"
+					},
+					{
+						"@key": "85",
+						"@id": "EB0397",
+						"@type": "EchoBASE"
+					},
+					{
+						"@key": "86",
+						"@id": "EG10402",
+						"property": {
+							"@value": "gltA",
+							"@type": "gene designation"
+						},
+						"@type": "EcoGene"
+					},
+					{
+						"@key": "87",
+						"@id": "COG0372",
+						"@type": "eggNOG"
+					},
+					{
+						"@key": "88",
+						"@id": "EBGT00050000010098",
+						"@type": "GeneTree"
+					},
+					{
+						"@key": "89",
+						"@id": "HBG649489",
+						"@type": "HOGENOM"
+					},
+					{
+						"@key": "90",
+						"@id": "RVTHHTM",
+						"@type": "OMA"
+					},
+					{
+						"@key": "91",
+						"@id": "PRK05614",
+						"@type": "ProtClustDB"
+					},
+					{
+						"@key": "92",
+						"@id": "EcoCyc:CITSYN-MONOMER",
+						"@type": "BioCyc"
+					},
+					{
+						"@key": "93",
+						"@id": "MetaCyc:CITSYN-MONOMER",
+						"@type": "BioCyc"
+					},
+					{
+						"@key": "94",
+						"@id": "P0ABH7",
+						"@type": "Genevestigator"
+					},
+					{
+						"@key": "95",
+						"@id": "GO:0005829",
+						"property": [
+							{
+								"@value": "C:cytosol",
+								"@type": "term"
+							},
+							{
+								"@value": "IDA:UniProtKB",
+								"@type": "evidence"
+							}
+						],
+						"@type": "GO"
+					},
+					{
+						"@key": "96",
+						"@id": "GO:0016020",
+						"property": [
+							{
+								"@value": "C:membrane",
+								"@type": "term"
+							},
+							{
+								"@value": "IDA:UniProtKB",
+								"@type": "evidence"
+							}
+						],
+						"@type": "GO"
+					},
+					{
+						"@key": "97",
+						"@id": "GO:0004108",
+						"property": [
+							{
+								"@value": "F:citrate (Si)-synthase activity",
+								"@type": "term"
+							},
+							{
+								"@value": "IEA:EC",
+								"@type": "evidence"
+							}
+						],
+						"@type": "GO"
+					},
+					{
+						"@key": "98",
+						"@id": "GO:0044262",
+						"property": [
+							{
+								"@value": "P:cellular carbohydrate metabolic process",
+								"@type": "term"
+							},
+							{
+								"@value": "IEA:InterPro",
+								"@type": "evidence"
+							}
+						],
+						"@type": "GO"
+					},
+					{
+						"@key": "99",
+						"@id": "GO:0006099",
+						"property": [
+							{
+								"@value": "P:tricarboxylic acid cycle",
+								"@type": "term"
+							},
+							{
+								"@value": "IDA:EcoliWiki",
+								"@type": "evidence"
+							}
+						],
+						"@type": "GO"
+					},
+					{
+						"@key": "100",
+						"@id": "IPR016142",
+						"property": {
+							"@value": "Citrate_synth-like_lrg_a-sub",
+							"@type": "entry name"
+						},
+						"@type": "InterPro"
+					},
+					{
+						"@key": "101",
+						"@id": "IPR016143",
+						"property": {
+							"@value": "Citrate_synth-like_sm_a-sub",
+							"@type": "entry name"
+						},
+						"@type": "InterPro"
+					},
+					{
+						"@key": "102",
+						"@id": "IPR002020",
+						"property": {
+							"@value": "Citrate_synthase-like",
+							"@type": "entry name"
+						},
+						"@type": "InterPro"
+					},
+					{
+						"@key": "103",
+						"@id": "IPR016141",
+						"property": {
+							"@value": "Citrate_synthase-like_core",
+							"@type": "entry name"
+						},
+						"@type": "InterPro"
+					},
+					{
+						"@key": "104",
+						"@id": "IPR019810",
+						"property": {
+							"@value": "Citrate_synthase_AS",
+							"@type": "entry name"
+						},
+						"@type": "InterPro"
+					},
+					{
+						"@key": "105",
+						"@id": "IPR024176",
+						"property": {
+							"@value": "Citrate_synthase_bac-typ",
+							"@type": "entry name"
+						},
+						"@type": "InterPro"
+					},
+					{
+						"@key": "106",
+						"@id": "IPR010953",
+						"property": {
+							"@value": "Citrate_synthase_typ-II",
+							"@type": "entry name"
+						},
+						"@type": "InterPro"
+					},
+					{
+						"@key": "107",
+						"@id": "G3DSA:1.10.580.10",
+						"property": [
+							{
+								"@value": "Citrate_synthase_lrg_a-sub",
+								"@type": "entry name"
+							},
+							{
+								"@value": "1",
+								"@type": "match status"
+							}
+						],
+						"@type": "Gene3D"
+					},
+					{
+						"@key": "108",
+						"@id": "G3DSA:1.10.230.10",
+						"property": [
+							{
+								"@value": "Citrate_synthase_sm_a-sub",
+								"@type": "entry name"
+							},
+							{
+								"@value": "1",
+								"@type": "match status"
+							}
+						],
+						"@type": "Gene3D"
+					},
+					{
+						"@key": "109",
+						"@id": "PTHR11739",
+						"property": [
+							{
+								"@value": "Citrate_synth",
+								"@type": "entry name"
+							},
+							{
+								"@value": "1",
+								"@type": "match status"
+							}
+						],
+						"@type": "PANTHER"
+					},
+					{
+						"@key": "110",
+						"@id": "PF00285",
+						"property": [
+							{
+								"@value": "Citrate_synt",
+								"@type": "entry name"
+							},
+							{
+								"@value": "1",
+								"@type": "match status"
+							}
+						],
+						"@type": "Pfam"
+					},
+					{
+						"@key": "111",
+						"@id": "PIRSF001369",
+						"property": [
+							{
+								"@value": "Citrate_synth",
+								"@type": "entry name"
+							},
+							{
+								"@value": "1",
+								"@type": "match status"
+							}
+						],
+						"@type": "PIRSF"
+					},
+					{
+						"@key": "112",
+						"@id": "PR00143",
+						"property": {
+							"@value": "CITRTSNTHASE",
+							"@type": "entry name"
+						},
+						"@type": "PRINTS"
+					},
+					{
+						"@key": "113",
+						"@id": "SSF48256",
+						"property": [
+							{
+								"@value": "Citrate_synthase_core",
+								"@type": "entry name"
+							},
+							{
+								"@value": "1",
+								"@type": "match status"
+							}
+						],
+						"@type": "SUPFAM"
+					},
+					{
+						"@key": "114",
+						"@id": "TIGR01798",
+						"property": [
+							{
+								"@value": "Cit_synth_I",
+								"@type": "entry name"
+							},
+							{
+								"@value": "1",
+								"@type": "match status"
+							}
+						],
+						"@type": "TIGRFAMs"
+					},
+					{
+						"@key": "115",
+						"@id": "PS00480",
+						"property": [
+							{
+								"@value": "CITRATE_SYNTHASE",
+								"@type": "entry name"
+							},
+							{
+								"@value": "1",
+								"@type": "match status"
+							}
+						],
+						"@type": "PROSITE"
+					}
+				],
+				"protein": {
+					"recommendedName": {
+						"fullName": {
+							"$t": "Citrate synthase"
+						},
+						"@ref": "1"
+					}
+				},
+				"comment": [
+					{
+						"text": {
+							"$t": "Acetyl-CoA + H(2)O + oxaloacetate = citrate + CoA."
+						},
+						"@type": "catalytic activity"
+					},
+					{
+						"text": {
+							"$t": "Allosterically inhibited by NADH."
+						},
+						"@type": "enzyme regulation"
+					},
+					{
+						"text": {
+							"$t": "Carbohydrate metabolism; tricarboxylic acid cycle; isocitrate from oxaloacetate: step 1/2."
+						},
+						"@type": "pathway"
+					},
+					{
+						"text": {
+							"$t": "Homohexamer."
+						},
+						"@type": "subunit"
+					},
+					{
+						"text": {
+							"$t": "Citrate synthase is found in nearly all cells capable of oxidative metabolism."
+						},
+						"@type": "miscellaneous"
+					},
+					{
+						"text": {
+							"$t": "Belongs to the citrate synthase family."
+						},
+						"@type": "similarity"
+					}
+				],
+				"reference": [
+					{
+						"source": {
+							"strain": {
+								"$t": "K12"
+							}
+						},
+						"@key": "3",
+						"scope": {
+							"$t": "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+						},
+						"citation": {
+							"@date": "1983",
+							"@last": "5249",
+							"@name": "Biochemistry",
+							"@first": "5243",
+							"authorList": {
+								"person": [
+									{
+										"@name": "Ner S.S."
+									},
+									{
+										"@name": "Bhayana V."
+									},
+									{
+										"@name": "Bell A.W."
+									},
+									{
+										"@name": "Giles I.G."
+									},
+									{
+										"@name": "Duckworth H.W."
+									},
+									{
+										"@name": "Bloxham D.P."
+									}
+								]
+							},
+							"title": {
+								"$t": "Complete sequence of the gltA gene encoding citrate synthase in Escherichia coli."
+							},
+							"@type": "journal article",
+							"@volume": "22"
+						}
+					},
+					{
+						"source": {
+							"strain": {
+								"$t": "K12 / W3110 / ATCC 27325 / DSM 5911"
+							}
+						},
+						"@key": "4",
+						"scope": {
+							"$t": "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+						},
+						"citation": {
+							"@date": "1996",
+							"@last": "155",
+							"@name": "DNA Res.",
+							"dbReference": [
+								{
+									"@key": "5",
+									"@id": "97061202",
+									"@type": "MEDLINE"
+								},
+								{
+									"@key": "6",
+									"@id": "8905232",
+									"@type": "PubMed"
+								},
+								{
+									"@key": "7",
+									"@id": "10.1093/dnares/3.3.137",
+									"@type": "DOI"
+								}
+							],
+							"@first": "137",
+							"authorList": {
+								"person": [
+									{
+										"@name": "Oshima T."
+									},
+									{
+										"@name": "Aiba H."
+									},
+									{
+										"@name": "Baba T."
+									},
+									{
+										"@name": "Fujita K."
+									},
+									{
+										"@name": "Hayashi K."
+									},
+									{
+										"@name": "Honjo A."
+									},
+									{
+										"@name": "Ikemoto K."
+									},
+									{
+										"@name": "Inada T."
+									},
+									{
+										"@name": "Itoh T."
+									},
+									{
+										"@name": "Kajihara M."
+									},
+									{
+										"@name": "Kanai K."
+									},
+									{
+										"@name": "Kashimoto K."
+									},
+									{
+										"@name": "Kimura S."
+									},
+									{
+										"@name": "Kitagawa M."
+									},
+									{
+										"@name": "Makino K."
+									},
+									{
+										"@name": "Masuda S."
+									},
+									{
+										"@name": "Miki T."
+									},
+									{
+										"@name": "Mizobuchi K."
+									},
+									{
+										"@name": "Mori H."
+									},
+									{
+										"@name": "Motomura K."
+									},
+									{
+										"@name": "Nakamura Y."
+									},
+									{
+										"@name": "Nashimoto H."
+									},
+									{
+										"@name": "Nishio Y."
+									},
+									{
+										"@name": "Saito N."
+									},
+									{
+										"@name": "Sampei G."
+									},
+									{
+										"@name": "Seki Y."
+									},
+									{
+										"@name": "Tagami H."
+									},
+									{
+										"@name": "Takemoto K."
+									},
+									{
+										"@name": "Wada C."
+									},
+									{
+										"@name": "Yamamoto Y."
+									},
+									{
+										"@name": "Yano M."
+									},
+									{
+										"@name": "Horiuchi T."
+									}
+								]
+							},
+							"title": {
+								"$t": "A 718-kb DNA sequence of the Escherichia coli K-12 genome corresponding to the 12.7-28.0 min region on the linkage map."
+							},
+							"@type": "journal article",
+							"@volume": "3"
+						}
+					},
+					{
+						"source": {
+							"strain": {
+								"$t": "K12 / MG1655 / ATCC 47076"
+							}
+						},
+						"@key": "8",
+						"scope": {
+							"$t": "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+						},
+						"citation": {
+							"@date": "1997",
+							"@last": "1474",
+							"@name": "Science",
+							"dbReference": [
+								{
+									"@key": "9",
+									"@id": "97426617",
+									"@type": "MEDLINE"
+								},
+								{
+									"@key": "10",
+									"@id": "9278503",
+									"@type": "PubMed"
+								},
+								{
+									"@key": "11",
+									"@id": "10.1126/science.277.5331.1453",
+									"@type": "DOI"
+								}
+							],
+							"@first": "1453",
+							"authorList": {
+								"person": [
+									{
+										"@name": "Blattner F.R."
+									},
+									{
+										"@name": "Plunkett G. III"
+									},
+									{
+										"@name": "Bloch C.A."
+									},
+									{
+										"@name": "Perna N.T."
+									},
+									{
+										"@name": "Burland V."
+									},
+									{
+										"@name": "Riley M."
+									},
+									{
+										"@name": "Collado-Vides J."
+									},
+									{
+										"@name": "Glasner J.D."
+									},
+									{
+										"@name": "Rode C.K."
+									},
+									{
+										"@name": "Mayhew G.F."
+									},
+									{
+										"@name": "Gregor J."
+									},
+									{
+										"@name": "Davis N.W."
+									},
+									{
+										"@name": "Kirkpatrick H.A."
+									},
+									{
+										"@name": "Goeden M.A."
+									},
+									{
+										"@name": "Rose D.J."
+									},
+									{
+										"@name": "Mau B."
+									},
+									{
+										"@name": "Shao Y."
+									}
+								]
+							},
+							"title": {
+								"$t": "The complete genome sequence of Escherichia coli K-12."
+							},
+							"@type": "journal article",
+							"@volume": "277"
+						}
+					},
+					{
+						"source": {
+							"strain": {
+								"$t": "K12 / W3110 / ATCC 27325 / DSM 5911"
+							}
+						},
+						"@key": "12",
+						"scope": {
+							"$t": "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+						},
+						"citation": {
+							"@date": "2006",
+							"@last": "E5",
+							"@name": "Mol. Syst. Biol.",
+							"dbReference": [
+								{
+									"@key": "13",
+									"@id": "16738553",
+									"@type": "PubMed"
+								},
+								{
+									"@key": "14",
+									"@id": "10.1038/msb4100049",
+									"@type": "DOI"
+								}
+							],
+							"@first": "E1",
+							"authorList": {
+								"person": [
+									{
+										"@name": "Hayashi K."
+									},
+									{
+										"@name": "Morooka N."
+									},
+									{
+										"@name": "Yamamoto Y."
+									},
+									{
+										"@name": "Fujita K."
+									},
+									{
+										"@name": "Isono K."
+									},
+									{
+										"@name": "Choi S."
+									},
+									{
+										"@name": "Ohtsubo E."
+									},
+									{
+										"@name": "Baba T."
+									},
+									{
+										"@name": "Wanner B.L."
+									},
+									{
+										"@name": "Mori H."
+									},
+									{
+										"@name": "Horiuchi T."
+									}
+								]
+							},
+							"title": {
+								"$t": "Highly accurate genome sequences of Escherichia coli K-12 strains MG1655 and W3110."
+							},
+							"@type": "journal article",
+							"@volume": "2"
+						}
+					},
+					{
+						"@key": "15",
+						"scope": {
+							"$t": "NUCLEOTIDE SEQUENCE [GENOMIC DNA] OF 1-127"
+						},
+						"citation": {
+							"@date": "1984",
+							"@last": "534",
+							"@name": "Biochem. J.",
+							"dbReference": [
+								{
+									"@key": "16",
+									"@id": "84307466",
+									"@type": "MEDLINE"
+								},
+								{
+									"@key": "17",
+									"@id": "6383359",
+									"@type": "PubMed"
+								}
+							],
+							"@first": "519",
+							"authorList": {
+								"person": [
+									{
+										"@name": "Wood D."
+									},
+									{
+										"@name": "Darlison M.G."
+									},
+									{
+										"@name": "Wilde R.J."
+									},
+									{
+										"@name": "Guest J.R."
+									}
+								]
+							},
+							"title": {
+								"$t": "Nucleotide sequence encoding the flavoprotein and hydrophobic subunits of the succinate dehydrogenase of Escherichia coli."
+							},
+							"@type": "journal article",
+							"@volume": "222"
+						}
+					},
+					{
+						"@key": "18",
+						"scope": {
+							"$t": "PROTEIN SEQUENCE OF 1-101; 110-217 AND 220-427"
+						},
+						"citation": {
+							"@date": "1984",
+							"@last": "2905",
+							"@name": "Biochemistry",
+							"dbReference": [
+								{
+									"@key": "19",
+									"@id": "84280857",
+									"@type": "MEDLINE"
+								},
+								{
+									"@key": "20",
+									"@id": "6380576",
+									"@type": "PubMed"
+								},
+								{
+									"@key": "21",
+									"@id": "10.1021/bi00308a008",
+									"@type": "DOI"
+								}
+							],
+							"@first": "2900",
+							"authorList": {
+								"person": [
+									{
+										"@name": "Bhayana V."
+									},
+									{
+										"@name": "Duckworth H.W."
+									}
+								]
+							},
+							"title": {
+								"$t": "Amino acid sequence of Escherichia coli citrate synthase."
+							},
+							"@type": "journal article",
+							"@volume": "23"
+						}
+					},
+					{
+						"source": {
+							"strain": {
+								"$t": "K12"
+							}
+						},
+						"@key": "22",
+						"scope": {
+							"$t": "NUCLEOTIDE SEQUENCE [GENOMIC DNA] OF 1-98"
+						},
+						"citation": {
+							"@date": "1983",
+							"@last": "370",
+							"@name": "FEBS Lett.",
+							"dbReference": [
+								{
+									"@key": "23",
+									"@id": "83210236",
+									"@type": "MEDLINE"
+								},
+								{
+									"@key": "24",
+									"@id": "6343122",
+									"@type": "PubMed"
+								},
+								{
+									"@key": "25",
+									"@id": "10.1016/0014-5793(83)80530-4",
+									"@type": "DOI"
+								}
+							],
+							"@first": "366",
+							"authorList": {
+								"person": [
+									{
+										"@name": "Hull E.P."
+									},
+									{
+										"@name": "Spencer M.E."
+									},
+									{
+										"@name": "Wood D."
+									},
+									{
+										"@name": "Guest J.R."
+									}
+								]
+							},
+							"title": {
+								"$t": "Nucleotide sequence of the promoter region of the citrate synthase gene (gltA) of Escherichia coli."
+							},
+							"@type": "journal article",
+							"@volume": "156"
+						}
+					},
+					{
+						"@key": "26",
+						"scope": {
+							"$t": "SEQUENCE REVISION TO 92-94"
+						},
+						"citation": {
+							"@date": "1984-08",
+							"authorList": {
+								"person": {
+									"@name": "Guest J.R."
+								}
+							},
+							"@db": "EMBL/GenBank/DDBJ databases",
+							"@type": "submission"
+						}
+					},
+					{
+						"source": {
+							"strain": {
+								"$t": "K12"
+							}
+						},
+						"@key": "27",
+						"scope": {
+							"$t": "NUCLEOTIDE SEQUENCE [GENOMIC DNA] OF 1-33"
+						},
+						"citation": {
+							"@date": "1986",
+							"@last": "3251",
+							"@name": "J. Gen. Microbiol.",
+							"dbReference": [
+								{
+									"@key": "28",
+									"@id": "88009821",
+									"@type": "MEDLINE"
+								},
+								{
+									"@key": "29",
+									"@id": "3309132",
+									"@type": "PubMed"
+								}
+							],
+							"@first": "3239",
+							"authorList": {
+								"person": [
+									{
+										"@name": "Wilde R.J."
+									},
+									{
+										"@name": "Guest J.R."
+									}
+								]
+							},
+							"title": {
+								"$t": "Transcript analysis of the citrate synthase and succinate dehydrogenase genes of Escherichia coli K12."
+							},
+							"@type": "journal article",
+							"@volume": "132"
+						}
+					},
+					{
+						"@key": "30",
+						"scope": {
+							"$t": "NUCLEOTIDE SEQUENCE [GENOMIC DNA] OF 360-388"
+						},
+						"citation": {
+							"@date": "1986",
+							"@last": "262",
+							"@name": "Int. J. Biochem.",
+							"dbReference": [
+								{
+									"@key": "31",
+									"@id": "86165297",
+									"@type": "MEDLINE"
+								},
+								{
+									"@key": "32",
+									"@id": "3514304",
+									"@type": "PubMed"
+								},
+								{
+									"@key": "33",
+									"@id": "10.1016/0020-711X(86)90115-1",
+									"@type": "DOI"
+								}
+							],
+							"@first": "257",
+							"authorList": {
+								"person": [
+									{
+										"@name": "Ner S.S."
+									},
+									{
+										"@name": "Bloxham D.P."
+									},
+									{
+										"@name": "Handford P.A."
+									},
+									{
+										"@name": "Akhtar M."
+									}
+								]
+							},
+							"title": {
+								"$t": "The synthesis and use of oligodeoxynucleotides in plasmid DNA sequencing."
+							},
+							"@type": "journal article",
+							"@volume": "18"
+						}
+					},
+					{
+						"source": {
+							"strain": {
+								"$t": "ATCC 33694 / HB101"
+							}
+						},
+						"@key": "34",
+						"scope": {
+							"$t": "MUTAGENESIS OF CYS-207 AND GLU-208"
+						},
+						"citation": {
+							"@date": "1991",
+							"@last": "20713",
+							"@name": "J. Biol. Chem.",
+							"dbReference": [
+								{
+									"@key": "35",
+									"@id": "92041923",
+									"@type": "MEDLINE"
+								},
+								{
+									"@key": "36",
+									"@id": "1939121",
+									"@type": "PubMed"
+								}
+							],
+							"@first": "20709",
+							"authorList": {
+								"person": [
+									{
+										"@name": "Donald L.J."
+									},
+									{
+										"@name": "Crane B.R."
+									},
+									{
+										"@name": "Anderson D.H."
+									},
+									{
+										"@name": "Duckworth H.W."
+									}
+								]
+							},
+							"title": {
+								"$t": "The role of cysteine 206 in allosteric inhibition of Escherichia coli citrate synthase. Studies by chemical modification, site-directed mutagenesis, and 19F NMR."
+							},
+							"@type": "journal article",
+							"@volume": "266"
+						}
+					},
+					{
+						"@key": "37",
+						"scope": {
+							"$t": "IDENTIFICATION OF ICDB AS GLTA"
+						},
+						"citation": {
+							"@date": "1995",
+							"@last": "2593",
+							"@name": "J. Bacteriol.",
+							"dbReference": [
+								{
+									"@key": "38",
+									"@id": "95247701",
+									"@type": "MEDLINE"
+								},
+								{
+									"@key": "39",
+									"@id": "7730298",
+									"@type": "PubMed"
+								}
+							],
+							"@first": "2592",
+							"authorList": {
+								"person": {
+									"@name": "Helling R.B."
+								}
+							},
+							"title": {
+								"$t": "icdB mutants of Escherichia coli."
+							},
+							"@type": "journal article",
+							"@volume": "177"
+						}
+					},
+					{
+						"source": {
+							"strain": [
+								{
+									"$t": "K12 / JW1106"
+								},
+								{
+									"$t": "K12 / MG1655 / ATCC 47076"
+								}
+							]
+						},
+						"@key": "40",
+						"scope": [
+							{
+								"$t": "ACETYLATION [LARGE SCALE ANALYSIS] AT LYS-283"
+							},
+							{
+								"$t": "MASS SPECTROMETRY"
+							}
+						],
+						"citation": {
+							"@date": "2009",
+							"@last": "225",
+							"@name": "Mol. Cell. Proteomics",
+							"dbReference": [
+								{
+									"@key": "41",
+									"@id": "18723842",
+									"@type": "PubMed"
+								},
+								{
+									"@key": "42",
+									"@id": "10.1074/mcp.M800187-MCP200",
+									"@type": "DOI"
+								}
+							],
+							"@first": "215",
+							"authorList": {
+								"person": [
+									{
+										"@name": "Zhang J."
+									},
+									{
+										"@name": "Sprung R."
+									},
+									{
+										"@name": "Pei J."
+									},
+									{
+										"@name": "Tan X."
+									},
+									{
+										"@name": "Kim S."
+									},
+									{
+										"@name": "Zhu H."
+									},
+									{
+										"@name": "Liu C.F."
+									},
+									{
+										"@name": "Grishin N.V."
+									},
+									{
+										"@name": "Zhao Y."
+									}
+								]
+							},
+							"title": {
+								"$t": "Lysine acetylation is a highly abundant and evolutionarily conserved modification in Escherichia coli."
+							},
+							"@type": "journal article",
+							"@volume": "8"
+						}
+					}
+				],
+				"@version": "56",
+				"evidence": [
+					{
+						"source": {
+							"dbReference": {
+								"@id": "18723842",
+								"@type": "PubMed"
+							}
+						},
+						"@key": "1",
+						"@type": "ECO:0000006"
+					},
+					{
+						"source": {
+							"dbReference": {
+								"@id": "1939121",
+								"@type": "PubMed"
+							}
+						},
+						"@key": "2",
+						"@type": "ECO:0000006"
+					}
+				],
+				"organism": {
+					"lineage": {
+						"taxon": [
+							{
+								"$t": "Bacteria"
+							},
+							{
+								"$t": "Proteobacteria"
+							},
+							{
+								"$t": "Gammaproteobacteria"
+							},
+							{
+								"$t": "Enterobacteriales"
+							},
+							{
+								"$t": "Enterobacteriaceae"
+							},
+							{
+								"$t": "Escherichia"
+							}
+						]
+					},
+					"dbReference": {
+						"@key": "2",
+						"@id": "83333",
+						"@type": "NCBI Taxonomy"
+					},
+					"name": {
+						"$t": "Escherichia coli (strain K12)",
+						"@type": "scientific"
+					}
+				},
+				"@created": "1986-07-21",
+				"@modified": "2011-10-19"
+			}
+		],
+		"copyright": {
+			"$t": "\u000aCopyrighted by the UniProt Consortium, see http://www.uniprot.org/terms\u000aDistributed under the Creative Commons Attribution-NoDerivs License\u000a"
+		},
+		"@xsi:schemaLocation": "http://uniprot.org/uniprot http://www.uniprot.org/support/docs/uniprot.xsd"
+	},
+	"@encoding": "UTF-8",
+	"@version": "1.0"
+}

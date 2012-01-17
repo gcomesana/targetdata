@@ -1,0 +1,375 @@
+{"uniprot":{
+	"entry":{
+		"keyword":[
+			{
+				"$t":"Host cell membrane",
+				"@id":"KW-1032",
+				"@evidence":"1"
+			},
+			{
+				"$t":"Host membrane",
+				"@id":"KW-1043",
+				"@evidence":"1"
+			},
+			{
+				"$t":"Host-virus interaction",
+				"@id":"KW-0945",
+				"@evidence":"3 5"
+			},
+			{
+				"$t":"Lipoprotein",
+				"@id":"KW-0449",
+				"@evidence":"2"
+			},
+			{
+				"$t":"Membrane",
+				"@id":"KW-0472",
+				"@evidence":"1"
+			},
+			{
+				"$t":"Myristate",
+				"@id":"KW-0519",
+				"@evidence":"2"
+			},
+			{
+				"$t":"Viral immunoevasion",
+				"@id":"KW-0899",
+				"@evidence":"3 5"
+			},
+			{
+				"$t":"Virulence",
+				"@id":"KW-0843",
+				"@evidence":"4 5"
+			}
+		],
+		"sequence":{
+			"@fragment":"single",
+			"@checksum":"3374D721DC4CF010",
+			"@version":"1",
+			"@mass":"6319",
+			"$t":"\nEEANEGENSCLLHPMSLHGMEDPEEEVLVWKFDSRLAFHHMAREMHPEYYKDC\n",
+			"@length":"53",
+			"@modified":"1997-05-01"
+		},
+		"gene":{
+			"name":{
+				"$t":"nef",
+				"@evidence":"6",
+				"@type":"primary"
+			}
+		},
+		"name":{
+			"$t":"P88732_9HIV1"
+		},
+		"accession":{
+			"$t":"P88732"
+		},
+		"@dataset":"TrEMBL",
+		"feature":{
+			"location":{
+				"position":{
+					"@position":"1"
+				}
+			},
+			"@evidence":"6",
+			"@type":"non-terminal residue"
+		},
+		"proteinExistence":{
+			"@type":"inferred from homology"
+		},
+		"dbReference":[
+			{
+				"@key":"3",
+				"@id":"U81457",
+				"property":[
+					{
+						"@value":"AAB39161.1",
+						"@type":"protein sequence ID"
+					},
+					{
+						"@value":"Genomic_DNA",
+						"@type":"molecule type"
+					}
+				],
+				"@type":"EMBL"
+			},
+			{
+				"@key":"4",
+				"@id":"P88732",
+				"@type":"ProteinModelPortal"
+			},
+			{
+				"@key":"5",
+				"@id":"GO:0020002",
+				"property":[
+					{
+						"@value":"C:host cell plasma membrane",
+						"@type":"term"
+					},
+					{
+						"@value":"IEA:UniProtKB-KW",
+						"@type":"evidence"
+					}
+				],
+				"@type":"GO"
+			},
+			{
+				"@key":"6",
+				"@id":"GO:0016020",
+				"property":[
+					{
+						"@value":"C:membrane",
+						"@type":"term"
+					},
+					{
+						"@value":"IEA:UniProtKB-KW",
+						"@type":"evidence"
+					}
+				],
+				"@type":"GO"
+			},
+			{
+				"@key":"7",
+				"@id":"GO:0005525",
+				"property":[
+					{
+						"@value":"F:GTP binding",
+						"@type":"term"
+					},
+					{
+						"@value":"IEA:InterPro",
+						"@type":"evidence"
+					}
+				],
+				"@type":"GO"
+			},
+			{
+				"@key":"8",
+				"@id":"GO:0030683",
+				"property":[
+					{
+						"@value":"P:evasion by virus of host immune response",
+						"@type":"term"
+					},
+					{
+						"@value":"IEA:UniProtKB-KW",
+						"@type":"evidence"
+					}
+				],
+				"@type":"GO"
+			},
+			{
+				"@key":"9",
+				"@id":"GO:0009405",
+				"property":[
+					{
+						"@value":"P:pathogenesis",
+						"@type":"term"
+					},
+					{
+						"@value":"IEA:UniProtKB-KW",
+						"@type":"evidence"
+					}
+				],
+				"@type":"GO"
+			},
+			{
+				"@key":"10",
+				"@id":"IPR001558",
+				"property":{
+					"@value":"HIV_Nef",
+					"@type":"entry name"
+				},
+				"@type":"InterPro"
+			},
+			{
+				"@key":"11",
+				"@id":"G3DSA:3.30.62.10",
+				"property":[
+					{
+						"@value":"HIV_Nef",
+						"@type":"entry name"
+					},
+					{
+						"@value":"1",
+						"@type":"match status"
+					}
+				],
+				"@type":"Gene3D"
+			},
+			{
+				"@key":"12",
+				"@id":"PF00469",
+				"property":[
+					{
+						"@value":"F-protein",
+						"@type":"entry name"
+					},
+					{
+						"@value":"1",
+						"@type":"match status"
+					}
+				],
+				"@type":"Pfam"
+			},
+			{
+				"@key":"13",
+				"@id":"SSF55671",
+				"property":[
+					{
+						"@value":"HIV_Nef",
+						"@type":"entry name"
+					},
+					{
+						"@value":"1",
+						"@type":"match status"
+					}
+				],
+				"@type":"SUPFAM"
+			}
+		],
+		"protein":{
+			"recommendedName":{
+				"fullName":{
+					"$t":"Protein Nef",
+					"@evidence":"5"
+				}
+			}
+		},
+		"comment":{
+			"text":{
+				"$t":"Belongs to the lentivirus primate group Nef protein family.",
+				"@evidence":"5"
+			},
+			"@type":"similarity"
+		},
+		"reference":{
+			"@key":"2",
+			"@evidence":"6",
+			"scope":{
+				"$t":"NUCLEOTIDE SEQUENCE"
+			},
+			"citation":{
+				"@date":"1996-12",
+				"authorList":{
+					"person":[
+						{
+							"@name":"Quinones-Mateu M.E."
+						},
+						{
+							"@name":"Domingo E."
+						}
+					]
+				},
+				"title":{
+					"$t":"Point mutant frequency and intrasubtype B recombination lead Venezuelan HIV-1 genetic diversities."
+				},
+				"@db":"EMBL/GenBank/DDBJ databases",
+				"@type":"submission"
+			}
+		},
+		"@version":"57",
+		"evidence":[
+			{
+				"source":{
+					"dbReference":{
+						"@id":"SAAS001558_004_000460",
+						"@type":"SAAS"
+					}
+				},
+				"@key":"1",
+				"@type":"ECO:0000203"
+			},
+			{
+				"source":{
+					"dbReference":{
+						"@id":"RU003609",
+						"@type":"RuleBase"
+					}
+				},
+				"@key":"2",
+				"@type":"ECO:0000203"
+			},
+			{
+				"source":{
+					"dbReference":{
+						"@id":"SAAS001558_004_000564",
+						"@type":"SAAS"
+					}
+				},
+				"@key":"3",
+				"@type":"ECO:0000203"
+			},
+			{
+				"source":{
+					"dbReference":{
+						"@id":"SAAS001558_004_000226",
+						"@type":"SAAS"
+					}
+				},
+				"@key":"4",
+				"@type":"ECO:0000203"
+			},
+			{
+				"source":{
+					"dbReference":{
+						"@id":"RU000344",
+						"@type":"RuleBase"
+					}
+				},
+				"@key":"5",
+				"@type":"ECO:0000203"
+			},
+			{
+				"source":{
+					"dbReference":{
+						"@id":"AAB39161.1",
+						"@type":"EMBL"
+					}
+				},
+				"@key":"6",
+				"@type":"ECO:0000313"
+			}
+		],
+		"organism":{
+			"lineage":{
+				"taxon":[
+					{
+						"$t":"Viruses"
+					},
+					{
+						"$t":"Retro-transcribing viruses"
+					},
+					{
+						"$t":"Retroviridae"
+					},
+					{
+						"$t":"Orthoretrovirinae"
+					},
+					{
+						"$t":"Lentivirus"
+					},
+					{
+						"$t":"Primate lentivirus group"
+					}
+				]
+			},
+			"dbReference":{
+				"@key":"1",
+				"@id":"11676",
+				"@type":"NCBI Taxonomy"
+			},
+			"name":{
+				"$t":"Human immunodeficiency virus 1",
+				"@type":"scientific"
+			},
+			"@evidence":"6"
+		},
+		"@created":"1997-05-01",
+		"@modified":"2011-06-28"
+	},
+	"copyright":{
+		"$t":"\nCopyrighted by the UniProt Consortium, see http://www.uniprot.org/terms\nDistributed under the Creative Commons Attribution-NoDerivs License\n"
+	},
+	"@xsi:schemaLocation":"http://uniprot.org/uniprot http://www.uniprot.org/support/docs/uniprot.xsd"
+},"@encoding":"UTF-8","@version":"1.0"}
