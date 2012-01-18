@@ -5,7 +5,8 @@
  */
 // TODO Refactorizar esto porque se está yendo de madre. Otra clase y/o ver los static
 Ext.require (["TD.view.tab.InfoFieldset", "TD.view.tab.TargetGenericPanel",
-							"TD.view.tab.TargetInfoPanel", "TD.controller.util.XTplFactory"])
+							"TD.view.tab.TargetInfoPanel", "TD.controller.util.XTplFactory",
+							"TD.util.CustomAjax"])
 Ext.define ("TD.controller.util.TargetInfoUtil", {
 
 	statics: {
@@ -34,7 +35,8 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 
 			var properUrl = self.getProperUri()
 //			properUrl = "resources/data/p62258.json"
-			Ext.Ajax.request({
+//			Ext.Ajax.request({
+			TD.util.CustomAjax.request ({
 	//			url: "http://ws.bioinfo.cnio.es/OpenPHACTS/cgi-bin/uniFetcher.pl",
 	//			url: "/cgi-bin/uniFetcher.pl",
 				url: properUrl,

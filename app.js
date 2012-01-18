@@ -46,7 +46,7 @@
 		autoCreateViewport: true,
 
 		launch: function() {
-			console.info("launchinnggggggggggg")
+console.info("launchinnggggggggggg")
 
 			Ext.create ("Ext.tip.ToolTip", {
 				html: "<b>UniProt</b> id like '<i>P12345</i>'",
