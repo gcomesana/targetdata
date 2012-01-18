@@ -90,14 +90,17 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 						try {
 							var accessions = JSONSelect.match (".accession", jsonObj)
 							var accession = (accessions[0].length)? accessions[0][0]._text_: accessions[0]._text_
-
+							var emptyMsg = 'No information available from Uniprot for id ????'
 //							var added = newFieldSet.add(citPanel)
 							var infoPanelTit = "Info for Uniprot acc <i>"+accession+"</i>"
 							var infoPanel = Ext.create ("TD.view.tab.TargetInfoPanel", {
 								id: "uniprotInfo-"+accession,
 //								tpl: self.createInfoXTpl(),
 								tpl: TD.controller.util.XTplFactory.createInfoXTpl(),
+								emptyTpl: TD.controller.util.XTplFactory.createEmptyTpl(emptyMsg, accession),
 								tplObj: myJsonObj,
+								numItems: 1,
+								emptyObjThreshold: 0,
 								title: infoPanelTit,
 								collapsed: false,
 								collapsible: false

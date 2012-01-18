@@ -7,11 +7,13 @@ Ext.define ("TD.controller.util.XTplFactory", {
 
 /**
  * Creates a XTemplate for a empty response of a uniprot request.
+ * @param msg, the message to display in the case of an empty resultset
  * @param reqId, the requested id which does not have any uniprot entry
  */
-		createEmptyTpl: function (reqId) {
+		createEmptyTpl: function (msg, reqId) {
+			var strMsg = msg.replace ('????', reqId)
 			var tpl = new Ext.XTemplate (
-				'<div class="infoJson">There is no result for the requested Uniprot id ('+reqId+').</div>'
+				'<div class="infoJson">'+strMsg+'</div>'
 			)
 			return tpl
 		},
@@ -101,8 +103,9 @@ Ext.define ("TD.controller.util.XTplFactory", {
 		citationInfo: function () {
 
 			var jsonObj = TD.controller.util.TargetInfoUtil.uniprotJson
-	if (jsonObj == undefined || jsonObj == null)
-		console.info ("jsonObj in XTplFactory is "+jsonObj)
+if (jsonObj == undefined || jsonObj == null)
+	console.info ("jsonObj in XTplFactory is "+jsonObj)
+
 			var entrezJson = []
 			var citations = JSONSelect.match(".reference .citation", jsonObj)
 			var pubmedCits = JSONSelect.match (".dbReference :has(._at_type:val(\"PubMed\"))", citations)

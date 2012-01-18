@@ -123,12 +123,17 @@ console.info ("onPathwaySelect -> selection length: "+selModel.getSelection().le
 
 		if (compId == 'targetcitations') {
 			var infoTpl = TD.controller.util.XTplFactory.createCitationXTpl(height)
+			var msgEmpty = "No citations found for Uniprot Id: ????"
+			var emptyTpl = TD.controller.util.XTplFactory.createEmptyTpl(msgEmpty, uniprotJson.uniprotId)
 			var citsJson = TD.controller.util.XTplFactory.citationInfo()
 
 			theComp.removeAll()
 			var panelInfo = Ext.widget ("targetinfo", {
 				tpl: infoTpl,
+				emptyTpl: emptyTpl,
 				tplObj: citsJson,
+				emptyObjThreshold: 1,
+				numItems: citsJson.length,
 				collapsible: false,
 				frame: false,
 				frameHeader: false,
@@ -229,6 +234,7 @@ console.info ("onPathwaySelect -> selection length: "+selModel.getSelection().le
 						TD.util.CustomAjax.maskMsg = 'Sending request to StringDB...'
 //						Ext.Ajax.request({
 						TD.util.CustomAjax.request ({
+//							async: false,
 							url: '/cgi-bin/string_resolve.rb',
 							params: {
 								uniprotAcc: uniprotAcc
@@ -244,9 +250,6 @@ console.info ("onPathwaySelect -> selection length: "+selModel.getSelection().le
 								thePanel.jsonObj.uniprotAcc = uniprotAcc
 
 								thePanel.tpl.overwrite(thePanel.body, thePanel.jsonObj)
-//								theComp.add (thePanel)
-
-console.info ("interaction panel: finishing on success...")
 							},
 
 							failure: function (response, opts) {
@@ -257,7 +260,6 @@ console.info ("interaction panel: finishing on success...")
 					} // EO render
 				} // EO listeners
 			})
-console.info ("adding interactions panel")
 			theComp.add (intPanel)
 		}
 	},
