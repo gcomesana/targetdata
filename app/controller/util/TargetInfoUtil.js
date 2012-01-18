@@ -36,6 +36,8 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 			var properUrl = self.getProperUri()
 //			properUrl = "resources/data/p62258.json"
 //			Ext.Ajax.request({
+			TD.util.CustomAjax.bodyMasking = true
+			TD.util.CustomAjax.maskMsg = 'Sending Uniprot request...'
 			TD.util.CustomAjax.request ({
 	//			url: "http://ws.bioinfo.cnio.es/OpenPHACTS/cgi-bin/uniFetcher.pl",
 	//			url: "/cgi-bin/uniFetcher.pl",
@@ -119,7 +121,7 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 						}
 //						tpl.append(view[0].body, myJsonObj)
 					}
-					Ext.getBody().unmask()
+//					Ext.getBody().unmask()
 				}, // EO success
 
 

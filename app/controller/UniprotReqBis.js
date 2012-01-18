@@ -36,7 +36,7 @@ Ext.define ("TD.controller.UniprotReq", {
  * @param opts
  */
 	onClickBtnSearch: function (btn, ev, opts) {
-		Ext.getBody().mask("Sending request...")
+//		Ext.getBody().mask("Sending request...")
 
 		var theForm = btn.findParentByType("form")
 		var txtRequest = theForm.child("textfield")

@@ -78,7 +78,10 @@ console.info ("onPathwaySelect -> selection length: "+selModel.getSelection().le
 		var thePanel = Ext.getCmp("panel4PathwayInfo")
 
 		thePanel.pathTpl.overwrite(thePanel.body, {})
-		Ext.Ajax.request({
+		TD.util.CustomAjax.bodyMasking = true
+		TD.util.CustomAjax.maskMsg = 'Sending request for pathways...'
+//		Ext.Ajax.request({
+		TD.util.CustomAjax.request ({
 			url: '/cgi-bin/pathway_info.rb',
 			params: {
 				pathway: record.raw[0]
@@ -108,6 +111,11 @@ console.info ("onPathwaySelect -> selection length: "+selModel.getSelection().le
 
 
 
+/**
+ * Response method every time a tab is clicked (and then, the panel showed)
+ * @param theComp
+ * @param opts
+ */
 	onPanelShow: function (theComp, opts) {
 		var compId = theComp.getId()
 		var height = theComp.getHeight()
@@ -191,25 +199,13 @@ console.info ("onPathwaySelect -> selection length: "+selModel.getSelection().le
 		if (compId == "targetInteractions") {
 			theComp.removeAll()
 			stringBaseUri = "http://string-db.org/api/image/network?identifier=xxxx&required_score=950&limit=10&network_flavor=evidence";
-/*
-			var netImgUri = 'http://string-db.org/api/image/network?identifier=9606.ENSP00000264335&required_score=950&limit=10&network_flavor=evidence'
-			var networkImg = Ext.create("Ext.Img", {
-				src: "http://string-db.org/api/image/network?identifier=9606.ENSP00000264335&required_score=950&limit=10&network_flavor=evidence",
-				height: 105,
-				width: 640,
-				style: {
-					padding: '0 10 0 50'
-				}
-			})
-*/
+
 			var intPanel = Ext.create ("TD.view.tab.TargetInfoPanel", {
 //								tpl: self.createInfoXTpl(),
 				tpl: TD.controller.util.XTplFactory.createIntAnnotationTpl(),
 				tplObj: {},
 				collapsed: false,
-//				frame: false,
 				frameHeader: false,
-//				border: 0,
 				collapsible: false,
 				id: "panel4Interactions",
 				maxWidth: 550,
@@ -219,7 +215,6 @@ console.info ("onPathwaySelect -> selection length: "+selModel.getSelection().le
 //				maxHeight: 700,
 				height: 700,
 //				minHeight: 500,
-
 				title: "Interactions from STRING db",
 				
 				listeners: {
@@ -230,7 +225,10 @@ console.info ("onPathwaySelect -> selection length: "+selModel.getSelection().le
 														uniprotJson.uniprot.entry.accession._text_
 
 //						thePanel.tpl.overwrite(thePanel.body, {})
-						Ext.Ajax.request({
+						TD.util.CustomAjax.bodyMasking = true
+						TD.util.CustomAjax.maskMsg = 'Sending request to StringDB...'
+//						Ext.Ajax.request({
+						TD.util.CustomAjax.request ({
 							url: '/cgi-bin/string_resolve.rb',
 							params: {
 								uniprotAcc: uniprotAcc
@@ -246,6 +244,9 @@ console.info ("onPathwaySelect -> selection length: "+selModel.getSelection().le
 								thePanel.jsonObj.uniprotAcc = uniprotAcc
 
 								thePanel.tpl.overwrite(thePanel.body, thePanel.jsonObj)
+//								theComp.add (thePanel)
+
+console.info ("interaction panel: finishing on success...")
 							},
 
 							failure: function (response, opts) {
@@ -256,55 +257,7 @@ console.info ("onPathwaySelect -> selection length: "+selModel.getSelection().le
 					} // EO render
 				} // EO listeners
 			})
-
-/*
-			var panelInt = Ext.create ("Ext.panel.Panel", {
-				layout: {
-					type: 'hbox',
-					padding:'5'
-				},
-				id: "panel4Interactions",
-				tpl: TD.controller.util.XTplFactory.createIntAnnotationTpl(),
-				jsonObj: {},
-//				border: 0,
-				frame: true,
-				frameHeader: true,
-				minWidth: 800,
-				maxWidth: 800,
-				items: [
-					networkImg
-				],
-
-				listeners: {
-					'render': function (comp, opts) {
-						var thePanel = comp
-
-						thePanel.tpl.overwrite(thePanel.body, {})
-						Ext.Ajax.request({
-							url: '/cgi-bin/string_resolve.rb',
-							params: {
-								uniprotAcc: 'P62258'
-							},
-
-							success: function(response){
-								var jsonResp = response.responseText;
-								var jsonObj = Ext.JSON.decode (jsonResp)
-								thePanel.jsonObj = jsonObj
-
-								thePanel.tpl.overwrite(thePanel.body, thePanel.jsonObj[0])
-				//						comp.add (pathwayTpl)
-									// process server response here
-							},
-
-							failure: function (response, opts) {
-								console.error ("Error in ajax call")
-								console.error (response)
-							}
-						}); // EO Ajax req
-					} // EO render
-				} // EO listeners
-			}) // EO create panel
-			*/
+console.info ("adding interactions panel")
 			theComp.add (intPanel)
 		}
 	},
@@ -320,7 +273,7 @@ console.info ("onPathwaySelect -> selection length: "+selModel.getSelection().le
  * @param opts
  */
 	onClickBtnSearch: function (btn, ev, opts) {
-		Ext.getBody().mask("Sending request...")
+//		Ext.getBody().mask("Sending request...")
 
 		var theForm = btn.findParentByType("form")
 		var txtRequest = theForm.child("textfield")

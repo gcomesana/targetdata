@@ -7,15 +7,13 @@ Ext.define ("TD.util.CustomAjax", {
 	singleton: true,
 
 	bodyMasking: false,
-	maskMsg: '',
+						maskMsg: "",
 
 	listeners: {
 		beforerequest: {
 			fn: function () {
-				if (this.bodyMasking == true) {
-					console.info ("CustomAjax beforerequest: "+this.bodyMasking)
-					Ext.getBody().mask(this.maskMsg)
-				}
+				if (this.masking == true)
+					console.info ("CustomAjax beforerequest: "+this.masking)
 				else
 					console.info ("CustomAjax beforerequest with no masking")
 			}
@@ -23,10 +21,7 @@ Ext.define ("TD.util.CustomAjax", {
 
 		requestcomplete: {
 			fn: function () {
-				if (this.bodyMasking) {
-					console.info ("CustomAjax requestcomplete")
-					Ext.getBody().unmask()
-				}
+				console.info ("CustomAjax requestcomplete")
 			}
 		},
 
