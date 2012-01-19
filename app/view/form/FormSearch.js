@@ -44,8 +44,10 @@ Ext.define ("TD.view.form.FormSearch", {
 		width: 275
 	}, {
 		xtype: 'examples-combo',
-		margin: '30 0 0 105',
-		width: 170
+		fieldLabel: 'Examples',
+//		margin: '50 0 0 105',
+		margin: '50 0 0 0',
+		width: 275
 	}],
 
 /*

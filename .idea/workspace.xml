@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9143943a-ef73-49b0-a7de-28ddef2562f2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/TargetExample.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/store/TargetExamples.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/view/form/ExamplesCombo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/data/examples.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/TargetInfo.js" afterPath="$PROJECT_DIR$/app/controller/TargetInfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/Viewport.js" afterPath="$PROJECT_DIR$/app/view/Viewport.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/form/FormSearch.js" afterPath="$PROJECT_DIR$/app/view/form/FormSearch.js" />
     </list>
     <list id="e94879f8-d4e7-4194-a763-3159edab8eba" name="Older" comment="After first commit, changes not commited or something...&#10;" />
@@ -33,10 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FormSearch.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="FormSearch.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view/form/FormSearch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="27" selection-start="160" selection-end="170" vertical-scroll-proportion="0.0">
+            <state line="49" column="14" selection-start="1081" selection-end="1081" vertical-scroll-proportion="0.8553616">
               <folding />
             </state>
           </provider>
@@ -60,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TargetInfo.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TargetInfo.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controller/TargetInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="0" selection-start="1670" selection-end="1670" vertical-scroll-proportion="0.6387833">
+            <state line="78" column="0" selection-start="2029" selection-end="2029" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -95,10 +89,10 @@
         <option value="$PROJECT_DIR$/resources/data/examples.json" />
         <option value="$PROJECT_DIR$/app/model/TargetExample.js" />
         <option value="$PROJECT_DIR$/app/store/TargetExamples.js" />
-        <option value="$PROJECT_DIR$/app/view/form/FormSearch.js" />
         <option value="$PROJECT_DIR$/app/view/form/ExamplesCombo.js" />
         <option value="$PROJECT_DIR$/app/view/Viewport.js" />
         <option value="$PROJECT_DIR$/app/controller/TargetInfo.js" />
+        <option value="$PROJECT_DIR$/app/view/form/FormSearch.js" />
       </list>
     </option>
   </component>
@@ -585,23 +579,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/form/ExamplesCombo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="8" selection-start="1106" selection-end="1106" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/panel/TabWestPanel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/form/FormSearch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="27" selection-start="160" selection-end="170" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -615,7 +595,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/TargetInfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="0" selection-start="1670" selection-end="1670" vertical-scroll-proportion="0.6387833">
+        <state line="78" column="0" selection-start="2029" selection-end="2029" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/form/ExamplesCombo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="8" selection-start="1106" selection-end="1106" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/form/FormSearch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="14" selection-start="1081" selection-end="1081" vertical-scroll-proportion="0.8553616">
           <folding />
         </state>
       </provider>

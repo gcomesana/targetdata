@@ -70,6 +70,10 @@ Ext.define ("TD.controller.TargetInfo", {
 
 	onSelectExample: function (field, value, opts) {
 		console.info ("got it viewport > tab-west-panel > panel...")
+		var panels = Ext.ComponentQuery.query ('viewport > center-tabs panel')
+		Ext.each (panels, function (panel, index, panelsItself) {
+			panel.removeAll()
+		})
 		TD.controller.util.TargetInfoUtil.uniprotReq (Ext.htmlEncode(field.getValue()))
 	},
 
