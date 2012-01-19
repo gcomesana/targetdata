@@ -1,6 +1,11 @@
 /**
  * This is the panel which is embedded in the first tab of the content tab panel
- * This is what have to be embedded in the fieldset
+ * This is what have to be embedded in the fieldset.
+ * Features embedded templates and json object: the goal is to display the
+ * info contained in the json object by using the templates, one of the only
+ * intended to display a 0 result message.
+ * The emptyObjThreshold is intended to be used as a threshold to take a decision
+ * about whether or not rendering the empty template or the normal template
  */
 Ext.define ("TD.view.tab.TargetInfoPanel", {
 	extend: "Ext.panel.Panel",
@@ -19,12 +24,18 @@ Ext.define ("TD.view.tab.TargetInfoPanel", {
 
 // may have to put it in a config object...
 	tpl: {}, // template to render the content into the panel
+	emptyTpl: {}, // template to display in the case the resultset is empty
 	tplObj: {},
+	emptyObjThreshold: 0,
+	numItems: 0,
 
 	listeners: {
 		render: function (comp, opts) {
 //			tpl = self.createInfoXTpl ()
-			this.tpl.overwrite(comp.body, this.tplObj)
+			if (this.numItems >= this.emptyObjThreshold)
+				this.tpl.overwrite(comp.body, this.tplObj)
+			else
+				this.emptyTpl.overwrite(comp.body, this.tplObj)
 		}
 	}
 

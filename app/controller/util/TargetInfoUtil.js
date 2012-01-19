@@ -5,7 +5,8 @@
  */
 // TODO Refactorizar esto porque se está yendo de madre. Otra clase y/o ver los static
 Ext.require (["TD.view.tab.InfoFieldset", "TD.view.tab.TargetGenericPanel",
-							"TD.view.tab.TargetInfoPanel", "TD.controller.util.XTplFactory"])
+							"TD.view.tab.TargetInfoPanel", "TD.controller.util.XTplFactory",
+							"TD.util.CustomAjax"])
 Ext.define ("TD.controller.util.TargetInfoUtil", {
 
 	statics: {
@@ -34,7 +35,10 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 
 			var properUrl = self.getProperUri()
 //			properUrl = "resources/data/p62258.json"
-			Ext.Ajax.request({
+//			Ext.Ajax.request({
+			TD.util.CustomAjax.bodyMasking = true
+			TD.util.CustomAjax.maskMsg = 'Sending Uniprot request...'
+			TD.util.CustomAjax.request ({
 	//			url: "http://ws.bioinfo.cnio.es/OpenPHACTS/cgi-bin/uniFetcher.pl",
 	//			url: "/cgi-bin/uniFetcher.pl",
 				url: properUrl,
@@ -86,14 +90,17 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 						try {
 							var accessions = JSONSelect.match (".accession", jsonObj)
 							var accession = (accessions[0].length)? accessions[0][0]._text_: accessions[0]._text_
-
+							var emptyMsg = 'No information available from Uniprot for id ????'
 //							var added = newFieldSet.add(citPanel)
 							var infoPanelTit = "Info for Uniprot acc <i>"+accession+"</i>"
 							var infoPanel = Ext.create ("TD.view.tab.TargetInfoPanel", {
 								id: "uniprotInfo-"+accession,
 //								tpl: self.createInfoXTpl(),
 								tpl: TD.controller.util.XTplFactory.createInfoXTpl(),
+								emptyTpl: TD.controller.util.XTplFactory.createEmptyTpl(emptyMsg, accession),
 								tplObj: myJsonObj,
+								numItems: 1,
+								emptyObjThreshold: 0,
 								title: infoPanelTit,
 								collapsed: false,
 								collapsible: false
@@ -117,7 +124,7 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 						}
 //						tpl.append(view[0].body, myJsonObj)
 					}
-					Ext.getBody().unmask()
+//					Ext.getBody().unmask()
 				}, // EO success
 
 
