@@ -123,7 +123,7 @@ console.info ("onPathwaySelect -> selection length: "+selModel.getSelection().le
 
 		if (compId == 'targetcitations') {
 			var infoTpl = TD.controller.util.XTplFactory.createCitationXTpl(height)
-			var msgEmpty = "No citations found for Uniprot Id: ????"
+			var msgEmpty = "No citations found for the Uniprot Id: ????"
 			var emptyTpl = TD.controller.util.XTplFactory.createEmptyTpl(msgEmpty, uniprotJson.uniprotId)
 			var citsJson = TD.controller.util.XTplFactory.citationInfo()
 
@@ -204,11 +204,14 @@ console.info ("onPathwaySelect -> selection length: "+selModel.getSelection().le
 		if (compId == "targetInteractions") {
 			theComp.removeAll()
 			stringBaseUri = "http://string-db.org/api/image/network?identifier=xxxx&required_score=950&limit=10&network_flavor=evidence";
-
+			var msgEmpty = "No interactions found for the Uniprot Id ????"
 			var intPanel = Ext.create ("TD.view.tab.TargetInfoPanel", {
 //								tpl: self.createInfoXTpl(),
 				tpl: TD.controller.util.XTplFactory.createIntAnnotationTpl(),
+				emptyTpl: TD.controller.util.XTplFactory.createEmptyTpl (msgEmpty, uniprotJson.uniprotId),
 				tplObj: {},
+				emptyObjThreshold: 0,
+				numItems: 1,
 				collapsed: false,
 				frameHeader: false,
 				collapsible: false,
@@ -224,6 +227,7 @@ console.info ("onPathwaySelect -> selection length: "+selModel.getSelection().le
 				
 				listeners: {
 					'render': function (comp, opts) {
+						var me = this
 						var thePanel = comp
 						var uniprotAcc = uniprotJson.uniprot.entry.accession.length?
 														uniprotJson.uniprot.entry.accession[0]._text_:
@@ -243,13 +247,19 @@ console.info ("onPathwaySelect -> selection length: "+selModel.getSelection().le
 							success: function(response){
 								var jsonResp = response.responseText;
 								var jsonObj = Ext.JSON.decode (jsonResp)
-								thePanel.jsonObj = jsonObj[0]
+								thePanel.tplObj = jsonObj[0]
 
-								stringBaseUri = stringBaseUri.replace ("xxxx", thePanel.jsonObj.stringId)
-								thePanel.jsonObj.imgUri = stringBaseUri
-								thePanel.jsonObj.uniprotAcc = uniprotAcc
+								stringBaseUri = stringBaseUri.replace ("xxxx", thePanel.tplObj.stringId)
+								thePanel.tplObj.imgUri = stringBaseUri
+								thePanel.tplObj.uniprotAcc = uniprotAcc
 
-								thePanel.tpl.overwrite(thePanel.body, thePanel.jsonObj)
+								thePanel.numItems = thePanel.jsonObj == undefined? 0: 1
+								if (thePanel.numItems >= thePanel.emptyObjThreshold)
+									thePanel.tpl.overwrite(thePanel.body, thePanel.tplObj)
+								else
+									thePanel.emptyTpl.overwrite(thePanel.body, thePanel.tplObj)
+
+//								thePanel.tpl.overwrite(thePanel.body, thePanel.tplObj)
 							},
 
 							failure: function (response, opts) {
