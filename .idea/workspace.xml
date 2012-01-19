@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9143943a-ef73-49b0-a7de-28ddef2562f2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/TargetInfo.js" afterPath="$PROJECT_DIR$/app/controller/TargetInfo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/util/TargetInfoUtil.js" afterPath="$PROJECT_DIR$/app/controller/util/TargetInfoUtil.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/form/FormSearch.js" afterPath="$PROJECT_DIR$/app/view/form/FormSearch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/tab/TargetInfoPanel.js" afterPath="$PROJECT_DIR$/app/view/tab/TargetInfoPanel.js" />
     </list>
     <list id="e94879f8-d4e7-4194-a763-3159edab8eba" name="Older" comment="After first commit, changes not commited or something...&#10;" />
     <ignored path="targetdata.iws" />
@@ -27,10 +29,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FormSearch.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FormSearch.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/form/FormSearch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="14" selection-start="1081" selection-end="1081" vertical-scroll-proportion="0.8553616">
+            <state line="8" column="19" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -45,19 +47,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExamplesCombo.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/form/ExamplesCombo.js">
+      <file leaf-file-name="TargetInfo.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controller/TargetInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="8" selection-start="1106" selection-end="1106" vertical-scroll-proportion="0.0">
+            <state line="234" column="19" selection-start="6564" selection-end="6613" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TargetInfo.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controller/TargetInfo.js">
+      <file leaf-file-name="TargetInfoPanel.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/tab/TargetInfoPanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="0" selection-start="2029" selection-end="2029" vertical-scroll-proportion="0.0">
+            <state line="40" column="0" selection-start="1248" selection-end="1248" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TargetInfoUtil.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controller/util/TargetInfoUtil.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="109" column="2" selection-start="4037" selection-end="4037" vertical-scroll-proportion="0.55136544">
               <folding />
             </state>
           </provider>
@@ -84,15 +95,15 @@
         <option value="$PROJECT_DIR$/app/controller/UniprotReqBis.js" />
         <option value="$PROJECT_DIR$/app/util/CustomAjax.js" />
         <option value="$PROJECT_DIR$/app/controller/util/XTplFactory.js" />
-        <option value="$PROJECT_DIR$/app/controller/util/TargetInfoUtil.js" />
-        <option value="$PROJECT_DIR$/app/view/tab/TargetInfoPanel.js" />
         <option value="$PROJECT_DIR$/resources/data/examples.json" />
         <option value="$PROJECT_DIR$/app/model/TargetExample.js" />
         <option value="$PROJECT_DIR$/app/store/TargetExamples.js" />
         <option value="$PROJECT_DIR$/app/view/form/ExamplesCombo.js" />
         <option value="$PROJECT_DIR$/app/view/Viewport.js" />
-        <option value="$PROJECT_DIR$/app/controller/TargetInfo.js" />
         <option value="$PROJECT_DIR$/app/view/form/FormSearch.js" />
+        <option value="$PROJECT_DIR$/app/controller/TargetInfo.js" />
+        <option value="$PROJECT_DIR$/app/view/tab/TargetInfoPanel.js" />
+        <option value="$PROJECT_DIR$/app/controller/util/TargetInfoUtil.js" />
       </list>
     </option>
   </component>
@@ -226,7 +237,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="panel" />
+              <option name="myItemId" value="tab" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -317,6 +328,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="targetdata" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="targetdata" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -502,23 +535,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/data/p12345.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/model/KeggPathway.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/tab/TargetInfoPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="55" selection-start="1089" selection-end="1240" vertical-scroll-proportion="0.5279584">
           <folding />
         </state>
       </provider>
@@ -593,13 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/TargetInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="0" selection-start="2029" selection-end="2029" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/form/ExamplesCombo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="8" selection-start="1106" selection-end="1106" vertical-scroll-proportion="0.0">
@@ -609,7 +621,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/form/FormSearch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="14" selection-start="1081" selection-end="1081" vertical-scroll-proportion="0.8553616">
+        <state line="8" column="19" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/TargetInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="234" column="19" selection-start="6564" selection-end="6613" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/tab/TargetInfoPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="1248" selection-end="1248" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/util/TargetInfoUtil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="2" selection-start="4037" selection-end="4037" vertical-scroll-proportion="0.55136544">
           <folding />
         </state>
       </provider>

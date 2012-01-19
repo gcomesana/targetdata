@@ -24,16 +24,6 @@ Ext.define ("TD.view.form.FormSearch", {
 			} // EO listeners
 		}
 
-		/*
-		fieldLabel: "Keyword search",
-		name: "frmKey",
-		iconCls: "icon-grid",
-		fieldCls: "x-form-field",
-		itemId: "txtIdSearch",
-		id: "txtIdSearch",
-		vtype: "uniprot",
-		emptyText: "Uniprot id (i.e. 'P47928')"
-		*/
 	}, {
 		xtype     : 'textarea',
 		grow      : false,

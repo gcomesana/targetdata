@@ -230,9 +230,9 @@ console.info ("onPathwaySelect -> selection length: "+selModel.getSelection().le
 				frameHeader: false,
 				collapsible: false,
 				id: "panel4Interactions",
-				maxWidth: 550,
+				maxWidth: 580,
 				minWidth: 400,
-				width: 550,
+				width: 580,
 
 //				maxHeight: 700,
 				height: 700,

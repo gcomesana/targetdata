@@ -39,38 +39,4 @@ Ext.define ("TD.view.tab.TargetInfoPanel", {
 		}
 	}
 
-
-/*
-	items: [{
-		xtype: "panel",
-		width: 500,
-		bodyPadding: 5,
-		collapsible: true,
-		hidden: true,
-		title: "Uniprot Info",
-		itemId: "uniprotInfo",
-		id: "uniprotInfo",
-		header: false
-	},{
-		xtype: "panel",
-		width: 500,
-		bodyPadding: 5,
-		collapsible: true,
-		collapsed: true,
-		hidden: true,
-		title: "Citations",
-		itemId: "citationInfo",
-		id: "citationInfo"
-	},{
-		xtype: "panel",
-		width: 500,
-		bodyPadding: 5,
-		collapsible: true,
-		collapsed: true,
-		hidden: true,
-		title: "Other references",
-		itemId: "dbRefInfo",
-		id: "dbRefInfo"
-	}]
-*/
 })
