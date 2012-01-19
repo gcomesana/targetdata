@@ -59,8 +59,18 @@ Ext.define ("TD.controller.TargetInfo", {
 			'#pathways-grid': {
 //				selectionchange: this.onPathwaySelect,
 				itemclick: this.onPathwayClick
+			},
+
+			'viewport > tab-west-panel > panel > formsearch > examples-combo': {
+				select: this.onSelectExample
 			}
 		})
+	},
+
+
+	onSelectExample: function (field, value, opts) {
+		console.info ("got it viewport > tab-west-panel > panel...")
+		TD.controller.util.TargetInfoUtil.uniprotReq (Ext.htmlEncode(field.getValue()))
 	},
 
 
