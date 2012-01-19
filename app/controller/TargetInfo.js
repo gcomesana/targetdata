@@ -59,8 +59,22 @@ Ext.define ("TD.controller.TargetInfo", {
 			'#pathways-grid': {
 //				selectionchange: this.onPathwaySelect,
 				itemclick: this.onPathwayClick
+			},
+
+			'viewport > tab-west-panel > panel > formsearch > examples-combo': {
+				select: this.onSelectExample
 			}
 		})
+	},
+
+
+	onSelectExample: function (field, value, opts) {
+		console.info ("got it viewport > tab-west-panel > panel...")
+		var panels = Ext.ComponentQuery.query ('viewport > center-tabs panel')
+		Ext.each (panels, function (panel, index, panelsItself) {
+			panel.removeAll()
+		})
+		TD.controller.util.TargetInfoUtil.uniprotReq (Ext.htmlEncode(field.getValue()))
 	},
 
 
@@ -216,9 +230,9 @@ console.info ("onPathwaySelect -> selection length: "+selModel.getSelection().le
 				frameHeader: false,
 				collapsible: false,
 				id: "panel4Interactions",
-				maxWidth: 550,
+				maxWidth: 580,
 				minWidth: 400,
-				width: 550,
+				width: 580,
 
 //				maxHeight: 700,
 				height: 700,

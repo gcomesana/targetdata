@@ -103,7 +103,11 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 								emptyObjThreshold: 0,
 								title: infoPanelTit,
 								collapsed: false,
-								collapsible: false
+								collapsible: false,
+
+//								maxWidth: 580,
+//								minWidth: 580,
+//								width: 580
 							})
 							view[0].add(infoPanel)
 //							var uniprotObj = TD.controller.util.TargetInfoUtil.uniprotJson

@@ -1,5 +1,5 @@
 
-Ext.require (["TD.view.form.ProteinLookup"])
+Ext.require (["TD.view.form.ProteinLookup", 'TD.view.form.ExamplesCombo'])
 Ext.define ("TD.view.form.FormSearch", {
 	extend: "Ext.form.Panel",
 	alias: "widget.formsearch",
@@ -14,6 +14,7 @@ Ext.define ("TD.view.form.FormSearch", {
 
 	items: [{
 		xtype: "combo-protein-lookup",
+		width: 275,
 		listeners: {
 			'afterrender': function (comp, opts) {
 				Ext.tip.QuickTipManager.register({
@@ -23,23 +24,20 @@ Ext.define ("TD.view.form.FormSearch", {
 			} // EO listeners
 		}
 
-		/*
-		fieldLabel: "Keyword search",
-		name: "frmKey",
-		iconCls: "icon-grid",
-		fieldCls: "x-form-field",
-		itemId: "txtIdSearch",
-		id: "txtIdSearch",
-		vtype: "uniprot",
-		emptyText: "Uniprot id (i.e. 'P47928')"
-		*/
 	}, {
 		xtype     : 'textarea',
 		grow      : false,
 		name      : 'frmSeq',
 		fieldLabel: 'Sequence search',
 		itemId: 'txtSeqSearch',
-		disabled: true
+		disabled: true,
+		width: 275
+	}, {
+		xtype: 'examples-combo',
+		fieldLabel: 'Examples',
+//		margin: '50 0 0 105',
+		margin: '50 0 0 0',
+		width: 275
 	}],
 
 /*
