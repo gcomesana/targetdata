@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9143943a-ef73-49b0-a7de-28ddef2562f2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/CenterTabs.js" afterPath="$PROJECT_DIR$/app/controller/CenterTabs.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/TargetInfo.js" afterPath="$PROJECT_DIR$/app/controller/TargetInfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/util/TargetInfoUtil.js" afterPath="$PROJECT_DIR$/app/controller/util/TargetInfoUtil.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/util/XTplFactory.js" afterPath="$PROJECT_DIR$/app/controller/util/XTplFactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/panel/CenterTabs.js" afterPath="$PROJECT_DIR$/app/view/panel/CenterTabs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/cgi/get_pathways.rb" afterPath="$PROJECT_DIR$/resources/cgi/get_pathways.rb" />
     </list>
     <list id="e94879f8-d4e7-4194-a763-3159edab8eba" name="Older" comment="After first commit, changes not commited or something...&#10;" />
     <ignored path="targetdata.iws" />
@@ -41,19 +35,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TargetInfo.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TargetInfo.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controller/TargetInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="201" column="50" selection-start="5811" selection-end="5811" vertical-scroll-proportion="0.0">
+            <state line="80" column="0" selection-start="2031" selection-end="2031" vertical-scroll-proportion="0.10392902">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XTplFactory.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="XTplFactory.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controller/util/XTplFactory.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="199" column="53" selection-start="6794" selection-end="6794" vertical-scroll-proportion="0.6704689">
+            <state line="174" column="14" selection-start="6111" selection-end="6111" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -96,8 +90,8 @@
         <option value="$PROJECT_DIR$/app/controller/util/TargetInfoUtil.js" />
         <option value="$PROJECT_DIR$/app/controller/CenterTabs.js" />
         <option value="$PROJECT_DIR$/app/view/panel/CenterTabs.js" />
-        <option value="$PROJECT_DIR$/app/controller/TargetInfo.js" />
         <option value="$PROJECT_DIR$/app/controller/util/XTplFactory.js" />
+        <option value="$PROJECT_DIR$/app/controller/TargetInfo.js" />
       </list>
     </option>
   </component>
@@ -473,6 +467,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21601942" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25606796" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24669074" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25112444" sideWeight="0.75330925" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25487256" sideWeight="0.75330925" order="0" side_tool="false" content_ui="tabs" />
@@ -482,7 +477,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24669074" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -588,13 +582,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/util/TargetInfoUtil.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="6" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/form/FormSearch.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="19" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
@@ -623,16 +610,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/TargetInfo.js">
+    <entry file="file://$PROJECT_DIR$/app/controller/util/XTplFactory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="201" column="50" selection-start="5811" selection-end="5811" vertical-scroll-proportion="0.0">
+        <state line="174" column="14" selection-start="6111" selection-end="6111" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/util/XTplFactory.js">
+    <entry file="file://$PROJECT_DIR$/app/controller/util/TargetInfoUtil.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="199" column="53" selection-start="6794" selection-end="6794" vertical-scroll-proportion="0.6704689">
+        <state line="19" column="6" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/TargetInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="0" selection-start="2031" selection-end="2031" vertical-scroll-proportion="0.10392902">
           <folding />
         </state>
       </provider>

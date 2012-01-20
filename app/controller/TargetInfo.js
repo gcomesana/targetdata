@@ -79,14 +79,6 @@ Ext.define ("TD.controller.TargetInfo", {
 
 
 
-	onPathwaySelect: function (selModel, selections, opts) {
-console.info ("onPathwaySelect -> selection length: "+selModel.getSelection().length+" vs "+selections.length)
-
-
-	},
-
-
-
 	onPathwayClick: function (grid, record, item, index, ev, opts) {
 // console.info ("onPathwayClick -> gridId: "+grid.getId()+" on index: "+index)
 		var thePanel = Ext.getCmp("panel4PathwayInfo")
