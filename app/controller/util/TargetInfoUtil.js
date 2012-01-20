@@ -103,7 +103,7 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 								emptyObjThreshold: 0,
 								title: infoPanelTit,
 								collapsed: false,
-								collapsible: false,
+								collapsible: false
 
 //								maxWidth: 580,
 //								minWidth: 580,

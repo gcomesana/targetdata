@@ -162,16 +162,16 @@ console.info ("onPathwaySelect -> selection length: "+selModel.getSelection().le
 
 ////////////////////////////////////////////////////////////////////////////
 		if (compId == 'targetpathways') {
-			var gene = JSONSelect.match(".gene .name :has(._at_type:val(\"primary\"))", uniprotJson)
+//			var gene = JSONSelect.match(".gene .name :has(._at_type:val(\"primary\"))", uniprotJson)
+			var gene = uniprotJson.uniprotId
 
 			theComp.removeAll()
 //			var pathwayStore = Ext.data.StoreManager.lookup('keggpathways-store')
 			var pathwayStore = Ext.create ("TD.store.KeggPathways")
 			pathwayStore.proxy.extraParams = {
 //				protein: Ext.getCmp('formSearch').currentUniprotId
-				protein: gene[0]._text_
+				protein: gene
 			}
-			pathwayStore.load()
 			var gridPathways = Ext.create("TD.view.KeggPathwaysGrid", {
 				flex: 1,
 				title: "Pathways from KEGG",
@@ -181,29 +181,44 @@ console.info ("onPathwaySelect -> selection length: "+selModel.getSelection().le
 
 			var panelPathW = theComp.getWidth()*0.75-50
 			var panelPath = Ext.create("Ext.panel.Panel", {
-				border: 0,
+				border: false,
 				frame: false,
-				minHeight: 800,
-				height: 800,
+//				height: 800,
 				minWidth: panelPathW,
-//				width: "500",
+				autoScroll: true,
 				id: "panel4PathwayInfo",
-				html: '<div class="citationTit">KEGG description</div>',
+//				html: '<div class="citationTit">KEGG description</div>',
 
 				pathJson: null,
 				pathTpl: TD.controller.util.XTplFactory.createPathwayInfoTpl(400, panelPathW),
-
 				flex: 3,
 				margins: '0 0 0 10'
 			})
 
+			pathwayStore.load(function (records, op, success) {
+				if (pathwayStore.getCount() == 0) {
+					var emptyCfg = {
+						html: '<span class="citationTit">No pathways found for <i>'+gene+'</i> protein</span>',
+						bodyStyle: 'border-width: 0px; padding-top: 10px',
+						style: {
+							borderWidth: '0px'
+						}
+					}
+					panelPath.add (Ext.apply(emptyCfg))
+				}
+			})
+
 			var newConfig = {
 				layout: {
-						type: 'hbox',
-						padding:'5'
+					type: 'hbox',
+//					padding:'5'
+					align: 'stretch'
 				},
 				minHeight: 75,
-				defaults:{margins:'0 15 0 0'},
+				defaults:{
+					margins:'0 15 0 0',
+					height: 300
+				},
 				items: [
 					gridPathways
 					,
@@ -211,6 +226,7 @@ console.info ("onPathwaySelect -> selection length: "+selModel.getSelection().le
 				]
 			}
 			theComp.add(Ext.apply (newConfig))
+			Ext.getCmp('panel4PathwayInfo').body.setStyle('border', '1px dotted black')
 		}
 
 
@@ -299,19 +315,17 @@ console.info ("onPathwaySelect -> selection length: "+selModel.getSelection().le
  * @param opts
  */
 	onClickBtnSearch: function (btn, ev, opts) {
-//		Ext.getBody().mask("Sending request...")
+// Check cache for proteinId existence
+// Otherwise, do ajax request call
 
 		var theForm = btn.findParentByType("form")
 		var txtRequest = theForm.child("textfield")
 		var txtValue = txtRequest.getValue()
 		var formSearch = Ext.getCmp('formSearch')
 		formSearch.currentUniprotId = txtValue
-	//	txtValue = theForm.child ("combo").getValue()
 
 		Ext.getCmp('infoPanel').removeAll()
-//		self.targetInfoUtil = Ext.create ("TD.controller.util.TargetInfo", {})
 		TD.controller.util.TargetInfoUtil.uniprotReq (Ext.htmlEncode(txtValue))
-//		self.uniprotReq (txtValue)
 	},
 
 

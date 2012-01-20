@@ -187,17 +187,17 @@ if (jsonObj == undefined || jsonObj == null)
  * @return the template
  */
 		createPathwayInfoTpl: function (h, w) {
-			var divStr = '<div id="divPathway" style="overflow-y: scroll; '
+			var divStr = '<div id="divPathway" ' // style="overflow-y: scroll; '
 			divStr += w != undefined? 'width: '+w+'px; ': ''
-			divStr += h != undefined? 'height:'+h+'px; ': ''
+//			divStr += h != undefined? 'height:'+h+'px; ': ''
 			divStr += '">'
 
 			var pathwayTpl = new Ext.XTemplate (
 //		'<tpl if="this.isData(name) && this.isData(description)">',
 				divStr,
 				'<p class="citationTit">Kegg id: {keggid}</p>',
-				'<p style="margin-bottom: 10px"><b>Name</b>: {name}</p>',
-				'<p style="margin-bottom: 20px"><b>Description</b>: {description}</p>',
+				'<p style="margin-bottom: 10px; padding-right: 5px"><b>Name</b>: {name}</p>',
+				'<p style="margin-bottom: 20px; padding-right: 5px"><b>Description</b>: {description}</p>',
 				'<p><a href="{url-img-big}" target="_blank" style="text-decoration: none">',
 					'<img src="{url-img-small}" alt="{name}"/>',
 				'</a></p>',
