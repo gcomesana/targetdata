@@ -1,10 +1,10 @@
 Ext.define('TD.view.UsersGrid', {
 	extend	 : 'Ext.grid.Panel',
 	alias		: 'widget.usersgrid',
-	requires : ['TD.store.UserStore'],
+	requires : ['TD.store.Users'],
 
 	initComponent : function() {
-		this.store = TD.store.UserStore;
+		this.store = TD.store.Users;
 		this.columns = this.buildColumns();
 		this.callParent();
 	},

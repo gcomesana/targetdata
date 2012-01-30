@@ -7,7 +7,10 @@ Ext.define ("TD.controller.CenterTabs", {
 		"panel.CenterTabs",
 		"tab.TargetGenericPanel"
 	],
-	
+
+	models: ['User', 'CacheReqParam', 'CacheReq'],
+	stores: ['Users', 'CacheReqs'],
+
 	extend: "Ext.app.Controller",
 
 	init: function () {

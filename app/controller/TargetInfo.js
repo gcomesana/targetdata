@@ -1,9 +1,10 @@
 // Ext.require (["TD.controller.util.TargetInfoUtil"])
 
 Ext.define ("TD.controller.TargetInfo", {
-	views: ["form.FormSearch", "tab.TargetInfoPanel", "KeggPathwaysGrid"],
-	stores: ["KeggPathways"],
-	models: ["KeggPathway"],
+	views: ["form.FormSearch", // "form.ExamplesCombo", // impossible to test with jasmine
+					"tab.TargetInfoPanel", "KeggPathwaysGrid"],
+	stores: ["KeggPathways", "TargetExamples"],
+	models: ["KeggPathway", "TargetExample"],
 	
 	extend: "Ext.app.Controller",
 	requires: ['TD.controller.util.TargetInfoUtil', 'TD.controller.util.XTplFactory'],
@@ -32,7 +33,7 @@ Ext.define ("TD.controller.TargetInfo", {
 	init: function () {
 		targetInfoUtil = TD.controller.util.TargetInfoUtil
 
-		this.control({
+		this.control ({
 			"#btnSearch": {
 				// render: this.onRenderBtnSearch,
 				click: this.onClickBtnSearch
@@ -61,7 +62,8 @@ Ext.define ("TD.controller.TargetInfo", {
 				itemclick: this.onPathwayClick
 			},
 
-			'viewport > tab-west-panel > panel > formsearch > examples-combo': {
+//			'viewport > tab-west-panel > panel > formsearch > examples-combo': {
+			'examples-combo': {
 				select: this.onSelectExample
 			}
 		})
@@ -69,7 +71,6 @@ Ext.define ("TD.controller.TargetInfo", {
 
 
 	onSelectExample: function (field, value, opts) {
-		console.info ("got it viewport > tab-west-panel > panel...")
 		var panels = Ext.ComponentQuery.query ('viewport > center-tabs panel')
 		Ext.each (panels, function (panel, index, panelsItself) {
 			panel.removeAll()

@@ -6,7 +6,7 @@
  * To change this template use File | Settings | File Templates.
  */
 
-var comboStore = Ext.create ("TD.store.UserStore")
+var comboStore = Ext.create ("TD.store.Users")
 var uniComboStore = Ext.create ("TD.store.ProteinLookup")
 
 Ext.define("TD.view.Viewport", {

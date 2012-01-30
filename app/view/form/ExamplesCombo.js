@@ -10,7 +10,6 @@ Ext.define ("TD.view.form.ExamplesCombo", {
 	alias: "widget.examples-combo",
 	requires: ['TD.model.TargetExample', 'TD.store.TargetExamples'],
 
-	store: examplesStore,
 	displayField: 'text',
 	valueField: 'acc',
 	queryMode: 'remote',
@@ -28,19 +27,15 @@ Ext.define ("TD.view.form.ExamplesCombo", {
 	initComponent: function (arguments) {
 		var me = this
 
+		me.store = examplesStore,
 		me.listeners = {
 			'afterrender': function (comp, opts) {
 				Ext.tip.QuickTipManager.register({
 					target: comp.getEl(),
 					text: '<span style="font-size: larger;"> Choose an entry from the combobox below...</span>'
 				});
-			},
-
-			'select': function (field, value, opts) {
-				
-
 			}
-			 // EO listeners
+
 		}
 		me.callParent(arguments)
 	}

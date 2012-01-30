@@ -1,7 +1,7 @@
 Ext.define('TD.view.KeywordsGridPanel', {
 	extend	 : 'Ext.grid.Panel',
 	alias		: 'widget.keywordsgrid',
-	requires : ['TD.store.UserStore'],
+	requires : ['TD.store.Users'],
 
 	initComponent : function() {
 //		this.store = UF.store.UserStore;

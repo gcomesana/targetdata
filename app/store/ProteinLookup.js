@@ -16,8 +16,7 @@ Ext.define('TD.store.ProteinLookup', {
 		}
 	},
 	autoLoad: true,
-	storeId: "userstore",
-//    storeId   : 'MyApp.store.UserStore',
+	storeId: "proteinlookup-store",
 
 
 	constructor : function() {
