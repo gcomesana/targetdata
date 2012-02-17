@@ -63,10 +63,46 @@ console.log("TD.util.CustomAjax.cacheInit")
 
 
 
+/**
+ * Fetches the jsonResp associated with the given request, defined by the url
+ * and the query string params
+ * @param theUrl
+ * @param params, the query string params as a object ({param1:val1,param2:val2,...})
+ */
+	fetchRequest: function (theUrl, theParams) {
 
-	fetchRequest: function (url, params) {
-		return false;
+		this.requestCache.filter ('url', theUrl)
+
+
+
+		var join = function (rec) {
+			var recParams = rec.params();
+			var joinOk = true;
+			recParams.each (function (recParam) {
+				var paramName = recParam.get('name')
+				joinOk = theParams[paramName] == recParam.get('value') && joinOk;
+
+				if (!joinOk)
+					return false;
+			})
+			return joinOk
+		}
+
+
+		this.requestCache.filterBy (function (record, idRec) {
+//			var urlOk = record.get('url') == theurl
+			var recordOk = join (record)
+			return recordOk
+		})
+
+		if (this.requestCache.getCount() == 0)
+			return null;
+		else {
+			var choice = this.requestCache.getAt(0);
+			return choice.get('jsonresp');
+		}
 	},
+
 
 
 
