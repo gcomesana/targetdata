@@ -1,9 +1,9 @@
-// Ext.require (["TD.controller.util.TargetInfoUtil"])
+Ext.require (["TD.controller.util.TargetInfoUtil"])
 
 Ext.define ("TD.controller.TargetInfo", {
 	views: ["form.FormSearch", "tab.TargetInfoPanel", "KeggPathwaysGrid"],
-	stores: ["KeggPathways"],
-	models: ["KeggPathway"],
+	stores: ["KeggPathways", "ProteinLookup"],
+	models: ["KeggPathway", "ProteinLookup"],
 	
 	extend: "Ext.app.Controller",
 	requires: ['TD.controller.util.TargetInfoUtil', 'TD.controller.util.XTplFactory'],
@@ -18,8 +18,8 @@ Ext.define ("TD.controller.TargetInfo", {
 	],
 
 	urisProd: [
-		{"cat":"uniprot", "url":"cgi-bin/uniFetcher.pl"},
-		{"cat":"pubmedAbstrac", "url": "cgi-bin/togoAbstractFetch.pl"}
+		{"cat":"uniprot", "url":"/cgi-bin/uniFetcher.pl"},
+		{"cat":"pubmedAbstrac", "url": "/cgi-bin/togoAbstractFetch.pl"}
 	],
 
 
@@ -75,14 +75,6 @@ Ext.define ("TD.controller.TargetInfo", {
 			panel.removeAll()
 		})
 		TD.controller.util.TargetInfoUtil.uniprotReq (Ext.htmlEncode(field.getValue()))
-	},
-
-
-
-	onPathwaySelect: function (selModel, selections, opts) {
-console.info ("onPathwaySelect -> selection length: "+selModel.getSelection().length+" vs "+selections.length)
-
-
 	},
 
 

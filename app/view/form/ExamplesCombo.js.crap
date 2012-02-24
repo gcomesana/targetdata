@@ -4,14 +4,12 @@
  * A model and a store has to be built in order to read the examples
  */
 
-// var examplesStore = Ext.create ("TD.store.TargetExamples");
 
 Ext.define ("TD.view.form.ExamplesCombo", {
 	extend: "Ext.form.field.ComboBox",
 	alias: "widget.examples-combo",
 	requires: ['TD.model.TargetExample', 'TD.store.TargetExamples'],
 
-	store: Ext.create ("TD.store.TargetExamples"),
 	displayField: 'text',
 	valueField: 'acc',
 	queryMode: 'remote',
@@ -29,19 +27,15 @@ Ext.define ("TD.view.form.ExamplesCombo", {
 	initComponent: function (arguments) {
 		var me = this
 
+		me.store = examplesStore,
 		me.listeners = {
 			'afterrender': function (comp, opts) {
 				Ext.tip.QuickTipManager.register({
 					target: comp.getEl(),
 					text: '<span style="font-size: larger;"> Choose an entry from the combobox below...</span>'
 				});
-			},
-
-			'select': function (field, value, opts) {
-				
-
 			}
-			 // EO listeners
+
 		}
 		me.callParent(arguments)
 	}
