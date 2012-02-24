@@ -17,30 +17,30 @@
 	Ext.require("TD.view.panel.TabWestPanel")
 	Ext.require("TD.view.panel.StatusSouthPanel")
 	Ext.require("TD.view.panel.NavAccordionPanel")
-
-
 	Ext.require([
 		'Ext.form.Panel',
 		'Ext.tip.*',
 		'Ext.ux.form.MultiSelect',
 		'Ext.ux.form.ItemSelector',
+		'TD.util.CustomAjax',
+		'TD.model.ProteinLookup',
+		'TD.store.ProteinLookup',
 		'TD.view.form.FormSearch',
+		'TD.view.form.ProteinLookup',
+		'TD.view.form.ExamplesCombo',
 		'TD.view.panel.CenterTabs',
 		'TD.view.tab.TargetGenericPanel',
 		'TD.view.Viewport'
-
 	]);
 	Ext.Ajax.disableCaching = false;
-
-
 
 	Ext.application({
 		name: "TD",
 		appFolder: "app",
 
 		controllers: [
-			"TargetInfo",
-			"CenterTabs"
+			"TargetInfo"
+//			"CenterTabs"
 		],
 
 		autoCreateViewport: true,
@@ -48,6 +48,7 @@
 		launch: function() {
 console.info("launchinnggggggggggg")
 
+			TD.util.CustomAjax.init({clearCache:true})
 			Ext.create ("Ext.tip.ToolTip", {
 				html: "<b>UniProt</b> id like '<i>P12345</i>'",
 				target: "txtIdSearch"

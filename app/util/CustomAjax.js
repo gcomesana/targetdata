@@ -49,7 +49,8 @@ console.log("TD.util.CustomAjax.cacheInit")
 		var myUrl = opts.url
 		var myParams = opts.params
 
-		var cacheResp = this.fetchRequest (myUrl, myParams)
+//		var cacheResp = this.fetchRequest (myUrl, myParams)
+		var cacheResp = null
 		if (!cacheResp)
 			this.callParent(arguments)
 
@@ -72,8 +73,6 @@ console.log("TD.util.CustomAjax.cacheInit")
 	fetchRequest: function (theUrl, theParams) {
 
 		this.requestCache.filter ('url', theUrl)
-
-
 
 		var join = function (rec) {
 			var recParams = rec.params();

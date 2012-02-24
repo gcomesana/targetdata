@@ -1,10 +1,9 @@
-// Ext.require (["TD.controller.util.TargetInfoUtil"])
+Ext.require (["TD.controller.util.TargetInfoUtil"])
 
 Ext.define ("TD.controller.TargetInfo", {
-	views: ["form.FormSearch", // "form.ExamplesCombo", // impossible to test with jasmine
-					"tab.TargetInfoPanel", "KeggPathwaysGrid"],
-	stores: ["KeggPathways", "TargetExamples"],
-	models: ["KeggPathway", "TargetExample"],
+	views: ["form.FormSearch", "tab.TargetInfoPanel", "KeggPathwaysGrid"],
+	stores: ["KeggPathways", "ProteinLookup"],
+	models: ["KeggPathway", "ProteinLookup"],
 	
 	extend: "Ext.app.Controller",
 	requires: ['TD.controller.util.TargetInfoUtil', 'TD.controller.util.XTplFactory'],
@@ -19,8 +18,8 @@ Ext.define ("TD.controller.TargetInfo", {
 	],
 
 	urisProd: [
-		{"cat":"uniprot", "url":"cgi-bin/uniFetcher.pl"},
-		{"cat":"pubmedAbstrac", "url": "cgi-bin/togoAbstractFetch.pl"}
+		{"cat":"uniprot", "url":"/cgi-bin/uniFetcher.pl"},
+		{"cat":"pubmedAbstrac", "url": "/cgi-bin/togoAbstractFetch.pl"}
 	],
 
 
@@ -33,7 +32,7 @@ Ext.define ("TD.controller.TargetInfo", {
 	init: function () {
 		targetInfoUtil = TD.controller.util.TargetInfoUtil
 
-		this.control ({
+		this.control({
 			"#btnSearch": {
 				// render: this.onRenderBtnSearch,
 				click: this.onClickBtnSearch
@@ -62,8 +61,7 @@ Ext.define ("TD.controller.TargetInfo", {
 				itemclick: this.onPathwayClick
 			},
 
-//			'viewport > tab-west-panel > panel > formsearch > examples-combo': {
-			'examples-combo': {
+			'viewport > tab-west-panel > panel > formsearch > examples-combo': {
 				select: this.onSelectExample
 			}
 		})
@@ -71,6 +69,7 @@ Ext.define ("TD.controller.TargetInfo", {
 
 
 	onSelectExample: function (field, value, opts) {
+		console.info ("got it viewport > tab-west-panel > panel...")
 		var panels = Ext.ComponentQuery.query ('viewport > center-tabs panel')
 		Ext.each (panels, function (panel, index, panelsItself) {
 			panel.removeAll()

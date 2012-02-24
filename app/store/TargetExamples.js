@@ -17,5 +17,9 @@ Ext.define ("TD.store.TargetExamples", {
 	},
 	
 	autoLoad: true,
-	storeId: "examplesStore"
+	storeId: "examplesStore",
+
+	constructor : function() {
+		this.callParent(arguments);
+	}
 })

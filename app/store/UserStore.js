@@ -1,18 +1,16 @@
 
-
-Ext.define('TD.store.ProteinLookup', {
+Ext.define('TD.store.UserStore', {
 	extend		: 'Ext.data.Store',
-	requires	: ['TD.model.ProteinLookup'],
+	requires	: ['TD.model.UserModel'],
 //	singleton: true,
 
-	model		 : 'TD.model.ProteinLookup',
+	model		 : 'TD.model.UserModel',
 	proxy: {
 		type: "ajax",
-//		url: "resources/data/test-uniprot.json",
-		url: "/cgi-bin/uniprot-entries.rb",
+		url: "resources/data/miniuser.json",
 		reader: {
 			type: "json",
-			root: "items"
+			root: "users"
 		}
 	},
 	autoLoad: true,
@@ -22,7 +20,7 @@ Ext.define('TD.store.ProteinLookup', {
 
 	constructor : function() {
 		this.callParent(arguments);
-		/*
+	/*
 		this.loadData([
 			{
 				firstName : 'Louis',
