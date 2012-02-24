@@ -76,12 +76,12 @@ describe ("Scenarios and specs for CustomAjax", function () {
 
 			waitsFor (
 				function () {
-					return TD.util.CustomAjax.isLoading()
-				}, 'Not loaded', 1500
+					return !TD.util.CustomAjax.isLoading()
+				}, 'Not loaded'
 			)
 
-			var countAfter = TD.util.CustomAjax.getCount()
-
+			var countAfter = TD.util.CustomAjax.requestCache.getCount()
+console.log ("countBefore: "+countBefore +" vs countAfter: "+countAfter)
 			expect(countAfter-countBefore).toBeGreaterThan(0)
 			expect (countAfter).toBeGreaterThan(countBefore)
 		})
