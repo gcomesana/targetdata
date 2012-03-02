@@ -23,12 +23,27 @@ Ext.define ("TD.controller.TargetInfo", {
 	],
 
 
-
 	currentUniprot: '',
+
+	endpoint: 'localhost',
+	cgiPath: '/cgi-bin/cgiruby.rb',
+	PROTEIN_LOOKUP :1,
+  PROTEIN_INFO: 2,
+  GET_PATHWAYS: 3,
+  PATHWAY_INFO: 4,
+  GET_INTERACTION: 5,
+  CHECK_ENDPOINT: 6,
 
 	targetInfoUtil: null,
 	stringBaseUri: null,
 
+
+
+
+
+/**
+ * Initialization method for the controller
+ */
 	init: function () {
 		targetInfoUtil = TD.controller.util.TargetInfoUtil
 
@@ -63,8 +78,33 @@ Ext.define ("TD.controller.TargetInfo", {
 
 			'viewport > tab-west-panel > panel > formsearch > examples-combo': {
 				select: this.onSelectExample
+			},
+
+			'viewport > tab-west-panel > panel > formsearch > combo-protein-lookup': {
+				beforerender: this.onProteinLookupRender
 			}
-		})
+		}) // EO this.control
+	},
+
+	
+
+	onProteinLookupRender: function (comp, opts) {
+		var store = this.getStore('TD.store.ProteinLookup')
+		var me = this
+
+		if (store) {
+			console.info ("Store accessed...")
+			comp.store.getProxy().url = me.cgiPath
+			comp.store.getProxy().extraParams = {
+				what: me.PROTEIN_LOOKUP,
+				endpoint: me.endpoint
+			}
+		}
+	},
+
+
+	setEndpoint: function (endpoint) {
+		this.endpoint = endpoint
 	},
 
 
@@ -74,23 +114,27 @@ Ext.define ("TD.controller.TargetInfo", {
 		Ext.each (panels, function (panel, index, panelsItself) {
 			panel.removeAll()
 		})
-		TD.controller.util.TargetInfoUtil.uniprotReq (Ext.htmlEncode(field.getValue()))
+		targetInfoUtil.uniprotReq(Ext.htmlEncode(field.getValue()))
 	},
 
 
 
 	onPathwayClick: function (grid, record, item, index, ev, opts) {
-// console.info ("onPathwayClick -> gridId: "+grid.getId()+" on index: "+index)
 		var thePanel = Ext.getCmp("panel4PathwayInfo")
+		var me = this
 
 		thePanel.pathTpl.overwrite(thePanel.body, {})
 		TD.util.CustomAjax.bodyMasking = true
 		TD.util.CustomAjax.maskMsg = 'Sending request for pathways...'
+
 //		Ext.Ajax.request({
 		TD.util.CustomAjax.request ({
-			url: '/cgi-bin/pathway_info.rb',
+//			url: '/cgi-bin/pathway_info.rb',
+			url: me.cgiPath,
 			params: {
-				pathway: record.raw[0]
+				pathway: record.raw[0],
+				ep: me.endpoint,
+				what: me.PATHWAY_INFO
 			},
 
 			success: function(response){
@@ -103,8 +147,6 @@ Ext.define ("TD.controller.TargetInfo", {
 				
 				thePanel.pathJson = jsonObj
 				thePanel.pathTpl.overwrite(thePanel.body, thePanel.pathJson)
-//						comp.add (pathwayTpl)
-					// process server response here
 			},
 
 			failure: function (response, opts) {
@@ -126,6 +168,7 @@ Ext.define ("TD.controller.TargetInfo", {
 		var compId = theComp.getId()
 		var height = theComp.getHeight()
 		var uniprotJson = TD.controller.util.TargetInfoUtil.uniprotJson
+		var me = this
 
 		if (compId == 'targetcitations') {
 			var infoTpl = TD.controller.util.XTplFactory.createCitationXTpl(height)
@@ -160,9 +203,12 @@ Ext.define ("TD.controller.TargetInfo", {
 			theComp.removeAll()
 //			var pathwayStore = Ext.data.StoreManager.lookup('keggpathways-store')
 			var pathwayStore = Ext.create ("TD.store.KeggPathways")
+			pathwayStore.proxy.url = me.cgiPath;
 			pathwayStore.proxy.extraParams = {
 //				protein: Ext.getCmp('formSearch').currentUniprotId
-				protein: gene
+				protein: gene,
+				what: me.GET_PATHWAYS,
+				endpoint: me.endpoint
 			}
 			var gridPathways = Ext.create("TD.view.KeggPathwaysGrid", {
 				flex: 1,
@@ -179,7 +225,6 @@ Ext.define ("TD.controller.TargetInfo", {
 				minWidth: panelPathW,
 				autoScroll: true,
 				id: "panel4PathwayInfo",
-//				html: '<div class="citationTit">KEGG description</div>',
 
 				pathJson: null,
 				pathTpl: TD.controller.util.XTplFactory.createPathwayInfoTpl(400, panelPathW),
@@ -219,12 +264,13 @@ Ext.define ("TD.controller.TargetInfo", {
 			}
 			theComp.add(Ext.apply (newConfig))
 			Ext.getCmp('panel4PathwayInfo').body.setStyle('border', '1px dotted black')
-		}
+		} // EO targetpathways
 
 
 ////////////////////////////////////////////////////////////////////////////
 		if (compId == "targetInteractions") {
 			theComp.removeAll()
+			
 			stringBaseUri = "http://string-db.org/api/image/network?identifier=xxxx&required_score=950&limit=10&network_flavor=evidence";
 			var msgEmpty = "No interactions found for the Uniprot Id ????"
 			var intPanel = Ext.create ("TD.view.tab.TargetInfoPanel", {
@@ -249,7 +295,7 @@ Ext.define ("TD.controller.TargetInfo", {
 				
 				listeners: {
 					'render': function (comp, opts) {
-						var me = this
+//						var me = this
 						var thePanel = comp
 						var uniprotAcc = uniprotJson.uniprot.entry.accession.length?
 														uniprotJson.uniprot.entry.accession[0]._text_:
@@ -260,10 +306,12 @@ Ext.define ("TD.controller.TargetInfo", {
 						TD.util.CustomAjax.maskMsg = 'Sending request to StringDB...'
 //						Ext.Ajax.request({
 						TD.util.CustomAjax.request ({
-//							async: false,
-							url: '/cgi-bin/string_resolve.rb',
+//							url: '/cgi-bin/string_resolve.rb',
+							url: me.cgiPath,
 							params: {
-								uniprotAcc: uniprotAcc
+								uniprotAcc: uniprotAcc,
+								what: me.GET_INTERACTION,
+								endpoint: me.endpoint
 							},
 
 							success: function(response){
@@ -309,7 +357,6 @@ Ext.define ("TD.controller.TargetInfo", {
 	onClickBtnSearch: function (btn, ev, opts) {
 // Check cache for proteinId existence
 // Otherwise, do ajax request call
-
 		var theForm = btn.findParentByType("form")
 		var txtRequest = theForm.child("textfield")
 		var txtValue = txtRequest.getValue()
@@ -317,7 +364,8 @@ Ext.define ("TD.controller.TargetInfo", {
 		formSearch.currentUniprotId = txtValue
 
 		Ext.getCmp('infoPanel').removeAll()
-		TD.controller.util.TargetInfoUtil.uniprotReq (Ext.htmlEncode(txtValue))
+//		TD.controller.util.TargetInfoUtil.uniprotReq (Ext.htmlEncode(txtValue))
+		targetInfoUtil.uniprotReq (Ext.htmlEncode(txtValue))
 	},
 
 
@@ -338,9 +386,11 @@ Ext.define ("TD.controller.TargetInfo", {
 			var dbRefObj = JSONSelect.match(".uniprot .entry .reference .citation", targetInfoCls.uniprotJson)
 			console.info ("dbRefObj: "+dbRefObj)
 		}
+	},
+
+	test: function () {
+		return 'TD.controller.TargetInfo.test() => OK';
 	}
-
-
 
 
 })

@@ -40,13 +40,12 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 			TD.util.CustomAjax.maskMsg = 'Sending Uniprot request...'
 			TD.util.CustomAjax.request ({
 	//			url: "http://ws.bioinfo.cnio.es/OpenPHACTS/cgi-bin/uniFetcher.pl",
-	//			url: "/cgi-bin/uniFetcher.pl",
+				url: "/cgi-bin/uniFetcher.pl",
 				url: properUrl,
 				params: {
 					id: uniprotId
 				},
 				method: "GET",
-
 
 				success: function (response, opts) {
 					var tpl

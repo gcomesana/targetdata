@@ -9,13 +9,14 @@ Ext.define('TD.store.ProteinLookup', {
 	proxy: {
 		type: "ajax",
 //		url: "resources/data/test-uniprot.json",
-		url: "/cgi-bin/uniprot-entries.rb",
+//		url: "/cgi-bin/uniprot-entries.rb",
+//		url: "",
 		reader: {
 			type: "json",
 			root: "items"
 		}
 	},
-	autoLoad: true,
+//	autoLoad: true,
 	storeId: "userstore",
 //    storeId   : 'MyApp.store.UserStore',
 
