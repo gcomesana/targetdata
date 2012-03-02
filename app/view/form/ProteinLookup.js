@@ -21,7 +21,24 @@ Ext.define ('TD.view.form.ProteinLookup', {
 	fieldLabel: 'Term',
 	triggerAction: 'query',
 	emptyText: 'Start typing free text or, i.e., BRCA1',
-	
+
+
+
+	constructor: function () {
+		this.store.getProxy().url = "/cgi-bin/uniprot-entries.rb"
+
+		this.callParent(arguments)
+	},
+
+
+	listeners: {
+		focus: function (thisComp, opts) {
+			var store = thisComp.store
+			console.log ("proteinlookup store: "+store.getProxy().url)
+		}
+	},
+
+
 	listConfig: {
 		getInnerTpl: function() {
 			return '<div data-qtip="genes: {genes}">{entry}<br>' +
