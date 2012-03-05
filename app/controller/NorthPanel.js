@@ -5,8 +5,10 @@ Ext.define ("TD.controller.NorthPanel", {
 
 	views: ['panel.NorthPanel'],
 
-	init: function () {
+	targetInfoCtrl: null,
 
+	init: function () {
+		targetInfoCtrl = this.getController('TD.controller.TargetInfo')
 	},
 
 	onLaunch: function() {
@@ -18,7 +20,12 @@ Ext.define ("TD.controller.NorthPanel", {
 	checkCoreAPI: function() {
 		var me = this
 		Ext.Ajax.request({
-			url: '/cgi-bin/check-api.rb',
+//			url: '/cgi-bin/check-api.rb',
+//			url: '/cgi-bin/gateway/bin/cgigateway.rb',
+			url: '/cgi-bin/cgiruby.rb',
+			params: {
+				what: targetInfoCtrl.CHECK_ENDPOINT
+			},
 
 			success: function(response) {
 				var status_field = Ext.ComponentQuery.query('displayfield[id="ops_api_staus_id"]')[0];

@@ -22,11 +22,10 @@ Ext.define ("TD.controller.TargetInfo", {
 		{"cat":"pubmedAbstrac", "url": "/cgi-bin/togoAbstractFetch.pl"}
 	],
 
-
 	currentUniprot: '',
 
 	endpoint: 'localhost',
-	cgiPath: '/cgi-bin/cgiruby.rb',
+	cgiPath: '/cgi-bin/cgiruby.rb', // '/cgi-bin/gateway/bin/cgigateway.rb', 
 	PROTEIN_LOOKUP :1,
   PROTEIN_INFO: 2,
   GET_PATHWAYS: 3,
@@ -103,8 +102,21 @@ Ext.define ("TD.controller.TargetInfo", {
 	},
 
 
+
+/**
+ * Set the endpoint which is going to be used to make requests.
+ * However, if a remote endpoint is to be used, the cgipath won't be based on it,
+ * as there will be a set of requests based on POST requests on endpoint and
+ * conceptwiki URLs for another issues.
+ * Basically people on OPS separates between coreAPI and conceptWiki when
+ * making different requests
+ * @param endpoint
+ */
 	setEndpoint: function (endpoint) {
 		this.endpoint = endpoint
+		if (endpoint.indexOf('localhost') == -1) { // remote endpoint
+			
+		}
 	},
 
 
