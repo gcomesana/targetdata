@@ -327,7 +327,11 @@ console.log (newJsonStr)
 					goJsonStr += ""
 			})
 
-			goJsonStr = goJsonStr.substr(0, goJsonStr.length-1) + "],"
+			if (goJsonStr.indexOf("[") == goJsonStr.length-1)
+				goJsonStr += "],"
+			else
+				goJsonStr = goJsonStr.substr(0, goJsonStr.length-1) + "],"
+			
 			return goJsonStr
 		},
 
