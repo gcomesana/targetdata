@@ -215,14 +215,79 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 				newJsonStr += "],"
 			}
 
+
+
 			var comment = JSONSelect.match(".comment :has(._at_type:val(\"function\"))", jsonObj)
 			var commentFunc = comment.length > 0? comment[entryIndex].text._text_: ''
 			newJsonStr += '"functionComment": "'+commentFunc+'",'
 
+		
+		
+			var commSimilarity = JSONSelect.match('.comment :has(._at_type:val("similarity"))', jsonObj)
+			var simLength = commSimilarity.length
+			newJsonStr = simLength > 0? newJsonStr + '"similarity": [': newJsonStr;
+			Ext.each (commSimilarity, function (item, index, elems) {
+				var similarityTxt = item.text._text_
+				newJsonStr += '"'+similarityTxt+'",'
+			})
+			if (simLength > 0) {
+				newJsonStr = newJsonStr.substr(0, newJsonStr.length-1)
+				newJsonStr += "],"
+			}
+
+
+
+			var commTissue = JSONSelect.match('.comment :has(._at_type:val("tissue specificity"))', jsonObj)
+			var tissueLen = commTissue.length
+//			newJsonStr = tissueLen > 0? newJsonStr + '"tissue": [': newJsonStr;
+			if (tissueLen > 0) {
+				newJsonStr += '"tissue": ['
+				Ext.each (commTissue, function (item, index, elems) {
+					var tissueTxt = item.text._text_
+					newJsonStr += '"'+tissueTxt+'",'
+				})
+
+				newJsonStr = newJsonStr.substr(0, newJsonStr.length-1)
+				newJsonStr += "],"
+			}
+			else
+				newJsonStr += '"tissue":[],'
+
+
+		
+			var commLocation = JSONSelect.match('.comment :has(._at_type:val("subcellular location"))', jsonObj)
+			if (commLocation.length > 0) {
+				newJsonStr += '"subcellLocations":['
+				Ext.each (commLocation[0].subcellularLocation, function (item, index, elems) {
+					Ext.each (item, function (itemLocation, index, elems) {
+						newJsonStr += '"'+itemLocation.location._text_+'",'
+					})
+					/*
+					if (item.length) {
+						Ext.each (item, function (itemLocation, index, elems) {
+							newJsonStr += '"'+itemLocation.location._text_+'",'
+						})
+					}
+					else
+						newJsonStr += '"'+item.location._text_ + '",'
+					*/
+				})
+				newJsonStr = newJsonStr.substr(0, newJsonStr.length-1)
+				newJsonStr += "],"
+			}
+			else
+				newJsonStr += '"subcellLocations":[],'
+
+
+
+			var goTerms = JSONSelect.match('.dbReference :has(._at_type:val("GO"))', jsonObj)
+			if (goTerms.length > 0)
+				newJsonStr += this.getGoTerms (goTerms)
+
 			var organism
 			organism = JSONSelect.match('.organism .name :has(._at_type:val("common"))', jsonObj)
 			var organismCommon = organism.length > 0? organism[entryIndex]._text_: ''
-			newJsonStr += '"organismName": "'+organismCommon+'",'
+			newJsonStr += '"organismName": "'+organismCommon+'"'
 
 			newJsonStr += "}"
 	// OJO!!!!!!! Shouldn't be necessary (or yes...) but XTemplate don't support $ and @
@@ -230,10 +295,39 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 			newJsonStr = newJsonStr.replace("@", "", "g")
 
 			var newJsonObj = Ext.JSON.decode (newJsonStr)
-
+console.log (newJsonStr)
 			return newJsonObj
 		}, // EO translateJson
 
+// TODO estaba sacando los GO:ids...
+
+
+		getGoTerms: function (theGOTerms) {
+			var goJsonStr = '"goTerms":['
+			var newTerms = JSONSelect.match('.property :has(._at_type:val("term"))', theGOTerms)
+
+			Ext.each (theGOTerms, function (item, index, elems) {
+//				var goType = item._at_value.charAt(0)
+				var goTerm = JSONSelect.match('.property :has(._at_type:val("term"))', item)
+				var goType = goTerm[0]._at_value.charAt(0)
+
+				if (goType == 'F') {
+					goJsonStr += '{"type":"Molecular function","value":"'
+					goJsonStr += goTerm[0]._at_value.substring(2, goTerm[0]._at_value.length)
+					goJsonStr += '","id":"'+item._at_id+'"},'
+				}
+				else if (goType == 'P') {
+					goJsonStr += '{"type":"Biological process","value":"'
+					goJsonStr += goTerm[0]._at_value.substring(2, goTerm[0]._at_value.length)
+					goJsonStr += '","id":"'+item._at_id+'"},'
+				}
+				else
+					goJsonStr += ""
+			})
+
+			goJsonStr = goJsonStr.substr(0, goJsonStr.length-1) + "],"
+			return goJsonStr
+		},
 
 
 
