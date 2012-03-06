@@ -12,6 +12,10 @@ Ext.define ("TD.view.panel.CenterTabs", {
 	activeTab: 0,		 // first tab initially active
 	itemId: "centerTabs",
 	id: "centerTabs",
+	border: false,
+	defaults: {
+		border: false
+	},
 
 	items: [{
 			xtype: "target-generic-panel",

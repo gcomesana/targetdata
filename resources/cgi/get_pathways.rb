@@ -12,7 +12,7 @@ format = "json"
 
 # request data via HTTP by utilizing an GET request
 # url = URI.parse('http://pfam.sanger.ac.uk/family?output=xml&acc=PF00285')
-keggReqUri = 'http://rbbt.bioinfo.cnio.es:1988/OPS/get_protein_kegg_pathways?protein=xxxx&organism=Hsa&_format=json'
+keggReqUri = 'http://rbbt.bioinfo.cnio.es:1988/OPS/get_gene_kegg_pathways?gene=xxxx&organism=Hsa&_format=json'
 keggReqUri = keggReqUri.sub("xxxx", term)
 
 url = URI.parse(keggReqUri)

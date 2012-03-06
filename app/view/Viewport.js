@@ -6,8 +6,8 @@
  * To change this template use File | Settings | File Templates.
  */
 
-var comboStore = Ext.create ("TD.store.UserStore")
-var uniComboStore = Ext.create ("TD.store.ProteinLookup")
+// var comboStore = Ext.create ("TD.store.UserStore")
+// var uniComboStore = Ext.create ("TD.store.ProteinLookup")
 
 Ext.define("TD.view.Viewport", {
 	extend: "Ext.container.Viewport",
@@ -54,29 +54,9 @@ Ext.define("TD.view.Viewport", {
 //								html: "<h1>HTML in h1</h1>",
 						title: 'Search',
 //									iconCls: 'nav' // see the HEAD section for style used
-						items: [
-							{
+						items: [{
 								xtype: "formsearch"
-							}/*,
-							Ext.create ("Ext.form.field.ComboBox", {
-								queryMode: "remote",
-								store: uniComboStore,
-								displayField: "names",
-								valueField: "entry",
-								typeAhead:true,
-								minChars: 3,
-								queryParam: "target_uuid",
-								fieldLabel: "Term",
-								
-								listConfig: {
-									getInnerTpl: function() {
-										return '<div data-qtip="genes: {genes}">{entry}<br>' +
-											'<small><i><tpl for="names"><b>{.}</b><br/></tpl></i></small></div>';
-									},
-
-									emptyText: "Start typing..."
-								}
-							})*/
+							}
 						]
 					}
 				]

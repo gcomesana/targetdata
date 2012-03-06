@@ -1,10 +1,10 @@
 
-Ext.define('TD.store.UserStore', {
+Ext.define('TD.store.Users', {
 	extend		: 'Ext.data.Store',
-	requires	: ['TD.model.UserModel'],
+	requires	: ['TD.model.User'],
 //	singleton: true,
 
-	model		 : 'TD.model.UserModel',
+	model		 : 'TD.model.User',
 	proxy: {
 		type: "ajax",
 		url: "resources/data/miniuser.json",

@@ -17,10 +17,6 @@ Ext.define ("TD.controller.CenterTabs", {
 			}
 		})
 
-	},
-
-
-	onPanelShow: function (aTab, opts) {
-		var theId = aTab.getId()
 	}
+
 })

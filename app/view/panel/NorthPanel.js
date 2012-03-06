@@ -38,6 +38,13 @@ Ext.define ("TD.view.panel.NorthPanel", {
 
 	initComponent : function() {
 		this.items = [
+			{
+						xtype: 'displayfield',
+						value: '<span style="color: blue;font-weight: bolder;">Testing connections to OPS API...</span>',
+						width: 400,
+						name: 'ops_api_staus',
+						id: 'ops_api_staus_id'
+					},
 					Ext.create("Ext.Img", {
 						src: "resources/images/app/targetdata_bottom.png",
 						height: 100,
@@ -46,6 +53,7 @@ Ext.define ("TD.view.panel.NorthPanel", {
 							padding: '0 10 0 10'
 						}
 					}),
+
 					Ext.create("Ext.Img", {
 						src: "resources/images/app/OPS_logo_med_transp.gif",
 						height: 70,
