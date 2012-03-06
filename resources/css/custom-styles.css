@@ -13,17 +13,35 @@
 	color: #0033CC;
 	margin-top: 10px;
 }
+
+.nameSubCat {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bolder;
+/*	font-variant: normal; */
+	color: #2a2a2a;
+	margin-top: 5px;
+}
+
 .infoJson {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	color: #000000;
-	width: 400px;
+/*	width: 400px; */
 }
 .infoList {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	color: #000000;
 }
+
+.goTermsList {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #000000;
+}
+
 .uniprotId {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 18px;

@@ -35,8 +35,22 @@ Ext.define ("TD.controller.util.XTplFactory", {
 
 /**
  * Creates a XTemplate to display the result of a successful uniprot request
+ * "functionComment": "Catalytic subunit of AMP-activated protein kinase (AMPK), an energy sensor protein kinase that plays a key role in regulating cellular energy metabolism. In response to reduction of intracellular ATP levels, AMPK activates energy-producing pathways and inhibits energy-consuming processes: inhibits protein, carbohydrate and lipid biosynthesis, as well as cell growth and proliferation. AMPK acts via direct phosphorylation of metabolic enzymes, and by longer-term effects via phosphorylation of transcription regulators. Also acts as a regulator of cellular polarity by remodeling the actin cytoskeleton; probably by indirectly activating myosin. Regulates lipid synthesis by phosphorylating and inactivating lipid metabolic enzymes such as ACACA, ACACB, GYS1, HMGCR and LIPE; regulates fatty acid and cholesterol synthesis by phosphorylating acetyl-CoA carboxylase (ACACA and ACACB) and hormone-sensitive lipase (LIPE) enzymes, respectively. Regulates insulin-signaling and glycolysis by phosphorylating IRS1, PFKFB2 and PFKFB3. AMPK stimulates glucose uptake in muscle by increasing the translocation of the glucose transporter SLC2A4/GLUT4 to the plasma membrane, possibly by mediating phosphorylation of TBC1D4/AS160. Regulates transcription and chromatin structure by phosphorylating transcription regulators involved in energy metabolism such as CRTC2/TORC2, FOXO3, histone H2B, HDAC5, MEF2C, MLXIPL/ChREBP, EP300, HNF4A, p53/TP53, SREBF1, SREBF2 and PPARGC1A. Acts as a key regulator of glucose homeostasis in liver by phosphorylating CRTC2/TORC2, leading to CRTC2/TORC2 sequestration in the cytoplasm. In response to stress, phosphorylates 'Ser-36' of histone H2B (H2BS36ph), leading to promote transcription. Acts as a key regulator of cell growth and proliferation by phosphorylating TSC2, RPTOR and ATG1: in response to nutrient limitation, negatively regulates the mTORC1 complex by phosphorylating RPTOR component of the mTORC1 complex and by phosphorylating and activating TSC2. In response to nutrient limitation, promotes autophagy by phosphorylating and activating ULK1. AMPK also acts as a regulator of circadian rhythm by mediating phosphorylation of CRY1, leading to destabilize it. May regulate the Wnt signaling pathway by phosphorylating CTNNB1, leading to stabilize it. Also has tau-protein kinase activity: in response to amyloid beta A4 protein (APP) exposure, activated by CAMKK2, leading to phosphorylation of MAPT/TAU; however the relevance of such data remains unclear in vivo. Also phosphorylates CFTR, EEF2K, KLC1, NOS3 and SLC12A1.",
+    "similarity": [
+        "Belongs to the protein kinase superfamily. CAMK Ser/Thr protein kinase family. SNF1 subfamily.",
+        "Contains 1 protein kinase domain."
+    ],
+    "tissue": [],
+    "subcellLocations": [
+        "Cytoplasm",
+        "Nucleus"
+    ],
  */
-		createInfoXTpl: function () {
+		createInfoXTpl: function (newJsonObj) {
+			var amigoURI = 'http://amigo.geneontology.org/cgi-bin/amigo/term_details?term='
+			var bioProcesses = JSONSelect.match('.goTerms :has(.type:val("Biological process"))', newJsonObj).length
+			var molFunctions = JSONSelect.match('.goTerms :has(.type:val("Molecular function"))', newJsonObj).length
+
 			var tpl = new Ext.XTemplate (
 				'<div id="divNames" class="nameCat">Name</div>',
 				'<div class="infoJson">{fullName}',
@@ -55,10 +69,59 @@ Ext.define ("TD.controller.util.XTplFactory", {
 				'<div id="divOrganism" class="nameCat">Organism</div>',
 				'<div class="infoJson">{organismName}</div>',
 				'</tpl>',
+/*
+				'<div id="divComments" class="nameCat">Comments</div>',
+				'<tpl if="functionComment != &quot;&quot;">',
+				'<div id="divFuncionComment" class="infoJson">{functionComment}</div>',
+				'</tpl>',
+*/
+				'<tpl if="tissue.length &gt; 0">',
+				'<div class="nameCat">Tissues</div>',
+					'<tpl for="tissue">',
+						'<li class="infoList">{.}</li>',
+					'</tpl>',
+				'</tpl>',
+
+				'<tpl if="subcellLocations.length &gt; 0">',
+				'<div class="nameCat">Subcellular locations</div>',
+					'<tpl for="subcellLocations">',
+						'<li class="infoList">{.}</li>',
+					'</tpl>',
+				'</tpl>',
 
 				'<tpl if="functionComment != &quot;&quot;">',
 				'<div id="divFunction" class="nameCat">Function</div>',
 				'<div class="infoJson">{functionComment}</div>',
+				'</tpl>',
+
+
+				'<tpl if="similarity.length &gt; 0">',
+					'<div class="nameCat">Known similarities</div>',
+					'<tpl for="similarity">',
+						'<li class="infoList">{.}</li>',
+					'</tpl>',
+				'</tpl>',
+
+				'<tpl if="goTerms.length &gt; 0">',
+				'<div class="nameCat">GO terms</div>',
+				'<tpl if="this.outGoTerms (\'mol\') == true">',
+				'<div class="nameSubCat">Molecular functions</div>',
+					'<tpl for="goTerms">',
+						'<tpl if="type == \'Molecular function\'">',
+							'<li class="goTermsList">[<a href="'+amigoURI+'{id}" target="_blank">{id}</a>] {value}</li>',
+						'</tpl>',
+					'</tpl>',
+				'</tpl>',
+				'</tpl>',
+
+				'<tpl if="this.outGoTerms (\'bio\') == true">',
+				'<div class="nameSubCat">Biological processes</div>',
+					'<tpl for="goTerms">',
+						'<tpl if="type == \'Biological process\'">',
+							'<li class="goTermsList">[<a href="'+amigoURI+'{id}" target="_blank">{id}</a>] {value}</li>',
+						'</tpl>',
+					'</tpl>',
+				'</tpl>',
 				'</tpl>', {
 					addListener: function(longSeq) {
 						Ext.get('divSeq').on('mouseover', function(e) {
@@ -85,6 +148,13 @@ Ext.define ("TD.controller.util.XTplFactory", {
 							autoHide: false,
 							closable: true
 						})
+					},
+					outGoTerms: function (goTermCat) {
+						if (goTermCat == 'bio')
+							return bioProcesses > 0;
+
+						if (goTermCat == 'mol')
+							return molFunctions > 0;
 					}
 				}
 			)

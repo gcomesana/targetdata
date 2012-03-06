@@ -95,18 +95,20 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 							var infoPanel = Ext.create ("TD.view.tab.TargetInfoPanel", {
 								id: "uniprotInfo-"+accession,
 //								tpl: self.createInfoXTpl(),
-								tpl: TD.controller.util.XTplFactory.createInfoXTpl(),
+								tpl: TD.controller.util.XTplFactory.createInfoXTpl(myJsonObj),
 								emptyTpl: TD.controller.util.XTplFactory.createEmptyTpl(emptyMsg, accession),
 								tplObj: myJsonObj,
 								numItems: 1,
 								emptyObjThreshold: 0,
 								title: infoPanelTit,
 								collapsed: false,
-								collapsible: false
+								collapsible: false,
+								autoScroll: true,
 
-//								maxWidth: 580,
-//								minWidth: 580,
-//								width: 580
+								height: 600,
+//								maxWidth: 780,
+								minWidth: 800,
+								width: 800
 							})
 							view[0].add(infoPanel)
 //							var uniprotObj = TD.controller.util.TargetInfoUtil.uniprotJson
@@ -187,7 +189,7 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 				oldSeq = seq
 			}
 
-			newJsonStr += '"shortSeq":"'+seq.substr(0, 18)+'...",'
+			newJsonStr += '"shortSeq":"'+seq.substr(0, 68)+'...",'
 			newJsonStr += '"seq":"'+seq+'",'
 
 			var accessions = JSONSelect.match (".accession", jsonObj)
@@ -260,7 +262,8 @@ Ext.define ("TD.controller.util.TargetInfoUtil", {
 				newJsonStr += '"subcellLocations":['
 				Ext.each (commLocation[0].subcellularLocation, function (item, index, elems) {
 					Ext.each (item, function (itemLocation, index, elems) {
-						newJsonStr += '"'+itemLocation.location._text_+'",'
+						if (itemLocation.location._text_ != undefined)
+							newJsonStr += '"'+itemLocation.location._text_+'",'
 					})
 					/*
 					if (item.length) {
@@ -299,7 +302,6 @@ console.log (newJsonStr)
 			return newJsonObj
 		}, // EO translateJson
 
-// TODO estaba sacando los GO:ids...
 
 
 		getGoTerms: function (theGOTerms) {
